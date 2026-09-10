@@ -1,24 +1,26 @@
-import { specimen, shape } from "@vivalence/typology";
+import { specimen, shape, Vector } from "@vivalence/typology";
 import * as domain from "../domain.viva.js";
-import { STATUS, SIGNAL } from "../types.js";
+import { STATUS, SIGNAL } from "../schematics.js";
 import drivers from "../retention/index.js";
-import { RetentionStatusEnum, RetentionDriverEnum } from "../entities/userspace/Retention.ts";
-import { LiteralTraitsEnum } from "../entities/kernel/Literal.ts";
+import { RETAINED } from "../traits/note/retained.js";
+
+const enumerated = (property) => RETAINED.schematic.properties[property].anyOf.map((variant) => variant.const);
 
 specimen.describe("domain module — what the runtime mounts", () => {
-  specimen.it("manifest is a TOOLED, EXPOSED domain named language-learning", () => {
+  specimen.it("manifest is a TOOLING, EXPOSED domain named language-learning", () => {
     specimen.expect(domain.manifest.type).toBe("domain");
     specimen.expect(domain.manifest.slug).toBe("language-learning");
-    specimen.expect([...domain.manifest.traits].sort()).toEqual(["EXPOSED", "TOOLED"]);
+    specimen.expect([...domain.manifest.traits].sort()).toEqual(["EXPOSED", "TOOLING"]);
   });
 
-  specimen.it("exports the five entities, each a {type, schema, entity} tier keyed by its type", () => {
-    specimen.expect(Object.keys(domain.entities).sort()).toEqual(["buffer", "literal", "retention", "symbol", "trace"]);
-    for (const [key, tier] of Object.entries(domain.entities)) {
-      specimen.expect(tier.type).toBe(key);
-      specimen.expect(tier.schema).toBeTruthy();
-      specimen.expect(typeof tier.entity).toBe("function");
-    }
+  specimen.it("exports traits per kind and a twitch — no entities, no class, no table", () => {
+    specimen.expect(domain.entities).toBeUndefined();
+    specimen.expect(Object.keys(domain.traits).sort()).toEqual(["literal", "note", "symbol"]);
+    specimen.expect(domain.traits.literal.map((held) => held.name)).toEqual(["RETAINED", "ANNOTATED", "RANKED", "TRANSLATED", "EXEMPLIFIED", "VOCALIZED", "CONJUGATED"]);
+    specimen.expect(domain.traits.symbol).toEqual([]);
+    specimen.expect(domain.traits.note.map((held) => held.name)).toEqual(["RETAINED", "TRACED"]);
+    for (const held of [...domain.traits.literal, ...domain.traits.note]) specimen.expect(Object.keys(held).sort()).toEqual(["entity", "name", "repository", "schematic"]);
+    specimen.expect(domain.twitch).toBeInstanceOf(Vector);
   });
 
   specimen.it("exposes the pick + review routes on its aperture and the four tools on its vector", () => {
@@ -26,18 +28,18 @@ specimen.describe("domain module — what the runtime mounts", () => {
     specimen.expect(Object.keys(routes.branches.pick.branches.literal.branches).sort()).toEqual(["byStatus", "byStrength", "due", "feed", "novel"]);
     specimen.expect(Object.keys(routes.branches.review.branches)).toEqual(["literal"]);
     specimen.expect(Object.keys(shape.strip(domain.tools).branches).sort()).toEqual(["lookup", "progress", "queue", "review"]);
-    specimen.expect(typeof domain.resolve).toBe("function");
+    specimen.expect(domain.resolve).toBeUndefined();
   });
 });
 
 specimen.describe("domain scales — STATUS and SIGNAL are the one vocabulary every part speaks", () => {
   specimen.it("STATUS is the retention status enum, in ladder order", () => {
-    specimen.expect(STATUS).toEqual(Object.values(RetentionStatusEnum));
+    specimen.expect(STATUS).toEqual(enumerated("status"));
     specimen.expect(STATUS).toEqual(["UNTOUCHED", "UNKNOWN", "LEARNING", "KNOWN", "GRADUATED"]);
   });
 
   specimen.it("every driver's verdicts stay inside STATUS for every SIGNAL, and the driver enum names the registry", () => {
-    specimen.expect(Object.keys(drivers).sort()).toEqual(Object.values(RetentionDriverEnum).sort());
+    specimen.expect(Object.keys(drivers).sort()).toEqual(enumerated("driver").sort());
     for (const driver of Object.values(drivers)) {
       for (const value of SIGNAL) {
         const verdict = driver.encode({ enum: value });
@@ -57,7 +59,7 @@ specimen.describe("domain scales — STATUS and SIGNAL are the one vocabulary ev
     specimen.expect(threw).toBe(true);
   });
 
-  specimen.it("literal traits name the corpus vocabulary the resolver and tools read", () => {
-    specimen.expect(Object.values(LiteralTraitsEnum).sort()).toEqual(["ANNOTATED", "CONJUGATED", "EXEMPLIFIED", "RANKED", "TRANSLATED", "VOCALIZED"]);
+  specimen.it("literal traits name the vocabulary the daemon composes for its literals", () => {
+    specimen.expect(domain.traits.literal.map((held) => held.name).sort()).toEqual(["ANNOTATED", "CONJUGATED", "EXEMPLIFIED", "RANKED", "RETAINED", "TRANSLATED", "VOCALIZED"]);
   });
 });

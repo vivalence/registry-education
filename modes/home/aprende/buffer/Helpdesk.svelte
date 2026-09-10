@@ -135,8 +135,8 @@
     box-sizing: border-box;
     padding: 0.5rem 0.5rem 0.5rem 1rem;
     border-radius: 0.75rem;
-    border: 1px solid color-mix(in srgb, var(--colors-theme-primary-surface) 45%, transparent);
-    background: color-mix(in srgb, var(--colors-theme-primary-surface) 7%, transparent);
+    border: 1px solid color-mix(in srgb, var(--signal-primary-tint) 45%, transparent);
+    background: color-mix(in srgb, var(--signal-primary-tint) 7%, transparent);
     transition: border-color 0.2s, background 0.2s;
   }
   .helpdesk:focus-within {
@@ -165,7 +165,7 @@
     flex: 0 0 auto;
     width: 1px;
     height: 1.4rem;
-    background: color-mix(in srgb, var(--colors-skeleton-1-boundary) 35%, transparent);
+    background: color-mix(in srgb, var(--divider) 35%, transparent);
   }
   .body {
     position: relative;
@@ -192,14 +192,14 @@
     background: transparent;
     font-family: var(--font-family-sans-text);
     font-size: var(--font-size-base, 1rem);
-    color: var(--colors-skeleton-1-contrast);
+    color: var(--text-strong);
     text-align: left;
   }
   input {
     outline: none;
   }
   input::placeholder {
-    color: color-mix(in srgb, var(--colors-skeleton-1-boundary) 80%, transparent);
+    color: color-mix(in srgb, var(--boundary) 80%, transparent);
   }
   .message {
     flex: 1 1 auto;

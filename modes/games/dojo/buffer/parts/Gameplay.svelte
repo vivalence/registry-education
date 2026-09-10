@@ -264,22 +264,22 @@
     flex-direction: column;
     min-height: 0;
     height: 100%;
-    background: var(--colors-skeleton-1-surface);
+    background: var(--surface-lift);
   }
   .start-row {
     flex: none;
     display: flex;
     gap: 0.4rem;
     padding: 0.75rem 0.75rem 0.6rem;
-    border-bottom: 1px solid var(--colors-skeleton-1-boundary);
+    border-bottom: 1px solid var(--boundary);
   }
   .stop {
     flex: none;
     padding: 0 0.8rem;
     border-radius: 0.25rem;
-    border: 1px solid var(--colors-system-error-contrast);
+    border: 1px solid var(--signal-negative-ink);
     background: transparent;
-    color: var(--colors-system-error-contrast);
+    color: var(--signal-negative-ink);
     font-family: var(--font-family-code);
     font-size: var(--font-size-2xs);
     cursor: pointer;
@@ -289,18 +289,18 @@
     min-width: 0;
     padding: 0.75rem 0.5rem;
     border-radius: 0.25rem;
-    border: 1px solid var(--colors-skeleton-2-boundary);
+    border: 1px solid var(--boundary-soft);
     background: transparent;
-    color: var(--text-support);
+    color: var(--text-light);
     font-family: var(--font-family-code);
     font-size: var(--font-size-2xs);
     letter-spacing: 0.06em;
     cursor: pointer;
   }
   .start.ready {
-    border-color: var(--colors-theme-primary-contrast);
-    color: var(--colors-theme-primary-contrast);
-    background: var(--colors-skeleton-2-surface);
+    border-color: var(--signal-primary-ink);
+    color: var(--signal-primary-ink);
+    background: var(--surface-sunk);
   }
   .start:disabled {
     cursor: default;
@@ -319,7 +319,7 @@
   .unit {
     font-family: var(--font-family-code);
     font-size: var(--font-size-2xs);
-    color: var(--text-support);
+    color: var(--text-light);
     align-self: center;
     margin-right: 0.35rem;
   }
@@ -328,7 +328,7 @@
     font-size: var(--font-size-2xs);
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--text-support);
+    color: var(--text-light);
     opacity: 0.8;
   }
   .chips {
@@ -347,7 +347,7 @@
     margin-left: auto;
     font-family: var(--font-family-code);
     font-size: var(--font-size-2xs);
-    color: var(--text-support);
+    color: var(--text-light);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -370,13 +370,13 @@
   .key {
     font-family: var(--font-family-code);
     font-size: var(--font-size-2xs);
-    color: var(--text-primary);
+    color: var(--text-strong);
     white-space: nowrap;
   }
   .note {
     font-family: var(--font-family-sans-text);
     font-size: var(--font-size-2xs);
-    color: var(--text-support);
+    color: var(--text-light);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;

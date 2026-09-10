@@ -21,16 +21,16 @@
   .brand {
     font-weight: 700;
     letter-spacing: 0.04em;
-    color: var(--colors-theme-primary-contrast);
+    color: var(--signal-primary-ink);
   }
   .sep {
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
   .phase {
-    color: var(--colors-skeleton-1-contrast);
+    color: var(--text-strong);
   }
   .ctx {
     margin-left: auto;
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
 </style>

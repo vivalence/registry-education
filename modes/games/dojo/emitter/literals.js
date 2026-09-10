@@ -16,7 +16,7 @@ export const literals = async (ctx) => {
   const [target] = set;
   const pool =
     ctx.input.distractors ??
-    (await ctx.daemon.entities.literal.feed(
+    (await ctx.entities.literal.feed(
       { ontology: target.ontology },
       { limit: DISTRACTOR_POOL, blacklist: ctx.input.blacklist },
     ));

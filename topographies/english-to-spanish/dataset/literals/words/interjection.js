@@ -1,75 +1,6 @@
 export default [
   {
-    "slug": "hola.interjection",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED",
-      "VOCALIZED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "hello",
-        "learning": "hola"
-      },
-      "EXEMPLIFIED": {
-        "known": "Hello, how are you?",
-        "learning": "Hola, ¿cómo estás?"
-      },
-      "RANKED": {
-        "rank": 5248,
-        "zipf": 5.28,
-        "fpm": 191.0
-      },
-      "VOCALIZED": {
-        "asset": {
-          "path": "words/hola.interjection.mp3"
-        }
-      }
-    },
-    "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.hola"
-      },
-      {
-        "slug": "word.part-of-speech.interjection"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "domain.social"
-      }
-    ]
-  },
-  {
     "slug": "adiós.interjection",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "goodbye",
-        "learning": "adiós"
-      },
-      "EXEMPLIFIED": {
-        "known": "Goodbye, see you tomorrow",
-        "learning": "Adiós, hasta mañana"
-      },
-      "RANKED": {
-        "rank": 37154,
-        "zipf": 4.43,
-        "fpm": 26.9
-      }
-    },
     "symbols": [
       {
         "slug": "word"
@@ -89,36 +20,30 @@ export default [
       {
         "slug": "domain.social"
       }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "Goodbye, see you tomorrow",
+        "learning": "Adiós, hasta mañana"
+      },
+      "RANKED": {
+        "fpm": 26.9,
+        "rank": 380,
+        "zipf": 4.43
+      },
+      "TRANSLATED": {
+        "known": "goodbye",
+        "learning": "adiós"
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
     ]
   },
   {
     "slug": "gracias.interjection",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED",
-      "VOCALIZED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "thank you",
-        "learning": "gracias"
-      },
-      "EXEMPLIFIED": {
-        "known": "Thank you very much",
-        "learning": "Muchas gracias"
-      },
-      "RANKED": {
-        "rank": 1380,
-        "zipf": 5.86,
-        "fpm": 724.0
-      },
-      "VOCALIZED": {
-        "asset": {
-          "path": "words/gracias.interjection.mp3"
-        }
-      }
-    },
     "symbols": [
       {
         "slug": "word"
@@ -144,36 +69,85 @@ export default [
       {
         "slug": "domain.social"
       }
-    ]
-  },
-  {
-    "slug": "perdón.interjection",
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "Thank you very much",
+        "learning": "Muchas gracias"
+      },
+      "RANKED": {
+        "fpm": 724,
+        "rank": 16,
+        "zipf": 5.86
+      },
+      "TRANSLATED": {
+        "known": "thank you",
+        "learning": "gracias"
+      },
+      "VOCALIZED": {
+        "asset": {
+          "path": "words/gracias.interjection.mp3"
+        }
+      }
+    },
     "traits": [
       "TRANSLATED",
       "EXEMPLIFIED",
       "RANKED",
       "VOCALIZED"
+    ]
+  },
+  {
+    "slug": "hola.interjection",
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.hola"
+      },
+      {
+        "slug": "word.part-of-speech.interjection"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "domain.social"
+      }
     ],
     "trait": {
-      "TRANSLATED": {
-        "known": "sorry / excuse me",
-        "learning": "perdón"
-      },
       "EXEMPLIFIED": {
-        "known": "Excuse me, where is the station?",
-        "learning": "Perdón, ¿dónde está la estación?"
+        "known": "Hello, how are you?",
+        "learning": "Hola, ¿cómo estás?"
       },
       "RANKED": {
-        "rank": 15488,
-        "zipf": 4.81,
-        "fpm": 64.6
+        "fpm": 191,
+        "rank": 15,
+        "zipf": 5.28
+      },
+      "TRANSLATED": {
+        "known": "hello",
+        "learning": "hola"
       },
       "VOCALIZED": {
         "asset": {
-          "path": "words/perdón.interjection.mp3"
+          "path": "words/hola.interjection.mp3"
         }
       }
     },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED",
+      "VOCALIZED"
+    ]
+  },
+  {
+    "slug": "perdón.interjection",
     "symbols": [
       {
         "slug": "word"
@@ -196,36 +170,36 @@ export default [
       {
         "slug": "domain.social"
       }
-    ]
-  },
-  {
-    "slug": "vale.interjection",
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "Excuse me, where is the station?",
+        "learning": "Perdón, ¿dónde está la estación?"
+      },
+      "RANKED": {
+        "fpm": 64.6,
+        "rank": 277,
+        "zipf": 4.81
+      },
+      "TRANSLATED": {
+        "known": "sorry / excuse me",
+        "learning": "perdón"
+      },
+      "VOCALIZED": {
+        "asset": {
+          "path": "words/perdón.interjection.mp3"
+        }
+      }
+    },
     "traits": [
       "TRANSLATED",
       "EXEMPLIFIED",
       "RANKED",
       "VOCALIZED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "okay / all right",
-        "learning": "vale"
-      },
-      "EXEMPLIFIED": {
-        "known": "Okay, let's go",
-        "learning": "Vale, vamos"
-      },
-      "RANKED": {
-        "rank": 7244,
-        "zipf": 5.14,
-        "fpm": 138.0
-      },
-      "VOCALIZED": {
-        "asset": {
-          "path": "words/vale.interjection.mp3"
-        }
-      }
-    },
+    ]
+  },
+  {
+    "slug": "vale.interjection",
     "symbols": [
       {
         "slug": "word"
@@ -251,6 +225,32 @@ export default [
       {
         "slug": "domain.social"
       }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "Okay, let's go",
+        "learning": "Vale, vamos"
+      },
+      "RANKED": {
+        "fpm": 138,
+        "rank": 204,
+        "zipf": 5.14
+      },
+      "TRANSLATED": {
+        "known": "okay / all right",
+        "learning": "vale"
+      },
+      "VOCALIZED": {
+        "asset": {
+          "path": "words/vale.interjection.mp3"
+        }
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED",
+      "VOCALIZED"
     ]
   }
-]
+];

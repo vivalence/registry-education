@@ -56,13 +56,13 @@
   h4 {
     margin: 0;
     padding-bottom: 0.6rem;
-    border-bottom: 1px solid color-mix(in srgb, var(--colors-skeleton-1-boundary) 20%, transparent);
+    border-bottom: 1px solid color-mix(in srgb, var(--boundary) 20%, transparent);
     font-family: var(--font-family-code);
     font-size: var(--font-size-xs);
     font-weight: 600;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
   .ranks {
     display: flex;
@@ -76,7 +76,7 @@
     font-size: var(--font-size-2xs, 0.65rem);
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
     margin: 0.9rem 0 0.3rem;
   }
   .group-label:first-child {
@@ -84,7 +84,7 @@
   }
   .group-hint {
     font-size: var(--font-size-2xs, 0.65rem);
-    color: color-mix(in srgb, var(--colors-skeleton-1-boundary) 65%, transparent);
+    color: color-mix(in srgb, var(--boundary) 65%, transparent);
     text-transform: none;
     letter-spacing: 0.04em;
   }
@@ -95,7 +95,7 @@
     padding: 0.32rem 0;
   }
   .lit + .lit {
-    border-top: 1px solid color-mix(in srgb, var(--colors-skeleton-1-boundary) 14%, transparent);
+    border-top: 1px solid color-mix(in srgb, var(--boundary) 14%, transparent);
   }
   .lit .glyph {
     width: 16px;
@@ -117,7 +117,7 @@
     font-family: var(--font-family-sans-text);
     font-size: var(--font-size-sm);
     font-weight: 600;
-    color: var(--colors-skeleton-1-contrast);
+    color: var(--text-strong);
     white-space: nowrap;
   }
   .lit .en {
@@ -125,7 +125,7 @@
     min-width: 0;
     font-family: var(--font-family-code);
     font-size: var(--font-size-xs);
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -135,7 +135,7 @@
     height: 4px;
     border-radius: 3px;
     overflow: hidden;
-    background: color-mix(in srgb, var(--colors-skeleton-1-boundary) 20%, transparent);
+    background: color-mix(in srgb, var(--divider) 20%, transparent);
   }
   .lit .bar-mini > i {
     display: block;
@@ -148,6 +148,6 @@
     font-family: var(--font-family-code);
     font-size: var(--font-size-sm);
     font-variant-numeric: tabular-nums;
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
 </style>

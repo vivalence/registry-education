@@ -62,36 +62,36 @@
     flex: none;
     overflow-anchor: none;
     align-items: stretch;
-    border: 1px solid var(--colors-skeleton-1-boundary);
+    border: 1px solid var(--boundary);
     border-radius: 0.2rem;
     overflow: hidden;
     height: 1.75rem;
   }
   .stepper.lit {
-    border-color: var(--colors-theme-primary-contrast);
+    border-color: var(--signal-primary-ink);
   }
   button {
     font-family: var(--font-family-code);
     font-size: var(--font-size-xs);
     padding: 0 0.6rem;
     border: none;
-    background: var(--colors-skeleton-2-surface);
-    color: var(--text-support);
+    background: var(--surface-sunk);
+    color: var(--text-light);
     cursor: pointer;
     line-height: 1;
   }
   button:hover {
-    color: var(--colors-theme-primary-contrast);
+    color: var(--signal-primary-ink);
   }
   input {
     width: 2.9rem;
     font-variant-numeric: tabular-nums;
     text-align: center;
-    background: var(--colors-skeleton-0-surface);
+    background: var(--surface);
     border: none;
-    border-left: 1px solid var(--colors-skeleton-1-boundary);
-    border-right: 1px solid var(--colors-skeleton-1-boundary);
-    color: var(--text-support);
+    border-left: 1px solid var(--boundary);
+    border-right: 1px solid var(--boundary);
+    color: var(--text-light);
     font-family: var(--font-family-code);
     font-size: var(--font-size-2xs);
     padding: 0;
@@ -99,6 +99,6 @@
     min-width: 0;
   }
   .lit input {
-    color: var(--colors-theme-primary-contrast);
+    color: var(--signal-primary-ink);
   }
 </style>

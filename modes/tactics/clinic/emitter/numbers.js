@@ -1,18 +1,18 @@
 import { array } from "@vivalence/typology";
 
 export default async (ctx) => {
-  const game = ctx.daemon.modes.game;
-  const all = await ctx.daemon.entities.literal.find(
+  const game = ctx.modes.game;
+  const all = await ctx.entities.literal.find(
     {
       ...ctx.input.where,
       ontology: "word",
       symbols: [...(ctx.input.where?.symbols ?? []), "functional.number"],
     },
-    { populate: ["retentions"] },
+    { populate: ["notes"] },
   );
   if (!all.length) return;
 
-  const virgin = all.filter((word) => !word.retention);
+  const virgin = all.filter((word) => !word.assess());
   if (virgin.length) {
     ctx.pool.add(
       game.exhibit.emit.present({ layout: "TABLE", title: "Numbers", literals: virgin }),
@@ -23,7 +23,7 @@ export default async (ctx) => {
   const practice = ctx.pool.section();
 
   for (const word of all) {
-    if (!word.retention || word.retention.is.virgin) {
+    if (!word.assess() || word.assess().is.virgin) {
       practice.add(
         game.judge.emit.literal({
           literal: word,
@@ -32,7 +32,7 @@ export default async (ctx) => {
           speed: { rate: "SLOW" },
         }),
       );
-    } else if (word.retention.is.failed) {
+    } else if (word.assess().is.failed) {
       practice.add(
         game.judge.emit.literal({
           literal: word,
@@ -41,7 +41,7 @@ export default async (ctx) => {
           speed: { rate: "FAST" },
         }),
       );
-    } else if (word.retention.is.weak) {
+    } else if (word.assess().is.weak) {
       practice.add(game["dojo"].emit.write.literals({ literal: word, recall: "LEARNING" }));
     }
   }

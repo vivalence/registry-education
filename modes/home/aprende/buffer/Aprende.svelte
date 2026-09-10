@@ -7,13 +7,13 @@
   import Activity from "./Activity.svelte";
   import Ranks from "./Ranks.svelte";
 
-  const { terminal, buffer } = $props();
+  const { terminal, buffer, surface } = $props();
 
   // ── help desk · tutor ──
   async function askTutor(text) {
     const result = await buffer.mode.connection.call("/assistant/message", {
       prompt: text,
-      thread: terminal.thread.id,
+      thread: buffer.thread.id,
     });
     // some ways to solve this now:
     // either the aperture returns render instructions,
@@ -26,7 +26,7 @@
   // ── ONE optimized read · the whole board ─────────────────────────────
   // every stat panel derives from `board` — bar, scatter, and ranks can never disagree
   // because there is exactly one source. streak rides statistics (it folds trace-days).
-  // the mode owns a connection scoped to its aperture mount, so the EXPOSED nature is
+  // the mode owns a connection scoped to its aperture reference, so the EXPOSED nature is
   // called bare — no hand-assembled daemon path.
   let board = $state([]);
   let streak = $state(0);
@@ -83,7 +83,7 @@
   .desk-hint {
     font-family: var(--font-family-code);
     font-size: var(--font-size-sm);
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
 
   /* ── stats · boxless 40 / 60 ── */

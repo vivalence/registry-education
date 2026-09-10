@@ -315,13 +315,13 @@
   h4 {
     margin: 0;
     padding-bottom: 0.6rem;
-    border-bottom: 1px solid color-mix(in srgb, var(--colors-skeleton-1-boundary) 20%, transparent);
+    border-bottom: 1px solid color-mix(in srgb, var(--boundary) 20%, transparent);
     font-family: var(--font-family-code);
     font-size: var(--font-size-xs);
     font-weight: 600;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
   /* streak — gold dopamine anchor, badged under the Activity chrome */
   .streak-card {
@@ -369,7 +369,7 @@
   .streak-sub {
     font-family: var(--font-family-sans-text);
     font-size: var(--font-size-xs);
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
   /* scatter (echarts) — the interactive centerpiece */
   .chart {

@@ -16,7 +16,7 @@
   //    against this store — and fill in reactively once modes finish loading.
   const buffers = atom.chain(terminal, "$thread", "$buffers");
   const active = atom.chain(terminal, "$buffer");
-  const modes = atom.chain(terminal, "$thread", "daemon", "entities", "mode", "$entities");
+  const modes = atom.chain(terminal, "$thread", "mode", "daemon", "entities", "mode", "$entities");
 
   const modeIndex = $derived(new Map(($modes ?? []).map((mode) => [mode.id, mode])));
 
@@ -110,10 +110,10 @@
     font-weight: 600;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
   .roster-label b {
-    color: color-mix(in srgb, var(--colors-skeleton-1-contrast) 85%, transparent);
+    color: color-mix(in srgb, var(--text-strong) 85%, transparent);
     font-weight: 700;
   }
   /* the tray — a horizontal deck of the pending games; scrolls when a drill fills it. */

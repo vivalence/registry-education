@@ -1,32 +1,49 @@
 export default [
   {
-    "slug": "cero.numeral",
+    "slug": "catorce.numeral",
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.catorce"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "functional.number"
+      }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "Fourteen euros",
+        "learning": "Catorce euros"
+      },
+      "RANKED": {
+        "fpm": 9.3,
+        "rank": 558,
+        "zipf": 3.97
+      },
+      "TRANSLATED": {
+        "known": "fourteen",
+        "learning": "catorce"
+      }
+    },
     "traits": [
       "TRANSLATED",
       "EXEMPLIFIED",
-      "RANKED",
-      "VOCALIZED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "zero",
-        "learning": "cero"
-      },
-      "EXEMPLIFIED": {
-        "known": "Zero degrees",
-        "learning": "Cero grados"
-      },
-      "RANKED": {
-        "rank": 25119,
-        "zipf": 4.6,
-        "fpm": 39.8
-      },
-      "VOCALIZED": {
-        "asset": {
-          "path": "words/cero.numeral.mp3"
-        }
-      }
-    },
+      "RANKED"
+    ]
+  },
+  {
+    "slug": "cero.numeral",
     "symbols": [
       {
         "slug": "word"
@@ -46,42 +63,42 @@ export default [
       {
         "slug": "functional.number"
       }
-    ]
-  },
-  {
-    "slug": "uno.numeral",
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "Zero degrees",
+        "learning": "Cero grados"
+      },
+      "RANKED": {
+        "fpm": 39.8,
+        "rank": 337,
+        "zipf": 4.6
+      },
+      "TRANSLATED": {
+        "known": "zero",
+        "learning": "cero"
+      },
+      "VOCALIZED": {
+        "asset": {
+          "path": "words/cero.numeral.mp3"
+        }
+      }
+    },
     "traits": [
       "TRANSLATED",
       "EXEMPLIFIED",
       "RANKED",
       "VOCALIZED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "one",
-        "learning": "uno"
-      },
-      "EXEMPLIFIED": {
-        "known": "I have one",
-        "learning": "Tengo uno"
-      },
-      "RANKED": {
-        "rank": 1096,
-        "zipf": 5.96,
-        "fpm": 912.0
-      },
-      "VOCALIZED": {
-        "asset": {
-          "path": "words/uno.numeral.mp3"
-        }
-      }
-    },
+    ]
+  },
+  {
+    "slug": "cien.numeral",
     "symbols": [
       {
         "slug": "word"
       },
       {
-        "slug": "word.lemma.uno"
+        "slug": "word.lemma.cien"
       },
       {
         "slug": "word.part-of-speech.numeral"
@@ -93,41 +110,480 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "proficiency.high-frequency"
+        "slug": "functional.number"
+      }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "One hundred euros",
+        "learning": "Cien euros"
+      },
+      "RANKED": {
+        "fpm": 32.4,
+        "rank": 358,
+        "zipf": 4.51
+      },
+      "TRANSLATED": {
+        "known": "one hundred",
+        "learning": "cien"
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ]
+  },
+  {
+    "slug": "cinco.numeral",
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.cinco"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
       },
       {
         "slug": "functional.number"
       }
-    ]
-  },
-  {
-    "slug": "dos.numeral",
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "Five euros",
+        "learning": "Cinco euros"
+      },
+      "RANKED": {
+        "fpm": 204,
+        "rank": 58,
+        "zipf": 5.31
+      },
+      "TRANSLATED": {
+        "known": "five",
+        "learning": "cinco"
+      },
+      "VOCALIZED": {
+        "asset": {
+          "path": "words/cinco.numeral.mp3"
+        }
+      }
+    },
     "traits": [
       "TRANSLATED",
       "EXEMPLIFIED",
       "RANKED",
       "VOCALIZED"
+    ]
+  },
+  {
+    "slug": "cincuenta.numeral",
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.cincuenta"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "functional.number"
+      }
     ],
     "trait": {
-      "TRANSLATED": {
-        "known": "two",
-        "learning": "dos"
-      },
       "EXEMPLIFIED": {
-        "known": "Two coffees, please",
-        "learning": "Dos cafés, por favor"
+        "known": "Fifty euros",
+        "learning": "Cincuenta euros"
       },
       "RANKED": {
-        "rank": 759,
-        "zipf": 6.12,
-        "fpm": 1320.0
+        "fpm": 19.5,
+        "rank": 448,
+        "zipf": 4.29
+      },
+      "TRANSLATED": {
+        "known": "fifty",
+        "learning": "cincuenta"
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ]
+  },
+  {
+    "slug": "cuarenta.numeral",
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.cuarenta"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "functional.number"
+      }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "Forty euros",
+        "learning": "Cuarenta euros"
+      },
+      "RANKED": {
+        "fpm": 17.4,
+        "rank": 462,
+        "zipf": 4.24
+      },
+      "TRANSLATED": {
+        "known": "forty",
+        "learning": "cuarenta"
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ]
+  },
+  {
+    "slug": "cuatro.numeral",
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.cuatro"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "functional.number"
+      }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "Four people",
+        "learning": "Cuatro personas"
+      },
+      "RANKED": {
+        "fpm": 251,
+        "rank": 57,
+        "zipf": 5.4
+      },
+      "TRANSLATED": {
+        "known": "four",
+        "learning": "cuatro"
       },
       "VOCALIZED": {
         "asset": {
-          "path": "words/dos.numeral.mp3"
+          "path": "words/cuatro.numeral.mp3"
         }
       }
     },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED",
+      "VOCALIZED"
+    ]
+  },
+  {
+    "slug": "diecinueve.numeral",
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.diecinueve"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "functional.number"
+      }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "Nineteen euros",
+        "learning": "Diecinueve euros"
+      },
+      "RANKED": {
+        "fpm": 3,
+        "rank": 643,
+        "zipf": 3.47
+      },
+      "TRANSLATED": {
+        "known": "nineteen",
+        "learning": "diecinueve"
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ]
+  },
+  {
+    "slug": "dieciocho.numeral",
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.dieciocho"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "functional.number"
+      }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "Eighteen euros",
+        "learning": "Dieciocho euros"
+      },
+      "RANKED": {
+        "fpm": 5.6,
+        "rank": 602,
+        "zipf": 3.75
+      },
+      "TRANSLATED": {
+        "known": "eighteen",
+        "learning": "dieciocho"
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ]
+  },
+  {
+    "slug": "diecisiete.numeral",
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.diecisiete"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "functional.number"
+      }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "Seventeen euros",
+        "learning": "Diecisiete euros"
+      },
+      "RANKED": {
+        "fpm": 4.1,
+        "rank": 616,
+        "zipf": 3.61
+      },
+      "TRANSLATED": {
+        "known": "seventeen",
+        "learning": "diecisiete"
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ]
+  },
+  {
+    "slug": "dieciséis.numeral",
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.dieciséis"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "functional.number"
+      }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "Sixteen euros",
+        "learning": "Dieciséis euros"
+      },
+      "RANKED": {
+        "fpm": 5.1,
+        "rank": 605,
+        "zipf": 3.71
+      },
+      "TRANSLATED": {
+        "known": "sixteen",
+        "learning": "dieciséis"
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ]
+  },
+  {
+    "slug": "diez.numeral",
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.diez"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "functional.number"
+      }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "Ten minutes",
+        "learning": "Diez minutos"
+      },
+      "RANKED": {
+        "fpm": 110,
+        "rank": 63,
+        "zipf": 5.04
+      },
+      "TRANSLATED": {
+        "known": "ten",
+        "learning": "diez"
+      },
+      "VOCALIZED": {
+        "asset": {
+          "path": "words/diez.numeral.mp3"
+        }
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED",
+      "VOCALIZED"
+    ]
+  },
+  {
+    "slug": "doce.numeral",
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.doce"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "functional.number"
+      }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "Twelve euros",
+        "learning": "Doce euros"
+      },
+      "RANKED": {
+        "fpm": 29.5,
+        "rank": 370,
+        "zipf": 4.47
+      },
+      "TRANSLATED": {
+        "known": "twelve",
+        "learning": "doce"
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ]
+  },
+  {
+    "slug": "dos.numeral",
     "symbols": [
       {
         "slug": "word"
@@ -150,330 +606,36 @@ export default [
       {
         "slug": "functional.number"
       }
-    ]
-  },
-  {
-    "slug": "tres.numeral",
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "Two coffees, please",
+        "learning": "Dos cafés, por favor"
+      },
+      "RANKED": {
+        "fpm": 1320,
+        "rank": 55,
+        "zipf": 6.12
+      },
+      "TRANSLATED": {
+        "known": "two",
+        "learning": "dos"
+      },
+      "VOCALIZED": {
+        "asset": {
+          "path": "words/dos.numeral.mp3"
+        }
+      }
+    },
     "traits": [
       "TRANSLATED",
       "EXEMPLIFIED",
       "RANKED",
       "VOCALIZED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "three",
-        "learning": "tres"
-      },
-      "EXEMPLIFIED": {
-        "known": "It is three o'clock",
-        "learning": "Son las tres"
-      },
-      "RANKED": {
-        "rank": 1905,
-        "zipf": 5.72,
-        "fpm": 525.0
-      },
-      "VOCALIZED": {
-        "asset": {
-          "path": "words/tres.numeral.mp3"
-        }
-      }
-    },
-    "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.tres"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "functional.number"
-      }
-    ]
-  },
-  {
-    "slug": "cuatro.numeral",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED",
-      "VOCALIZED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "four",
-        "learning": "cuatro"
-      },
-      "EXEMPLIFIED": {
-        "known": "Four people",
-        "learning": "Cuatro personas"
-      },
-      "RANKED": {
-        "rank": 3981,
-        "zipf": 5.4,
-        "fpm": 251.0
-      },
-      "VOCALIZED": {
-        "asset": {
-          "path": "words/cuatro.numeral.mp3"
-        }
-      }
-    },
-    "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.cuatro"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "functional.number"
-      }
-    ]
-  },
-  {
-    "slug": "cinco.numeral",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED",
-      "VOCALIZED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "five",
-        "learning": "cinco"
-      },
-      "EXEMPLIFIED": {
-        "known": "Five euros",
-        "learning": "Cinco euros"
-      },
-      "RANKED": {
-        "rank": 4898,
-        "zipf": 5.31,
-        "fpm": 204.0
-      },
-      "VOCALIZED": {
-        "asset": {
-          "path": "words/cinco.numeral.mp3"
-        }
-      }
-    },
-    "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.cinco"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "functional.number"
-      }
-    ]
-  },
-  {
-    "slug": "seis.numeral",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED",
-      "VOCALIZED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "six",
-        "learning": "seis"
-      },
-      "EXEMPLIFIED": {
-        "known": "Six days",
-        "learning": "Seis días"
-      },
-      "RANKED": {
-        "rank": 6918,
-        "zipf": 5.16,
-        "fpm": 145.0
-      },
-      "VOCALIZED": {
-        "asset": {
-          "path": "words/seis.numeral.mp3"
-        }
-      }
-    },
-    "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.seis"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "functional.number"
-      }
-    ]
-  },
-  {
-    "slug": "siete.numeral",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED",
-      "VOCALIZED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "seven",
-        "learning": "siete"
-      },
-      "EXEMPLIFIED": {
-        "known": "Seven years",
-        "learning": "Siete años"
-      },
-      "RANKED": {
-        "rank": 10471,
-        "zipf": 4.98,
-        "fpm": 95.5
-      },
-      "VOCALIZED": {
-        "asset": {
-          "path": "words/siete.numeral.mp3"
-        }
-      }
-    },
-    "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.siete"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "functional.number"
-      }
-    ]
-  },
-  {
-    "slug": "ocho.numeral",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED",
-      "VOCALIZED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "eight",
-        "learning": "ocho"
-      },
-      "EXEMPLIFIED": {
-        "known": "Eight hours",
-        "learning": "Ocho horas"
-      },
-      "RANKED": {
-        "rank": 11749,
-        "zipf": 4.93,
-        "fpm": 85.1
-      },
-      "VOCALIZED": {
-        "asset": {
-          "path": "words/ocho.numeral.mp3"
-        }
-      }
-    },
-    "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.ocho"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "functional.number"
-      }
     ]
   },
   {
     "slug": "nueve.numeral",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED",
-      "VOCALIZED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "nine",
-        "learning": "nueve"
-      },
-      "EXEMPLIFIED": {
-        "known": "Nine months",
-        "learning": "Nueve meses"
-      },
-      "RANKED": {
-        "rank": 16982,
-        "zipf": 4.77,
-        "fpm": 58.9
-      },
-      "VOCALIZED": {
-        "asset": {
-          "path": "words/nueve.numeral.mp3"
-        }
-      }
-    },
     "symbols": [
       {
         "slug": "word"
@@ -493,42 +655,42 @@ export default [
       {
         "slug": "functional.number"
       }
-    ]
-  },
-  {
-    "slug": "diez.numeral",
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "Nine months",
+        "learning": "Nueve meses"
+      },
+      "RANKED": {
+        "fpm": 58.9,
+        "rank": 62,
+        "zipf": 4.77
+      },
+      "TRANSLATED": {
+        "known": "nine",
+        "learning": "nueve"
+      },
+      "VOCALIZED": {
+        "asset": {
+          "path": "words/nueve.numeral.mp3"
+        }
+      }
+    },
     "traits": [
       "TRANSLATED",
       "EXEMPLIFIED",
       "RANKED",
       "VOCALIZED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "ten",
-        "learning": "diez"
-      },
-      "EXEMPLIFIED": {
-        "known": "Ten minutes",
-        "learning": "Diez minutos"
-      },
-      "RANKED": {
-        "rank": 9120,
-        "zipf": 5.04,
-        "fpm": 110.0
-      },
-      "VOCALIZED": {
-        "asset": {
-          "path": "words/diez.numeral.mp3"
-        }
-      }
-    },
+    ]
+  },
+  {
+    "slug": "ocho.numeral",
     "symbols": [
       {
         "slug": "word"
       },
       {
-        "slug": "word.lemma.diez"
+        "slug": "word.lemma.ocho"
       },
       {
         "slug": "word.part-of-speech.numeral"
@@ -542,30 +704,36 @@ export default [
       {
         "slug": "functional.number"
       }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "Eight hours",
+        "learning": "Ocho horas"
+      },
+      "RANKED": {
+        "fpm": 85.1,
+        "rank": 61,
+        "zipf": 4.93
+      },
+      "TRANSLATED": {
+        "known": "eight",
+        "learning": "ocho"
+      },
+      "VOCALIZED": {
+        "asset": {
+          "path": "words/ocho.numeral.mp3"
+        }
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED",
+      "VOCALIZED"
     ]
   },
   {
     "slug": "once.numeral",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "eleven",
-        "learning": "once"
-      },
-      "EXEMPLIFIED": {
-        "known": "Eleven euros",
-        "learning": "Once euros"
-      },
-      "RANKED": {
-        "rank": 40738,
-        "zipf": 4.39,
-        "fpm": 24.5
-      }
-    },
     "symbols": [
       {
         "slug": "word"
@@ -585,159 +753,30 @@ export default [
       {
         "slug": "functional.number"
       }
-    ]
-  },
-  {
-    "slug": "doce.numeral",
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "Eleven euros",
+        "learning": "Once euros"
+      },
+      "RANKED": {
+        "fpm": 24.5,
+        "rank": 400,
+        "zipf": 4.39
+      },
+      "TRANSLATED": {
+        "known": "eleven",
+        "learning": "once"
+      }
+    },
     "traits": [
       "TRANSLATED",
       "EXEMPLIFIED",
       "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "twelve",
-        "learning": "doce"
-      },
-      "EXEMPLIFIED": {
-        "known": "Twelve euros",
-        "learning": "Doce euros"
-      },
-      "RANKED": {
-        "rank": 33884,
-        "zipf": 4.47,
-        "fpm": 29.5
-      }
-    },
-    "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.doce"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "functional.number"
-      }
-    ]
-  },
-  {
-    "slug": "trece.numeral",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "thirteen",
-        "learning": "trece"
-      },
-      "EXEMPLIFIED": {
-        "known": "Thirteen euros",
-        "learning": "Trece euros"
-      },
-      "RANKED": {
-        "rank": 87096,
-        "zipf": 4.06,
-        "fpm": 11.5
-      }
-    },
-    "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.trece"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "functional.number"
-      }
-    ]
-  },
-  {
-    "slug": "catorce.numeral",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "fourteen",
-        "learning": "catorce"
-      },
-      "EXEMPLIFIED": {
-        "known": "Fourteen euros",
-        "learning": "Catorce euros"
-      },
-      "RANKED": {
-        "rank": 107152,
-        "zipf": 3.97,
-        "fpm": 9.3
-      }
-    },
-    "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.catorce"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "functional.number"
-      }
     ]
   },
   {
     "slug": "quince.numeral",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "fifteen",
-        "learning": "quince"
-      },
-      "EXEMPLIFIED": {
-        "known": "Fifteen euros",
-        "learning": "Quince euros"
-      },
-      "RANKED": {
-        "rank": 50119,
-        "zipf": 4.3,
-        "fpm": 20.0
-      }
-    },
     "symbols": [
       {
         "slug": "word"
@@ -757,36 +796,36 @@ export default [
       {
         "slug": "functional.number"
       }
-    ]
-  },
-  {
-    "slug": "dieciséis.numeral",
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "Fifteen euros",
+        "learning": "Quince euros"
+      },
+      "RANKED": {
+        "fpm": 20,
+        "rank": 444,
+        "zipf": 4.3
+      },
+      "TRANSLATED": {
+        "known": "fifteen",
+        "learning": "quince"
+      }
+    },
     "traits": [
       "TRANSLATED",
       "EXEMPLIFIED",
       "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "sixteen",
-        "learning": "dieciséis"
-      },
-      "EXEMPLIFIED": {
-        "known": "Sixteen euros",
-        "learning": "Dieciséis euros"
-      },
-      "RANKED": {
-        "rank": 194984,
-        "zipf": 3.71,
-        "fpm": 5.1
-      }
-    },
+    ]
+  },
+  {
+    "slug": "seis.numeral",
     "symbols": [
       {
         "slug": "word"
       },
       {
-        "slug": "word.lemma.dieciséis"
+        "slug": "word.lemma.seis"
       },
       {
         "slug": "word.part-of-speech.numeral"
@@ -800,36 +839,42 @@ export default [
       {
         "slug": "functional.number"
       }
-    ]
-  },
-  {
-    "slug": "diecisiete.numeral",
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "Six days",
+        "learning": "Seis días"
+      },
+      "RANKED": {
+        "fpm": 145,
+        "rank": 59,
+        "zipf": 5.16
+      },
+      "TRANSLATED": {
+        "known": "six",
+        "learning": "seis"
+      },
+      "VOCALIZED": {
+        "asset": {
+          "path": "words/seis.numeral.mp3"
+        }
+      }
+    },
     "traits": [
       "TRANSLATED",
       "EXEMPLIFIED",
-      "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "seventeen",
-        "learning": "diecisiete"
-      },
-      "EXEMPLIFIED": {
-        "known": "Seventeen euros",
-        "learning": "Diecisiete euros"
-      },
-      "RANKED": {
-        "rank": 245471,
-        "zipf": 3.61,
-        "fpm": 4.1
-      }
-    },
+      "RANKED",
+      "VOCALIZED"
+    ]
+  },
+  {
+    "slug": "siete.numeral",
     "symbols": [
       {
         "slug": "word"
       },
       {
-        "slug": "word.lemma.diecisiete"
+        "slug": "word.lemma.siete"
       },
       {
         "slug": "word.part-of-speech.numeral"
@@ -843,36 +888,42 @@ export default [
       {
         "slug": "functional.number"
       }
-    ]
-  },
-  {
-    "slug": "dieciocho.numeral",
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "Seven years",
+        "learning": "Siete años"
+      },
+      "RANKED": {
+        "fpm": 95.5,
+        "rank": 60,
+        "zipf": 4.98
+      },
+      "TRANSLATED": {
+        "known": "seven",
+        "learning": "siete"
+      },
+      "VOCALIZED": {
+        "asset": {
+          "path": "words/siete.numeral.mp3"
+        }
+      }
+    },
     "traits": [
       "TRANSLATED",
       "EXEMPLIFIED",
-      "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "eighteen",
-        "learning": "dieciocho"
-      },
-      "EXEMPLIFIED": {
-        "known": "Eighteen euros",
-        "learning": "Dieciocho euros"
-      },
-      "RANKED": {
-        "rank": 177828,
-        "zipf": 3.75,
-        "fpm": 5.6
-      }
-    },
+      "RANKED",
+      "VOCALIZED"
+    ]
+  },
+  {
+    "slug": "trece.numeral",
     "symbols": [
       {
         "slug": "word"
       },
       {
-        "slug": "word.lemma.dieciocho"
+        "slug": "word.lemma.trece"
       },
       {
         "slug": "word.part-of-speech.numeral"
@@ -886,116 +937,30 @@ export default [
       {
         "slug": "functional.number"
       }
-    ]
-  },
-  {
-    "slug": "diecinueve.numeral",
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "Thirteen euros",
+        "learning": "Trece euros"
+      },
+      "RANKED": {
+        "fpm": 11.5,
+        "rank": 527,
+        "zipf": 4.06
+      },
+      "TRANSLATED": {
+        "known": "thirteen",
+        "learning": "trece"
+      }
+    },
     "traits": [
       "TRANSLATED",
       "EXEMPLIFIED",
       "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "nineteen",
-        "learning": "diecinueve"
-      },
-      "EXEMPLIFIED": {
-        "known": "Nineteen euros",
-        "learning": "Diecinueve euros"
-      },
-      "RANKED": {
-        "rank": 338844,
-        "zipf": 3.47,
-        "fpm": 3.0
-      }
-    },
-    "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.diecinueve"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "functional.number"
-      }
-    ]
-  },
-  {
-    "slug": "veinte.numeral",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "twenty",
-        "learning": "veinte"
-      },
-      "EXEMPLIFIED": {
-        "known": "Twenty euros",
-        "learning": "Veinte euros"
-      },
-      "RANKED": {
-        "rank": 33884,
-        "zipf": 4.47,
-        "fpm": 29.5
-      }
-    },
-    "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.veinte"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "functional.number"
-      }
     ]
   },
   {
     "slug": "treinta.numeral",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "thirty",
-        "learning": "treinta"
-      },
-      "EXEMPLIFIED": {
-        "known": "Thirty euros",
-        "learning": "Treinta euros"
-      },
-      "RANKED": {
-        "rank": 38019,
-        "zipf": 4.42,
-        "fpm": 26.3
-      }
-    },
     "symbols": [
       {
         "slug": "word"
@@ -1015,36 +980,36 @@ export default [
       {
         "slug": "functional.number"
       }
-    ]
-  },
-  {
-    "slug": "cuarenta.numeral",
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "Thirty euros",
+        "learning": "Treinta euros"
+      },
+      "RANKED": {
+        "fpm": 26.3,
+        "rank": 389,
+        "zipf": 4.42
+      },
+      "TRANSLATED": {
+        "known": "thirty",
+        "learning": "treinta"
+      }
+    },
     "traits": [
       "TRANSLATED",
       "EXEMPLIFIED",
       "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "forty",
-        "learning": "cuarenta"
-      },
-      "EXEMPLIFIED": {
-        "known": "Forty euros",
-        "learning": "Cuarenta euros"
-      },
-      "RANKED": {
-        "rank": 57544,
-        "zipf": 4.24,
-        "fpm": 17.4
-      }
-    },
+    ]
+  },
+  {
+    "slug": "tres.numeral",
     "symbols": [
       {
         "slug": "word"
       },
       {
-        "slug": "word.lemma.cuarenta"
+        "slug": "word.lemma.tres"
       },
       {
         "slug": "word.part-of-speech.numeral"
@@ -1058,36 +1023,94 @@ export default [
       {
         "slug": "functional.number"
       }
-    ]
-  },
-  {
-    "slug": "cincuenta.numeral",
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "It is three o'clock",
+        "learning": "Son las tres"
+      },
+      "RANKED": {
+        "fpm": 525,
+        "rank": 56,
+        "zipf": 5.72
+      },
+      "TRANSLATED": {
+        "known": "three",
+        "learning": "tres"
+      },
+      "VOCALIZED": {
+        "asset": {
+          "path": "words/tres.numeral.mp3"
+        }
+      }
+    },
     "traits": [
       "TRANSLATED",
       "EXEMPLIFIED",
-      "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "fifty",
-        "learning": "cincuenta"
-      },
-      "EXEMPLIFIED": {
-        "known": "Fifty euros",
-        "learning": "Cincuenta euros"
-      },
-      "RANKED": {
-        "rank": 51286,
-        "zipf": 4.29,
-        "fpm": 19.5
-      }
-    },
+      "RANKED",
+      "VOCALIZED"
+    ]
+  },
+  {
+    "slug": "uno.numeral",
     "symbols": [
       {
         "slug": "word"
       },
       {
-        "slug": "word.lemma.cincuenta"
+        "slug": "word.lemma.uno"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "functional.number"
+      }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "I have one",
+        "learning": "Tengo uno"
+      },
+      "RANKED": {
+        "fpm": 912,
+        "rank": 54,
+        "zipf": 5.96
+      },
+      "TRANSLATED": {
+        "known": "one",
+        "learning": "uno"
+      },
+      "VOCALIZED": {
+        "asset": {
+          "path": "words/uno.numeral.mp3"
+        }
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED",
+      "VOCALIZED"
+    ]
+  },
+  {
+    "slug": "veinte.numeral",
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.veinte"
       },
       {
         "slug": "word.part-of-speech.numeral"
@@ -1101,49 +1124,26 @@ export default [
       {
         "slug": "functional.number"
       }
-    ]
-  },
-  {
-    "slug": "cien.numeral",
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "Twenty euros",
+        "learning": "Veinte euros"
+      },
+      "RANKED": {
+        "fpm": 29.5,
+        "rank": 372,
+        "zipf": 4.47
+      },
+      "TRANSLATED": {
+        "known": "twenty",
+        "learning": "veinte"
+      }
+    },
     "traits": [
       "TRANSLATED",
       "EXEMPLIFIED",
       "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "one hundred",
-        "learning": "cien"
-      },
-      "EXEMPLIFIED": {
-        "known": "One hundred euros",
-        "learning": "Cien euros"
-      },
-      "RANKED": {
-        "rank": 30903,
-        "zipf": 4.51,
-        "fpm": 32.4
-      }
-    },
-    "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.cien"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "functional.number"
-      }
     ]
   }
-]
+];

@@ -1,5 +1,5 @@
 <script>
-  const { terminal, buffer } = $props();
+  const { terminal, buffer, surface } = $props();
 
   // O Charlatão — gutted to the bare minimum that RUNS: the jester character, the
   // stage styling, a dev resolve button, and the input wired to the mode aperture

@@ -10,12 +10,12 @@ export const frasi = new Vector().open(
     }),
   },
   async (ctx) => {
-    const game = ctx.daemon.modes.game;
+    const game = ctx.modes.game;
 
-    const sentences = await ctx.daemon.entities.literal.feed(ctx.input.where, {
+    const sentences = await ctx.entities.literal.feed(ctx.input.where, {
       limit: ctx.input.limit,
       blacklist: ctx.input.blacklist,
-      populate: ["retentions"],
+      populate: ["notes"],
     });
     if (!sentences.length) return;
 
@@ -24,7 +24,7 @@ export const frasi = new Vector().open(
     for (const sentence of sentences) {
       const vocalized = sentence.traits?.includes("VOCALIZED");
 
-      if (!sentence.retention || sentence.retention.is.virgin) {
+      if (!sentence.assess() || sentence.assess().is.virgin) {
         practice.add(
           game["dojo"].emit.shadow.literals({
             literal: sentence,
@@ -36,11 +36,11 @@ export const frasi = new Vector().open(
         practice.add(
           game["dojo"].emit.listen.literal({
             literal: sentence,
-            gameplay: sentence.retention.is.failed ? "PICK" : "TYPE",
+            gameplay: sentence.assess().is.failed ? "PICK" : "TYPE",
             recall: "LEARNING",
           }),
         );
-      } else if (sentence.retention.is.failed) {
+      } else if (sentence.assess().is.failed) {
         practice.add(
           game["dojo"].emit.shadow.literals({
             literal: sentence,

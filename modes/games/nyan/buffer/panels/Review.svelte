@@ -9,15 +9,15 @@
   const tint = (name) =>
     getComputedStyle(document.documentElement).getPropertyValue(name).trim() || "#888";
   const LANE_COLOR = {
-    recall: tint("--colors-theme-accent-contrast"),
-    spelling: tint("--colors-system-warning-contrast"),
-    motor: tint("--colors-system-error-contrast"),
-    clean: tint("--colors-system-success-contrast"),
+    recall: tint("--signal-caution-ink"),
+    spelling: tint("--signal-caution-ink"),
+    motor: tint("--signal-negative-ink"),
+    clean: tint("--signal-positive-ink"),
   };
 
   const speedOptions = $derived.by(() => {
     const line = speedline(view, game.resolution);
-    const boundary = tint("--colors-skeleton-1-boundary");
+    const boundary = tint("--boundary");
     const axis = {
       type: "value",
       axisLabel: { fontSize: 9, fontFamily: "monospace", color: boundary },
@@ -51,9 +51,9 @@
           type: "line",
           smooth: true,
           showSymbol: false,
-          lineStyle: { width: 2, color: tint("--colors-theme-primary-contrast") },
-          itemStyle: { color: tint("--colors-theme-primary-contrast") },
-          areaStyle: { color: tint("--colors-theme-primary-contrast"), opacity: 0.07 },
+          lineStyle: { width: 2, color: tint("--signal-primary-ink") },
+          itemStyle: { color: tint("--signal-primary-ink") },
+          areaStyle: { color: tint("--signal-primary-ink"), opacity: 0.07 },
           data: line.map((point) => [+point.seconds.toFixed(1), point.wpm | 0]),
         },
         ...LANES.map((lane) => ({
@@ -246,21 +246,21 @@
     font-size: var(--font-size-sm);
     font-weight: 600;
     letter-spacing: 0.04em;
-    color: var(--colors-skeleton-1-contrast);
+    color: var(--text-strong);
     margin: 0 0 1.25rem 0;
   }
   .dim {
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
     font-weight: 400;
   }
   .strong {
-    color: var(--colors-skeleton-1-contrast);
+    color: var(--text-strong);
   }
   .ok {
-    color: var(--colors-system-success-contrast);
+    color: var(--signal-positive-ink);
   }
   .warn {
-    color: var(--colors-system-warning-contrast);
+    color: var(--signal-caution-ink);
   }
 
   /* glance */
@@ -275,30 +275,30 @@
     flex-direction: column;
     gap: 0.2rem;
     padding: 0.75rem 1rem;
-    border: 1px solid color-mix(in srgb, var(--colors-skeleton-1-boundary) 40%, transparent);
+    border: 1px solid color-mix(in srgb, var(--boundary) 40%, transparent);
     border-radius: 0.5rem;
   }
   .digit .value {
     font-family: var(--font-family-code);
     font-size: var(--font-size-lg);
     font-weight: 600;
-    color: var(--colors-skeleton-1-contrast);
+    color: var(--text-strong);
     font-variant-numeric: tabular-nums;
   }
   .digit.hero .value {
-    color: var(--colors-theme-primary-contrast);
+    color: var(--signal-primary-ink);
   }
   .digit .label {
     font-family: var(--font-family-code);
     font-size: var(--font-size-xs);
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
   .subline {
     font-family: var(--font-family-code);
     font-size: var(--font-size-sm);
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
     margin-bottom: 1rem;
   }
 
@@ -308,7 +308,7 @@
     border-radius: 999px;
     overflow: hidden;
     margin-bottom: 0.6rem;
-    background: color-mix(in srgb, var(--colors-skeleton-1-boundary) 25%, transparent);
+    background: color-mix(in srgb, var(--divider) 25%, transparent);
   }
   .spine-seg {
     height: 100%;
@@ -331,7 +331,7 @@
     font-size: var(--font-size-sm);
     margin-bottom: 0.75rem;
     padding-top: 0.75rem;
-    border-top: 1px solid color-mix(in srgb, var(--colors-skeleton-1-boundary) 25%, transparent);
+    border-top: 1px solid color-mix(in srgb, var(--boundary) 25%, transparent);
   }
   .unit-picks {
     display: flex;
@@ -346,10 +346,10 @@
   }
   .chip {
     padding: 0.15rem 0.5rem;
-    border: 1px solid var(--colors-skeleton-1-boundary);
+    border: 1px solid var(--boundary);
     border-radius: 0.25rem;
     background: transparent;
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
     font-family: var(--font-family-code);
     font-size: var(--font-size-sm);
     cursor: pointer;
@@ -359,20 +359,20 @@
     opacity: 0.6;
   }
   .chip.on {
-    border-color: var(--colors-theme-primary-contrast);
-    color: var(--colors-theme-primary-contrast);
+    border-color: var(--signal-primary-ink);
+    color: var(--signal-primary-ink);
   }
   .link {
     background: none;
     border: none;
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
     font-family: var(--font-family-code);
     font-size: var(--font-size-sm);
     cursor: pointer;
     padding: 0;
   }
   .link.on {
-    color: var(--colors-skeleton-1-contrast);
+    color: var(--text-strong);
     text-decoration: underline;
     text-underline-offset: 3px;
   }
@@ -392,11 +392,11 @@
     grid-template-columns: minmax(5rem, 1fr) 5rem 4rem 4rem 1.5fr;
     column-gap: 0.75rem;
     padding: 0.15rem 0;
-    border-bottom: 1px solid color-mix(in srgb, var(--colors-skeleton-1-boundary) 15%, transparent);
+    border-bottom: 1px solid color-mix(in srgb, var(--boundary) 15%, transparent);
   }
   .wrow.whead {
-    color: var(--colors-skeleton-1-boundary);
-    border-bottom-color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
+    border-bottom-color: var(--boundary);
     padding-bottom: 0.25rem;
   }
 
@@ -413,26 +413,26 @@
     column-gap: 0.75rem;
     align-items: center;
     padding: 0.3rem 0;
-    border-bottom: 1px solid color-mix(in srgb, var(--colors-skeleton-1-boundary) 15%, transparent);
-    color: var(--colors-skeleton-1-contrast);
+    border-bottom: 1px solid color-mix(in srgb, var(--boundary) 15%, transparent);
+    color: var(--text-strong);
   }
   .urow.uhead {
-    color: var(--colors-skeleton-1-boundary);
-    border-bottom-color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
+    border-bottom-color: var(--boundary);
     padding-bottom: 0.25rem;
   }
   .urow.thin {
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
   .urow .num {
     text-align: right;
   }
   .urow .strong,
   .wrow .strong {
-    color: var(--colors-skeleton-1-contrast);
+    color: var(--text-strong);
   }
   .urow.thin .strong {
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
   .conf-h {
     padding-left: 0.75rem;
@@ -447,7 +447,7 @@
     width: 4rem;
     border-radius: 999px;
     overflow: hidden;
-    background: color-mix(in srgb, var(--colors-skeleton-1-boundary) 30%, transparent);
+    background: color-mix(in srgb, var(--divider) 30%, transparent);
   }
   .conf-fill {
     display: block;
@@ -455,14 +455,14 @@
   }
   .empty-row {
     padding: 0.5rem 0;
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
     font-family: var(--font-family-code);
     font-size: var(--font-size-sm);
   }
   .hint {
     font-family: var(--font-family-code);
     font-size: var(--font-size-sm);
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
   .thin-note {
     margin: 0.25rem 0 0 0;
@@ -474,45 +474,45 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.4rem 1.25rem;
-    color: var(--colors-skeleton-1-contrast);
+    color: var(--text-strong);
     margin-top: 1.25rem;
   }
   .trans strong {
-    color: var(--colors-theme-primary-contrast);
+    color: var(--signal-primary-ink);
   }
 
   /* lane tints */
   .lane-recall {
-    color: var(--colors-theme-accent-contrast);
+    color: var(--signal-caution-ink);
   }
   .lane-spelling {
-    color: var(--colors-system-warning-contrast);
+    color: var(--signal-caution-ink);
   }
   .lane-motor {
-    color: var(--colors-system-error-contrast);
+    color: var(--signal-negative-ink);
   }
   .lane-clean {
-    color: var(--colors-system-success-contrast);
+    color: var(--signal-positive-ink);
   }
   .lane-recall-bg {
-    background: var(--colors-theme-accent-contrast);
+    background: var(--signal-caution-ink);
   }
   .lane-spelling-bg {
-    background: var(--colors-system-warning-contrast);
+    background: var(--signal-caution-ink);
   }
   .lane-motor-bg {
-    background: var(--colors-system-error-contrast);
+    background: var(--signal-negative-ink);
   }
   .lane-clean-bg {
-    background: var(--colors-system-success-contrast);
+    background: var(--signal-positive-ink);
   }
   .g-bg {
-    background: var(--colors-system-success-contrast);
+    background: var(--signal-positive-ink);
   }
   .y-bg {
-    background: var(--colors-system-warning-contrast);
+    background: var(--signal-caution-ink);
   }
   .r-bg {
-    background: var(--colors-system-error-contrast);
+    background: var(--signal-negative-ink);
   }
 </style>

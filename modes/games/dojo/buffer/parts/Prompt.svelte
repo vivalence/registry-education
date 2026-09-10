@@ -11,7 +11,7 @@
     phase,
     method,
     status,
-    asset = null,
+    file = null,
     labels,
     span = 0,
     speed = null,
@@ -37,7 +37,7 @@
 
   const shown = $derived(recall === "KNOWN" ? knowable.learning : knowable.known);
   const answer = $derived(recall === "KNOWN" ? knowable.known : knowable.learning);
-  const audible = $derived(Boolean(asset) && (listening || recall === "KNOWN"));
+  const audible = $derived(Boolean(file) && (listening || recall === "KNOWN"));
   const answerLabel = $derived(recall === "KNOWN" ? labels.known : labels.learning);
   const task = $derived(
     (listening ? "listen · " : "") + (TASK[gameplay] ?? TASK.TYPE)(answerLabel ?? ""),
@@ -137,8 +137,8 @@
 
   {#if listening}
     <div class="audio">
-      {#if asset}
-        {#key turn}<Asset {asset} variant="inline" autoplay={true} />{/key}
+      {#if file}
+        {#key turn}<Asset {file} variant="inline" autoplay={true} />{/key}
         <div class="wave">
           {#each wave as height, index (index)}
             <div class="bar" style:height="{height}px"></div>
@@ -152,7 +152,7 @@
   {:else}
     <div class="line">
       <p class="prompt" class:word>{shown}</p>
-      {#if audible}{#key turn}<Asset {asset} variant="dot" autoplay={true} />{/key}{/if}
+      {#if audible}{#key turn}<Asset {file} variant="dot" autoplay={true} />{/key}{/if}
     </div>
   {/if}
 
@@ -179,23 +179,23 @@
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--colors-theme-primary-contrast);
+    color: var(--signal-primary-ink);
     white-space: nowrap;
   }
   .fact {
     font-family: var(--font-family-code);
     font-size: var(--font-size-xs);
-    color: var(--text-support);
+    color: var(--text-light);
     white-space: nowrap;
   }
   .value {
-    color: var(--text-primary);
+    color: var(--text-strong);
   }
   .accent {
-    color: var(--colors-theme-accent-contrast);
+    color: var(--signal-caution-ink);
   }
   .urgent {
-    color: var(--colors-system-error-contrast);
+    color: var(--signal-negative-ink);
   }
   .aside {
     margin-left: auto;
@@ -207,16 +207,16 @@
     display: flex;
     align-items: center;
     gap: 5px;
-    color: var(--text-support);
+    color: var(--text-light);
   }
   .knob {
     width: 28px;
     height: 28px;
     padding: 0;
     border-radius: 0.25rem;
-    border: 1px solid color-mix(in srgb, var(--colors-skeleton-1-boundary) 60%, transparent);
+    border: 1px solid color-mix(in srgb, var(--boundary) 60%, transparent);
     background: transparent;
-    color: var(--text-support);
+    color: var(--text-light);
     font-family: var(--font-family-code);
     font-size: var(--font-size-sm);
     line-height: 1;
@@ -224,8 +224,8 @@
   }
   .knob:hover,
   .knob.open {
-    border-color: var(--colors-theme-primary-contrast);
-    color: var(--colors-theme-primary-contrast);
+    border-color: var(--signal-primary-ink);
+    color: var(--signal-primary-ink);
   }
 
   .kicker {
@@ -234,18 +234,18 @@
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--colors-system-warning-contrast);
+    color: var(--signal-caution-ink);
   }
   .progress {
     height: 2px;
-    background: var(--colors-skeleton-1-boundary);
+    background: var(--divider);
     overflow: hidden;
     margin: 1.5rem 0 0.5rem 0;
   }
   .progress-fill {
     height: 100%;
     width: 0;
-    background: var(--colors-system-warning-contrast);
+    background: var(--signal-caution-ink);
     animation-name: memorize;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
@@ -273,12 +273,12 @@
   .pair-key {
     font-family: var(--font-family-code);
     font-size: var(--font-size-2xs);
-    color: var(--text-support);
+    color: var(--text-light);
   }
   .pair-value {
     font-family: var(--font-family-sans-text);
     font-size: var(--font-size-sm);
-    color: var(--text-body);
+    color: var(--text-ink);
   }
 
   .audio {
@@ -295,7 +295,7 @@
   .bar {
     width: 3px;
     border-radius: 2px;
-    background: var(--colors-skeleton-1-boundary);
+    background: var(--divider);
   }
 
   .line {
@@ -309,7 +309,7 @@
     font-family: var(--font-family-serif-heading);
     font-size: var(--font-size-3xl);
     font-weight: 600;
-    color: var(--text-primary);
+    color: var(--text-strong);
     line-height: 1.15;
     margin: 0 0 0.5rem 0;
   }
@@ -319,7 +319,7 @@
   .translation {
     font-family: var(--font-family-sans-text);
     font-size: var(--font-size-base);
-    color: var(--text-body);
+    color: var(--text-ink);
     margin: 0;
   }
 
@@ -330,13 +330,13 @@
     font-family: var(--font-family-serif-heading);
     font-size: var(--font-size-base);
     font-style: italic;
-    color: var(--colors-theme-secondary-contrast);
+    color: var(--signal-primary-ink);
     margin: 0;
   }
   .example {
     font-family: var(--font-family-serif-heading);
     font-size: var(--font-size-base);
-    color: var(--text-support);
+    color: var(--text-light);
     font-style: italic;
     margin: 0.5rem 0 0 0;
   }

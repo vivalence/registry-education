@@ -408,6 +408,17 @@ export default [
     }
   },
   {
+    "slug": "domain.mando",
+    "traits": ["STRUCTURAL", "LABELED"],
+    "trait": {
+      "STRUCTURAL": {},
+      "LABELED": {
+        "name": "Domain > Mando",
+        "description": "Commands and directions — the words an order is given in: left, right, up, down, stop, cut."
+      }
+    }
+  },
+  {
     "slug": "domain.mind",
     "traits": ["STRUCTURAL", "LABELED"],
     "trait": {

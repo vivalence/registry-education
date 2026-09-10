@@ -1,26 +1,6 @@
 export default [
   {
     "slug": "el.determiner",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "the (masc.)",
-        "learning": "el"
-      },
-      "EXEMPLIFIED": {
-        "known": "The book is new",
-        "learning": "El libro es nuevo"
-      },
-      "RANKED": {
-        "rank": 35,
-        "zipf": 7.45,
-        "fpm": 28200.0
-      }
-    },
     "symbols": [
       {
         "slug": "word"
@@ -49,30 +29,30 @@ export default [
       {
         "slug": "functional.grammar"
       }
-    ]
-  },
-  {
-    "slug": "la.determiner",
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "The book is new",
+        "learning": "El libro es nuevo"
+      },
+      "RANKED": {
+        "fpm": 28200,
+        "rank": 3,
+        "zipf": 7.45
+      },
+      "TRANSLATED": {
+        "known": "the (masc.)",
+        "learning": "el"
+      }
+    },
     "traits": [
       "TRANSLATED",
       "EXEMPLIFIED",
       "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "the (fem.)",
-        "learning": "la"
-      },
-      "EXEMPLIFIED": {
-        "known": "Close the door",
-        "learning": "Cierra la puerta"
-      },
-      "RANKED": {
-        "rank": 28,
-        "zipf": 7.56,
-        "fpm": 36300.0
-      }
-    },
+    ]
+  },
+  {
+    "slug": "la.determiner",
     "symbols": [
       {
         "slug": "word"
@@ -101,94 +81,30 @@ export default [
       {
         "slug": "functional.grammar"
       }
-    ]
-  },
-  {
-    "slug": "los.determiner",
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "Close the door",
+        "learning": "Cierra la puerta"
+      },
+      "RANKED": {
+        "fpm": 36300,
+        "rank": 2,
+        "zipf": 7.56
+      },
+      "TRANSLATED": {
+        "known": "the (fem.)",
+        "learning": "la"
+      }
+    },
     "traits": [
       "TRANSLATED",
       "EXEMPLIFIED",
-      "RANKED",
-      "VOCALIZED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "the (masc. pl.)",
-        "learning": "los"
-      },
-      "EXEMPLIFIED": {
-        "known": "The children are here",
-        "learning": "Los niños están aquí"
-      },
-      "RANKED": {
-        "rank": 66,
-        "zipf": 7.18,
-        "fpm": 15100.0
-      },
-      "VOCALIZED": {
-        "asset": {
-          "path": "words/los.determiner.mp3"
-        }
-      }
-    },
-    "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.los"
-      },
-      {
-        "slug": "word.part-of-speech.determiner"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.plural"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.grammar"
-      }
+      "RANKED"
     ]
   },
   {
     "slug": "las.determiner",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED",
-      "VOCALIZED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "the (fem. pl.)",
-        "learning": "las"
-      },
-      "EXEMPLIFIED": {
-        "known": "The flowers are pretty",
-        "learning": "Las flores son bonitas"
-      },
-      "RANKED": {
-        "rank": 102,
-        "zipf": 6.99,
-        "fpm": 9770.0
-      },
-      "VOCALIZED": {
-        "asset": {
-          "path": "words/las.determiner.mp3"
-        }
-      }
-    },
     "symbols": [
       {
         "slug": "word"
@@ -217,36 +133,94 @@ export default [
       {
         "slug": "functional.grammar"
       }
-    ]
-  },
-  {
-    "slug": "un.determiner",
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "The flowers are pretty",
+        "learning": "Las flores son bonitas"
+      },
+      "RANKED": {
+        "fpm": 9770,
+        "rank": 74,
+        "zipf": 6.99
+      },
+      "TRANSLATED": {
+        "known": "the (fem. pl.)",
+        "learning": "las"
+      },
+      "VOCALIZED": {
+        "asset": {
+          "path": "words/las.determiner.mp3"
+        }
+      }
+    },
     "traits": [
       "TRANSLATED",
       "EXEMPLIFIED",
       "RANKED",
       "VOCALIZED"
+    ]
+  },
+  {
+    "slug": "los.determiner",
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.los"
+      },
+      {
+        "slug": "word.part-of-speech.determiner"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.number.plural"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "functional.grammar"
+      }
     ],
     "trait": {
-      "TRANSLATED": {
-        "known": "a / an (masc.)",
-        "learning": "un"
-      },
       "EXEMPLIFIED": {
-        "known": "A man is speaking",
-        "learning": "Un hombre habla"
+        "known": "The children are here",
+        "learning": "Los niños están aquí"
       },
       "RANKED": {
-        "rank": 85,
-        "zipf": 7.07,
-        "fpm": 11700.0
+        "fpm": 15100,
+        "rank": 70,
+        "zipf": 7.18
+      },
+      "TRANSLATED": {
+        "known": "the (masc. pl.)",
+        "learning": "los"
       },
       "VOCALIZED": {
         "asset": {
-          "path": "words/un.determiner.mp3"
+          "path": "words/los.determiner.mp3"
         }
       }
     },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED",
+      "VOCALIZED"
+    ]
+  },
+  {
+    "slug": "un.determiner",
     "symbols": [
       {
         "slug": "word"
@@ -275,36 +249,36 @@ export default [
       {
         "slug": "functional.grammar"
       }
-    ]
-  },
-  {
-    "slug": "una.determiner",
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "A man is speaking",
+        "learning": "Un hombre habla"
+      },
+      "RANKED": {
+        "fpm": 11700,
+        "rank": 9,
+        "zipf": 7.07
+      },
+      "TRANSLATED": {
+        "known": "a / an (masc.)",
+        "learning": "un"
+      },
+      "VOCALIZED": {
+        "asset": {
+          "path": "words/un.determiner.mp3"
+        }
+      }
+    },
     "traits": [
       "TRANSLATED",
       "EXEMPLIFIED",
       "RANKED",
       "VOCALIZED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "a / an (fem.)",
-        "learning": "una"
-      },
-      "EXEMPLIFIED": {
-        "known": "A woman is singing",
-        "learning": "Una mujer canta"
-      },
-      "RANKED": {
-        "rank": 112,
-        "zipf": 6.95,
-        "fpm": 8910.0
-      },
-      "VOCALIZED": {
-        "asset": {
-          "path": "words/una.determiner.mp3"
-        }
-      }
-    },
+    ]
+  },
+  {
+    "slug": "una.determiner",
     "symbols": [
       {
         "slug": "word"
@@ -333,76 +307,36 @@ export default [
       {
         "slug": "functional.grammar"
       }
-    ]
-  },
-  {
-    "slug": "unos.determiner",
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "A woman is singing",
+        "learning": "Una mujer canta"
+      },
+      "RANKED": {
+        "fpm": 8910,
+        "rank": 10,
+        "zipf": 6.95
+      },
+      "TRANSLATED": {
+        "known": "a / an (fem.)",
+        "learning": "una"
+      },
+      "VOCALIZED": {
+        "asset": {
+          "path": "words/una.determiner.mp3"
+        }
+      }
+    },
     "traits": [
       "TRANSLATED",
       "EXEMPLIFIED",
-      "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "some (masc.)",
-        "learning": "unos"
-      },
-      "EXEMPLIFIED": {
-        "known": "Some friends are coming",
-        "learning": "Unos amigos vienen"
-      },
-      "RANKED": {
-        "rank": 2455,
-        "zipf": 5.61,
-        "fpm": 407.0
-      }
-    },
-    "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.unos"
-      },
-      {
-        "slug": "word.part-of-speech.determiner"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.plural"
-      },
-      {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "functional.grammar"
-      }
+      "RANKED",
+      "VOCALIZED"
     ]
   },
   {
     "slug": "unas.determiner",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "some (fem.)",
-        "learning": "unas"
-      },
-      "EXEMPLIFIED": {
-        "known": "Some girls are talking",
-        "learning": "Unas chicas hablan"
-      },
-      "RANKED": {
-        "rank": 4467,
-        "zipf": 5.35,
-        "fpm": 224.0
-      }
-    },
     "symbols": [
       {
         "slug": "word"
@@ -425,6 +359,72 @@ export default [
       {
         "slug": "functional.grammar"
       }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "Some girls are talking",
+        "learning": "Unas chicas hablan"
+      },
+      "RANKED": {
+        "fpm": 224,
+        "rank": 1018,
+        "zipf": 5.35
+      },
+      "TRANSLATED": {
+        "known": "some (fem.)",
+        "learning": "unas"
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ]
+  },
+  {
+    "slug": "unos.determiner",
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.unos"
+      },
+      {
+        "slug": "word.part-of-speech.determiner"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.number.plural"
+      },
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "functional.grammar"
+      }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "Some friends are coming",
+        "learning": "Unos amigos vienen"
+      },
+      "RANKED": {
+        "fpm": 407,
+        "rank": 982,
+        "zipf": 5.61
+      },
+      "TRANSLATED": {
+        "known": "some (masc.)",
+        "learning": "unos"
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
     ]
   }
-]
+];

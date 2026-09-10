@@ -86,7 +86,7 @@
     flex-direction: column;
     min-height: 0;
     height: 100%;
-    background: var(--colors-skeleton-0-surface);
+    background: var(--surface);
   }
   .head {
     flex: none;
@@ -100,34 +100,34 @@
     font-size: var(--font-size-2xs);
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--text-support);
+    color: var(--text-light);
     opacity: 0.8;
   }
   .total {
     font-family: var(--font-family-serif-heading);
     font-size: var(--font-size-lg);
-    color: var(--colors-theme-primary-contrast);
+    color: var(--signal-primary-ink);
   }
   .unit {
     font-family: var(--font-family-sans-text);
     font-size: var(--font-size-2xs);
-    color: var(--text-support);
+    color: var(--text-light);
     flex: 1;
   }
   .ghost {
     border: none;
     background: transparent;
-    color: var(--text-support);
+    color: var(--text-light);
     cursor: pointer;
     font-family: var(--font-family-code);
     font-size: var(--font-size-2xs);
     padding: 0;
   }
   .ghost:hover {
-    color: var(--colors-theme-primary-contrast);
+    color: var(--signal-primary-ink);
   }
   .ghost.danger:hover {
-    color: var(--colors-system-error-contrast);
+    color: var(--signal-negative-ink);
   }
   .naming {
     flex: none;
@@ -138,11 +138,11 @@
   .field {
     flex: 1;
     min-width: 0;
-    background: var(--colors-skeleton-1-surface);
-    border: 1px solid var(--colors-theme-primary-contrast);
+    background: var(--surface-lift);
+    border: 1px solid var(--signal-primary-ink);
     border-radius: 0.2rem;
     padding: 0.4rem 0.55rem;
-    color: var(--text-primary);
+    color: var(--text-strong);
     font-family: var(--font-family-sans-text);
     font-size: var(--font-size-2xs);
     outline: none;
@@ -152,9 +152,9 @@
     font-size: var(--font-size-2xs);
     padding: 0 0.6rem;
     border-radius: 0.2rem;
-    border: 1px solid var(--colors-theme-primary-contrast);
+    border: 1px solid var(--signal-primary-ink);
     background: transparent;
-    color: var(--colors-theme-primary-contrast);
+    color: var(--signal-primary-ink);
     cursor: pointer;
   }
   .cards {
@@ -167,29 +167,29 @@
     gap: 0.45rem;
   }
   .card {
-    border: 1px solid var(--colors-skeleton-1-boundary);
+    border: 1px solid var(--boundary);
     border-radius: 0.2rem;
-    background: var(--colors-skeleton-1-surface);
+    background: var(--surface-lift);
   }
   .card.editing {
-    border-color: var(--colors-system-warning-contrast);
+    border-color: var(--signal-caution-ink);
   }
   .card-head {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     padding: 0.3rem 0.3rem 0.3rem 0.55rem;
-    border-bottom: 1px solid var(--colors-skeleton-1-boundary);
+    border-bottom: 1px solid var(--boundary);
     min-width: 0;
   }
   .kind {
     font-family: var(--font-family-code);
     font-size: var(--font-size-2xs);
-    color: var(--colors-theme-primary-contrast);
+    color: var(--signal-primary-ink);
     white-space: nowrap;
   }
   .kind.pinned {
-    color: var(--colors-system-warning-contrast);
+    color: var(--signal-caution-ink);
   }
   .label {
     flex: 1;
@@ -201,19 +201,19 @@
     padding: 0;
     font-family: var(--font-family-code);
     font-size: var(--font-size-2xs);
-    color: var(--text-primary);
+    color: var(--text-strong);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
   .label:hover {
-    color: var(--colors-theme-primary-contrast);
+    color: var(--signal-primary-ink);
   }
   .count {
     font-family: var(--font-family-code);
     font-size: var(--font-size-2xs);
     font-variant-numeric: tabular-nums;
-    color: var(--colors-theme-primary-contrast);
+    color: var(--signal-primary-ink);
   }
   .tools {
     display: flex;
@@ -225,7 +225,7 @@
     border: none;
     border-radius: 0.2rem;
     background: transparent;
-    color: var(--text-support);
+    color: var(--text-light);
     cursor: pointer;
     width: 1.5rem;
     height: 1.5rem;
@@ -236,7 +236,7 @@
     flex: none;
   }
   .tool:hover {
-    background: var(--colors-skeleton-2-surface);
+    background: var(--surface-sunk);
   }
   .tool svg {
     width: 13px;
@@ -248,10 +248,10 @@
     stroke-linejoin: round;
   }
   .tool:hover {
-    color: var(--colors-system-warning-contrast);
+    color: var(--signal-caution-ink);
   }
   .tool.danger:hover {
-    color: var(--colors-system-error-contrast);
+    color: var(--signal-negative-ink);
   }
   .preview {
     padding: 0.35rem 0.5rem;
@@ -262,9 +262,9 @@
   .crumb {
     font-family: var(--font-family-serif-heading);
     font-size: var(--font-size-2xs);
-    color: var(--text-support);
+    color: var(--text-light);
     padding: 0.1rem 0.3rem;
-    border: 1px solid var(--colors-skeleton-1-boundary);
+    border: 1px solid var(--boundary);
     border-radius: 0.15rem;
     max-width: 100%;
     overflow: hidden;
@@ -274,14 +274,14 @@
   .more {
     font-family: var(--font-family-code);
     font-size: var(--font-size-2xs);
-    color: var(--text-support);
+    color: var(--text-light);
     opacity: 0.7;
     padding: 0.1rem 0.25rem;
   }
   .empty {
     font-family: var(--font-family-sans-text);
     font-size: var(--font-size-2xs);
-    color: var(--text-support);
+    color: var(--text-light);
     line-height: 1.6;
   }
 </style>

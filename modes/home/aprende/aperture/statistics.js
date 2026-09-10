@@ -11,8 +11,8 @@ const STATISTICS = v.object({
   }),
   retention: v.object({
     byStatus: tally(STATUS),
-    seen: v.integer(), // retentions past UNTOUCHED
-    due: v.integer(), // nextAt <= now
+    seen: v.integer(),
+    due: v.integer(),
   }),
   activity: v.object({
     bySignal: tally(SIGNAL),
@@ -27,27 +27,27 @@ export const statistics = new Vector().open(
     output: STATISTICS,
   },
   async (ctx) => {
-    const { retention, trace, literal } = ctx.daemon.entities;
+    const { note, literal } = ctx.entities;
 
-    const byKey = (repo, where) => async (keys) =>
+    const byKey = (where) => async (keys) =>
       Object.fromEntries(
-        await Promise.all(keys.map(async (key) => [key, await repo.count(where(key))])),
+        await Promise.all(keys.map(async (key) => [key, await note.count(where(key))])),
       );
 
-    const byStatus = await byKey(retention, (status) => ({ status }))(STATUS);
-    const bySignal = await byKey(trace, (enumeration) => ({ signal: { enum: enumeration } }))(
+    const byStatus = await byKey((status) => ({ traits: "RETAINED", trait: { RETAINED: { status } } }))(STATUS);
+    const bySignal = await byKey((enumeration) => ({ traits: "TRACED", trait: { TRACED: { signal: { enum: enumeration } } } }))(
       SIGNAL,
     );
 
     const [literals, retentions, traces, due] = await Promise.all([
       literal.count({}),
-      retention.count({}),
-      trace.count({}),
-      retention.count({ nextAt: { $lt: new Date() } }),
+      note.count({ traits: "RETAINED" }),
+      note.count({ traits: "TRACED" }),
+      note.due({}).then((rows) => rows.length),
     ]);
 
     // streak — distinct trace-days, newest first, counted while contiguous
-    const events = await trace.find({}, { fields: ["createdAt"], orderBy: { createdAt: "DESC" } });
+    const events = await note.find({ traits: "TRACED" }, { fields: ["createdAt"], orderBy: { createdAt: "DESC" } });
     const days = [...new Set(events.map((event) => event.createdAt.toISOString().slice(0, 10)))];
     const DAY = 86_400_000;
     let streak = 0;

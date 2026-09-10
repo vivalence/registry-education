@@ -1,7 +1,8 @@
 <script>
   import { Asset, Desk } from "@vivalence/drapes";
 
-  const { terminal, buffer } = $props();
+  const { terminal, buffer, surface } = $props();
+  const files = terminal.client.runtime.entities.file.$entities;
 
   const data = buffer.data ?? {};
   const layout = data.layout ?? "TABLE";
@@ -13,7 +14,7 @@
   let loading = $state(!literals.length);
 
   if (!literals.length) {
-    terminal.daemon.connection.call("/pick/literal/feed", { limit: 6 }).then((lits) => {
+    buffer.mode.daemon.connection.call("/pick/literal/feed", { limit: 6 }).then((lits) => {
       literals = lits ?? [];
       loading = false;
     });
@@ -39,7 +40,7 @@
 
   function getAudio(lit) {
     const ref = lit?.trait?.VOCALIZED?.asset;
-    return ref ? terminal.daemon.getAsset(ref) : null;
+    return ref ? ($files.find((file) => file.path === ref.path && file.mode.daemon === buffer.mode.daemon) ?? null) : null;
   }
 
   function parseTemplate(tpl, lits) {
@@ -103,7 +104,7 @@
               <span class="table-gloss">{known(lit)}</span>
               {#if getAudio(lit)}
                 <span class="table-dot">
-                  <Asset asset={getAudio(lit)} variant="dot" />
+                  <Asset file={getAudio(lit)} variant="dot" />
                 </span>
               {/if}
             </div>
@@ -176,26 +177,26 @@
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--colors-theme-primary-contrast);
+    color: var(--signal-primary-ink);
   }
   .meta-type {
     font-family: var(--font-family-code);
     font-size: var(--font-size-xs);
     font-weight: 500;
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
 
   .title {
     font-family: var(--font-family-serif-heading);
     font-size: var(--font-size-2xl);
-    color: var(--colors-skeleton-1-contrast);
+    color: var(--text-strong);
     line-height: 1.2;
     margin: 0 0 0.25rem 0;
   }
   .subtitle {
     font-family: var(--font-family-code);
     font-size: var(--font-size-sm);
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
     margin: 0 0 1.5rem 0;
   }
 
@@ -212,26 +213,26 @@
     align-items: center;
     padding: 0.625rem 0.75rem;
     border-radius: 0.375rem;
-    background: color-mix(in srgb, var(--colors-skeleton-1-surface) 40%, transparent);
+    background: color-mix(in srgb, var(--surface-lift) 40%, transparent);
   }
   .table-row:nth-child(odd) {
-    background: color-mix(in srgb, var(--colors-skeleton-1-surface) 70%, transparent);
+    background: color-mix(in srgb, var(--surface-lift) 70%, transparent);
   }
   .table-person {
     font-family: var(--font-family-code);
     font-size: var(--font-size-sm);
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
   .table-form {
     font-family: var(--font-family-serif-heading);
     font-size: var(--font-size-base);
-    color: var(--colors-theme-primary-contrast);
+    color: var(--signal-primary-ink);
     line-height: 1.35;
   }
   .table-gloss {
     font-family: var(--font-family-serif-heading);
     font-size: var(--font-size-sm);
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
     line-height: 1.35;
   }
   .table-dot {
@@ -247,21 +248,21 @@
     margin-bottom: 1.5rem;
     padding: 1rem;
     border-radius: 0.5rem;
-    background: color-mix(in srgb, var(--colors-skeleton-1-surface) 50%, transparent);
+    background: color-mix(in srgb, var(--surface-lift) 50%, transparent);
   }
   .pattern-text {
     font-family: var(--font-family-serif-heading);
     font-size: var(--font-size-lg);
-    color: var(--colors-skeleton-1-contrast);
+    color: var(--text-strong);
   }
   .pattern-slot {
     font-family: var(--font-family-code);
     font-size: var(--font-size-sm);
-    color: var(--colors-theme-primary-contrast);
+    color: var(--signal-primary-ink);
     padding: 0.125rem 0.5rem;
     border-radius: 0.25rem;
-    background: color-mix(in srgb, var(--colors-theme-primary-surface) 40%, transparent);
-    border: 1px dashed var(--colors-theme-primary-contrast);
+    background: color-mix(in srgb, var(--signal-primary-tint) 40%, transparent);
+    border: 1px dashed var(--signal-primary-ink);
   }
 
   .examples {
@@ -272,19 +273,19 @@
   .example-row {
     padding: 0.75rem;
     border-radius: 0.375rem;
-    background: color-mix(in srgb, var(--colors-skeleton-1-surface) 40%, transparent);
+    background: color-mix(in srgb, var(--surface-lift) 40%, transparent);
   }
   .example-learning {
     font-family: var(--font-family-serif-heading);
     font-size: var(--font-size-lg);
-    color: var(--colors-skeleton-1-contrast);
+    color: var(--text-strong);
     margin: 0 0 0.25rem 0;
     line-height: 1.3;
   }
   .example-known {
     font-family: var(--font-family-serif-heading);
     font-size: var(--font-size-md);
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
     margin: 0;
     font-style: italic;
   }
@@ -302,25 +303,25 @@
   }
   .contrast-divider {
     width: 1px;
-    background: var(--colors-skeleton-1-boundary);
+    background: var(--divider);
     flex-shrink: 0;
   }
   .contrast-row {
     padding: 0.625rem;
     border-radius: 0.375rem;
-    background: color-mix(in srgb, var(--colors-skeleton-1-surface) 40%, transparent);
+    background: color-mix(in srgb, var(--surface-lift) 40%, transparent);
   }
   .contrast-learning {
     font-family: var(--font-family-serif-heading);
     font-size: var(--font-size-base);
-    color: var(--colors-skeleton-1-contrast);
+    color: var(--text-strong);
     margin: 0 0 0.125rem 0;
     line-height: 1.3;
   }
   .contrast-known {
     font-family: var(--font-family-serif-heading);
     font-size: var(--font-size-sm);
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
     margin: 0;
     font-style: italic;
   }
@@ -336,7 +337,7 @@
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: var(--colors-skeleton-1-boundary);
+    background: var(--divider);
     animation: pulse 1s ease-in-out infinite;
   }
   @keyframes pulse {
@@ -353,7 +354,7 @@
     display: block;
     text-align: center;
     padding: 1rem;
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
     font-size: var(--font-size-sm);
     font-family: var(--font-family-code);
   }
@@ -363,16 +364,16 @@
     min-height: 48px;
     padding: 0.75rem 1rem;
     border-radius: 0.625rem;
-    border: 1px solid var(--colors-skeleton-1-boundary);
+    border: 1px solid var(--boundary);
     background: transparent;
-    color: var(--colors-palette-gray-200);
+    color: var(--text-light);
     font-size: var(--font-size-base);
     font-weight: 500;
     cursor: pointer;
     font-family: var(--font-family-sans-text);
   }
   .btn-got-it:hover {
-    border-color: var(--colors-skeleton-1-contrast);
+    border-color: var(--text-strong);
   }
 
   @media (max-width: 640px) {

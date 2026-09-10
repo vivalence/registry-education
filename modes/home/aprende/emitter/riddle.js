@@ -17,7 +17,7 @@ export const riddle = new Vector().open(
   },
   async (ctx) => {
     ctx.pool.add(
-      await ctx.daemon.modes.game.riddler.emit.riddle.fromSymbols({
+      await ctx.modes.game.riddler.emit.riddle.fromSymbols({
         literals: ctx.input.literals,
         symbols: ctx.input.symbols,
         instructions: ctx.input.instructions,

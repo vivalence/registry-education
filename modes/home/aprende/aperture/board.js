@@ -3,7 +3,7 @@ import { STATUS } from "../types.js";
 
 // the board — ONE optimized read backing the whole homepage dashboard. Every panel
 // (status bar, strength×due scatter, weakest/strongest ranks) derives from this single
-// array, so they can never disagree. One retention.find, literal + lazy strength populated.
+// array, so they can never disagree. One note.find over the RETAINED notes, literal populated.
 const BOARD = v.array(
   v.object({
     slug: v.string(),
@@ -11,7 +11,7 @@ const BOARD = v.array(
     pt: v.string(), // learning (brazilian) — the headword
     ontology: v.enum(["word", "sentence", "conjugation"]),
     status: v.enum(STATUS),
-    strength: v.number(), // 0..1, the lazy SQL formula
+    strength: v.number(),
     nextDays: v.number(), // days until review (negative = overdue); 0 when never scheduled
     seen: v.boolean(), // status past UNTOUCHED → has been studied
   }),
@@ -22,24 +22,20 @@ export const board = new Vector().open(
   async (ctx) => {
     const DAY = 86_400_000;
     const now = Date.now();
-    // one read: every retention for this user, with the literal + the lazy strength formula
-    // populated so each row carries gloss + ontology + strength + due in a single pass.
-    const retentions = await ctx.daemon.entities.retention.find(
-      {},
-      { populate: ["strength", "literal"] },
-    );
-    return retentions.map((retention) => {
-      const literal = retention.literal;
+    const retained = await ctx.entities.note.find({ traits: "RETAINED" }, { populate: ["literal"] });
+    return retained.map((note) => {
+      const literal = note.literal;
       const translated = literal?.trait?.TRANSLATED ?? {};
+      const assessed = note.assess(now);
       return {
         slug: literal?.slug ?? "",
         en: translated.known ?? "",
         pt: translated.learning ?? "",
         ontology: literal?.ontology || "word",
-        status: retention.status,
-        strength: retention.strength ?? 0,
-        nextDays: retention.nextAt ? (retention.nextAt.getTime() - now) / DAY : 0,
-        seen: retention.status !== "UNTOUCHED",
+        status: assessed.status,
+        strength: assessed.strength ?? 0,
+        nextDays: assessed.due ? (Date.parse(assessed.due) - now) / DAY : 0,
+        seen: assessed.status !== "UNTOUCHED",
       };
     });
   },

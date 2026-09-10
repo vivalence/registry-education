@@ -89,8 +89,9 @@ export default {
   encode,
   evolve,
   assess,
+  strength: (held, now) => Math.exp(-(Math.max(now - held.lastAt, 0) / 3_600_000) / held.state[2]),
   sql: {
-    strength: (table) =>
-      `exp(-(julianday('now') - julianday(${table}.lastAt / 1000.0, 'unixepoch')) * 24.0 / json_extract(${table}.state, '$[2]'))`,
+    strength: (at) =>
+      `exp(-(julianday('now') - julianday(${at("lastAt")} / 1000.0, 'unixepoch')) * 24.0 / json_extract(${at("state")}, '$[2]'))`,
   },
 };

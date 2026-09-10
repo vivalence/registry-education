@@ -11,18 +11,19 @@ const memos = new Map(); // user id → { at, promise }
 async function compose(ctx) {
   const now = Date.now();
 
-  const [literals, retentions, weakest, symbols] = await Promise.all([
-    ctx.daemon.entities.literal.count({}),
-    ctx.daemon.entities.retention.find({}, { fields: ["status", "nextAt"] }),
-    ctx.daemon.entities.literal.byStrength({}, { limit: 10 }),
-    ctx.daemon.entities.symbol.find({}, { fields: ["slug"] }),
+  const [literals, retained, weakest, symbols] = await Promise.all([
+    ctx.entities.literal.count({}),
+    ctx.entities.note.find({ traits: "RETAINED" }),
+    ctx.entities.literal.byStrength({}, { limit: 10 }),
+    ctx.entities.symbol.find({}, { fields: ["slug"] }),
   ]);
 
   const byStatus = Object.fromEntries(STATUS.map((status) => [status, 0]));
   let due = 0;
-  for (const retention of retentions) {
-    byStatus[retention.status] = (byStatus[retention.status] ?? 0) + 1;
-    if (retention.nextAt && retention.nextAt.getTime() <= now) due += 1;
+  for (const note of retained) {
+    const held = note.trait.RETAINED;
+    byStatus[held.status] = (byStatus[held.status] ?? 0) + 1;
+    if (held.due && Date.parse(held.due) <= now) due += 1;
   }
 
   const domains = symbols
@@ -31,7 +32,7 @@ async function compose(ctx) {
 
   return {
     literals,
-    retentions: { total: retentions.length, byStatus, due },
+    retentions: { total: retained.length, byStatus, due },
     weakest: weakest.map((literal) => ({
       slug: literal.slug,
       learning: literal.trait?.TRANSLATED?.learning ?? "",

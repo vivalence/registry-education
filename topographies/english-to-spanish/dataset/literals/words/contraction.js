@@ -1,26 +1,6 @@
 export default [
   {
     "slug": "al.contraction",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "to the (masc.)",
-        "learning": "al"
-      },
-      "EXEMPLIFIED": {
-        "known": "I am going to the bathroom",
-        "learning": "Voy al baño"
-      },
-      "RANKED": {
-        "rank": 182,
-        "zipf": 6.74,
-        "fpm": 5500.0
-      }
-    },
     "symbols": [
       {
         "slug": "word"
@@ -46,30 +26,30 @@ export default [
       {
         "slug": "functional.grammar"
       }
-    ]
-  },
-  {
-    "slug": "del.contraction",
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "I am going to the bathroom",
+        "learning": "Voy al baño"
+      },
+      "RANKED": {
+        "fpm": 5500,
+        "rank": 68,
+        "zipf": 6.74
+      },
+      "TRANSLATED": {
+        "known": "to the (masc.)",
+        "learning": "al"
+      }
+    },
     "traits": [
       "TRANSLATED",
       "EXEMPLIFIED",
       "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "of the (masc.)",
-        "learning": "del"
-      },
-      "EXEMPLIFIED": {
-        "known": "The owner of the flat",
-        "learning": "El dueño del piso"
-      },
-      "RANKED": {
-        "rank": 98,
-        "zipf": 7.01,
-        "fpm": 10200.0
-      }
-    },
+    ]
+  },
+  {
+    "slug": "del.contraction",
     "symbols": [
       {
         "slug": "word"
@@ -95,6 +75,26 @@ export default [
       {
         "slug": "functional.grammar"
       }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "The owner of the flat",
+        "learning": "El dueño del piso"
+      },
+      "RANKED": {
+        "fpm": 10200,
+        "rank": 69,
+        "zipf": 7.01
+      },
+      "TRANSLATED": {
+        "known": "of the (masc.)",
+        "learning": "del"
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
     ]
   }
-]
+];

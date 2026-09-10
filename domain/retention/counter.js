@@ -48,8 +48,9 @@ export default {
   encode,
   evolve,
   assess,
+  strength: (held) => Math.min((held.state?.streak ?? 0) / 8, 1),
   sql: {
-    strength: (table) =>
-      `MIN(json_extract(${table}.state, '$.streak') * 1.0 / 8.0, 1.0)`,
+    strength: (at) =>
+      `MIN(json_extract(${at("state")}, '$.streak') * 1.0 / 8.0, 1.0)`,
   },
 };

@@ -6,7 +6,7 @@ import { queue } from "./queue.js";
 import { review } from "./review.js";
 
 export const tools = new Vector()
-  .slurp(progress)
-  .slurp(lookup)
-  .slurp(queue)
-  .slurp(review);
+  .graft(progress)
+  .graft(lookup)
+  .graft(queue)
+  .graft(review);

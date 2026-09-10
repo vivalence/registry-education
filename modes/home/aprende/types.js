@@ -7,5 +7,5 @@ export const SIGNAL = ["MASTERY", "SUCCESS", "NEUTRAL", "MISTAKE", "FAILURE"];
 
 export const TUTOR_MESSAGE_INPUT = v.object({
   prompt: v.string().desc("The learner's message to the tutor."),
-  thread: v.string().optional().desc("Binds the exchange to the caller's thread."),
+  thread: v.string().desc('Binds the exchange to the caller\'s thread. Example: "th3"'),
 });

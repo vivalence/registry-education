@@ -1,124 +1,6 @@
 export default [
   {
-    "slug": "de.adposition",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "of / from",
-        "learning": "de"
-      },
-      "EXEMPLIFIED": {
-        "known": "A cup of coffee",
-        "learning": "Una taza de café"
-      },
-      "RANKED": {
-        "rank": 15,
-        "zipf": 7.81,
-        "fpm": 64600.0
-      }
-    },
-    "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.de"
-      },
-      {
-        "slug": "word.part-of-speech.adposition"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.grammar"
-      }
-    ]
-  },
-  {
-    "slug": "en.adposition",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED",
-      "VOCALIZED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "in / on",
-        "learning": "en"
-      },
-      "EXEMPLIFIED": {
-        "known": "I am in the house",
-        "learning": "Estoy en la casa"
-      },
-      "RANKED": {
-        "rank": 35,
-        "zipf": 7.45,
-        "fpm": 28200.0
-      },
-      "VOCALIZED": {
-        "asset": {
-          "path": "words/en.adposition.mp3"
-        }
-      }
-    },
-    "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.en"
-      },
-      {
-        "slug": "word.part-of-speech.adposition"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.grammar"
-      }
-    ]
-  },
-  {
     "slug": "a.adposition",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "to",
-        "learning": "a"
-      },
-      "EXEMPLIFIED": {
-        "known": "I am going to Madrid",
-        "learning": "Voy a Madrid"
-      },
-      "RANKED": {
-        "rank": 44,
-        "zipf": 7.36,
-        "fpm": 22900.0
-      }
-    },
     "symbols": [
       {
         "slug": "word"
@@ -141,36 +23,110 @@ export default [
       {
         "slug": "functional.grammar"
       }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "I am going to Madrid",
+        "learning": "Voy a Madrid"
+      },
+      "RANKED": {
+        "fpm": 22900,
+        "rank": 7,
+        "zipf": 7.36
+      },
+      "TRANSLATED": {
+        "known": "to",
+        "learning": "a"
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ]
+  },
+  {
+    "slug": "ante.adposition",
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.ante"
+      },
+      {
+        "slug": "word.part-of-speech.adposition"
+      },
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "functional.grammar"
+      }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "I am in front of the door",
+        "learning": "Estoy ante la puerta"
+      },
+      "RANKED": {
+        "fpm": 302,
+        "rank": 1004,
+        "zipf": 5.48
+      },
+      "TRANSLATED": {
+        "known": "before / in front of",
+        "learning": "ante"
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ]
+  },
+  {
+    "slug": "bajo.adposition",
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.bajo"
+      },
+      {
+        "slug": "word.part-of-speech.adposition"
+      },
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "functional.grammar"
+      }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "The cat is under the chair",
+        "learning": "El gato está bajo la silla"
+      },
+      "RANKED": {
+        "fpm": 389,
+        "rank": 989,
+        "zipf": 5.59
+      },
+      "TRANSLATED": {
+        "known": "under",
+        "learning": "bajo"
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
     ]
   },
   {
     "slug": "con.adposition",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED",
-      "VOCALIZED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "with",
-        "learning": "con"
-      },
-      "EXEMPLIFIED": {
-        "known": "I speak with her",
-        "learning": "Hablo con ella"
-      },
-      "RANKED": {
-        "rank": 107,
-        "zipf": 6.97,
-        "fpm": 9330.0
-      },
-      "VOCALIZED": {
-        "asset": {
-          "path": "words/con.adposition.mp3"
-        }
-      }
-    },
     "symbols": [
       {
         "slug": "word"
@@ -193,42 +149,82 @@ export default [
       {
         "slug": "functional.grammar"
       }
-    ]
-  },
-  {
-    "slug": "por.adposition",
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "I speak with her",
+        "learning": "Hablo con ella"
+      },
+      "RANKED": {
+        "fpm": 9330,
+        "rank": 12,
+        "zipf": 6.97
+      },
+      "TRANSLATED": {
+        "known": "with",
+        "learning": "con"
+      },
+      "VOCALIZED": {
+        "asset": {
+          "path": "words/con.adposition.mp3"
+        }
+      }
+    },
     "traits": [
       "TRANSLATED",
       "EXEMPLIFIED",
       "RANKED",
       "VOCALIZED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "for / by / through",
-        "learning": "por"
-      },
-      "EXEMPLIFIED": {
-        "known": "Thank you for everything",
-        "learning": "Gracias por todo"
-      },
-      "RANKED": {
-        "rank": 91,
-        "zipf": 7.04,
-        "fpm": 11000.0
-      },
-      "VOCALIZED": {
-        "asset": {
-          "path": "words/por.adposition.mp3"
-        }
-      }
-    },
+    ]
+  },
+  {
+    "slug": "contra.adposition",
     "symbols": [
       {
         "slug": "word"
       },
       {
-        "slug": "word.lemma.por"
+        "slug": "word.lemma.contra"
+      },
+      {
+        "slug": "word.part-of-speech.adposition"
+      },
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "functional.grammar"
+      }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "The ladder is against the wall",
+        "learning": "La escalera está contra la pared"
+      },
+      "RANKED": {
+        "fpm": 603,
+        "rank": 967,
+        "zipf": 5.78
+      },
+      "TRANSLATED": {
+        "known": "against",
+        "learning": "contra"
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ]
+  },
+  {
+    "slug": "de.adposition",
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.de"
       },
       {
         "slug": "word.part-of-speech.adposition"
@@ -245,36 +241,300 @@ export default [
       {
         "slug": "functional.grammar"
       }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "A cup of coffee",
+        "learning": "Una taza de café"
+      },
+      "RANKED": {
+        "fpm": 64600,
+        "rank": 1,
+        "zipf": 7.81
+      },
+      "TRANSLATED": {
+        "known": "of / from",
+        "learning": "de"
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
     ]
   },
   {
-    "slug": "para.adposition",
+    "slug": "desde.adposition",
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.desde"
+      },
+      {
+        "slug": "word.part-of-speech.adposition"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "functional.grammar"
+      }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "I have lived here since March",
+        "learning": "Vivo aquí desde marzo"
+      },
+      "RANKED": {
+        "fpm": 1260,
+        "rank": 117,
+        "zipf": 6.1
+      },
+      "TRANSLATED": {
+        "known": "from / since",
+        "learning": "desde"
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ]
+  },
+  {
+    "slug": "durante.adposition",
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.durante"
+      },
+      {
+        "slug": "word.part-of-speech.adposition"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "functional.grammar"
+      }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "I study during the morning",
+        "learning": "Estudio durante la mañana"
+      },
+      "RANKED": {
+        "fpm": 631,
+        "rank": 131,
+        "zipf": 5.8
+      },
+      "TRANSLATED": {
+        "known": "during",
+        "learning": "durante"
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ]
+  },
+  {
+    "slug": "en.adposition",
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.en"
+      },
+      {
+        "slug": "word.part-of-speech.adposition"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "functional.grammar"
+      }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "I am in the house",
+        "learning": "Estoy en la casa"
+      },
+      "RANKED": {
+        "fpm": 28200,
+        "rank": 5,
+        "zipf": 7.45
+      },
+      "TRANSLATED": {
+        "known": "in / on",
+        "learning": "en"
+      },
+      "VOCALIZED": {
+        "asset": {
+          "path": "words/en.adposition.mp3"
+        }
+      }
+    },
     "traits": [
       "TRANSLATED",
       "EXEMPLIFIED",
       "RANKED",
       "VOCALIZED"
+    ]
+  },
+  {
+    "slug": "entre.adposition",
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.entre"
+      },
+      {
+        "slug": "word.part-of-speech.adposition"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "functional.grammar"
+      }
     ],
     "trait": {
-      "TRANSLATED": {
-        "known": "for / in order to",
-        "learning": "para"
-      },
       "EXEMPLIFIED": {
-        "known": "It is for you",
-        "learning": "Es para ti"
+        "known": "It is between the house and the park",
+        "learning": "Está entre la casa y el parque"
       },
       "RANKED": {
-        "rank": 120,
-        "zipf": 6.92,
-        "fpm": 8320.0
+        "fpm": 1290,
+        "rank": 116,
+        "zipf": 6.11
+      },
+      "TRANSLATED": {
+        "known": "between",
+        "learning": "entre"
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ]
+  },
+  {
+    "slug": "hacia.adposition",
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.hacia"
+      },
+      {
+        "slug": "word.part-of-speech.adposition"
+      },
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "functional.grammar"
+      }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "I walk toward the beach",
+        "learning": "Camino hacia la playa"
+      },
+      "RANKED": {
+        "fpm": 389,
+        "rank": 996,
+        "zipf": 5.59
+      },
+      "TRANSLATED": {
+        "known": "toward",
+        "learning": "hacia"
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ]
+  },
+  {
+    "slug": "hasta.adposition",
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.hasta"
+      },
+      {
+        "slug": "word.part-of-speech.adposition"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "functional.grammar"
+      }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "I work until five",
+        "learning": "Trabajo hasta las cinco"
+      },
+      "RANKED": {
+        "fpm": 1230,
+        "rank": 118,
+        "zipf": 6.09
+      },
+      "TRANSLATED": {
+        "known": "until / up to",
+        "learning": "hasta"
       },
       "VOCALIZED": {
         "asset": {
-          "path": "words/para.adposition.mp3"
+          "path": "words/hasta.adposition.mp3"
         }
       }
     },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED",
+      "VOCALIZED"
+    ]
+  },
+  {
+    "slug": "para.adposition",
     "symbols": [
       {
         "slug": "word"
@@ -297,36 +557,128 @@ export default [
       {
         "slug": "functional.grammar"
       }
-    ]
-  },
-  {
-    "slug": "sin.adposition",
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "It is for you",
+        "learning": "Es para ti"
+      },
+      "RANKED": {
+        "fpm": 8320,
+        "rank": 13,
+        "zipf": 6.92
+      },
+      "TRANSLATED": {
+        "known": "for / in order to",
+        "learning": "para"
+      },
+      "VOCALIZED": {
+        "asset": {
+          "path": "words/para.adposition.mp3"
+        }
+      }
+    },
     "traits": [
       "TRANSLATED",
       "EXEMPLIFIED",
       "RANKED",
       "VOCALIZED"
+    ]
+  },
+  {
+    "slug": "por.adposition",
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.por"
+      },
+      {
+        "slug": "word.part-of-speech.adposition"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "functional.grammar"
+      }
     ],
     "trait": {
-      "TRANSLATED": {
-        "known": "without",
-        "learning": "sin"
-      },
       "EXEMPLIFIED": {
-        "known": "Coffee without sugar",
-        "learning": "Café sin azúcar"
+        "known": "Thank you for everything",
+        "learning": "Gracias por todo"
       },
       "RANKED": {
-        "rank": 575,
-        "zipf": 6.24,
-        "fpm": 1740.0
+        "fpm": 11000,
+        "rank": 11,
+        "zipf": 7.04
+      },
+      "TRANSLATED": {
+        "known": "for / by / through",
+        "learning": "por"
       },
       "VOCALIZED": {
         "asset": {
-          "path": "words/sin.adposition.mp3"
+          "path": "words/por.adposition.mp3"
         }
       }
     },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED",
+      "VOCALIZED"
+    ]
+  },
+  {
+    "slug": "según.adposition",
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.según"
+      },
+      {
+        "slug": "word.part-of-speech.adposition"
+      },
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "functional.grammar"
+      }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "According to the doctor, I am well",
+        "learning": "Según el médico, estoy bien"
+      },
+      "RANKED": {
+        "fpm": 417,
+        "rank": 974,
+        "zipf": 5.62
+      },
+      "TRANSLATED": {
+        "known": "according to",
+        "learning": "según"
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ]
+  },
+  {
+    "slug": "sin.adposition",
     "symbols": [
       {
         "slug": "word"
@@ -346,30 +698,36 @@ export default [
       {
         "slug": "functional.grammar"
       }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "Coffee without sugar",
+        "learning": "Café sin azúcar"
+      },
+      "RANKED": {
+        "fpm": 1740,
+        "rank": 113,
+        "zipf": 6.24
+      },
+      "TRANSLATED": {
+        "known": "without",
+        "learning": "sin"
+      },
+      "VOCALIZED": {
+        "asset": {
+          "path": "words/sin.adposition.mp3"
+        }
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED",
+      "VOCALIZED"
     ]
   },
   {
     "slug": "sobre.adposition",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "on / about",
-        "learning": "sobre"
-      },
-      "EXEMPLIFIED": {
-        "known": "The book is on the table",
-        "learning": "El libro está sobre la mesa"
-      },
-      "RANKED": {
-        "rank": 646,
-        "zipf": 6.19,
-        "fpm": 1550.0
-      }
-    },
     "symbols": [
       {
         "slug": "word"
@@ -389,408 +747,30 @@ export default [
       {
         "slug": "functional.grammar"
       }
-    ]
-  },
-  {
-    "slug": "bajo.adposition",
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "The book is on the table",
+        "learning": "El libro está sobre la mesa"
+      },
+      "RANKED": {
+        "fpm": 1550,
+        "rank": 114,
+        "zipf": 6.19
+      },
+      "TRANSLATED": {
+        "known": "on / about",
+        "learning": "sobre"
+      }
+    },
     "traits": [
       "TRANSLATED",
       "EXEMPLIFIED",
       "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "under",
-        "learning": "bajo"
-      },
-      "EXEMPLIFIED": {
-        "known": "The cat is under the chair",
-        "learning": "El gato está bajo la silla"
-      },
-      "RANKED": {
-        "rank": 2570,
-        "zipf": 5.59,
-        "fpm": 389.0
-      }
-    },
-    "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.bajo"
-      },
-      {
-        "slug": "word.part-of-speech.adposition"
-      },
-      {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "functional.grammar"
-      }
-    ]
-  },
-  {
-    "slug": "entre.adposition",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "between",
-        "learning": "entre"
-      },
-      "EXEMPLIFIED": {
-        "known": "It is between the house and the park",
-        "learning": "Está entre la casa y el parque"
-      },
-      "RANKED": {
-        "rank": 776,
-        "zipf": 6.11,
-        "fpm": 1290.0
-      }
-    },
-    "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.entre"
-      },
-      {
-        "slug": "word.part-of-speech.adposition"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "functional.grammar"
-      }
-    ]
-  },
-  {
-    "slug": "hasta.adposition",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED",
-      "VOCALIZED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "until / up to",
-        "learning": "hasta"
-      },
-      "EXEMPLIFIED": {
-        "known": "I work until five",
-        "learning": "Trabajo hasta las cinco"
-      },
-      "RANKED": {
-        "rank": 813,
-        "zipf": 6.09,
-        "fpm": 1230.0
-      },
-      "VOCALIZED": {
-        "asset": {
-          "path": "words/hasta.adposition.mp3"
-        }
-      }
-    },
-    "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.hasta"
-      },
-      {
-        "slug": "word.part-of-speech.adposition"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "functional.grammar"
-      }
-    ]
-  },
-  {
-    "slug": "desde.adposition",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "from / since",
-        "learning": "desde"
-      },
-      "EXEMPLIFIED": {
-        "known": "I have lived here since March",
-        "learning": "Vivo aquí desde marzo"
-      },
-      "RANKED": {
-        "rank": 794,
-        "zipf": 6.1,
-        "fpm": 1260.0
-      }
-    },
-    "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.desde"
-      },
-      {
-        "slug": "word.part-of-speech.adposition"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "functional.grammar"
-      }
-    ]
-  },
-  {
-    "slug": "hacia.adposition",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "toward",
-        "learning": "hacia"
-      },
-      "EXEMPLIFIED": {
-        "known": "I walk toward the beach",
-        "learning": "Camino hacia la playa"
-      },
-      "RANKED": {
-        "rank": 2570,
-        "zipf": 5.59,
-        "fpm": 389.0
-      }
-    },
-    "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.hacia"
-      },
-      {
-        "slug": "word.part-of-speech.adposition"
-      },
-      {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "functional.grammar"
-      }
-    ]
-  },
-  {
-    "slug": "contra.adposition",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "against",
-        "learning": "contra"
-      },
-      "EXEMPLIFIED": {
-        "known": "The ladder is against the wall",
-        "learning": "La escalera está contra la pared"
-      },
-      "RANKED": {
-        "rank": 1660,
-        "zipf": 5.78,
-        "fpm": 603.0
-      }
-    },
-    "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.contra"
-      },
-      {
-        "slug": "word.part-of-speech.adposition"
-      },
-      {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "functional.grammar"
-      }
-    ]
-  },
-  {
-    "slug": "según.adposition",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "according to",
-        "learning": "según"
-      },
-      "EXEMPLIFIED": {
-        "known": "According to the doctor, I am well",
-        "learning": "Según el médico, estoy bien"
-      },
-      "RANKED": {
-        "rank": 2399,
-        "zipf": 5.62,
-        "fpm": 417.0
-      }
-    },
-    "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.según"
-      },
-      {
-        "slug": "word.part-of-speech.adposition"
-      },
-      {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "functional.grammar"
-      }
-    ]
-  },
-  {
-    "slug": "durante.adposition",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "during",
-        "learning": "durante"
-      },
-      "EXEMPLIFIED": {
-        "known": "I study during the morning",
-        "learning": "Estudio durante la mañana"
-      },
-      "RANKED": {
-        "rank": 1585,
-        "zipf": 5.8,
-        "fpm": 631.0
-      }
-    },
-    "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.durante"
-      },
-      {
-        "slug": "word.part-of-speech.adposition"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "functional.grammar"
-      }
-    ]
-  },
-  {
-    "slug": "ante.adposition",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "before / in front of",
-        "learning": "ante"
-      },
-      "EXEMPLIFIED": {
-        "known": "I am in front of the door",
-        "learning": "Estoy ante la puerta"
-      },
-      "RANKED": {
-        "rank": 3311,
-        "zipf": 5.48,
-        "fpm": 302.0
-      }
-    },
-    "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.ante"
-      },
-      {
-        "slug": "word.part-of-speech.adposition"
-      },
-      {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "functional.grammar"
-      }
     ]
   },
   {
     "slug": "tras.adposition",
-    "traits": [
-      "TRANSLATED",
-      "EXEMPLIFIED",
-      "RANKED"
-    ],
-    "trait": {
-      "TRANSLATED": {
-        "known": "after / behind",
-        "learning": "tras"
-      },
-      "EXEMPLIFIED": {
-        "known": "The dog runs after the cat",
-        "learning": "El perro corre tras el gato"
-      },
-      "RANKED": {
-        "rank": 3715,
-        "zipf": 5.43,
-        "fpm": 269.0
-      }
-    },
     "symbols": [
       {
         "slug": "word"
@@ -807,6 +787,26 @@ export default [
       {
         "slug": "functional.grammar"
       }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "The dog runs after the cat",
+        "learning": "El perro corre tras el gato"
+      },
+      "RANKED": {
+        "fpm": 269,
+        "rank": 1011,
+        "zipf": 5.43
+      },
+      "TRANSLATED": {
+        "known": "after / behind",
+        "learning": "tras"
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
     ]
   }
-]
+];

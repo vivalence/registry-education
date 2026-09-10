@@ -20,6 +20,34 @@ const COUNT_INPUT = v.object({
   wheres: v.array(types.query).desc("Queries to count under the ontology guard — one count per entry, pick-independent."),
 });
 
+export const catalog = async (daemon, { search, traits, limit }) => {
+  const like = search ? `%${search}%` : null;
+  const where = {
+    ...(like
+      ? { $or: [{ slug: { $like: like } }, { trait: { LABELED: { name: { $like: like } } } }] }
+      : {}),
+    ...(traits?.length ? { traits: { $overlap: traits } } : {}),
+  };
+  const [symbols, tallies] = await Promise.all([
+    daemon.entities.symbol.find(where),
+    daemon.entities.em
+      .getConnection()
+      .execute(
+        "SELECT symbol_entity_id AS symbol, count(*) AS literals FROM symbol_literals GROUP BY symbol_entity_id",
+      ),
+  ]);
+  const counted = new Map(tallies.map((tally) => [tally.symbol, Number(tally.literals)]));
+  return symbols
+    .map((symbol) => ({
+      slug: symbol.slug,
+      traits: symbol.traits ?? [],
+      literals: counted.get(symbol.id) ?? 0,
+      ...(symbol.trait?.LABELED?.name ? { name: symbol.trait.LABELED.name } : {}),
+    }))
+    .sort((left, right) => right.literals - left.literals || left.slug.localeCompare(right.slug))
+    .slice(0, limit ?? Infinity);
+};
+
 const SYMBOLS_INPUT = v.object({
   search: v.string().desc("Matched against the symbol slug and its LABELED name.").optional(),
   traits: v
@@ -59,23 +87,23 @@ const keepQuietly = async (entities, buffer, data) => {
 };
 
 const held = (ctx) =>
-  ctx.daemon.entities.buffer.findOneOrFail(
+  ctx.entities.buffer.findOneOrFail(
     { id: ctx.input.buffer },
     { populate: ["literals", "symbols"] },
   );
 
 const review = async (ctx, identifier, grade) => {
   if (!identifier || !grade) return;
-  const literal = await ctx.daemon.entities.literal.findOne(identifier);
+  const literal = await ctx.entities.literal.findOne(identifier);
   if (!literal) return;
-  return literal.review(grade, ctx);
+  return ctx.entities.literal.review(literal, grade);
 };
 
 const row = (literal) => ({
   ...fold.fromLiteral(literal),
   slug: literal.slug,
   rank: literal.rank,
-  status: literal.retention?.status ?? "UNTOUCHED",
+  status: literal.assess()?.status ?? "UNTOUCHED",
 });
 
 const rows = (resolved) => ({
@@ -109,19 +137,19 @@ export const aperture = new Vector()
       ...object.pluck(ctx.input, types.SETUP),
       set,
     };
-    buffer.symbols.set(await ctx.daemon.entities.symbol.findByIdentifiers(projection(set)));
-    await ctx.daemon.entities.em.flush();
+    buffer.symbols.set(await ctx.entities.symbol.findByIdentifiers(projection(set)));
+    await ctx.entities.em.flush();
     return buffer;
   })
 
   .open({ nature: "/session", input: SESSION_INPUT }, async (ctx) => {
-    const buffer = await ctx.daemon.entities.buffer.findOneOrFail({ id: ctx.input.buffer });
+    const buffer = await ctx.entities.buffer.findOneOrFail({ id: ctx.input.buffer });
     const { session: previous, ...rest } = buffer.data ?? {};
     const incoming = ctx.input.session;
     const next = incoming
       ? { ...rest, session: { ...incoming, queue: incoming.queue ?? previous?.queue ?? [] } }
       : rest;
-    await keepQuietly(ctx.daemon.entities, buffer, next);
+    await keepQuietly(ctx.entities, buffer, next);
     return { session: Boolean(incoming) };
   })
 
@@ -130,38 +158,11 @@ export const aperture = new Vector()
     const resolved = await resolve(ctx, { set: buffer.data?.set ?? [] }, { prompt: buffer.data?.prompt });
     buffer.literals.set(resolved.literals);
     buffer.data = { ...buffer.data, knowables: resolved.knowables };
-    await ctx.daemon.entities.em.flush();
+    await ctx.entities.em.flush();
     return buffer;
   })
 
-  .open({ nature: "/symbols", input: SYMBOLS_INPUT }, async (ctx) => {
-    const { search, traits, limit } = ctx.input;
-    const like = search ? `%${search}%` : null;
-    const where = {
-      ...(like
-        ? { $or: [{ slug: { $like: like } }, { trait: { LABELED: { name: { $like: like } } } }] }
-        : {}),
-      ...(traits?.length ? { traits: { $overlap: traits } } : {}),
-    };
-    const [symbols, tallies] = await Promise.all([
-      ctx.daemon.entities.symbol.find(where),
-      ctx.daemon.entities.em
-        .getConnection()
-        .execute(
-          "SELECT symbol_entity_id AS symbol, count(*) AS literals FROM symbol_literals GROUP BY symbol_entity_id",
-        ),
-    ]);
-    const counted = new Map(tallies.map((tally) => [tally.symbol, Number(tally.literals)]));
-    return symbols
-      .map((symbol) => ({
-        slug: symbol.slug,
-        traits: symbol.traits ?? [],
-        literals: counted.get(symbol.id) ?? 0,
-        ...(symbol.trait?.LABELED?.name ? { name: symbol.trait.LABELED.name } : {}),
-      }))
-      .sort((left, right) => right.literals - left.literals || left.slug.localeCompare(right.slug))
-      .slice(0, limit ?? Infinity);
-  })
+  .open({ nature: "/symbols", input: SYMBOLS_INPUT }, (ctx) => catalog(ctx, ctx.input))
 
   .open({ nature: "/traits" }, async (ctx) => {
     const counts = await Promise.all(types.TRAITS.map((name) => count(ctx, { traits: [name] })));
@@ -173,9 +174,11 @@ export const aperture = new Vector()
      directly; never adds, never starts.
 
   .open({ nature: "/provision", input: PROVISION_INPUT }, async (ctx) => {
-    const language = ctx.daemon.statics.language;
-    const symbols = await ctx.daemon.entities.symbol.find({});
-    const render = await ctx.daemon.cortex.hallucinate.object.render({
+    const language = ctx.statics.language;
+    const symbols = await ctx.entities.symbol.find({});
+    const activity = await ctx.entities.activity.control({ user: ctx.user?.id ?? null, mode: ctx.mode.id, thread: ctx.thread?.id ?? null });
+    const render = await ctx.cortex.hallucinate.object.render({
+      controller: activity.controller,
       policy: { tune: "balanced" },
       system: { identity: hal.provision.identity(language) },
       turns: [{ role: "user", parts: [{ type: "text", text: hal.provision.request(vocabulary(symbols), ctx.input.state ?? {}, ctx.input.text) }] }],
@@ -209,7 +212,7 @@ export const aperture = new Vector()
   const validated = async (ctx, set = []) => {
     const wanted = projection(set);
     if (!wanted.length) return { set, unknown: [] };
-    const known = new Set((await ctx.daemon.entities.symbol.find({ slug: { $in: wanted } })).map((symbol) => symbol.slug));
+    const known = new Set((await ctx.entities.symbol.find({ slug: { $in: wanted } })).map((symbol) => symbol.slug));
     const unknown = wanted.filter((slug) => !known.has(slug));
     if (!unknown.length) return { set, unknown };
     const keep = (slugs) => slugs?.filter((slug) => known.has(slug));
@@ -224,11 +227,13 @@ export const aperture = new Vector()
   */
 
   .open({ nature: "/judge", input: JUDGE_INPUT }, async (ctx) => {
-    const language = ctx.daemon.statics.language;
+    const language = ctx.statics.language;
     const knowable = ctx.input.knowable;
     const tokens = knowable.tokens ?? [];
 
-    const render = await ctx.daemon.cortex.hallucinate.object.render({
+    const activity = await ctx.entities.activity.control({ user: ctx.user?.id ?? null, mode: ctx.mode.id, thread: ctx.thread?.id ?? null });
+    const render = await ctx.cortex.hallucinate.object.render({
+      controller: activity.controller,
       policy: { tune: "balanced" },
       system: {
         rubric: hal.judge.rubric(language, {
@@ -256,7 +261,7 @@ export const aperture = new Vector()
       ...graded.map((token) => review(ctx, token.literal, token.grade)),
     ]);
 
-    await ctx.daemon.entities.em.flush();
+    await ctx.entities.em.flush();
 
     return { overall: evaluation?.overall, tokens: graded };
   });

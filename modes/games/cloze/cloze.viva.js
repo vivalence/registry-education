@@ -1,4 +1,4 @@
-import { object, App, Vector, v } from "@vivalence/typology";
+import { object, Vector, v, mime } from "@vivalence/typology";
 
 const manifest = {
   type: "game",
@@ -7,35 +7,36 @@ const manifest = {
   description:
     "Fill blanked tokens in a sentence. Typed, picked, or audio-prompted. Per-token review.",
   version: "0.1.0",
-  traits: ["APPLICATION", "EMITTER"],
+  traits: ["VIEWABLE", "EMITTER"],
 };
 
 const ontology = ["sentence"];
 
-const app = new App(
-  "buffer/Cloze.svelte",
-  v.buffer({
-    data: {
-      recall: v
-        .string({ default: "LEARNING" })
-        .desc("LEARNING: known→learning, KNOWN: learning→known"),
-      gameplay: v
-        .string({ default: "TYPE" })
-        .desc("TYPE: free input, PICK: select from options, LISTEN: audio prompt with blanks"),
-      blankIndices: v
-        .array(v.number(), { default: [] })
-        .desc("Token positions to blank in the ANNOTATED sentence"),
-      options: v.array(v.string().desc("Shuffled answer candidates for pick gameplay")).optional(),
-      forgiving: v
-        .boolean({ default: true })
-        .desc("Normalize diacritics and case when evaluating typed input"),
-    },
-  }),
-);
+const buffer = v.buffer({
+  data: {
+    recall: v
+      .string({ default: "LEARNING" })
+      .desc("LEARNING: known→learning, KNOWN: learning→known"),
+    gameplay: v
+      .string({ default: "TYPE" })
+      .desc("TYPE: free input, PICK: select from options, LISTEN: audio prompt with blanks"),
+    blankIndices: v
+      .array(v.number(), { default: [] })
+      .desc("Token positions to blank in the ANNOTATED sentence"),
+    options: v.array(v.string().desc("Shuffled answer candidates for pick gameplay")).optional(),
+    forgiving: v
+      .boolean({ default: true })
+      .desc("Normalize diacritics and case when evaluating typed input"),
+  },
+});
+
+const views = [
+  { slug: "cloze", mount: "buffer/Cloze.svelte", mime: mime.dom.svelte },
+];
 
 const emitter = new Vector()
   .open("/literal", async (ctx) => {
-    return ctx.mode.app.buffer({
+    return ctx.mode.buffer({
       data: {
         recall: ctx.input.recall ?? "LEARNING",
         gameplay: ctx.input.gameplay ?? "TYPE",
@@ -48,7 +49,7 @@ const emitter = new Vector()
   })
   .open("/feed", async (ctx) => {
     const limit = ctx.input.limit ?? 1;
-    const all = await ctx.daemon.entities.literal.feed(
+    const all = await ctx.entities.literal.feed(
       object.merge(ctx.input.where, { ontology: { $in: ontology } }),
       { limit: limit * 3, blacklist: ctx.input.blacklist },
     );
@@ -57,7 +58,7 @@ const emitter = new Vector()
     const lit = annotated[0];
     const tokens = lit.trait?.ANNOTATED?.tokens ?? [];
     const blankIndices = tokens.length ? [Math.floor(Math.random() * tokens.length)] : [0];
-    return ctx.mode.app.buffer({
+    return ctx.mode.buffer({
       data: {
         recall: ctx.input.recall ?? "LEARNING",
         gameplay: ctx.input.gameplay ?? "TYPE",
@@ -83,4 +84,4 @@ const dataset = {
   ],
 };
 
-export { manifest, app, emitter, dataset };
+export { manifest, buffer, views, emitter, dataset };

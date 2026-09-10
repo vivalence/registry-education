@@ -1,6 +1,6 @@
 import { specimen, v } from "@vivalence/typology";
 
-import { app } from "../dojo.viva.js";
+import { buffer } from "../dojo.viva.js";
 import * as set from "../set/index.js";
 import * as streak from "../buffer/streak.js";
 import * as judge from "../buffer/judge.js";
@@ -231,7 +231,7 @@ specimen.describe("dojo judge", () => {
 
 specimen.describe("dojo buffer schema", () => {
   specimen.it("fill lands the three defaults and nothing else", () => {
-    const filled = app.fill({ data: {} });
+    const filled = buffer.fill({ data: {} }).data;
     specimen.expect(filled).toEqual({ gameplay: "TYPE", prompt: "TEXT", forgiving: true });
   });
 
@@ -247,55 +247,55 @@ specimen.describe("dojo buffer schema", () => {
       forgiving: false,
       knowables: [{ ontology: "word", known: "the house", learning: "la casa" }],
     };
-    specimen.expect(app.fill({ data: axes })).toEqual(axes);
+    specimen.expect(buffer.fill({ data: axes }).data).toEqual(axes);
   });
 
   specimen.it("recall and gameplay accept the pool form", () => {
-    const filled = app.fill({ data: { recall: ["KNOWN", "LEARNING"], gameplay: ["TYPE", "FLIP"] } });
+    const filled = buffer.fill({ data: { recall: ["KNOWN", "LEARNING"], gameplay: ["TYPE", "FLIP"] } }).data;
     specimen.expect(filled.recall).toEqual(["KNOWN", "LEARNING"]);
     specimen.expect(filled.gameplay).toEqual(["TYPE", "FLIP"]);
   });
 });
 
 specimen.describe("dojo wardrobe", () => {
-  const terminal = { daemon: { getAsset: (reference) => (reference ? { url: reference } : null) } };
-  const word = { ontology: "word", known: "a", learning: "b", asset: "a.mp3" };
+  const files = [{ path: "a.mp3" }];
+  const word = { ontology: "word", known: "a", learning: "b", asset: { path: "a.mp3" } };
   const key = (dress) => `${dress.recall}/${dress.gameplay}/${dress.prompt}`;
 
   specimen.it("the wardrobe is every feasible recall × gameplay × prompt; a table wears only CONJUGATE", () => {
     const axes = { recall: ["KNOWN", "LEARNING"], gameplay: ["TYPE", "PICK", "CONJUGATE"], prompt: ["TEXT", "AUDIO"] };
-    specimen.expect(knowables.wardrobe(terminal, axes, word).map(key).sort()).toEqual(
+    specimen.expect(knowables.wardrobe(files, axes, word).map(key).sort()).toEqual(
       ["KNOWN/PICK/AUDIO", "KNOWN/PICK/TEXT", "KNOWN/TYPE/AUDIO", "KNOWN/TYPE/TEXT", "LEARNING/PICK/AUDIO", "LEARNING/PICK/TEXT", "LEARNING/TYPE/AUDIO", "LEARNING/TYPE/TEXT"],
     );
-    specimen.expect(knowables.wardrobe(terminal, axes, { ...word, asset: undefined }).map(key).sort()).toEqual(
+    specimen.expect(knowables.wardrobe(files, axes, { ...word, asset: undefined }).map(key).sort()).toEqual(
       ["KNOWN/PICK/TEXT", "KNOWN/TYPE/TEXT", "LEARNING/PICK/TEXT", "LEARNING/TYPE/TEXT"],
     );
     const table = { ontology: "conjugation", known: "essere", learning: "essere", tokens: [{ form: "sono", gloss: "I am" }] };
-    specimen.expect(knowables.wardrobe(terminal, axes, table).map((dress) => dress.gameplay)).toEqual(["CONJUGATE", "CONJUGATE"]);
-    specimen.expect(knowables.wardrobe(terminal, { ...axes, greedy: true }, word).map((dress) => dress.prompt)).toEqual(["AUDIO", "AUDIO", "AUDIO", "AUDIO"]);
+    specimen.expect(knowables.wardrobe(files, axes, table).map((dress) => dress.gameplay)).toEqual(["CONJUGATE", "CONJUGATE"]);
+    specimen.expect(knowables.wardrobe(files, { ...axes, greedy: true }, word).map((dress) => dress.prompt)).toEqual(["AUDIO", "AUDIO", "AUDIO", "AUDIO"]);
   });
 
   specimen.it("dressFor wears the wardrobe out before repeating, then avoids only the current dress, and a one-dress wardrobe repeats", () => {
     const axes = { recall: ["KNOWN", "LEARNING"], gameplay: ["TYPE", "PICK"], prompt: "TEXT" };
     const worn = [];
-    for (let round = 0; round < 4; round++) worn.push(knowables.dressFor(terminal, axes, word, { worn }));
+    for (let round = 0; round < 4; round++) worn.push(knowables.dressFor(files, axes, word, { worn }));
     specimen.expect(new Set(worn.map(key)).size).toBe(4);
     for (let round = 0; round < 20; round++) {
-      const next = knowables.dressFor(terminal, axes, word, { worn });
+      const next = knowables.dressFor(files, axes, word, { worn });
       specimen.expect(key(next)).not.toBe(key(worn.at(-1)));
       worn.push(next);
     }
     const fixed = { recall: "KNOWN", gameplay: "TYPE", prompt: "TEXT" };
-    specimen.expect(knowables.dressFor(terminal, fixed, word, { worn: [fixed] })).toEqual(fixed);
-    specimen.expect(knowables.dressFor(terminal, fixed, word, { worn: [fixed, fixed] })).toEqual(fixed);
+    specimen.expect(knowables.dressFor(files, fixed, word, { worn: [fixed] })).toEqual(fixed);
+    specimen.expect(knowables.dressFor(files, fixed, word, { worn: [fixed, fixed] })).toEqual(fixed);
   });
 
   specimen.it("dressFor without randomness cycles each pool by queue position and pins tables to CONJUGATE", () => {
     const axes = { recall: ["KNOWN", "LEARNING"], gameplay: ["TYPE", "PICK", "FLIP"], prompt: "TEXT" };
-    const cycled = [0, 1, 2, 3].map((index) => key(knowables.dressFor(terminal, axes, word, { index, random: false })));
+    const cycled = [0, 1, 2, 3].map((index) => key(knowables.dressFor(files, axes, word, { index, random: false })));
     specimen.expect(cycled).toEqual(["KNOWN/TYPE/TEXT", "LEARNING/PICK/TEXT", "KNOWN/FLIP/TEXT", "LEARNING/TYPE/TEXT"]);
     const table = { ontology: "conjugation", known: "essere", learning: "essere", tokens: [{ form: "sono", gloss: "I am" }] };
-    specimen.expect(knowables.dressFor(terminal, axes, table, { index: 1, random: false }).gameplay).toBe("CONJUGATE");
+    specimen.expect(knowables.dressFor(files, axes, table, { index: 1, random: false }).gameplay).toBe("CONJUGATE");
   });
 });
 
@@ -320,7 +320,7 @@ specimen.describe("dojo pools", () => {
     specimen.expect(names.length).toBeLessThanOrEqual(9);
     for (const [name, entry] of Object.entries(types.PRESETS)) {
       specimen.expect(typeof entry.note).toBe("string");
-      const filled = app.fill({ data: entry.axes });
+      const filled = buffer.fill({ data: entry.axes }).data;
       for (const key of Object.keys(entry.axes)) specimen.expect(filled[key]).toEqual(entry.axes[key]);
       if (entry.count) specimen.expect(entry.count).toBeGreaterThanOrEqual(1);
     }

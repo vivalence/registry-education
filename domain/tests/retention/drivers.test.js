@@ -1,10 +1,13 @@
-import { specimen } from "@vivalence/typology";
+import { specimen, traits } from "@vivalence/typology";
 import drivers from "../../retention/index.js";
 import boolean from "../../retention/boolean.js";
 import counter from "../../retention/counter.js";
 import bayesian from "../../retention/bayesian.js";
-import { RetentionEntity, RetentionDriverEnum, RetentionStatusEnum } from "../../entities/userspace/Retention.ts";
-import { STATUS, SIGNAL } from "../../types.js";
+import { RETAINED } from "../../traits/note/retained.js";
+import { STATUS, SIGNAL } from "../../schematics.js";
+
+const enumerated = (property) => RETAINED.schematic.properties[property].anyOf.map((variant) => variant.const);
+const RetentionStatus = enumerated("status");
 
 const signal = (value) => ({ enum: value });
 
@@ -15,9 +18,9 @@ specimen.describe("retention drivers — the registry", () => {
       specimen.expect(typeof driver.encode).toBe("function");
       specimen.expect(typeof driver.evolve).toBe("function");
       specimen.expect(typeof driver.assess).toBe("function");
-      specimen.expect(typeof driver.sql.strength("m")).toBe("string");
+      specimen.expect(typeof driver.sql.strength((field) => `m.${field}`)).toBe("string");
     }
-    specimen.expect(Object.keys(drivers).sort()).toEqual(Object.values(RetentionDriverEnum).sort());
+    specimen.expect(Object.keys(drivers).sort()).toEqual(enumerated("driver").sort());
   });
 
   specimen.it("every driver speaks the domain's status ladder and accepts every domain signal", () => {
@@ -25,7 +28,7 @@ specimen.describe("retention drivers — the registry", () => {
       for (const value of SIGNAL) {
         const encoded = driver.encode(signal(value));
         specimen.expect(STATUS).toContain(encoded.status);
-        specimen.expect(Object.values(RetentionStatusEnum)).toContain(encoded.status);
+        specimen.expect(RetentionStatus).toContain(encoded.status);
         const evolved = driver.evolve(signal(value), { state: encoded.state, lastAt: new Date(Date.now() - 3600000), traces: [] });
         specimen.expect(STATUS).toContain(evolved.status);
         specimen.expect(evolved.nextAt instanceof Date || typeof evolved.nextAt === "string").toBe(true);
@@ -118,46 +121,31 @@ specimen.describe("counter driver — a streak schedule", () => {
   });
 });
 
-specimen.describe("RetentionEntity.evolve — the entity applies a driver's verdict", () => {
-  const fresh = () => {
-    const retention = new RetentionEntity();
-    retention.state = null;
-    retention.status = RetentionStatusEnum.UNTOUCHED;
-    return retention;
-  };
+specimen.describe("note.evolve — the RETAINED verb applies a driver's verdict to the payload", () => {
+  const notes = { schematics: { RETAINED: RETAINED.schematic }, claim: (row, name) => traits.claim(row, name, { RETAINED: RETAINED.schematic }) };
+  const evolve = (note, signal) => RETAINED.repository.evolve.call(notes, note, signal);
+  const fresh = (driver = "BAYESIAN") => ({ traits: ["RETAINED"], trait: { RETAINED: { ...RETAINED.schematic.create(), driver } } });
 
-  specimen.it("encodes on first signal, evolves after, accepts a bare string signal, stamps lastAt", () => {
-    const retention = fresh();
+  specimen.it("encodes on first signal, evolves after, accepts a bare string signal, stamps lastAt and due", () => {
+    const note = fresh();
     const before = Date.now();
-    const first = retention.evolve("SUCCESS", bayesian);
-    specimen.expect(first.signal).toEqual({ enum: "SUCCESS" });
-    specimen.expect(retention.state).toEqual(first.state);
-    specimen.expect(retention.status).toBe(first.status);
-    specimen.expect(retention.nextAt.getTime()).toBeGreaterThan(before);
-    specimen.expect(retention.lastAt.getTime()).toBeGreaterThanOrEqual(before);
-    const firstNext = retention.nextAt.getTime();
-    retention.evolve({ enum: "FAILURE" }, bayesian);
-    specimen.expect(retention.nextAt.getTime()).toBeLessThan(firstNext);
-    specimen.expect(["UNKNOWN", "LEARNING"]).toContain(retention.status);
+    evolve(note, "SUCCESS");
+    const first = note.trait.RETAINED;
+    specimen.expect(first.lastSignal).toBe("SUCCESS");
+    specimen.expect(Array.isArray(first.state)).toBe(true);
+    specimen.expect(new Date(first.due).getTime()).toBeGreaterThan(before);
+    specimen.expect(first.lastAt).toBeGreaterThanOrEqual(before);
+    evolve(note, { enum: "FAILURE" });
+    specimen.expect(new Date(note.trait.RETAINED.due).getTime()).toBeLessThan(new Date(first.due).getTime());
+    specimen.expect(["UNKNOWN", "LEARNING"]).toContain(note.trait.RETAINED.status);
   });
 
-  specimen.it("is: the ladder predicates read status and lastSignal", () => {
-    const retention = fresh();
-    specimen.expect(retention.is.virgin).toBe(true);
-    retention.status = RetentionStatusEnum.KNOWN;
-    retention.lastSignal = "SUCCESS";
-    specimen.expect(retention.is).toMatchObject({ virgin: false, weak: false, familiar: true, strong: true, succeeded: true, failed: false });
-    retention.status = RetentionStatusEnum.UNKNOWN;
-    retention.lastSignal = "MISTAKE";
-    specimen.expect(retention.is).toMatchObject({ weak: true, familiar: false, strong: false, succeeded: false, failed: true });
-  });
-
-  specimen.it("every driver runs through the entity, statuses stay inside the enum", () => {
-    for (const driver of Object.values(drivers)) {
-      const retention = fresh();
+  specimen.it("every driver runs through the verb, statuses stay inside the enum", () => {
+    for (const driver of Object.keys(drivers)) {
+      const note = fresh(driver);
       for (const value of ["SUCCESS", "SUCCESS", "MISTAKE", "SUCCESS", "MASTERY"]) {
-        retention.evolve(value, driver);
-        specimen.expect(Object.values(RetentionStatusEnum)).toContain(retention.status);
+        evolve(note, value);
+        specimen.expect(RetentionStatus).toContain(note.trait.RETAINED.status);
       }
     }
   });

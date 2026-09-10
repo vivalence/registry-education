@@ -1,7 +1,8 @@
 <script>
   import { Asset, Desk } from "@vivalence/drapes";
 
-  const { terminal, buffer } = $props();
+  const { terminal, buffer, surface } = $props();
+  const files = terminal.client.runtime.entities.file.$entities;
 
   const data = buffer.data ?? {};
   const recall = data.recall ?? "LEARNING";
@@ -17,9 +18,9 @@
   const sourceField = recall === "LEARNING" ? "learning" : "known";
 
   const isWord = target?.ontology === "word";
-  const asset =
+  const file =
     (gameplay === "audio" || gameplay === "audio-only")
-      ? terminal.daemon.getAsset(target?.trait?.VOCALIZED?.asset)
+      ? ($files.find((file) => file.path === target?.trait?.VOCALIZED?.asset?.path && file.mode.daemon === buffer.mode.daemon) ?? null)
       : null;
 
   const sourceText = target && gameplay !== "audio-only"
@@ -85,7 +86,7 @@
     result = { correct, timeout: isTimeout };
 
     setTimeout(() => {
-      terminal.daemon.connection.call("/review/literal", {
+      buffer.mode.daemon.connection.call("/review/literal", {
         signal: correct ? "SUCCESS" : "MISTAKE",
         scope: { literal: target.id },
       });
@@ -151,13 +152,13 @@
             {/if}
           </div>
 
-          {#if sourceText || asset}
+          {#if sourceText || file}
             <div class="source-row">
               {#if sourceText}
                 <p class="source" class:source-word={isWord}>{sourceText}</p>
               {/if}
-              {#if asset}
-                <div class="audio-block"><Asset autoplay={true} {asset} /></div>
+              {#if file}
+                <div class="audio-block"><Asset autoplay={true} {file} /></div>
               {/if}
             </div>
           {/if}
@@ -221,15 +222,15 @@
   .timer-bar {
     flex-shrink: 0;
     height: 3px;
-    background: var(--colors-skeleton-1-boundary);
+    background: var(--divider);
   }
   .timer-fill {
     height: 100%;
-    background: var(--colors-theme-primary-contrast);
+    background: var(--signal-primary-ink);
     transition: width 50ms linear;
   }
   .timer-fill.timer-urgent {
-    background: var(--colors-system-error-contrast);
+    background: var(--signal-negative-ink);
   }
 
   .touch-layer {
@@ -254,7 +255,7 @@
   .meta-type {
     font-family: var(--font-family-code);
     font-size: var(--font-size-xs);
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
 
   .source-row {
@@ -266,7 +267,7 @@
   .source {
     font-family: var(--font-family-serif-heading);
     font-size: var(--font-size-2xl);
-    color: var(--colors-skeleton-1-contrast);
+    color: var(--text-strong);
     line-height: 1.2;
     margin: 0;
     flex: 1;
@@ -285,13 +286,13 @@
     gap: 0.5rem;
     padding: 1.25rem 1.5rem;
     border-radius: 0.75rem;
-    border: 1px solid var(--colors-skeleton-1-boundary);
-    background: color-mix(in srgb, var(--colors-skeleton-1-surface) 80%, var(--colors-skeleton-2-surface));
+    border: 1px solid var(--boundary);
+    background: color-mix(in srgb, var(--surface-lift) 80%, var(--surface-sunk));
   }
   .shown {
     font-family: var(--font-family-serif-heading);
     font-size: var(--font-size-xl);
-    color: var(--colors-palette-gray-100);
+    color: var(--text-light);
     margin: 0;
     line-height: 1.3;
   }
@@ -321,8 +322,8 @@
     text-transform: uppercase;
     letter-spacing: 0.06em;
   }
-  .fb-ok .fb-icon, .fb-ok .fb-text { color: var(--colors-system-success-contrast); }
-  .fb-miss .fb-icon, .fb-miss .fb-text { color: var(--colors-system-error-contrast); }
+  .fb-ok .fb-icon, .fb-ok .fb-text { color: var(--signal-positive-ink); }
+  .fb-miss .fb-icon, .fb-miss .fb-text { color: var(--signal-negative-ink); }
 
   .fb-answer {
     display: flex;
@@ -333,14 +334,14 @@
   .fb-answer-label {
     font-family: var(--font-family-code);
     font-size: var(--font-size-xs);
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
     text-transform: uppercase;
     letter-spacing: 0.08em;
   }
   .fb-answer-text {
     font-family: var(--font-family-serif-heading);
     font-size: var(--font-size-lg);
-    color: var(--colors-theme-primary-contrast);
+    color: var(--signal-primary-ink);
   }
 
   .menu-hint {
@@ -348,7 +349,7 @@
     width: 100%;
     text-align: center;
     padding: 1rem;
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
     font-size: var(--font-size-sm);
     font-family: var(--font-family-code);
   }
@@ -365,12 +366,12 @@
     font-family: var(--font-family-sans-text);
   }
   .btn-wrong {
-    background: var(--colors-system-error-surface);
-    color: var(--colors-system-error-contrast);
+    background: var(--signal-negative-tint);
+    color: var(--signal-negative-ink);
   }
   .btn-correct {
-    background: var(--colors-system-success-surface);
-    color: var(--colors-system-success-contrast);
+    background: var(--signal-positive-tint);
+    color: var(--signal-positive-ink);
   }
 
   @media (max-width: 640px) {

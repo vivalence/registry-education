@@ -54,13 +54,13 @@
   h4 {
     margin: 0;
     padding-bottom: 0.6rem;
-    border-bottom: 1px solid color-mix(in srgb, var(--colors-skeleton-1-boundary) 20%, transparent);
+    border-bottom: 1px solid color-mix(in srgb, var(--boundary) 20%, transparent);
     font-family: var(--font-family-code);
     font-size: var(--font-size-xs);
     font-weight: 600;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
   .legend {
     display: flex;
@@ -73,7 +73,7 @@
     gap: 0.45rem;
     font-family: var(--font-family-code);
     font-size: var(--font-size-xs);
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
   .swatch {
     width: 10px;
@@ -118,6 +118,6 @@
     font-size: var(--font-size-2xs, 0.65rem);
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: color-mix(in srgb, var(--colors-skeleton-1-boundary) 75%, transparent);
+    color: color-mix(in srgb, var(--boundary) 75%, transparent);
   }
 </style>

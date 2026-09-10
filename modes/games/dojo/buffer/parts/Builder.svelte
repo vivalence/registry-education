@@ -58,10 +58,10 @@
     { id: "trait", label: "traits" },
   ];
   const KIND_DOT = {
-    ONTOLOGICAL: "var(--colors-theme-primary-contrast)",
-    STRUCTURAL: "var(--colors-system-warning-contrast)",
-    TOPOGRAPHICAL: "var(--colors-theme-secondary-contrast)",
-    trait: "var(--colors-system-success-contrast)",
+    ONTOLOGICAL: "var(--signal-primary-ink)",
+    STRUCTURAL: "var(--signal-caution-ink)",
+    TOPOGRAPHICAL: "var(--signal-primary-ink)",
+    trait: "var(--signal-positive-ink)",
   };
   const BINS = [
     { id: "all", glyph: "∧", title: "must have all of", operator: "symbols.$all · traits.$contains", tone: "primary" },
@@ -79,11 +79,11 @@
     sample: "random — optionally only these statuses",
   };
   const STATUS_TONE = {
-    UNTOUCHED: "var(--colors-skeleton-2-boundary)",
-    UNKNOWN: "var(--colors-system-error-contrast)",
-    LEARNING: "var(--colors-system-warning-contrast)",
-    KNOWN: "var(--colors-system-success-contrast)",
-    GRADUATED: "var(--colors-theme-primary-contrast)",
+    UNTOUCHED: "var(--boundary-soft)",
+    UNKNOWN: "var(--signal-negative-ink)",
+    LEARNING: "var(--signal-caution-ink)",
+    KNOWN: "var(--signal-positive-ink)",
+    GRADUATED: "var(--signal-primary-ink)",
   };
 
   let found = $state.raw([]);
@@ -179,7 +179,7 @@
               label: symbol.slug,
               count: symbol.literals,
               title: `${(symbol.traits?.[0] ?? "symbol").toLowerCase()}${symbol.name ? " · " + symbol.name : ""}`,
-              dot: KIND_DOT[symbol.traits?.[0]] ?? "var(--text-support)",
+              dot: KIND_DOT[symbol.traits?.[0]] ?? "var(--text-light)",
             }));
     const all = [...symbolChips, ...traitChips];
     const recent = all.filter((chip) => touched[chip.key]).sort((left, right) => touched[right.key] - touched[left.key]);
@@ -506,7 +506,7 @@
     <div class="rows">
       {#each shown as row (row.literal ?? row.learning + row.known)}
         <button class="line" class:pinnable={Boolean(row.literal)} class:pinned={pinnedIds.has(row.literal)} onclick={() => (row.literal ? togglePin(row) : null)}>
-          <span class="bar" style:background={STATUS_TONE[row.status] ?? "var(--colors-skeleton-2-boundary)"}></span>
+          <span class="bar" style:background={STATUS_TONE[row.status] ?? "var(--boundary-soft)"}></span>
           <span class="faces">
             <span class="learning">{row.learning}</span>
             <span class="known">{row.known}{row.context ? ` · ${Object.values(row.context).join(" · ")}` : ""}</span>
@@ -538,20 +538,20 @@
     align-items: center;
     gap: 0.4rem;
     padding: 0.6rem 1rem 0.5rem;
-    border-bottom: 1px solid var(--colors-skeleton-1-boundary);
+    border-bottom: 1px solid var(--boundary);
     flex-wrap: wrap;
   }
   .note,
   .hint {
     font-family: var(--font-family-sans-text);
     font-size: var(--font-size-2xs);
-    color: var(--text-support);
+    color: var(--text-light);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
   .hint.lit {
-    color: var(--text-body);
+    color: var(--text-ink);
   }
   .editing {
     margin-left: auto;
@@ -559,12 +559,12 @@
     align-items: center;
     gap: 0.4rem;
     padding: 0.15rem 0.25rem 0.15rem 0.6rem;
-    border: 1px solid var(--colors-system-warning-contrast);
+    border: 1px solid var(--signal-caution-ink);
     border-radius: 0.2rem;
-    background: var(--colors-skeleton-2-surface);
+    background: var(--surface-sunk);
     font-family: var(--font-family-code);
     font-size: var(--font-size-2xs);
-    color: var(--colors-system-warning-contrast);
+    color: var(--signal-caution-ink);
     white-space: nowrap;
   }
   .ghost {
@@ -572,14 +572,14 @@
     font-size: var(--font-size-2xs);
     padding: 0.2rem 0.5rem;
     border-radius: 0.15rem;
-    border: 1px solid var(--colors-skeleton-2-boundary);
+    border: 1px solid var(--boundary-soft);
     background: transparent;
-    color: var(--text-support);
+    color: var(--text-light);
     cursor: pointer;
   }
   .ghost.danger {
-    border-color: var(--colors-system-error-contrast);
-    color: var(--colors-system-error-contrast);
+    border-color: var(--signal-negative-ink);
+    color: var(--signal-negative-ink);
   }
   .form {
     flex: 0 1 auto;
@@ -612,7 +612,7 @@
   .num {
     font-family: var(--font-family-code);
     font-size: var(--font-size-2xs);
-    color: var(--text-support);
+    color: var(--text-light);
     opacity: 0.6;
   }
   .title {
@@ -620,23 +620,23 @@
     font-size: var(--font-size-2xs);
     letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: var(--text-support);
+    color: var(--text-light);
     white-space: nowrap;
   }
   .field {
     width: 100%;
     box-sizing: border-box;
-    background: var(--colors-skeleton-0-surface);
-    border: 1px solid var(--colors-skeleton-1-boundary);
+    background: var(--surface);
+    border: 1px solid var(--boundary);
     border-radius: 0.25rem;
     padding: 0.55rem 0.7rem;
-    color: var(--text-primary);
+    color: var(--text-strong);
     font-family: var(--font-family-sans-text);
     font-size: var(--font-size-sm);
     outline: none;
   }
   .field:focus {
-    border-color: var(--colors-theme-primary-contrast);
+    border-color: var(--signal-primary-ink);
   }
   .kinds {
     display: flex;
@@ -651,13 +651,13 @@
     border: none;
     border-bottom: 1px solid transparent;
     background: transparent;
-    color: var(--text-support);
+    color: var(--text-light);
     cursor: pointer;
     opacity: 0.8;
   }
   .kind.on {
-    color: var(--colors-theme-primary-contrast);
-    border-bottom-color: var(--colors-theme-primary-contrast);
+    color: var(--signal-primary-ink);
+    border-bottom-color: var(--signal-primary-ink);
     opacity: 1;
   }
   .chips {
@@ -674,20 +674,20 @@
     font-size: var(--font-size-2xs);
     padding: 0.3rem 0.55rem;
     border-radius: 0.2rem;
-    border: 1px solid var(--colors-skeleton-1-boundary);
-    background: var(--colors-skeleton-0-surface);
-    color: var(--text-body);
+    border: 1px solid var(--boundary);
+    background: var(--surface);
+    color: var(--text-ink);
     cursor: grab;
     min-height: 1.75rem;
   }
   .chip:hover {
-    border-color: var(--text-support);
-    color: var(--text-primary);
+    border-color: var(--text-light);
+    color: var(--text-strong);
   }
   .chip.more {
     cursor: pointer;
     border-style: dashed;
-    color: var(--text-support);
+    color: var(--text-light);
   }
   .chip:global(.lifted),
   .placed:global(.lifted) {
@@ -708,7 +708,7 @@
     gap: 0.25rem;
   }
   .bin {
-    border: 1px solid var(--colors-skeleton-1-boundary);
+    border: 1px solid var(--boundary);
     border-left: 3px solid var(--tone);
     border-radius: 0.2rem;
     background: transparent;
@@ -717,22 +717,22 @@
     transition:
       background 120ms,
       border-color 120ms;
-    --tone: var(--colors-theme-primary-contrast);
+    --tone: var(--signal-primary-ink);
   }
   .bin[data-tone="secondary"] {
-    --tone: var(--colors-theme-secondary-contrast);
+    --tone: var(--signal-primary-ink);
   }
   .bin[data-tone="danger"] {
-    --tone: var(--colors-system-error-contrast);
+    --tone: var(--signal-negative-ink);
   }
   .bin.aimed {
-    border-color: var(--text-support);
+    border-color: var(--text-light);
     border-left-color: var(--tone);
-    background: var(--colors-skeleton-2-surface);
+    background: var(--surface-sunk);
   }
   .bin.over {
     border-color: var(--tone);
-    background: var(--colors-skeleton-2-surface);
+    background: var(--surface-sunk);
   }
   .bin-head {
     display: flex;
@@ -751,16 +751,16 @@
     font-size: var(--font-size-2xs);
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--text-support);
+    color: var(--text-light);
     white-space: nowrap;
   }
   .bin-title.lit {
-    color: var(--text-primary);
+    color: var(--text-strong);
   }
   .operator {
     font-family: var(--font-family-code);
     font-size: var(--font-size-2xs);
-    color: var(--text-support);
+    color: var(--text-light);
     opacity: 0.6;
     white-space: nowrap;
     overflow: hidden;
@@ -770,11 +770,11 @@
     margin-left: auto;
     font-family: var(--font-family-code);
     font-size: var(--font-size-2xs);
-    color: var(--text-support);
+    color: var(--text-light);
     white-space: nowrap;
   }
   .state.aim {
-    color: var(--colors-system-warning-contrast);
+    color: var(--signal-caution-ink);
   }
   .bin-chips {
     display: flex;
@@ -790,7 +790,7 @@
     gap: 0.4rem;
     border: 1px solid var(--tone);
     border-radius: 0.2rem;
-    background: var(--colors-skeleton-2-surface);
+    background: var(--surface-sunk);
     padding: 0.2rem 0.3rem 0.2rem 0.55rem;
     cursor: grab;
   }
@@ -803,26 +803,26 @@
   .x {
     border: none;
     background: transparent;
-    color: var(--text-support);
+    color: var(--text-light);
     cursor: pointer;
     font-size: var(--font-size-xs);
     padding: 0 0.2rem;
     line-height: 1;
   }
   .x:hover {
-    color: var(--colors-system-error-contrast);
+    color: var(--signal-negative-ink);
   }
   .sub {
     display: inline-flex;
     gap: 0.2rem;
     flex-wrap: wrap;
     padding-left: 0.3rem;
-    border-left: 1px solid var(--colors-skeleton-1-boundary);
+    border-left: 1px solid var(--boundary);
   }
   .sep {
     width: 1px;
     height: 0.9rem;
-    background: var(--colors-skeleton-1-boundary);
+    background: var(--divider);
   }
   .cap {
     display: inline-flex;
@@ -844,18 +844,18 @@
   .key {
     font-family: var(--font-family-code);
     font-size: var(--font-size-xs);
-    color: var(--text-support);
+    color: var(--text-light);
     white-space: nowrap;
   }
   .mini {
     width: 4rem;
     height: 1.75rem;
     box-sizing: border-box;
-    background: var(--colors-skeleton-0-surface);
-    border: 1px solid var(--colors-skeleton-1-boundary);
+    background: var(--surface);
+    border: 1px solid var(--boundary);
     border-radius: 0.2rem;
     padding: 0 0.5rem;
-    color: var(--text-primary);
+    color: var(--text-strong);
     font-family: var(--font-family-code);
     font-size: var(--font-size-xs);
     outline: none;
@@ -868,7 +868,7 @@
     font-size: var(--font-size-sm);
   }
   .mini:focus {
-    border-color: var(--colors-theme-primary-contrast);
+    border-color: var(--signal-primary-ink);
   }
   .split {
     flex: none;
@@ -877,9 +877,9 @@
     cursor: row-resize;
     touch-action: none;
     position: relative;
-    background: var(--colors-skeleton-1-surface);
-    border-top: 1px solid var(--colors-skeleton-2-boundary);
-    border-bottom: 1px solid var(--colors-skeleton-2-boundary);
+    background: var(--surface-lift);
+    border-top: 1px solid var(--boundary-soft);
+    border-bottom: 1px solid var(--boundary-soft);
   }
   .split.narrow {
     height: 22px;
@@ -893,18 +893,18 @@
     height: 4px;
     border-radius: 2px;
     transform: translate(-50%, -50%);
-    background: var(--colors-skeleton-2-boundary);
+    background: var(--divider);
   }
   .split:hover::after,
   .split:active::after {
-    background: var(--colors-theme-primary-contrast);
+    background: var(--signal-primary-ink);
   }
   .results {
     flex: 1 4 6rem;
     min-height: 6rem;
     display: flex;
     flex-direction: column;
-    background: var(--colors-skeleton-2-surface);
+    background: var(--surface-sunk);
   }
   .results-head {
     flex: none;
@@ -918,10 +918,10 @@
     font-family: var(--font-family-serif-heading);
     font-size: var(--font-size-2xl);
     line-height: 1;
-    color: var(--text-primary);
+    color: var(--text-strong);
   }
   .big.none {
-    color: var(--colors-system-error-contrast);
+    color: var(--signal-negative-ink);
   }
   .results-note {
     display: flex;
@@ -936,20 +936,20 @@
     font-size: var(--font-size-2xs);
     padding: 0.5rem 0.8rem;
     border-radius: 0.2rem;
-    border: 1px solid var(--colors-skeleton-2-boundary);
+    border: 1px solid var(--boundary-soft);
     background: transparent;
-    color: var(--text-support);
+    color: var(--text-light);
     cursor: pointer;
     white-space: nowrap;
   }
   .add.ready {
-    border-color: var(--colors-theme-primary-contrast);
-    color: var(--colors-theme-primary-contrast);
-    background: var(--colors-skeleton-1-surface);
+    border-color: var(--signal-primary-ink);
+    color: var(--signal-primary-ink);
+    background: var(--surface-lift);
   }
   .add.ready.amber {
-    border-color: var(--colors-system-warning-contrast);
-    color: var(--colors-system-warning-contrast);
+    border-color: var(--signal-caution-ink);
+    color: var(--signal-caution-ink);
   }
   .add:disabled {
     cursor: default;
@@ -967,7 +967,7 @@
     gap: 0.6rem;
     padding: 0.4rem 0;
     border: none;
-    border-bottom: 1px solid var(--colors-skeleton-1-boundary);
+    border-bottom: 1px solid var(--boundary);
     background: transparent;
     cursor: default;
     text-align: left;
@@ -977,10 +977,10 @@
     cursor: pointer;
   }
   .line.pinned {
-    background: var(--colors-skeleton-2-surface);
+    background: var(--surface-sunk);
   }
   .line:hover {
-    background: var(--colors-skeleton-1-surface);
+    background: var(--surface-lift);
   }
   .bar {
     flex: none;
@@ -997,7 +997,7 @@
   .learning {
     font-family: var(--font-family-serif-heading);
     font-size: var(--font-size-sm);
-    color: var(--text-primary);
+    color: var(--text-strong);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -1005,7 +1005,7 @@
   .known {
     font-family: var(--font-family-sans-text);
     font-size: var(--font-size-2xs);
-    color: var(--text-support);
+    color: var(--text-light);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -1014,7 +1014,7 @@
     flex: none;
     font-family: var(--font-family-code);
     font-size: var(--font-size-2xs);
-    color: var(--text-support);
+    color: var(--text-light);
     opacity: 0.7;
     white-space: nowrap;
   }
@@ -1022,13 +1022,13 @@
     flex: none;
     font-family: var(--font-family-code);
     font-size: var(--font-size-sm);
-    color: var(--text-support);
+    color: var(--text-light);
     opacity: 0.6;
     width: 0.9rem;
     text-align: right;
   }
   .plus.on {
-    color: var(--colors-theme-primary-contrast);
+    color: var(--signal-primary-ink);
     opacity: 1;
   }
   .empty {
@@ -1036,7 +1036,7 @@
     padding-top: 0.5rem;
     font-family: var(--font-family-sans-text);
     font-size: var(--font-size-2xs);
-    color: var(--colors-system-error-contrast);
+    color: var(--signal-negative-ink);
     line-height: 1.5;
   }
 </style>

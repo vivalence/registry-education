@@ -21,8 +21,8 @@
     labels,
     language = {},
     status,
-    asset = null,
-    assetOf = () => null,
+    file = null,
+    fileOf = () => null,
     position,
     total,
     first,
@@ -133,7 +133,7 @@
   );
   const corrected = $derived(Boolean(correction && POSITIVE.includes(correction.signal)));
   const shown = $derived(corrected ? { ...correction, corrected: true } : result);
-  const feedbackAsset = $derived(recall === "KNOWN" ? null : asset);
+  const feedbackFile = $derived(recall === "KNOWN" ? null : file);
 
   $effect(() => {
     if (phase !== "preview") return;
@@ -358,7 +358,7 @@
       {phase}
       {method}
       {status}
-      {asset}
+      {file}
       turn={rep}
       {labels}
       {span}
@@ -378,12 +378,12 @@
         {prompt}
         {editing}
         revealed={phase === "preview"}
-        {assetOf}
+        {fileOf}
         oncorrect={correct}
         onselect={select} />
     {:else if gameplay === "FLIP"}
       {#if revealed}
-        <FlipReveal {answer} example={answerExample} {asset} label={answerLabel} />
+        <FlipReveal {answer} example={answerExample} {file} label={answerLabel} />
       {/if}
     {:else if phase === "feedback"}
       {#if pending}
@@ -396,7 +396,7 @@
           {note}
           example={answerExample}
           forgiving={axes.forgiving}
-          asset={feedbackAsset}
+          file={feedbackFile}
           dense={compact} />
       {/if}
     {/if}
@@ -481,7 +481,7 @@
     gap: 0.5rem;
     font-family: var(--font-family-code);
     font-size: var(--font-size-sm);
-    color: var(--colors-theme-secondary-contrast);
+    color: var(--signal-primary-ink);
     margin-top: 1.5rem;
   }
   .btn {
@@ -496,21 +496,21 @@
     font-family: var(--font-family-sans-text);
   }
   .unknown {
-    background: var(--colors-system-error-surface);
-    color: var(--colors-system-error-contrast);
+    background: var(--signal-negative-tint);
+    color: var(--signal-negative-ink);
   }
   .known {
-    background: var(--colors-system-success-surface);
-    color: var(--colors-system-success-contrast);
+    background: var(--signal-positive-tint);
+    color: var(--signal-positive-ink);
   }
   .easy {
-    background: var(--colors-theme-primary-surface);
-    color: var(--colors-theme-primary-contrast);
+    background: var(--signal-primary-tint);
+    color: var(--signal-primary-ink);
   }
   .reveal {
     background: transparent;
-    border: 1px solid var(--colors-skeleton-1-boundary);
-    color: var(--text-body);
+    border: 1px solid var(--boundary);
+    color: var(--text-ink);
     font-weight: 500;
   }
 </style>

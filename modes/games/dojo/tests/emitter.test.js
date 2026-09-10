@@ -1,7 +1,9 @@
 import { specimen } from "@vivalence/typology";
 import { mountMode } from "@vivalence/runtime/scenarios";
+import { viewable } from "./viewable.js";
 
 import * as dojo from "../dojo.viva.js";
+import * as domain from "../../../../domain/domain.viva.js";
 import * as types from "../types.js";
 import * as fold from "../fold.js";
 
@@ -11,7 +13,12 @@ specimen.describe("dojo emitter", () => {
   let scenario;
 
   specimen.beforeAll(async () => {
-    scenario = await mountMode(dojo);
+    scenario = await mountMode(dojo, { domain });
+    viewable(scenario, dojo);
+    await scenario.scoped(async () => {
+      await scenario.daemon.entities.file.ensure({ mode: scenario.mode.entity.id, path: "audio/thanks.mp3", mount: "/dev/null", mime: "audio/mpeg", hash: "thanks", integrity: "sha256-thanks", bytes: 0 });
+      await scenario.daemon.entities.em.flush();
+    });
   });
 
   specimen.afterAll(async () => {

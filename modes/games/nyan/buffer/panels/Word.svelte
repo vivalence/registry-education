@@ -46,24 +46,24 @@
   }
   .word.todo,
   .pend {
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
     opacity: 0.55;
   }
   .word.done.g,
   .g {
-    color: var(--colors-system-success-contrast);
+    color: var(--signal-positive-ink);
   }
   .word.done.y,
   .y {
-    color: var(--colors-system-warning-contrast);
+    color: var(--signal-caution-ink);
   }
   .word.done.r,
   .r {
-    color: var(--colors-system-error-contrast);
+    color: var(--signal-negative-ink);
   }
   /* reveal — the committed word replaced by its gloss, faded in in place (river only) */
   .word.reveal {
-    color: var(--colors-skeleton-1-contrast);
+    color: var(--text-strong);
     animation: reveal 0.25s ease both;
   }
   @keyframes reveal {

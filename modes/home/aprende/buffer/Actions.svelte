@@ -1,7 +1,7 @@
 <script>
   import { Section } from "@vivalence/drapes";
 
-  const { terminal, buffer } = $props();
+  const { terminal, buffer, surface } = $props();
 
   const GAMES = [
     { key: "flashcard", label: "Flashcard", accent: "#5b8c5a" },
@@ -116,9 +116,9 @@
   }
 
   async function fire(route, input) {
-    const before = new Set(terminal.thread.$buffers.get().map((entry) => entry.id));
-    await buffer.mode.emit[route]({ ...input, thread: terminal.thread.id });
-    const fresh = terminal.thread.$buffers.get().find((entry) => !before.has(entry.id));
+    const before = new Set(buffer.thread.$buffers.get().map((entry) => entry.id));
+    await buffer.mode.emit[route]({ ...input, thread: buffer.thread.id });
+    const fresh = buffer.thread.$buffers.get().find((entry) => !before.has(entry.id));
     if (fresh) terminal.buffer = fresh;
     return !!fresh;
   }
@@ -373,7 +373,7 @@
   .phint {
     font-family: var(--font-family-sans-text);
     font-size: var(--font-size-xs);
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
   .row {
     display: flex;
@@ -386,7 +386,7 @@
     font-size: var(--font-size-xs);
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
   .seg {
     display: flex;
@@ -401,7 +401,7 @@
     border: 1px solid color-mix(in srgb, var(--accent) 32%, transparent);
     border-radius: 0.4rem;
     background: transparent;
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
     font-family: var(--font-family-sans-text);
     font-size: var(--font-size-sm);
     cursor: pointer;

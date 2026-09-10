@@ -20,18 +20,18 @@ export const conjugations = new Vector().open(
     }),
   },
   async (ctx) => {
-    const game = ctx.daemon.modes.game?.["dojo"];
+    const game = ctx.modes.game?.["dojo"];
     if (!game) return { condition: "ERROR", message: "dojo is not mounted" };
 
     const where = {};
     if (ctx.input.uses?.length) {
-      const rows = await ctx.daemon.entities.literal.findByIdentifiers(ctx.input.uses);
+      const rows = await ctx.entities.literal.findByIdentifiers(ctx.input.uses);
       if (!rows.length) {
         return {
           condition: "ERROR",
           message: `no literals match ${
             ctx.input.uses.join(", ")
-          } — check slugs via pull or entity_find`,
+          } — check slugs via lookup or entity_find`,
         };
       }
       where.uses = { $in: rows.map((row) => row.id) };

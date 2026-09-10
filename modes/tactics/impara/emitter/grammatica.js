@@ -10,14 +10,14 @@ export const grammatica = new Vector().open(
     }),
   },
   async (ctx) => {
-    const game = ctx.daemon.modes.game;
+    const game = ctx.modes.game;
 
-    const conjugations = await ctx.daemon.entities.literal.feed(
+    const conjugations = await ctx.entities.literal.feed(
       ctx.input.where,
       {
         limit: ctx.input.limit,
         blacklist: ctx.input.blacklist,
-        populate: ["uses", "symbols", "retentions"],
+        populate: ["uses", "symbols", "notes"],
       },
     );
     if (!conjugations.length) return;
@@ -26,7 +26,7 @@ export const grammatica = new Vector().open(
       conjugation.uses.getItems()
     );
     const untouched = forms.filter((form) =>
-      !form.retention || form.retention.is.virgin
+      !form.assess() || form.assess().is.virgin
     );
     if (untouched.length && game.exhibit) {
       ctx.pool.add(
@@ -44,7 +44,7 @@ export const grammatica = new Vector().open(
       practice.add(game["dojo"].emit.literals({ literals: [conjugation], gameplay: "CONJUGATE", recall: "LEARNING" }));
     }
 
-    const failed = forms.filter((form) => form.retention?.is.failed);
+    const failed = forms.filter((form) => form.assess()?.is.failed);
     if (failed.length) {
       practice.add(
         game["dojo"].emit.conjugations({

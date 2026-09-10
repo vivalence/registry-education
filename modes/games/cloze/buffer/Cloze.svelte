@@ -2,17 +2,18 @@
   import { string } from "@vivalence/typology";
   import { Keyboard, Asset, ViewportLock, Desk, persist } from "@vivalence/drapes";
 
-  const { terminal, buffer } = $props();
+  const { terminal, buffer, surface } = $props();
+  const files = terminal.client.runtime.entities.file.$entities;
 
   let keyboard;
 
   const data = buffer.data ?? {};
   const gameplay = data.gameplay ?? "TYPE";
-  let language = $state.raw(terminal.daemon.statics?.language ?? {});
+  let language = $state.raw(buffer.mode.daemon.statics?.language ?? {});
   const blankIndices = new Set(data.blankIndices ?? []);
   const forgiving = data.forgiving ?? true;
 
-  terminal.daemon.connection
+  buffer.mode.daemon.connection
     .call("/language", {})
     .then((pair) => {
       if (pair?.known || pair?.learning) language = pair;
@@ -26,11 +27,13 @@
 
   const tokens = $derived(literal?.trait?.ANNOTATED?.tokens ?? []);
   const known = $derived(literal?.trait?.TRANSLATED?.known);
-  const asset = $derived(terminal.daemon.getAsset(literal?.trait?.VOCALIZED?.asset));
+  const file = $derived(
+    $files.find((file) => file.path === literal?.trait?.VOCALIZED?.asset?.path && file.mode.daemon === buffer.mode.daemon) ?? null,
+  );
   const isListenMode = $derived(gameplay === "LISTEN");
 
   if (!literal) {
-    terminal.daemon.connection.call("/pick/literal/feed", { limit: 1, where: { traits: { $contains: "ANNOTATED" } } }).then(([lit]) => {
+    buffer.mode.daemon.connection.call("/pick/literal/feed", { limit: 1, where: { traits: { $contains: "ANNOTATED" } } }).then(([lit]) => {
       literal = lit ?? null;
       if (literal && !blankIndices.size) blankIndices.add(0);
       loading = false;
@@ -56,7 +59,7 @@
       if (!token) continue;
       const correct = evaluate(i);
       const literalRef = token.literal ?? literal.id;
-      terminal.daemon.connection.call("/review/literal", {
+      buffer.mode.daemon.connection.call("/review/literal", {
         signal: correct ? "SUCCESS" : "MISTAKE",
         scope: { literal: typeof literalRef === "object" ? literalRef.id ?? literalRef : literalRef },
       });
@@ -115,8 +118,8 @@
       {:else}
         <div class="meta">
           <span class="meta-lang">Listen</span>
-          {#if asset}
-            <div class="audio-block"><Asset autoplay={true} {asset} /></div>
+          {#if file}
+            <div class="audio-block"><Asset autoplay={true} {file} /></div>
           {/if}
         </div>
       {/if}
@@ -207,12 +210,12 @@
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--colors-theme-primary-contrast);
+    color: var(--signal-primary-ink);
   }
   .meta-hint {
     font-family: var(--font-family-serif-heading);
     font-size: var(--font-size-md);
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
     font-style: italic;
   }
 
@@ -235,10 +238,10 @@
     font-family: var(--font-family-serif-heading);
     font-size: var(--font-size-xl);
     line-height: 1.5;
-    color: var(--colors-skeleton-1-contrast);
+    color: var(--text-strong);
   }
   .tok-hidden {
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
     letter-spacing: 0.15em;
   }
 
@@ -246,7 +249,7 @@
     display: inline-flex;
     flex-direction: column;
     align-items: stretch;
-    border-bottom: 2px solid var(--colors-theme-primary-contrast);
+    border-bottom: 2px solid var(--signal-primary-ink);
     padding: 0;
     line-height: 1.5;
   }
@@ -255,7 +258,7 @@
     font-family: var(--font-family-serif-heading);
     font-size: var(--font-size-xl);
     line-height: 1.5;
-    color: var(--colors-skeleton-1-contrast);
+    color: var(--text-strong);
     background: none;
     border: none;
     outline: none;
@@ -268,7 +271,7 @@
   .gap-gloss {
     font-family: var(--font-family-code);
     font-size: var(--font-size-xs);
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
 
   .gap-answer {
@@ -278,13 +281,13 @@
     text-align: center;
     padding: 0 0.25rem;
   }
-  .gap-ok { color: var(--colors-system-success-contrast); }
-  .gap-wrong { color: var(--colors-system-error-contrast); }
+  .gap-ok { color: var(--signal-positive-ink); }
+  .gap-wrong { color: var(--signal-negative-ink); }
 
   .gap-yours {
     font-family: var(--font-family-code);
     font-size: var(--font-size-xs);
-    color: var(--colors-system-error-contrast);
+    color: var(--signal-negative-ink);
     text-decoration: line-through;
     opacity: 0.7;
   }
@@ -299,18 +302,18 @@
     min-height: 48px;
     padding: 0.625rem 1.25rem;
     border-radius: 0.5rem;
-    border: 1px solid var(--colors-skeleton-1-boundary);
-    background: color-mix(in srgb, var(--colors-skeleton-1-surface) 70%, var(--colors-skeleton-2-surface));
-    color: var(--colors-palette-gray-100);
+    border: 1px solid var(--boundary);
+    background: color-mix(in srgb, var(--surface-lift) 70%, var(--surface-sunk));
+    color: var(--text-light);
     font-size: var(--font-size-lg);
     font-family: var(--font-family-serif-heading);
     cursor: pointer;
     transition: all 0.12s;
   }
-  .opt:hover:not(:disabled) { border-color: var(--colors-skeleton-1-contrast); }
+  .opt:hover:not(:disabled) { border-color: var(--text-strong); }
   .opt-selected {
-    background: color-mix(in srgb, var(--colors-theme-primary-surface) 60%, transparent);
-    border-color: var(--colors-theme-primary-contrast);
+    background: color-mix(in srgb, var(--signal-primary-tint) 60%, transparent);
+    border-color: var(--signal-primary-ink);
   }
 
   .loading {
@@ -321,7 +324,7 @@
   }
   .dot {
     width: 6px; height: 6px; border-radius: 50%;
-    background: var(--colors-skeleton-1-boundary);
+    background: var(--divider);
     animation: pulse 1s ease-in-out infinite;
   }
   @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
@@ -331,7 +334,7 @@
     width: 100%;
     text-align: center;
     padding: 1rem;
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
     font-size: var(--font-size-sm);
     font-family: var(--font-family-code);
   }
@@ -348,13 +351,13 @@
     font-family: var(--font-family-sans-text);
   }
   .btn-submit {
-    background: var(--colors-theme-primary-surface);
-    color: var(--colors-theme-primary-contrast);
+    background: var(--signal-primary-tint);
+    color: var(--signal-primary-ink);
   }
   .btn-next {
     background: transparent;
-    border: 1px solid var(--colors-skeleton-1-boundary);
-    color: var(--colors-skeleton-1-contrast);
+    border: 1px solid var(--boundary);
+    color: var(--text-strong);
   }
 
   @media (max-width: 640px) {

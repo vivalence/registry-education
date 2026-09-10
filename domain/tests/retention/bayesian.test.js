@@ -346,10 +346,10 @@ specimen.describe("bayesian / stress", () => {
     specimen.expect(Number.isFinite(perfect.state[2])).toBe(true);
   });
 
-  specimen.it("sql.strength returns valid SQL fragment", () => {
-    const sql = bayesian.sql.strength("m0");
-    specimen.expect(sql).toContain("m0.lastAt");
-    specimen.expect(sql).toContain("m0.state");
+  specimen.it("sql.strength returns valid SQL fragment over the payload path it is handed", () => {
+    const sql = bayesian.sql.strength((field) => `json_extract(n0.trait, '$.RETAINED.${field}')`);
+    specimen.expect(sql).toContain("json_extract(n0.trait, '$.RETAINED.lastAt')");
+    specimen.expect(sql).toContain("json_extract(n0.trait, '$.RETAINED.state')");
     specimen.expect(sql).toContain("exp(");
   });
 });

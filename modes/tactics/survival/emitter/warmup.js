@@ -20,36 +20,38 @@ export default async (ctx) => {
   };
 
   const failures = collect(
-    await ctx.daemon.entities.literal.byLastSignal(
+    await ctx.entities.literal.byLastSignal(
       ["MISTAKE", "FAILURE", "NEUTRAL"],
-      { ...ctx.input.where, retentions: { nextAt: { $lt: horizon } } },
+      { ...ctx.input.where, notes: { trait: { RETAINED: { due: { $lt: horizon } } } } },
       { limit: 4, blacklist: ctx.input.blacklist },
     ),
   );
 
   const due = collect(
-    await ctx.daemon.entities.literal.feed(ctx.input.where, {
+    await ctx.entities.literal.feed(ctx.input.where, {
       limit: 4,
       blacklist: ctx.input.blacklist,
     }),
   );
 
   const weak = collect(
-    await ctx.daemon.entities.literal.byStrength(
-      { ...ctx.input.where, retentions: { strength: { $gte: 0.1, $lte: 0.5 } } },
-      { limit: 4, blacklist: ctx.input.blacklist },
-    ),
+    (await ctx.entities.literal.byStrength(ctx.input.where, { limit: 12, blacklist: ctx.input.blacklist }))
+      .filter((word) => {
+        const strength = word.assess()?.strength ?? 0;
+        return strength >= 0.1 && strength <= 0.5;
+      })
+      .slice(0, 4),
   );
   const words = array.shuffle([...failures, ...due, ...weak]);
 
   if (!words.length) return;
 
-  const distractors = await ctx.daemon.entities.literal.find(ctx.input.where ?? {}, { limit: 30 });
+  const distractors = await ctx.entities.literal.find(ctx.input.where ?? {}, { limit: 30 });
 
-  const untouched = words.filter((word) => !word.retention || word.retention.is.virgin);
+  const untouched = words.filter((word) => !word.assess() || word.assess().is.virgin);
   if (untouched.length) {
     ctx.pool.add(
-      ctx.daemon.modes.game.exhibit.emit.present({
+      ctx.modes.game.exhibit.emit.present({
         layout: "TABLE",
         title: "New words",
         literals: untouched,
@@ -62,10 +64,10 @@ export default async (ctx) => {
   for (const word of words) {
     const vocalized = word.traits?.includes("VOCALIZED");
 
-    if (!word.retention || word.retention.is.virgin) {
-      // practice.add(ctx.daemon.modes.game.exhibit.emit.present({ literals: [word] }));
+    if (!word.assess() || word.assess().is.virgin) {
+      // practice.add(ctx.modes.game.exhibit.emit.present({ literals: [word] }));
       practice.add(
-        ctx.daemon.modes.game.judge.emit.literal({
+        ctx.modes.game.judge.emit.literal({
           literal: word,
           distractors,
           speed: { rate: "SLOW" },
@@ -73,7 +75,7 @@ export default async (ctx) => {
       );
     } else if (vocalized && random.coinflip(0.7)) {
       practice.add(
-        ctx.daemon.modes.game["dojo"].emit.listen.literal({
+        ctx.modes.game["dojo"].emit.listen.literal({
           literal: word,
           distractors,
           gameplay: "TYPE",
@@ -81,7 +83,7 @@ export default async (ctx) => {
         }),
       );
     } else {
-      practice.add(ctx.daemon.modes.game["dojo"].emit.write.literals({ literal: word }));
+      practice.add(ctx.modes.game["dojo"].emit.write.literals({ literal: word }));
     }
   }
 
@@ -90,19 +92,19 @@ export default async (ctx) => {
   // ctx.pool
   //   .section(
   //     ...words
-  //       // .filter((l) => !l.retention?.is.virgin)
+  //       // .filter((l) => !l.assess()?.is.virgin)
   //       // .filter((word) => !word.traits?.includes("VOCALIZED"))
   //       .map((literal) =>
-  //         ctx.daemon.modes.game.flashcard.emit.literals({
-  //           recall: !literal.retention?.is.succeeded ? "KNOWN" : "LEARNING",
+  //         ctx.modes.game.flashcard.emit.literals({
+  //           recall: !literal.assess()?.is.succeeded ? "KNOWN" : "LEARNING",
   //           literal,
   //         }),
   //       ),
 
   //     ...words
-  //       .filter((l) => l.retention?.is.virgin)
+  //       .filter((l) => l.assess()?.is.virgin)
   //       .map((literal) =>
-  //         ctx.daemon.modes.game.judge.emit.literal({
+  //         ctx.modes.game.judge.emit.literal({
   //           literal,
   //           distractors,
   //           speed: { rate: "SLOW" },
@@ -111,11 +113,11 @@ export default async (ctx) => {
   //     ...words
   //       .filter((word) => word.traits?.includes("VOCALIZED"))
   //       .map((literal) =>
-  //         ctx.daemon.modes.game.listen.emit.literal({
+  //         ctx.modes.game.listen.emit.literal({
   //           literal,
   //           distractors,
   //           // gameplay: "TYPE",
-  //           gameplay: !literal.retention?.is.succeeded ? "PICK" : "TYPE",
+  //           gameplay: !literal.assess()?.is.succeeded ? "PICK" : "TYPE",
   //           recall: "KNOWN",
   //         }),
   //       ),

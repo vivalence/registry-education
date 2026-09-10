@@ -2,7 +2,7 @@
   import { Asset } from "@vivalence/drapes";
   import Chip from "./Chip.svelte";
 
-  const { result, typed, answer, example, note, forgiving = true, asset = null, dense = false } = $props();
+  const { result, typed, answer, example, note, forgiving = true, file = null, dense = false } = $props();
 
   const landed = $derived(result.signal === "SUCCESS" || result.signal === "MASTERY");
   const label = $derived(result.corrected ? "corrected" : result.signal.toLowerCase());
@@ -30,14 +30,14 @@
     {#if landed}
       <span class="key" class:landed>{dense ? label : "answer"}</span>
       <span class="value right">{answer}</span>
-      <span class="dot">{#if asset}<Asset {asset} variant="dot" autoplay={true} />{/if}</span>
+      <span class="dot">{#if file}<Asset {file} variant="dot" autoplay={true} />{/if}</span>
     {:else}
       <span class="key">you wrote</span>
       <span class="value wrong">{typed?.trim() || "—"}</span>
       <span class="dot"></span>
       <span class="key">expected</span>
       <span class="value right">{answer}</span>
-      <span class="dot">{#if asset}<Asset {asset} variant="dot" autoplay={true} />{/if}</span>
+      <span class="dot">{#if file}<Asset {file} variant="dot" autoplay={true} />{/if}</span>
     {/if}
   </div>
 
@@ -62,7 +62,7 @@
 <style>
   .divider {
     height: 1px;
-    background: color-mix(in srgb, var(--colors-skeleton-1-boundary) 60%, transparent);
+    background: color-mix(in srgb, var(--divider) 60%, transparent);
     margin: 1.75rem 0 1.5rem 0;
   }
   .eval {
@@ -80,15 +80,15 @@
     font-size: var(--font-size-sm);
     font-weight: 600;
     letter-spacing: 0.1em;
-    color: var(--colors-system-error-contrast);
+    color: var(--signal-negative-ink);
   }
   .signal.landed {
-    color: var(--colors-system-success-contrast);
+    color: var(--signal-positive-ink);
   }
   .how {
     font-family: var(--font-family-sans-text);
     font-size: var(--font-size-base);
-    color: var(--text-support);
+    color: var(--text-light);
   }
   .chips {
     display: flex;
@@ -105,11 +105,11 @@
   .key {
     font-family: var(--font-family-code);
     font-size: var(--font-size-2xs);
-    color: var(--text-support);
+    color: var(--text-light);
     white-space: nowrap;
   }
   .key.landed {
-    color: var(--colors-system-success-contrast);
+    color: var(--signal-positive-ink);
   }
   .value {
     font-family: var(--font-family-code);
@@ -123,28 +123,28 @@
     align-self: center;
   }
   .wrong {
-    color: var(--colors-system-error-contrast);
+    color: var(--signal-negative-ink);
   }
   .right {
-    color: var(--colors-system-success-contrast);
+    color: var(--signal-positive-ink);
   }
   .example {
     font-family: var(--font-family-serif-heading);
     font-size: var(--font-size-base);
-    color: var(--text-support);
+    color: var(--text-light);
     font-style: italic;
     margin: 0;
   }
   .note {
     font-family: var(--font-family-sans-text);
     font-size: var(--font-size-sm);
-    color: var(--text-support);
+    color: var(--text-light);
     margin: 0;
   }
   .note-key {
     font-family: var(--font-family-code);
     font-size: var(--font-size-xs);
-    color: var(--colors-system-warning-contrast);
+    color: var(--signal-caution-ink);
   }
 
   .eval.dense {

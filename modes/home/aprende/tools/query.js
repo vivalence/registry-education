@@ -29,7 +29,7 @@ export const query = new Vector().open(
   async (ctx) => {
     if (ctx.input.entity === "symbol") {
       const where = ctx.input.text ? { slug: { $like: `%${ctx.input.text}%` } } : {};
-      const symbols = await ctx.daemon.entities.symbol.find(where, { limit: ctx.input.limit });
+      const symbols = await ctx.entities.symbol.find(where, { limit: ctx.input.limit });
       return {
         results: symbols.map((symbol) => ({ slug: symbol.slug, traits: symbol.traits })),
       };
@@ -40,12 +40,12 @@ export const query = new Vector().open(
     if (ctx.input.symbols?.length) where.symbols = ctx.input.symbols;
     if (ctx.input.ontology) where.ontology = ctx.input.ontology;
 
-    const opts = { limit: ctx.input.limit, populate: ["retentions", "symbols"] };
+    const opts = { limit: ctx.input.limit, populate: ["notes", "symbols"] };
     const fetch = {
-      match: () => ctx.daemon.entities.literal.find(where, opts),
-      weak: () => ctx.daemon.entities.literal.byStrength(where, opts),
-      due: () => ctx.daemon.entities.literal.due(where, opts),
-      novel: () => ctx.daemon.entities.literal.novel(where, opts),
+      match: () => ctx.entities.literal.find(where, opts),
+      weak: () => ctx.entities.literal.byStrength(where, opts),
+      due: () => ctx.entities.literal.due(where, opts),
+      novel: () => ctx.entities.literal.novel(where, opts),
     }[ctx.input.pick];
     const literals = await fetch();
 
@@ -55,7 +55,7 @@ export const query = new Vector().open(
         known: literal.trait?.TRANSLATED?.known ?? "",
         learning: literal.trait?.TRANSLATED?.learning ?? "",
         ontology: literal.ontology,
-        status: literal.retention?.status ?? "UNTOUCHED",
+        status: literal.assess()?.status ?? "UNTOUCHED",
         symbols: literal.symbols.getItems().map((symbol) => symbol.slug),
       })),
     };

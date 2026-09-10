@@ -1,0 +1,18 @@
+const T = Deno.env.get("HOME") + "/.viva/registry/education/topographies/english-to-spanish/dataset/literals";
+const words = [];
+for await (const f of Deno.readDir(`${T}/words`)) if (f.name.endsWith(".js")) words.push(...(await import(`${T}/words/${f.name}`)).default);
+const sentences = (await import(`${T}/sentences.js`)).default;
+const conj = (await import(`${T}/conjugation.js`)).default;
+const rank = (r) => r.trait.RANKED?.rank ?? Infinity;
+const sym = (r, p) => (r.symbols ?? []).map((s) => s.slug).filter((s) => s.startsWith(p)).map((s) => s.slice(p.length)).join(",");
+const w = words.sort((a, b) => rank(a) - rank(b));
+console.log("== WORDS by rank (slug · rank · zipf · known · pos · cefr)");
+w.slice(0, 500).forEach((r, i) => console.log(`${String(i + 1).padStart(3)} ${r.slug.padEnd(44)} r${String(rank(r)).padStart(5)} z${r.trait.RANKED?.zipf ?? "-"} ${String(r.trait.TRANSLATED.known).slice(0, 22).padEnd(22)} ${sym(r, "proficiency.cefr.")}`));
+console.log("\n== WORD rank stats"); const ranks = w.map(rank).filter(Number.isFinite); const dup = {}; for (const r of ranks) dup[r] = (dup[r] ?? 0) + 1; console.log("ranked", ranks.length, "unranked", w.length - ranks.length, "distinct ranks", Object.keys(dup).length, "rank collisions", Object.values(dup).filter((n) => n > 1).length, "min", Math.min(...ranks), "max", Math.max(...ranks));
+console.log("rank==1 rows:", w.filter((r) => rank(r) === 1).map((r) => r.slug).join(" "));
+const forms = w.slice(0, 500).filter((r) => /\.verb\.(indicative|subjunctive|conditional|imperative)\./.test(r.slug)).length; const lemmas = w.slice(0, 500).filter((r) => /\.verb\.infinitive$/.test(r.slug)).length;
+console.log("top500: inflected verb forms", forms, "· infinitives", lemmas, "· pos histogram", JSON.stringify(Object.entries(w.slice(0, 500).reduce((h, r) => { const p = sym(r, "word.part-of-speech."); h[p] = (h[p] ?? 0) + 1; return h; }, {}))));
+console.log("\n== SENTENCES by rank");
+sentences.sort((a, b) => rank(a) - rank(b)).slice(0, 100).forEach((r, i) => console.log(`${String(i + 1).padStart(3)} r${String(rank(r)).padStart(4)} ${r.trait.TRANSLATED.learning.padEnd(46)} ${r.trait.TRANSLATED.known.slice(0, 40)} ${sym(r, "sentence.tense.")} ${r.trait.VOCALIZED ? "♪" : ""}`));
+console.log("\n== CONJUGATIONS by rank");
+conj.sort((a, b) => rank(a) - rank(b)).slice(0, 50).forEach((r, i) => console.log(`${String(i + 1).padStart(3)} r${String(rank(r)).padStart(4)} ${r.slug.padEnd(34)} ${Object.keys(r.trait.CONJUGATED.paradigm).length} forms ${sym(r, "word.regularity.")}`));

@@ -32,9 +32,9 @@
     gap: 0.4rem;
     padding: 0.3rem 0.55rem;
     border-radius: 0.2rem;
-    border: 1px solid var(--colors-skeleton-2-boundary);
+    border: 1px solid var(--boundary-soft);
     background: transparent;
-    color: var(--text-support);
+    color: var(--text-light);
     font-family: var(--font-family-code);
     font-size: var(--font-size-2xs);
     line-height: 1.2;
@@ -43,25 +43,25 @@
     min-height: 1.75rem;
   }
   .segment:hover {
-    border-color: var(--text-support);
-    color: var(--text-primary);
+    border-color: var(--text-light);
+    color: var(--text-strong);
   }
   .segment.on {
-    border-color: var(--colors-theme-primary-contrast);
-    background: var(--colors-skeleton-2-surface);
-    color: var(--colors-theme-primary-contrast);
+    border-color: var(--signal-primary-ink);
+    background: var(--surface-sunk);
+    color: var(--signal-primary-ink);
   }
   .segment.on[data-tone="secondary"] {
-    border-color: var(--colors-theme-secondary-contrast);
-    color: var(--colors-theme-secondary-contrast);
+    border-color: var(--signal-primary-ink);
+    color: var(--signal-primary-ink);
   }
   .segment.on[data-tone="warning"] {
-    border-color: var(--colors-system-warning-contrast);
-    color: var(--colors-system-warning-contrast);
+    border-color: var(--signal-caution-ink);
+    color: var(--signal-caution-ink);
   }
   .segment.on[data-tone="danger"] {
-    border-color: var(--colors-system-error-contrast);
-    color: var(--colors-system-error-contrast);
+    border-color: var(--signal-negative-ink);
+    color: var(--signal-negative-ink);
   }
   .segment.dim {
     opacity: 0.45;
