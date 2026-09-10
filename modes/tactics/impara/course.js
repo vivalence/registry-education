@@ -8,7 +8,7 @@ export const buckets = [
         name: "Vocabolario",
         description: "Parole per frequenza, ripasso prima",
       },
-      MASKED: { where: { symbols: ["word"], rank: { $gt: 0 } }, limit: 12 },
+      MASKED: { where: { symbols: ["word"], trait: { RANKED: { rank: { $gt: 0 } } } }, limit: 12 },
       AIMED: { mount: "/emit/vocabolario" },
       QUEUEING: { depth: 3 },
     },

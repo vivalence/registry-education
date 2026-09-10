@@ -20,7 +20,7 @@
   .hint {
     font-family: var(--font-family-code);
     font-size: var(--font-size-sm);
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
   .btn {
     display: inline-flex;
@@ -29,9 +29,9 @@
     min-height: 40px;
     padding: 0.5rem 0.9rem;
     border-radius: 0.375rem;
-    border: 1px solid var(--colors-skeleton-1-boundary);
+    border: 1px solid var(--boundary);
     background: transparent;
-    color: var(--colors-palette-gray-200);
+    color: var(--text-light);
     font-family: var(--font-family-code);
     font-size: var(--font-size-sm);
     cursor: pointer;
@@ -39,18 +39,18 @@
   .btn .k {
     padding: 0.05rem 0.35rem;
     border-radius: 0.25rem;
-    background: color-mix(in srgb, var(--colors-skeleton-1-boundary) 25%, transparent);
-    color: var(--colors-skeleton-1-boundary);
+    background: color-mix(in srgb, var(--divider) 25%, transparent);
+    color: var(--boundary);
     font-size: var(--font-size-xs);
   }
   .btn.primary {
     border: none;
-    background: var(--colors-theme-primary-surface);
-    color: var(--colors-theme-primary-contrast);
+    background: var(--signal-primary-tint);
+    color: var(--signal-primary-ink);
     font-weight: 600;
   }
   .btn.primary .k {
-    background: color-mix(in srgb, var(--colors-theme-primary-contrast) 22%, transparent);
-    color: var(--colors-theme-primary-contrast);
+    background: color-mix(in srgb, var(--signal-primary-ink) 22%, transparent);
+    color: var(--signal-primary-ink);
   }
 </style>

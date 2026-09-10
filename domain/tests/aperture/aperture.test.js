@@ -14,7 +14,7 @@ specimen.describe("domain aperture — /pick/literal/*", () => {
   specimen.it("refuses an unauthenticated caller", async () => {
     let status = null;
     try {
-      await scenario.conn.call("/pick/literal/feed", { limit: 3 });
+      await scenario.anonymous.call("/pick/literal/feed", { limit: 3 });
     } catch (error) {
       status = error.status ?? error.message;
     }
@@ -81,11 +81,14 @@ specimen.describe("domain aperture — /review/literal", () => {
   specimen.it("reschedules: a reviewed literal leaves novel, its trace count grows per review, lastSignal follows the newest", async () => {
     const novel = await call("/pick/literal/novel", { limit: 50 });
     specimen.expect(novel.map((row) => row.slug)).not.toContain("please");
-    const traces = await call("/userspace/entities/trace/find", { where: { literal: scenario.fixtures.please.id } });
+    const traces = await scenario.userspace.call("/userspace/entities/note/find", { where: { literal: scenario.fixtures.please.id, traits: "TRACED" } });
     specimen.expect(traces.length).toBe(3);
-    const missed = await call("/pick/literal/feed", { limit: 50 });
-    const please = missed.find((row) => row.slug === "please");
-    specimen.expect(please?.retentions?.[0]?.lastSignal ?? please?.retention?.lastSignal ?? "MISTAKE").toBe("MISTAKE");
+    const feed = await call("/pick/literal/feed", { limit: 50 });
+    specimen.expect(feed.map((row) => row.slug)).not.toContain("please");
+    const retainedOnes = await call("/pick/literal/byStrength", { limit: 50 });
+    specimen.expect(retainedOnes.map((row) => row.slug)).toContain("please");
+    const [retained] = await scenario.userspace.call("/userspace/entities/note/find", { where: { literal: scenario.fixtures.please.id, traits: "RETAINED" } });
+    specimen.expect(retained.trait.RETAINED.lastSignal).toBe("MISTAKE");
   });
 
   specimen.it("daemon.call proxies the same route in-process (the tools' path)", async () => {
@@ -98,11 +101,11 @@ specimen.describe("domain aperture — /review/literal", () => {
 });
 
 specimen.describe("domain aperture — userspace entities are user-scoped", () => {
-  specimen.it("retention + trace routes exist and answer only this user's rows", async () => {
-    const retentions = await call("/userspace/entities/retention/find", { where: {} });
+  specimen.it("RETAINED and TRACED notes ride the runtime's note route and answer only this user's rows", async () => {
+    const retentions = await scenario.userspace.call("/userspace/entities/note/find", { where: { traits: "RETAINED" } });
     specimen.expect(retentions.length).toBeGreaterThan(0);
     for (const row of retentions) specimen.expect(row.user?.id ?? row.user).toBe(scenario.fixtures.user.id);
-    const traces = await call("/userspace/entities/trace/find", { where: {} });
+    const traces = await scenario.userspace.call("/userspace/entities/note/find", { where: { traits: "TRACED" } });
     specimen.expect(traces.length).toBeGreaterThan(0);
     for (const row of traces) specimen.expect(row.user?.id ?? row.user).toBe(scenario.fixtures.user.id);
   });

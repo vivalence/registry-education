@@ -4767,5 +4767,93 @@ export default [
         "slug": "proficiency.survival"
       }
     ]
+  },
+  {
+    "slug": "rojo.adjective",
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "red",
+        "learning": "rojo"
+      },
+      "EXEMPLIFIED": {
+        "known": "The red truck",
+        "learning": "El camión rojo"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.rojo"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "medio.adjective",
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "half",
+        "learning": "medio"
+      },
+      "EXEMPLIFIED": {
+        "known": "Half an onion",
+        "learning": "Media cebolla"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.medio"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
   }
 ]

@@ -1,4 +1,4 @@
-import { App } from "@vivalence/typology";
+import { mime } from "@vivalence/typology";
 
 export { emitter } from "./emitter/index.js";
 export { aperture } from "./aperture/index.js";
@@ -11,7 +11,9 @@ export const manifest = {
   name: "Impara",
   description:
     "Italian course in three buckets: vocabolario, grammatica, frasi.",
-  traits: ["APPLICATION", "STANDALONE", "EMITTER", "EXPOSED"],
+  traits: ["VIEWABLE", "EMITTER", "EXPOSED"],
 };
 
-export const app = new App("buffer/Impara.svelte");
+export const views = [
+  { slug: "impara", mount: "buffer/Impara.svelte", mime: mime.dom.svelte },
+];

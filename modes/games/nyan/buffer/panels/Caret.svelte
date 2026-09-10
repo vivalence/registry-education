@@ -49,7 +49,7 @@
     left: 0;
     top: 0;
     width: 2px;
-    background: var(--colors-theme-primary-contrast);
+    background: var(--signal-primary-ink);
     transition: transform 0.07s ease;
     pointer-events: none;
     animation: blink 1s step-end infinite;

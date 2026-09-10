@@ -1,13 +1,16 @@
 import { specimen } from "@vivalence/typology";
 import { mountMode } from "@vivalence/runtime/scenarios";
+import { viewable } from "./viewable.js";
 
 import * as dojo from "../dojo.viva.js";
+import * as domain from "../../../../domain/domain.viva.js";
 
 specimen.describe("dojo aperture", () => {
   let scenario;
 
   specimen.beforeAll(async () => {
-    scenario = await mountMode(dojo);
+    scenario = await mountMode(dojo, { domain });
+    viewable(scenario, dojo);
   });
 
   specimen.afterAll(async () => {
@@ -128,7 +131,7 @@ specimen.describe("dojo aperture", () => {
 
   specimen.it("/setup writes the declared state onto the buffer; /commission materializes it", async () => {
     await scenario.scoped(async () => {
-      const bare = await scenario.mode.app.buffer({ thread: scenario.fixtures.thread.id });
+      const bare = await scenario.mode.buffer({ thread: scenario.fixtures.thread.id });
       await scenario.daemon.entities.em.flush();
 
       const set = [{ pick: "feed", where: { symbols: ["greeting"] }, limit: 2 }];
@@ -169,7 +172,7 @@ specimen.describe("dojo aperture", () => {
 
   specimen.it("/session keeps the live session on the buffer; /setup carries it; omitting it clears", async () => {
     await scenario.scoped(async () => {
-      const bare = await scenario.mode.app.buffer({ thread: scenario.fixtures.thread.id });
+      const bare = await scenario.mode.buffer({ thread: scenario.fixtures.thread.id });
       await scenario.daemon.entities.em.flush();
 
       const broadcasts = [];

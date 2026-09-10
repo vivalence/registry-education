@@ -48499,5 +48499,1302 @@ export default [
         "slug": "proficiency.survival"
       }
     ]
+  },
+  {
+    "slug": "subir.verb.imperative.second.singular",
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "go up! (tú)",
+        "learning": "sube"
+      },
+      "EXEMPLIFIED": {
+        "known": "Go up!",
+        "learning": "¡Sube!"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.subir"
+      },
+      {
+        "slug": "word.part-of-speech.verb"
+      },
+      {
+        "slug": "word.suffix.ir"
+      },
+      {
+        "slug": "word.regularity.regular"
+      },
+      {
+        "slug": "word.verb-form.finite"
+      },
+      {
+        "slug": "word.mood.imperative"
+      },
+      {
+        "slug": "word.person.second"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.voice.active"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "subir.verb.imperative.third.singular",
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "go up! (usted)",
+        "learning": "suba"
+      },
+      "EXEMPLIFIED": {
+        "known": "Go up!",
+        "learning": "¡Sube!"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.subir"
+      },
+      {
+        "slug": "word.part-of-speech.verb"
+      },
+      {
+        "slug": "word.suffix.ir"
+      },
+      {
+        "slug": "word.regularity.regular"
+      },
+      {
+        "slug": "word.verb-form.finite"
+      },
+      {
+        "slug": "word.mood.imperative"
+      },
+      {
+        "slug": "word.person.third"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.voice.active"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "subir.verb.infinitive",
+    "traits": [
+      "TRANSLATED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "to go up",
+        "learning": "subir"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.subir"
+      },
+      {
+        "slug": "word.part-of-speech.verb"
+      },
+      {
+        "slug": "word.suffix.ir"
+      },
+      {
+        "slug": "word.regularity.regular"
+      },
+      {
+        "slug": "word.verb-form.infinitive"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "bajar.verb.imperative.second.singular",
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "go down! (tú)",
+        "learning": "baja"
+      },
+      "EXEMPLIFIED": {
+        "known": "Go down!",
+        "learning": "¡Baja!"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.bajar"
+      },
+      {
+        "slug": "word.part-of-speech.verb"
+      },
+      {
+        "slug": "word.suffix.ar"
+      },
+      {
+        "slug": "word.regularity.regular"
+      },
+      {
+        "slug": "word.verb-form.finite"
+      },
+      {
+        "slug": "word.mood.imperative"
+      },
+      {
+        "slug": "word.person.second"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.voice.active"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "bajar.verb.imperative.third.singular",
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "go down! (usted)",
+        "learning": "baje"
+      },
+      "EXEMPLIFIED": {
+        "known": "Go down!",
+        "learning": "¡Baja!"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.bajar"
+      },
+      {
+        "slug": "word.part-of-speech.verb"
+      },
+      {
+        "slug": "word.suffix.ar"
+      },
+      {
+        "slug": "word.regularity.regular"
+      },
+      {
+        "slug": "word.verb-form.finite"
+      },
+      {
+        "slug": "word.mood.imperative"
+      },
+      {
+        "slug": "word.person.third"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.voice.active"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "bajar.verb.infinitive",
+    "traits": [
+      "TRANSLATED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "to go down",
+        "learning": "bajar"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.bajar"
+      },
+      {
+        "slug": "word.part-of-speech.verb"
+      },
+      {
+        "slug": "word.suffix.ar"
+      },
+      {
+        "slug": "word.regularity.regular"
+      },
+      {
+        "slug": "word.verb-form.infinitive"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "girar.verb.imperative.second.singular",
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "turn! (tú)",
+        "learning": "gira"
+      },
+      "EXEMPLIFIED": {
+        "known": "Turn left!",
+        "learning": "¡Gira a la izquierda!"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.girar"
+      },
+      {
+        "slug": "word.part-of-speech.verb"
+      },
+      {
+        "slug": "word.suffix.ar"
+      },
+      {
+        "slug": "word.regularity.regular"
+      },
+      {
+        "slug": "word.verb-form.finite"
+      },
+      {
+        "slug": "word.mood.imperative"
+      },
+      {
+        "slug": "word.person.second"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.voice.active"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "girar.verb.imperative.third.singular",
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "turn! (usted)",
+        "learning": "gire"
+      },
+      "EXEMPLIFIED": {
+        "known": "Turn left!",
+        "learning": "¡Gira a la izquierda!"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.girar"
+      },
+      {
+        "slug": "word.part-of-speech.verb"
+      },
+      {
+        "slug": "word.suffix.ar"
+      },
+      {
+        "slug": "word.regularity.regular"
+      },
+      {
+        "slug": "word.verb-form.finite"
+      },
+      {
+        "slug": "word.mood.imperative"
+      },
+      {
+        "slug": "word.person.third"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.voice.active"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "girar.verb.infinitive",
+    "traits": [
+      "TRANSLATED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "to turn",
+        "learning": "girar"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.girar"
+      },
+      {
+        "slug": "word.part-of-speech.verb"
+      },
+      {
+        "slug": "word.suffix.ar"
+      },
+      {
+        "slug": "word.regularity.regular"
+      },
+      {
+        "slug": "word.verb-form.infinitive"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "parar.verb.imperative.second.singular",
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "stop! (tú)",
+        "learning": "para"
+      },
+      "EXEMPLIFIED": {
+        "known": "Stop!",
+        "learning": "¡Para!"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.parar"
+      },
+      {
+        "slug": "word.part-of-speech.verb"
+      },
+      {
+        "slug": "word.suffix.ar"
+      },
+      {
+        "slug": "word.regularity.regular"
+      },
+      {
+        "slug": "word.verb-form.finite"
+      },
+      {
+        "slug": "word.mood.imperative"
+      },
+      {
+        "slug": "word.person.second"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.voice.active"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "parar.verb.imperative.third.singular",
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "stop! (usted)",
+        "learning": "pare"
+      },
+      "EXEMPLIFIED": {
+        "known": "Stop!",
+        "learning": "¡Para!"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.parar"
+      },
+      {
+        "slug": "word.part-of-speech.verb"
+      },
+      {
+        "slug": "word.suffix.ar"
+      },
+      {
+        "slug": "word.regularity.regular"
+      },
+      {
+        "slug": "word.verb-form.finite"
+      },
+      {
+        "slug": "word.mood.imperative"
+      },
+      {
+        "slug": "word.person.third"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.voice.active"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "parar.verb.infinitive",
+    "traits": [
+      "TRANSLATED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "to stop",
+        "learning": "parar"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.parar"
+      },
+      {
+        "slug": "word.part-of-speech.verb"
+      },
+      {
+        "slug": "word.suffix.ar"
+      },
+      {
+        "slug": "word.regularity.regular"
+      },
+      {
+        "slug": "word.verb-form.infinitive"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "cortar.verb.imperative.second.singular",
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "cut! (tú)",
+        "learning": "corta"
+      },
+      "EXEMPLIFIED": {
+        "known": "Cut the onion!",
+        "learning": "¡Corta la cebolla!"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.cortar"
+      },
+      {
+        "slug": "word.part-of-speech.verb"
+      },
+      {
+        "slug": "word.suffix.ar"
+      },
+      {
+        "slug": "word.regularity.regular"
+      },
+      {
+        "slug": "word.verb-form.finite"
+      },
+      {
+        "slug": "word.mood.imperative"
+      },
+      {
+        "slug": "word.person.second"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.voice.active"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "cortar.verb.imperative.third.singular",
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "cut! (usted)",
+        "learning": "corte"
+      },
+      "EXEMPLIFIED": {
+        "known": "Cut the onion!",
+        "learning": "¡Corta la cebolla!"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.cortar"
+      },
+      {
+        "slug": "word.part-of-speech.verb"
+      },
+      {
+        "slug": "word.suffix.ar"
+      },
+      {
+        "slug": "word.regularity.regular"
+      },
+      {
+        "slug": "word.verb-form.finite"
+      },
+      {
+        "slug": "word.mood.imperative"
+      },
+      {
+        "slug": "word.person.third"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.voice.active"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "cortar.verb.infinitive",
+    "traits": [
+      "TRANSLATED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "to cut",
+        "learning": "cortar"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.cortar"
+      },
+      {
+        "slug": "word.part-of-speech.verb"
+      },
+      {
+        "slug": "word.suffix.ar"
+      },
+      {
+        "slug": "word.regularity.regular"
+      },
+      {
+        "slug": "word.verb-form.infinitive"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "poner.verb.imperative.second.singular",
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "put! (tú)",
+        "learning": "pon"
+      },
+      "EXEMPLIFIED": {
+        "known": "Put the cheese!",
+        "learning": "¡Pon el queso!"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.poner"
+      },
+      {
+        "slug": "word.part-of-speech.verb"
+      },
+      {
+        "slug": "word.suffix.er"
+      },
+      {
+        "slug": "word.regularity.irregular"
+      },
+      {
+        "slug": "word.verb-form.finite"
+      },
+      {
+        "slug": "word.mood.imperative"
+      },
+      {
+        "slug": "word.person.second"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.voice.active"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "poner.verb.imperative.third.singular",
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "put! (usted)",
+        "learning": "ponga"
+      },
+      "EXEMPLIFIED": {
+        "known": "Put the cheese!",
+        "learning": "¡Pon el queso!"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.poner"
+      },
+      {
+        "slug": "word.part-of-speech.verb"
+      },
+      {
+        "slug": "word.suffix.er"
+      },
+      {
+        "slug": "word.regularity.irregular"
+      },
+      {
+        "slug": "word.verb-form.finite"
+      },
+      {
+        "slug": "word.mood.imperative"
+      },
+      {
+        "slug": "word.person.third"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.voice.active"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "freír.verb.imperative.second.singular",
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "fry! (tú)",
+        "learning": "fríe"
+      },
+      "EXEMPLIFIED": {
+        "known": "Fry the egg!",
+        "learning": "¡Fríe el huevo!"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.freír"
+      },
+      {
+        "slug": "word.part-of-speech.verb"
+      },
+      {
+        "slug": "word.suffix.ir"
+      },
+      {
+        "slug": "word.regularity.irregular"
+      },
+      {
+        "slug": "word.verb-form.finite"
+      },
+      {
+        "slug": "word.mood.imperative"
+      },
+      {
+        "slug": "word.person.second"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.voice.active"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "freír.verb.imperative.third.singular",
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "fry! (usted)",
+        "learning": "fría"
+      },
+      "EXEMPLIFIED": {
+        "known": "Fry the egg!",
+        "learning": "¡Fríe el huevo!"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.freír"
+      },
+      {
+        "slug": "word.part-of-speech.verb"
+      },
+      {
+        "slug": "word.suffix.ir"
+      },
+      {
+        "slug": "word.regularity.irregular"
+      },
+      {
+        "slug": "word.verb-form.finite"
+      },
+      {
+        "slug": "word.mood.imperative"
+      },
+      {
+        "slug": "word.person.third"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.voice.active"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "freír.verb.infinitive",
+    "traits": [
+      "TRANSLATED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "to fry",
+        "learning": "freír"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.freír"
+      },
+      {
+        "slug": "word.part-of-speech.verb"
+      },
+      {
+        "slug": "word.suffix.ir"
+      },
+      {
+        "slug": "word.regularity.irregular"
+      },
+      {
+        "slug": "word.verb-form.infinitive"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "servir.verb.imperative.second.singular",
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "serve! (tú)",
+        "learning": "sirve"
+      },
+      "EXEMPLIFIED": {
+        "known": "Serve the bread!",
+        "learning": "¡Sirve el pan!"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.servir"
+      },
+      {
+        "slug": "word.part-of-speech.verb"
+      },
+      {
+        "slug": "word.suffix.ir"
+      },
+      {
+        "slug": "word.regularity.irregular"
+      },
+      {
+        "slug": "word.verb-form.finite"
+      },
+      {
+        "slug": "word.mood.imperative"
+      },
+      {
+        "slug": "word.person.second"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.voice.active"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "servir.verb.imperative.third.singular",
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "serve! (usted)",
+        "learning": "sirva"
+      },
+      "EXEMPLIFIED": {
+        "known": "Serve the bread!",
+        "learning": "¡Sirve el pan!"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.servir"
+      },
+      {
+        "slug": "word.part-of-speech.verb"
+      },
+      {
+        "slug": "word.suffix.ir"
+      },
+      {
+        "slug": "word.regularity.irregular"
+      },
+      {
+        "slug": "word.verb-form.finite"
+      },
+      {
+        "slug": "word.mood.imperative"
+      },
+      {
+        "slug": "word.person.third"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.voice.active"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "servir.verb.infinitive",
+    "traits": [
+      "TRANSLATED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "to serve",
+        "learning": "servir"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.servir"
+      },
+      {
+        "slug": "word.part-of-speech.verb"
+      },
+      {
+        "slug": "word.suffix.ir"
+      },
+      {
+        "slug": "word.regularity.irregular"
+      },
+      {
+        "slug": "word.verb-form.infinitive"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "ir.verb.imperative.third.singular",
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "go! (usted)",
+        "learning": "vaya"
+      },
+      "EXEMPLIFIED": {
+        "known": "Go home!",
+        "learning": "¡Ve a casa!"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.ir"
+      },
+      {
+        "slug": "word.part-of-speech.verb"
+      },
+      {
+        "slug": "word.suffix.ir"
+      },
+      {
+        "slug": "word.regularity.irregular"
+      },
+      {
+        "slug": "word.verb-form.finite"
+      },
+      {
+        "slug": "word.mood.imperative"
+      },
+      {
+        "slug": "word.person.third"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.voice.active"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
   }
 ]

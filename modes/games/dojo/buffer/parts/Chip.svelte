@@ -77,8 +77,8 @@
     gap: 0.125rem;
     padding: 0.625rem 0.875rem;
     border-radius: 0.5rem;
-    border: 1px solid color-mix(in srgb, var(--colors-skeleton-1-boundary) 45%, transparent);
-    background: color-mix(in srgb, var(--colors-skeleton-1-surface) 70%, var(--colors-skeleton-2-surface));
+    border: 1px solid color-mix(in srgb, var(--boundary) 45%, transparent);
+    background: color-mix(in srgb, var(--surface-lift) 70%, var(--surface-sunk));
     color: inherit;
     font: inherit;
     text-align: left;
@@ -91,15 +91,15 @@
     font-family: var(--font-family-serif-heading);
     font-size: var(--font-size-lg);
     line-height: 1.15;
-    color: var(--colors-system-warning-contrast);
+    color: var(--signal-caution-ink);
   }
   .landed .form {
-    color: var(--colors-system-success-contrast);
+    color: var(--signal-positive-ink);
   }
   .gloss {
     font-family: var(--font-family-code);
     font-size: var(--font-size-2xs);
-    color: var(--text-support);
+    color: var(--text-light);
   }
   .input {
     background: transparent;

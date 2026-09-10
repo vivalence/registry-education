@@ -1,7 +1,7 @@
 import { array, object } from "@vivalence/typology";
 
 export default async (ctx) => {
-  const game = ctx.daemon.modes.game;
+  const game = ctx.modes.game;
   const baseWhere = object.omit(ctx.input.where ?? {}, ["ontology"]);
   const blacklist = ctx.input.blacklist;
 
@@ -15,18 +15,18 @@ export default async (ctx) => {
     symbols: ["word.part-of-speech.verb"],
   });
 
-  const populate = ["uses", "symbols", "retentions"];
+  const populate = ["uses", "symbols", "notes"];
   const opts = (limit) => ({ limit, blacklist, populate });
 
   const [conjugations, conjugationErrors, verbs, verbErrors] = await Promise.all([
-    ctx.daemon.entities.literal.feed(conjugationWhere, opts(conjugationLimit)),
-    ctx.daemon.entities.literal.byLastSignal(
+    ctx.entities.literal.feed(conjugationWhere, opts(conjugationLimit)),
+    ctx.entities.literal.byLastSignal(
       ["MISTAKE", "FAILURE"],
       conjugationWhere,
       opts(errorLimit),
     ),
-    ctx.daemon.entities.literal.feed(verbWhere, opts(verbLimit)),
-    ctx.daemon.entities.literal.byLastSignal(["MISTAKE", "FAILURE"], verbWhere, opts(errorLimit)),
+    ctx.entities.literal.feed(verbWhere, opts(verbLimit)),
+    ctx.entities.literal.byLastSignal(["MISTAKE", "FAILURE"], verbWhere, opts(errorLimit)),
   ]);
 
   const dedupe = (items) => {
@@ -40,7 +40,7 @@ export default async (ctx) => {
 
   const untouched = dedupe(
     [...allVerbs, ...allConjugations.flatMap((c) => c.uses.getItems())].filter(
-      (word) => !word.retention || word.retention.is.virgin,
+      (word) => !word.assess() || word.assess().is.virgin,
     ),
   );
   if (untouched.length) {
@@ -63,7 +63,7 @@ export default async (ctx) => {
     const isInfinitive = verb.symbols
       .getItems()
       .some((s) => s.slug === "word.verb-form.infinitive");
-    if (isInfinitive || verb.retention?.is?.failed) {
+    if (isInfinitive || verb.assess()?.is.failed) {
       practice.add(game["dojo"].emit.write.literals({ literal: verb }));
     } else {
       practice.add(

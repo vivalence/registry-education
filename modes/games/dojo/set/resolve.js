@@ -5,9 +5,9 @@ import { picks, cap } from "./picks.js";
 
 const tables = async (ctx, rows, listening) => {
   if (!rows.length) return new Map();
-  const populated = await ctx.daemon.entities.literal.find(
+  const populated = await ctx.entities.literal.find(
     { id: { $in: rows.map((row) => row.id) } },
-    { populate: ["uses", "uses.retentions", "symbols", "retentions"] },
+    { populate: ["uses", "uses.notes", "symbols", "notes"] },
   );
   const built = await paradigms(ctx, populated);
   return new Map(
@@ -54,7 +54,7 @@ export const resolve = async (ctx, { set = [] } = {}, { prompt, blacklist = [] }
         if (!table) continue;
         paradigms.push(literal);
         expanded.push(table);
-      } else if (!covered.has(literal.id) && (!listening || audible(ctx.daemon, literal))) spoken.push(literal);
+      } else if (!covered.has(literal.id) && (!listening || (await audible(ctx, literal)))) spoken.push(literal);
     }
 
     for (const literal of [...spoken, ...paradigms]) taken.add(literal.id);

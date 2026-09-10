@@ -10633,5 +10633,272 @@ export default [
         "slug": "domain.food"
       }
     ]
+  },
+  {
+    "slug": "izquierda.noun",
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "left",
+        "learning": "izquierda"
+      },
+      "EXEMPLIFIED": {
+        "known": "Turn to the left",
+        "learning": "Gira a la izquierda"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.izquierda"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "derecha.noun",
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "right",
+        "learning": "derecha"
+      },
+      "EXEMPLIFIED": {
+        "known": "Turn to the right",
+        "learning": "Gira a la derecha"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.derecha"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "soldado.noun",
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "soldier",
+        "learning": "soldado"
+      },
+      "EXEMPLIFIED": {
+        "known": "The soldier goes up",
+        "learning": "El soldado sube"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.soldado"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "camión.noun",
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "truck",
+        "learning": "camión"
+      },
+      "EXEMPLIFIED": {
+        "known": "The red truck stops",
+        "learning": "El camión rojo para"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.camión"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "explorador.noun",
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "scout",
+        "learning": "explorador"
+      },
+      "EXEMPLIFIED": {
+        "known": "The scout goes left",
+        "learning": "El explorador va a la izquierda"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.explorador"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "cebolla.noun",
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "onion",
+        "learning": "cebolla"
+      },
+      "EXEMPLIFIED": {
+        "known": "Cut the onion",
+        "learning": "Corta la cebolla"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.cebolla"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "domain.food"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
   }
 ]

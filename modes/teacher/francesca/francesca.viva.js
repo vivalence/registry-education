@@ -1,4 +1,4 @@
-export { harness } from "./harness.js";
+export { harness, primer } from "./harness.js";
 export { tools } from "./tools/index.js";
 
 export const manifest = {
@@ -6,5 +6,5 @@ export const manifest = {
   slug: "francesca",
   name: "Francesca",
   description: "Italian conversation tutor.",
-  traits: ["CONVERSATIONAL", "HARNESSED", "TOOLED", "AGENTIC"],
+  traits: ["CONVERSATIONAL", "HARNESSED", "TOOLING", "AGENTIC", "PRIMER"],
 };

@@ -56,49 +56,51 @@ export const previews = (preview, { first = false, missed = false, signal = null
 
 export const surface = (knowable, gameplay) => (fold.table(knowable) && gameplay !== TABLE ? forms(knowable) : [knowable]);
 
-const audible = (terminal, knowable) =>
-  fold.table(knowable)
-    ? knowable.tokens.every((token) => Boolean(terminal.daemon.getAsset(token.asset)))
-    : Boolean(terminal.daemon.getAsset(knowable.asset));
+export const fileOf = (files, asset) => files.find((file) => file.path === asset?.path) ?? null;
 
-export const prompts = (terminal, prompt, knowable, greedy = false) => {
+const audible = (files, knowable) =>
+  fold.table(knowable)
+    ? knowable.tokens.every((token) => fileOf(files, token.asset) !== null)
+    : fileOf(files, knowable.asset) !== null;
+
+export const prompts = (files, prompt, knowable, greedy = false) => {
   const wanted = pool(prompt, types.PROMPTS);
-  const feasible = wanted.filter((entry) => entry !== "AUDIO" || audible(terminal, knowable));
+  const feasible = wanted.filter((entry) => entry !== "AUDIO" || audible(files, knowable));
   if (greedy && !fold.table(knowable) && feasible.includes("AUDIO")) return ["AUDIO"];
   return feasible.length ? feasible : wanted;
 };
 
-export const promptFor = (terminal, prompt, knowable, greedy = false, index = 0, random = true) =>
-  drawFrom(prompts(terminal, prompt, knowable, greedy), index, random);
+export const promptFor = (files, prompt, knowable, greedy = false, index = 0, random = true) =>
+  drawFrom(prompts(files, prompt, knowable, greedy), index, random);
 
 export const DRESS = ["recall", "gameplay", "prompt"];
 
 const same = (a, b) => DRESS.every((key) => a?.[key] === b?.[key]);
 
-export const wardrobe = (terminal, axes, knowable) =>
+export const wardrobe = (files, axes, knowable) =>
   recalls(axes.recall).flatMap((recall) =>
     (fold.table(knowable) ? [TABLE] : gameplays(axes.gameplay, knowable)).flatMap((gameplay) =>
-      prompts(terminal, axes.prompt, knowable, axes.greedy).map((prompt) => ({ recall, gameplay, prompt })),
+      prompts(files, axes.prompt, knowable, axes.greedy).map((prompt) => ({ recall, gameplay, prompt })),
     ),
   );
 
-export const dressFor = (terminal, axes, knowable, { index = 0, random = true, worn = [] } = {}) => {
+export const dressFor = (files, axes, knowable, { index = 0, random = true, worn = [] } = {}) => {
   if (!random)
     return {
       recall: recallFor(axes.recall, index, false),
       gameplay: fold.table(knowable) ? TABLE : gameplayFor(axes.gameplay, knowable, index, false),
-      prompt: promptFor(terminal, axes.prompt, knowable, axes.greedy, index, false),
+      prompt: promptFor(files, axes.prompt, knowable, axes.greedy, index, false),
     };
-  const all = wardrobe(terminal, axes, knowable);
+  const all = wardrobe(files, axes, knowable);
   const unworn = all.filter((dress) => !worn.some((past) => same(past, dress)));
   const fresh = all.filter((dress) => !same(dress, worn.at(-1)));
   return array.shuffle(unworn.length ? unworn : fresh.length ? fresh : all)[0];
 };
 
-export const playable = (terminal, knowable, axes) =>
+export const playable = (files, knowable, axes) =>
   fold.speakable(knowable) &&
   (!fold.table(knowable) || knowable.tokens?.length > 0) &&
-  (!types.listening(axes.prompt) || audible(terminal, knowable));
+  (!types.listening(axes.prompt) || audible(files, knowable));
 
 export const carriers = (buffer) => [
   ...(buffer.literals ?? []).map(fold.fromLiteral),
@@ -107,18 +109,18 @@ export const carriers = (buffer) => [
 
 export const order = (list, random) => (types.shuffling(random) ? array.shuffle(list) : list);
 
-export const admit = (terminal, set, axes) => {
-  const rejected = set.filter((knowable) => !playable(terminal, knowable, axes));
+export const admit = (files, set, axes) => {
+  const rejected = set.filter((knowable) => !playable(files, knowable, axes));
   if (rejected.length)
     console.warn(
       "[dojo] dropped unplayable knowables",
       rejected.map((entry) => entry.literal ?? entry.learning),
     );
 
-  return set.filter((knowable) => playable(terminal, knowable, axes));
+  return set.filter((knowable) => playable(files, knowable, axes));
 };
 
-export const carried = (terminal, buffer) => admit(terminal, carriers(buffer), buffer.data ?? {});
+export const carried = (files, buffer) => admit(files, carriers(buffer), buffer.data ?? {});
 
 export const refetch = async (buffer, { set = [], prompt, blacklist = [] } = {}) => {
   if (!set.length) return [];

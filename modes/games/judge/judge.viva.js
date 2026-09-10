@@ -1,4 +1,4 @@
-import { App, Vector, array, string, v } from "@vivalence/typology";
+import { Vector, array, string, v, mime } from "@vivalence/typology";
 
 const manifest = {
   type: "game",
@@ -7,7 +7,7 @@ const manifest = {
   description:
     "True/false on translation pairs. Correct or distractor pairing. Visual, audio, or audio-only gameplay. Optional speed presets.",
   version: "0.1.0",
-  traits: ["APPLICATION", "EMITTER"],
+  traits: ["VIEWABLE", "EMITTER"],
 };
 
 const ontology = ["word", "sentence"];
@@ -35,7 +35,7 @@ const emitter = new Vector()
 
     const pool =
       ctx.input.distractors ??
-      (await ctx.daemon.entities.literal.feed(
+      (await ctx.entities.literal.feed(
         { ontology: target.ontology },
         { limit: 3, blacklist: { literals: [...(ctx.input.blacklist?.literals ?? []), target.id] } },
       ));
@@ -54,7 +54,7 @@ const emitter = new Vector()
     const distractor = scored[0]?.d ?? null;
     const useDistractor = distractor && Math.random() > 0.5;
 
-    return ctx.mode.app.buffer({
+    return ctx.mode.buffer({
       data: {
         recall,
         gameplay: ctx.input.gameplay ?? "visual",
@@ -67,7 +67,7 @@ const emitter = new Vector()
   })
   .open("/feed", async (ctx) => {
     const limit = ctx.input.limit ?? 4;
-    const literals = await ctx.daemon.entities.literal.feed(
+    const literals = await ctx.entities.literal.feed(
       { ontology: { $in: ontology } },
       { limit, blacklist: ctx.input.blacklist },
     );
@@ -87,46 +87,47 @@ const emitter = new Vector()
     return buffers;
   });
 
-const app = new App(
-  "buffer/Judge.svelte",
-  v.buffer({
-    data: {
-      recall: v
-        .string({ default: "LEARNING" })
-        .desc("LEARNING: show learning text + judge known, KNOWN: reversed"),
-      gameplay: v
-        .string({ default: "visual" })
-        .desc("visual: text only, audio: text + audio, audio-only: audio + translation only"),
-      speed: v
-        .object({
-          rate: v
-            .string()
-            .desc(
-              "Preset: FAST (1500ms+80ms/char), NORMAL (2500ms+120ms/char), SLOW (3500ms+180ms/char)",
-            )
-            .optional(),
-          base: v
-            .number()
-            .desc(
-              "Base time in ms. Overrides preset base. With multiplier=0, acts as absolute time.",
-            )
-            .optional(),
-          multiplier: v
-            .number()
-            .desc(
-              "Extra ms per character of shown text. Absent = use preset. 0 = base is absolute.",
-            )
-            .optional(),
-        })
-        .desc("Per-item timing. Computed as base + shown.length × multiplier.")
-        .optional(),
-      target: v.string().desc("Literal ID of the target"),
-      distractor: v
-        .string()
-        .desc("Literal ID of the distractor (wrong pairing), or null if correct pairing")
-        .optional(),
-    },
-  }),
-);
+const buffer = v.buffer({
+  data: {
+    recall: v
+      .string({ default: "LEARNING" })
+      .desc("LEARNING: show learning text + judge known, KNOWN: reversed"),
+    gameplay: v
+      .string({ default: "visual" })
+      .desc("visual: text only, audio: text + audio, audio-only: audio + translation only"),
+    speed: v
+      .object({
+        rate: v
+          .string()
+          .desc(
+            "Preset: FAST (1500ms+80ms/char), NORMAL (2500ms+120ms/char), SLOW (3500ms+180ms/char)",
+          )
+          .optional(),
+        base: v
+          .number()
+          .desc(
+            "Base time in ms. Overrides preset base. With multiplier=0, acts as absolute time.",
+          )
+          .optional(),
+        multiplier: v
+          .number()
+          .desc(
+            "Extra ms per character of shown text. Absent = use preset. 0 = base is absolute.",
+          )
+          .optional(),
+      })
+      .desc("Per-item timing. Computed as base + shown.length × multiplier.")
+      .optional(),
+    target: v.string().desc("Literal ID of the target"),
+    distractor: v
+      .string()
+      .desc("Literal ID of the distractor (wrong pairing), or null if correct pairing")
+      .optional(),
+  },
+});
 
-export { manifest, app, emitter, dataset };
+const views = [
+  { slug: "judge", mount: "buffer/Judge.svelte", mime: mime.dom.svelte },
+];
+
+export { manifest, buffer, views, emitter, dataset };

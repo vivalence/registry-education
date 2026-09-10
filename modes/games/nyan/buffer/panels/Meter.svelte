@@ -43,7 +43,7 @@
   .read {
     font-size: var(--font-size-sm);
     font-variant-numeric: tabular-nums;
-    color: var(--colors-theme-primary-contrast);
+    color: var(--signal-primary-ink);
     height: 1rem;
   }
   .vu {
@@ -52,25 +52,25 @@
     flex: 1;
     border-radius: 999px;
     overflow: hidden;
-    background: color-mix(in srgb, var(--colors-skeleton-1-boundary) 20%, transparent);
+    background: color-mix(in srgb, var(--divider) 20%, transparent);
   }
   .vu-fill {
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
-    background: color-mix(in srgb, var(--colors-system-warning-contrast) 70%, transparent);
+    background: color-mix(in srgb, var(--signal-caution-ink) 70%, transparent);
     transition: height 0.12s ease;
   }
   .vu-fill.hot {
-    background: color-mix(in srgb, var(--colors-system-success-contrast) 70%, transparent);
+    background: color-mix(in srgb, var(--signal-positive-ink) 70%, transparent);
   }
   .vu-needle {
     position: absolute;
     left: 0;
     right: 0;
     height: 2px;
-    background: var(--colors-theme-accent-contrast);
+    background: var(--signal-caution-ink);
     transition: bottom 0.09s ease;
   }
 </style>

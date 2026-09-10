@@ -1,4 +1,4 @@
-import { Vector, App, v } from "@vivalence/typology";
+import { Vector, v, mime } from "@vivalence/typology";
 import { GAMEPLAYS, fold } from "./buffer/engine.js";
 
 const manifest = {
@@ -8,32 +8,33 @@ const manifest = {
   description:
     "Standalone typing trainer. Setup, practice, review. One keystroke stream split into recall / spelling / motor. Generic words, or learning-domain literals graded back to retention.",
   version: "0.1.0",
-  traits: ["APPLICATION", "EMITTER", "STANDALONE", "TOOLED"],
+  traits: ["VIEWABLE", "EMITTER", "TOOLING"],
 };
 
-const app = new App(
-  "buffer/Nyan.svelte",
-  v.buffer({
-    data: {
-      gameplay: v.enum(Object.keys(GAMEPLAYS), { default: "PLAIN" }),
-      revealing: v
-        .enum(["on", "off"], { default: "off" })
-        .desc(
-          "Reveal each word's translation once it's committed — the typed word is replaced inline by its gloss. Domain buffers only.",
-        ),
-      layout: v
-        .enum(["block", "river"], { default: "block" })
-        .desc(
-          "Typing layout. block: words wrap in a paragraph. river: the current word is pinned at center while past and upcoming words flow right-to-left beneath it.",
-        ),
-      words: v.array(v.string()).optional(),
-      // owners[i] = the literal id that word i belongs to; "" for untracked
-      // function words (articles, etc). parallel to words — the grade alignment.
-      owners: v.array(v.string()).optional(),
-    },
-    literals: v.array(v.rel(v.literal())).optional(),
-  }),
-);
+const buffer = v.buffer({
+  data: {
+    gameplay: v.enum(Object.keys(GAMEPLAYS), { default: "PLAIN" }),
+    revealing: v
+      .enum(["on", "off"], { default: "off" })
+      .desc(
+        "Reveal each word's translation once it's committed — the typed word is replaced inline by its gloss. Domain buffers only.",
+      ),
+    layout: v
+      .enum(["block", "river"], { default: "block" })
+      .desc(
+        "Typing layout. block: words wrap in a paragraph. river: the current word is pinned at center while past and upcoming words flow right-to-left beneath it.",
+      ),
+    words: v.array(v.string()).optional(),
+    // owners[i] = the literal id that word i belongs to; "" for untracked
+    // function words (articles, etc). parallel to words — the grade alignment.
+    owners: v.array(v.string()).optional(),
+  },
+  literals: v.array(v.rel(v.literal())).optional(),
+});
+
+const views = [
+  { slug: "nyan", mount: "buffer/Nyan.svelte", mime: mime.dom.svelte },
+];
 
 const surfaceOf = (literal) => literal.trait?.TRANSLATED?.learning ?? literal.slug;
 
@@ -50,7 +51,7 @@ async function planLiterals(ctx, literals) {
     if (literal.ontology === "conjugation") {
       const slugs = Object.values(literal.trait?.CONJUGATED?.paradigm ?? {});
       const forms = slugs.length
-        ? await ctx.daemon.entities.literal.find({ slug: { $in: slugs } })
+        ? await ctx.entities.literal.find({ slug: { $in: slugs } })
         : [];
       for (const form of forms) {
         words.push(surfaceOf(form));
@@ -77,7 +78,7 @@ const emitter = new Vector()
     const data = {};
     if (ctx.input.gameplay) data.gameplay = ctx.input.gameplay;
     if (ctx.input.words) data.words = ctx.input.words;
-    return ctx.mode.app.buffer({ data });
+    return ctx.mode.buffer({ data });
   })
   // domain ingress: type learning literals; the buffer carries the owner index
   // so finishing grades each token back to retention (see buffer/Nyan.svelte).
@@ -95,7 +96,7 @@ const emitter = new Vector()
     },
     async (ctx) => {
       const ids = ctx.input.literals.map((rel) => (typeof rel === "string" ? rel : rel.id));
-      const found = await ctx.daemon.entities.literal.find(
+      const found = await ctx.entities.literal.find(
         { id: { $in: ids } },
         { populate: ["uses"] },
       );
@@ -103,7 +104,7 @@ const emitter = new Vector()
       const literals = ids.map((id) => byId.get(id)).filter(Boolean); // preserve order
       const { words, owners } = await planLiterals(ctx, literals);
       if (!words.length) return [];
-      return ctx.mode.app.buffer({
+      return ctx.mode.buffer({
         data: { gameplay: ctx.input.gameplay, layout: ctx.input.layout, words, owners },
         literals,
       });
@@ -129,4 +130,4 @@ const tools = new Vector().open(
   async (ctx) => ctx.mode.emit.play(ctx.input),
 );
 
-export { manifest, app, emitter, tools };
+export { manifest, buffer, views, emitter, tools };

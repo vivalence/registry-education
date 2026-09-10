@@ -1,20 +1,22 @@
+import { raw } from "@mikro-orm/core";
 import { object } from "@vivalence/typology";
 import * as fold from "../fold.js";
 import * as types from "../types.js";
 import { compile } from "./where.js";
 
-const RETENTION = ["retentions"];
+const RETENTION = ["notes"];
+const RANK = raw("coalesce(json_extract(l0.trait, '$.RANKED.rank'), 999999)");
 
 const resolved = (repository, where) =>
   repository.resolveTraits(repository.resolveSearch(repository.resolveSymbols(where)));
 
 export const count = (ctx, where) => {
-  const repository = ctx.daemon.entities.literal;
+  const repository = ctx.entities.literal;
   return repository.count(resolved(repository, compile(where)));
 };
 
 const stream = (method) => async (ctx, clause, { blacklist, limit }) => ({
-  literals: await ctx.daemon.entities.literal[method](compile(clause.where), {
+  literals: await ctx.entities.literal[method](compile(clause.where), {
     limit,
     blacklist: { literals: blacklist },
     populate: RETENTION,
@@ -23,13 +25,13 @@ const stream = (method) => async (ctx, clause, { blacklist, limit }) => ({
 
 export const picks = {
   all: async (ctx, clause, { blacklist, limit }) => {
-    const repository = ctx.daemon.entities.literal;
+    const repository = ctx.entities.literal;
     const where = compile(clause.where);
     const [total, literals] = await Promise.all([
       repository.count(resolved(repository, where)),
       repository.find(object.merge(where, { id: { $nin: blacklist } }), {
         limit,
-        orderBy: { rank: "ASC" },
+        orderBy: { [RANK]: "ASC" },
         populate: RETENTION,
       }),
     ]);
@@ -42,7 +44,7 @@ export const picks = {
   byStrength: stream("byStrength"),
 
   byLastSignal: async (ctx, clause, { blacklist, limit }) => ({
-    literals: await ctx.daemon.entities.literal.byLastSignal(
+    literals: await ctx.entities.literal.byLastSignal(
       clause.signals?.length ? clause.signals : types.MISSED,
       compile(clause.where),
       { limit, blacklist: { literals: blacklist }, populate: RETENTION },
@@ -50,7 +52,7 @@ export const picks = {
   }),
 
   sample: async (ctx, clause, { blacklist, limit }) => ({
-    literals: await ctx.daemon.entities.literal.sample(compile(clause.where), {
+    literals: await ctx.entities.literal.sample(compile(clause.where), {
       status: clause.status?.length ? clause.status : undefined,
       limit,
       blacklist: { literals: blacklist },
@@ -60,7 +62,7 @@ export const picks = {
 
   literals: async (ctx, clause) => ({
     literals: clause.literals?.length
-      ? await ctx.daemon.entities.literal.findByIdentifiers(clause.literals, { populate: RETENTION })
+      ? await ctx.entities.literal.findByIdentifiers(clause.literals, { populate: RETENTION })
       : [],
   }),
 

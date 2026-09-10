@@ -1,4 +1,4 @@
-import { object, App, Vector, v } from "@vivalence/typology";
+import { object, Vector, v, mime } from "@vivalence/typology";
 
 const manifest = {
   type: "game",
@@ -7,26 +7,27 @@ const manifest = {
   description:
     "Present structured knowledge. Tables, patterns, contrasts. No testing — pure absorption.",
   version: "0.1.0",
-  traits: ["APPLICATION", "EMITTER"],
+  traits: ["VIEWABLE", "EMITTER"],
 };
 
 const ontology = ["word", "sentence"];
 
-const app = new App(
-  "buffer/Exhibit.svelte",
-  v.buffer({
-    data: {
-      layout: v.string({ default: "TABLE" }),
-      title: v.string({ default: "" }),
-      subtitle: v.string().optional(),
-      template: v.string().optional(),
-    },
-  }),
-);
+const buffer = v.buffer({
+  data: {
+    layout: v.string({ default: "TABLE" }),
+    title: v.string({ default: "" }),
+    subtitle: v.string().optional(),
+    template: v.string().optional(),
+  },
+});
+
+const views = [
+  { slug: "exhibit", mount: "buffer/Exhibit.svelte", mime: mime.dom.svelte },
+];
 
 const emitter = new Vector()
   .open("/present", async (ctx) => {
-    return ctx.mode.app.buffer({
+    return ctx.mode.buffer({
       data: {
         layout: ctx.input.layout ?? "TABLE",
         title: ctx.input.title ?? "",
@@ -38,12 +39,12 @@ const emitter = new Vector()
   })
   .open("/feed", async (ctx) => {
     const limit = ctx.input.limit ?? 8;
-    const literals = await ctx.daemon.entities.literal.feed(
+    const literals = await ctx.entities.literal.feed(
       object.merge(ctx.input.where, { ontology: { $in: ontology } }),
       { limit, blacklist: ctx.input.blacklist },
     );
     if (!literals.length) return [];
-    return ctx.mode.app.buffer({
+    return ctx.mode.buffer({
       data: {
         layout: ctx.input.layout ?? "TABLE",
         title: ctx.input.title ?? "",
@@ -68,4 +69,4 @@ const dataset = {
   ],
 };
 
-export { manifest, app, emitter, dataset };
+export { manifest, buffer, views, emitter, dataset };

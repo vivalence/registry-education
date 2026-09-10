@@ -1,5 +1,5 @@
 import { specimen, shape } from "@vivalence/typology";
-import { SIGNAL } from "../../types.js";
+import { SIGNAL } from "../../schematics.js";
 import { mount } from "../scenarios/domain.js";
 import { line } from "../../tools/line.js";
 
@@ -25,8 +25,8 @@ specimen.describe("tools — the vector and its four routes", () => {
   });
 
   specimen.it("line: slug · learning (known) · ontology · status", () => {
-    specimen.expect(line({ slug: "x", ontology: "word", trait: { TRANSLATED: { known: "k", learning: "l" } } })).toBe("x · l (k) · word · UNTOUCHED");
-    specimen.expect(line({ slug: "y", ontology: "sentence", trait: {}, retention: { status: "KNOWN" } })).toBe("y ·  () · sentence · KNOWN");
+    specimen.expect(line({ slug: "x", ontology: "word", trait: { TRANSLATED: { known: "k", learning: "l" } }, assess: () => undefined })).toBe("x · l (k) · word · UNTOUCHED");
+    specimen.expect(line({ slug: "y", ontology: "sentence", trait: {}, assess: () => ({ status: "KNOWN" }) })).toBe("y ·  () · sentence · KNOWN");
   });
 });
 
@@ -47,6 +47,42 @@ specimen.describe("tools — lookup", () => {
     const out = await scenario.invoke("/lookup", { text: "zzzz-nope", limit: 12 });
     specimen.expect(out.message).toContain("not in the corpus");
     specimen.expect(out.entities).toBeUndefined();
+  });
+
+  specimen.it("a conjugated form walks to its paradigm and infinitive", async () => {
+    const out = await scenario.invoke("/lookup", { text: "chamas", limit: 12 });
+    specimen.expect(out.message).toContain("↳ form in chamar.presente.indicativo");
+    specimen.expect(out.message).toContain("chamar.verb");
+    specimen.expect(out.object.slugs).toContain("chamar.verb");
+  });
+
+  specimen.it("an unmatched inflection retries by lemma when the daemon classifies", async () => {
+    scenario.daemon.providers = {
+      nlp: async ({ text }) => [[{ token: text, lemma: "chamar" }]],
+    };
+    try {
+      const out = await scenario.invoke("/lookup", { text: "chamavam", limit: 12 });
+      specimen.expect(out.message).toContain('its lemma chamar');
+      specimen.expect(out.object.slugs).toContain("chamar.verb");
+    } finally {
+      delete scenario.daemon.providers;
+    }
+  });
+
+  specimen.it("the lemma leg fails silent — no service, or a throwing one, still reports the miss", async () => {
+    const bare = await scenario.invoke("/lookup", { text: "chamavam", limit: 12 });
+    specimen.expect(bare.message).toContain("not in the corpus");
+    scenario.daemon.providers = {
+      nlp: async () => {
+        throw new Error("nlp is down");
+      },
+    };
+    try {
+      const out = await scenario.invoke("/lookup", { text: "chamavam", limit: 12 });
+      specimen.expect(out.message).toContain("not in the corpus");
+    } finally {
+      delete scenario.daemon.providers;
+    }
   });
 });
 
@@ -87,7 +123,7 @@ specimen.describe("tools — review", () => {
         { literal: "no.such.slug", signal: "SUCCESS" },
       ],
     });
-    specimen.expect(out.entities.retention.length).toBe(2);
+    specimen.expect(out.entities.note.length).toBe(2);
     specimen.expect(out.message).toContain("please SUCCESS →");
     specimen.expect(out.message).toContain("thanks MISTAKE →");
     specimen.expect(out.message).toContain("no.such.slug — not in the corpus");

@@ -38,9 +38,9 @@
     width: 100%;
     max-width: 560px;
     box-sizing: border-box;
-    border: 1px solid var(--colors-skeleton-1-boundary);
+    border: 1px solid var(--boundary);
     border-radius: 0.625rem;
-    background: var(--colors-skeleton-1-surface);
+    background: var(--surface-lift);
     padding: 2.375rem;
     margin: auto;
   }
@@ -52,20 +52,20 @@
     font-size: var(--font-size-2xs);
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: var(--text-support);
+    color: var(--text-light);
   }
   .title {
     font-family: var(--font-family-serif-heading);
     font-size: var(--font-size-2xl);
     font-weight: 500;
-    color: var(--text-primary);
+    color: var(--text-strong);
     margin: 0.875rem 0 0 0;
   }
   .note {
     font-family: var(--font-family-sans-text);
     font-size: var(--font-size-sm);
     line-height: 1.6;
-    color: var(--text-body);
+    color: var(--text-ink);
     max-width: 38ch;
     margin: 0.625rem auto 0 auto;
   }
@@ -79,18 +79,18 @@
   .fact {
     font-family: var(--font-family-code);
     font-size: var(--font-size-xs);
-    color: var(--text-support);
+    color: var(--text-light);
     white-space: nowrap;
   }
   .call {
-    background: var(--colors-skeleton-2-surface);
-    border: 1px solid var(--colors-skeleton-1-boundary);
+    background: var(--surface-sunk);
+    border: 1px solid var(--boundary);
     border-radius: 0.375rem;
     padding: 0.875rem;
     margin: 1.25rem 0 0 0;
     font-family: var(--font-family-code);
     font-size: var(--font-size-xs);
-    color: var(--text-support);
+    color: var(--text-light);
     text-align: left;
     white-space: pre-wrap;
     overflow-x: auto;
@@ -99,8 +99,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1px;
-    background: var(--colors-skeleton-1-boundary);
-    border: 1px solid var(--colors-skeleton-1-boundary);
+    background: var(--divider);
+    border: 1px solid var(--boundary);
     border-radius: 0.375rem;
     margin-top: 1.375rem;
     overflow: hidden;
@@ -109,7 +109,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.375rem;
-    background: var(--colors-skeleton-2-surface);
+    background: var(--surface-sunk);
     padding: 0.875rem 1rem;
   }
   .stat-key {
@@ -117,12 +117,12 @@
     font-size: var(--font-size-2xs);
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--text-support);
+    color: var(--text-light);
   }
   .stat-value {
     font-family: var(--font-family-serif-heading);
     font-size: var(--font-size-xl);
-    color: var(--text-primary);
+    color: var(--text-strong);
   }
   .acts {
     display: flex;
@@ -136,8 +136,8 @@
     padding: 0.75rem 1.375rem;
     border-radius: 0.5rem;
     border: none;
-    background: var(--colors-theme-primary-surface);
-    color: var(--colors-theme-primary-contrast);
+    background: var(--signal-primary-tint);
+    color: var(--signal-primary-ink);
     font-family: var(--font-family-sans-text);
     font-size: var(--font-size-md);
     font-weight: 600;
@@ -145,8 +145,8 @@
   }
   .act.ghost {
     background: transparent;
-    border: 1px solid var(--colors-skeleton-2-boundary);
-    color: var(--text-support);
+    border: 1px solid var(--boundary-soft);
+    color: var(--text-light);
   }
 
   @media (max-width: 640px) {

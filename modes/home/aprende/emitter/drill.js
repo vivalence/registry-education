@@ -4,7 +4,7 @@ import { POOL_FACTOR, weightedSample } from "./sample.js";
 // ontology × retention-state → the exercise mode. weak/failed → scaffolded productive
 // recall; strong → fast recognition. One literal in, one game-mode buffer out.
 function exercise(game, literal, thread) {
-  const hard = literal.retention?.is?.weak || literal.retention?.is?.failed;
+  const hard = literal.assess()?.is.weak || literal.assess()?.is.failed;
   switch (literal.ontology) {
     case "conjugation":
       return hard
@@ -39,21 +39,21 @@ export const drill = new Vector().open(
     // each exercise needs (uses = sentence tokens / paradigm forms). Sort weakest-first
     // so the weighted sample favors the most-decayed items.
     const pool = (
-      await ctx.daemon.entities.literal.due(
+      await ctx.entities.literal.due(
         {},
         {
           limit: ctx.input.count * POOL_FACTOR,
-          populate: ["retentions", "retentions.strength", "uses"],
+          populate: ["notes", "uses"],
         },
       )
-    ).sort((a, b) => (a.retention?.strength ?? 0) - (b.retention?.strength ?? 0));
+    ).sort((a, b) => (a.assess()?.strength ?? 0) - (b.assess()?.strength ?? 0));
     const literals = weightedSample(pool, ctx.input.count);
     if (!literals.length) return [];
 
     // one section, one exercise per literal, shuffled into an interleaved deck
     const deck = ctx.pool.section();
     for (const literal of literals) {
-      deck.add(await exercise(ctx.daemon.modes.game, literal, ctx.input.thread));
+      deck.add(await exercise(ctx.modes.game, literal, ctx.input.thread));
     }
     deck.apply(array.shuffle);
   },

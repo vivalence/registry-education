@@ -219,13 +219,13 @@
   .head-rule {
     flex: 1;
     height: 1px;
-    background: color-mix(in srgb, var(--colors-skeleton-1-boundary) 30%, transparent);
+    background: color-mix(in srgb, var(--divider) 30%, transparent);
   }
   .head-value {
     font-family: var(--font-family-code);
     font-size: var(--font-size-md, 0.875rem);
     font-weight: 700;
-    color: var(--colors-skeleton-1-contrast);
+    color: var(--text-strong);
     white-space: nowrap;
   }
   .head-value::after {
@@ -239,7 +239,7 @@
     gap: 0;
     padding: 0.4rem;
     border-radius: 0.75rem;
-    background: color-mix(in srgb, var(--colors-skeleton-1-boundary) 8%, transparent);
+    background: color-mix(in srgb, var(--divider) 8%, transparent);
   }
   .card {
     display: flex;
@@ -259,7 +259,7 @@
     font-family: var(--font-family-sans-text);
     font-size: var(--font-size-md, 0.875rem);
     font-weight: 700;
-    color: var(--colors-skeleton-1-contrast);
+    color: var(--text-strong);
   }
   .card.on .card-label {
     color: #0F1C35;
@@ -267,7 +267,7 @@
   .card-sub {
     font-family: var(--font-family-code);
     font-size: var(--font-size-xs);
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
   .card.on .card-sub {
     color: color-mix(in srgb, #0F1C35 70%, transparent);
@@ -277,9 +277,9 @@
     box-sizing: border-box;
     padding: 0.6rem 0.8rem;
     border-radius: 0.5rem;
-    border: 1px solid var(--colors-skeleton-1-boundary);
-    background: color-mix(in srgb, var(--colors-skeleton-1-surface) 50%, transparent);
-    color: var(--colors-skeleton-1-contrast);
+    border: 1px solid var(--boundary);
+    background: color-mix(in srgb, var(--surface-lift) 50%, transparent);
+    color: var(--text-strong);
     font-family: var(--font-family-code);
     font-size: var(--font-size-md);
     outline: none;
@@ -291,12 +291,12 @@
     margin: 0;
     font-family: var(--font-family-sans-text);
     font-size: var(--font-size-md, 0.875rem);
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
   .meta {
     font-family: var(--font-family-code);
     font-size: var(--font-size-xs);
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
   .lits {
     list-style: none;
@@ -313,7 +313,7 @@
     align-items: baseline;
     gap: 0.6rem;
     padding: 0.3rem 0;
-    border-bottom: 1px solid color-mix(in srgb, var(--colors-skeleton-1-boundary) 12%, transparent);
+    border-bottom: 1px solid color-mix(in srgb, var(--boundary) 12%, transparent);
   }
   .glyph {
     width: 14px;
@@ -321,25 +321,25 @@
     text-align: center;
     font-style: normal;
     font-size: var(--font-size-xs);
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
   .pt {
     font-family: var(--font-family-sans-text);
     font-size: var(--font-size-md, 0.875rem);
     font-weight: 600;
-    color: var(--colors-skeleton-1-contrast);
+    color: var(--text-strong);
   }
   .en {
     font-family: var(--font-family-code);
     font-size: var(--font-size-sm);
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
   .text {
     margin: 0;
     font-family: var(--font-family-code);
     font-size: var(--font-size-md);
     line-height: 1.7;
-    color: var(--colors-skeleton-1-contrast);
+    color: var(--text-strong);
     max-height: 11rem;
     overflow-y: auto;
   }
@@ -359,9 +359,9 @@
     min-width: 3rem;
     padding: 0.45rem 0.6rem;
     border-radius: 0.45rem;
-    border: 1px solid color-mix(in srgb, var(--colors-skeleton-1-boundary) 45%, transparent);
+    border: 1px solid color-mix(in srgb, var(--boundary) 45%, transparent);
     background: transparent;
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
     font-family: var(--font-family-code);
     font-size: var(--font-size-md);
     cursor: pointer;
@@ -377,14 +377,14 @@
     flex: 0 0 auto;
     padding: 0.2rem;
     border-radius: 0.5rem;
-    background: color-mix(in srgb, var(--colors-skeleton-1-boundary) 12%, transparent);
+    background: color-mix(in srgb, var(--divider) 12%, transparent);
   }
   .seg-btn {
     padding: 0.4rem 0.95rem;
     border: none;
     border-radius: 0.4rem;
     background: transparent;
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
     font-family: var(--font-family-code);
     font-size: var(--font-size-md);
     cursor: pointer;
@@ -404,7 +404,7 @@
   .mode-desc {
     font-family: var(--font-family-sans-text);
     font-size: var(--font-size-md, 0.875rem);
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
   .inline {
     display: flex;
@@ -414,7 +414,7 @@
   .inline-key {
     font-family: var(--font-family-code);
     font-size: var(--font-size-sm);
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
     min-width: 8rem;
   }
 
@@ -433,7 +433,7 @@
     flex: 0 0 8rem;
     font-family: var(--font-family-code);
     font-size: var(--font-size-sm);
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
   .dial-val {
     flex: 0 0 3rem;
@@ -441,7 +441,7 @@
     font-family: var(--font-family-code);
     font-size: var(--font-size-md);
     font-variant-numeric: tabular-nums;
-    color: var(--colors-skeleton-1-contrast);
+    color: var(--text-strong);
   }
 
   /* slider */
@@ -457,7 +457,7 @@
     background: linear-gradient(
       90deg,
       #1EBCB5 0 var(--fill, 0%),
-      color-mix(in srgb, var(--colors-skeleton-1-boundary) 35%, transparent) var(--fill, 0%) 100%
+      color-mix(in srgb, var(--divider) 35%, transparent) var(--fill, 0%) 100%
     );
   }
   .slider::-webkit-slider-thumb {

@@ -38,7 +38,7 @@ export const paradigms = async (ctx, rows) => {
     built.flatMap((card) => card.forms.flatMap(({ form }) => FACETS.map((branch) => facet(form, branch)))).filter(Boolean),
   );
   const labels = new Map(
-    (await ctx.daemon.entities.symbol.find({ slug: { $in: slugs } })).map((symbol) => [symbol.slug, named(symbol)]),
+    (await ctx.entities.symbol.find({ slug: { $in: slugs } })).map((symbol) => [symbol.slug, named(symbol)]),
   );
 
   return built.map((card) => ({
@@ -56,13 +56,13 @@ export const paradigms = async (ctx, rows) => {
           person: labelled(labels, facet(form, "person")),
           number: labelled(labels, facet(form, "number")),
           asset: form.trait?.VOCALIZED?.asset,
-          signal: form.retention?.lastSignal ?? undefined,
+          signal: form.assess()?.lastSignal ?? undefined,
         },
         TOKEN,
       ),
     ),
     literal: card.row.id,
     ...(card.infinitive?.trait?.VOCALIZED?.asset && { asset: card.infinitive.trait.VOCALIZED.asset }),
-    ...(card.row.retention?.lastSignal && { signal: card.row.retention.lastSignal }),
+    ...(card.row.assess()?.lastSignal && { signal: card.row.assess().lastSignal }),
   }));
 };

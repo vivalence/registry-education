@@ -17,7 +17,7 @@ export const aperture = new Vector().open(
     ),
   },
   async (ctx) => {
-    const existing = await ctx.daemon.entities.thread.find({
+    const existing = await ctx.entities.thread.find({
       mode: ctx.mode.id,
       user: ctx.user.id,
     });
@@ -34,7 +34,7 @@ export const aperture = new Vector().open(
         continue;
       }
 
-      const thread = await ctx.daemon.entities.thread.create({
+      const thread = await ctx.entities.thread.create({
         user: ctx.user.id,
         mode: ctx.mode.id,
         phase: "continuous",
@@ -44,7 +44,7 @@ export const aperture = new Vector().open(
       opened.push({ bucket, mount, thread, created: true });
     }
 
-    await ctx.daemon.entities.em.flush();
+    await ctx.entities.em.flush();
 
     return opened.map(({ bucket, mount, thread, created }) => ({
       id: thread.id,

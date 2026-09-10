@@ -11,7 +11,9 @@ import * as workbenchState from "./workbench.js";
   import Handle from "./parts/Handle.svelte";
   import Drawer from "./parts/Drawer.svelte";
 
-  const { terminal, buffer } = $props();
+  const { terminal, buffer, surface } = $props();
+  const recorded = terminal.client.runtime.entities.file.$entities;
+  const files = $derived($recorded.filter((file) => file.mode.daemon === buffer.mode.daemon));
 
   const PICK_OPTIONS = 3;
   const TICK = 1000;
@@ -27,7 +29,7 @@ import * as workbenchState from "./workbench.js";
   const POSITIVE = ["MASTERY", "SUCCESS", "NEUTRAL"];
   const RESET = Object.fromEntries(types.SETUP.map((key) => [key, undefined]));
 
-  let language = $state.raw(terminal.daemon.statics?.language ?? {});
+  let language = $state.raw(buffer.mode.daemon.statics?.language ?? {});
   const labels = $derived({ known: language.known?.name, learning: language.learning?.name });
 
   const clone = (value) => JSON.parse(JSON.stringify(value ?? null));
@@ -38,7 +40,7 @@ import * as workbenchState from "./workbench.js";
   const drawn = () => types.drawing(axes.random);
 
   const dresser = (list) => (index, worn) =>
-    knowables.dressFor(terminal, axes, list[index], { index, random: drawn(), worn });
+    knowables.dressFor(files, axes, list[index], { index, random: drawn(), worn });
 
   const prepare = (list) =>
     knowables.order(
@@ -54,7 +56,7 @@ import * as workbenchState from "./workbench.js";
   const resuming = Boolean(kept && LIVE_PHASES.includes(kept.phase) && kept.queue?.length);
 
   let carriers = $state.raw(knowables.carriers(buffer));
-  let queue = $state.raw(resuming ? clone(kept.queue) : prepare(knowables.admit(terminal, carriers, axes)));
+  let queue = $state.raw(resuming ? clone(kept.queue) : prepare(knowables.admit(files, carriers, axes)));
   let session = $state.raw(resuming ? clone(kept.session) : board(queue));
   let phase = $state(resuming ? kept.phase : "idle");
   let dirty = $state(!resuming && !carriers.length && set.length > 0);
@@ -204,7 +206,7 @@ import * as workbenchState from "./workbench.js";
   const riding = () => object.pluck(axes, types.SETUP);
 
   function readmit() {
-    queue = prepare(knowables.admit(terminal, carriers, axes));
+    queue = prepare(knowables.admit(files, carriers, axes));
     session = board(queue);
   }
 
@@ -236,7 +238,7 @@ import * as workbenchState from "./workbench.js";
   }
 
   async function absorb(raw) {
-    const fresh = await terminal.daemon.entities.buffer.cast(raw);
+    const fresh = await terminal.client.runtime.entities.buffer.cast(raw);
     retain(record());
     return fresh ?? raw;
   }
@@ -437,7 +439,7 @@ import * as workbenchState from "./workbench.js";
       });
     const fresh = await drawing;
     drawing = null;
-    const admitted = knowables.admit(terminal, fresh, axes);
+    const admitted = knowables.admit(files, fresh, axes);
     if (!admitted.length) return finish("complete");
     carriers = fresh;
     played = [...played, ...fresh.map((knowable) => knowable.literal).filter(Boolean)];
@@ -495,7 +497,7 @@ import * as workbenchState from "./workbench.js";
   });
 
   $effect(() => {
-    terminal.daemon.connection
+    buffer.mode.daemon.connection
       .call("/language", {})
       .then((pair) => {
         if (pair?.known || pair?.learning) language = pair;
@@ -524,7 +526,7 @@ import * as workbenchState from "./workbench.js";
   function review(signal, literal) {
     if (!literal || !signal) return;
     reviews += 1;
-    const sent = terminal.daemon.connection
+    const sent = buffer.mode.daemon.connection
       .call("/review/literal", { signal, scope: { literal } })
       .catch((error) => console.warn("[dojo] /review/literal failed", error))
       .finally(() => inflight.delete(sent));
@@ -616,8 +618,8 @@ import * as workbenchState from "./workbench.js";
           {labels}
           {language}
           {status}
-          asset={terminal.daemon.getAsset(staged.asset)}
-          assetOf={(reference) => terminal.daemon.getAsset(reference)}
+          file={knowables.fileOf(files, staged.asset)}
+          fileOf={(reference) => knowables.fileOf(files, reference)}
           {position}
           total={queue.length}
           first={streak.first(session)}
@@ -727,7 +729,7 @@ import * as workbenchState from "./workbench.js";
     max-height: var(--viva-h, 100%);
     min-height: 0;
     overflow: hidden;
-    background: var(--colors-skeleton-0-surface);
+    background: var(--surface);
   }
   .player {
     position: absolute;
@@ -740,11 +742,11 @@ import * as workbenchState from "./workbench.js";
   .strip {
     flex: none;
     height: 2px;
-    background: var(--colors-skeleton-1-surface);
+    background: var(--surface-lift);
   }
   .fill {
     height: 100%;
-    background: var(--colors-theme-primary-contrast);
+    background: var(--signal-primary-ink);
     transition: width 200ms;
   }
   .play {
@@ -762,7 +764,7 @@ import * as workbenchState from "./workbench.js";
     display: flex;
     align-items: center;
     justify-content: center;
-    background: color-mix(in srgb, var(--colors-skeleton-0-surface) 70%, transparent);
+    background: color-mix(in srgb, var(--surface) 70%, transparent);
   }
   .stage {
     display: flex;
@@ -778,7 +780,7 @@ import * as workbenchState from "./workbench.js";
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: var(--colors-skeleton-1-boundary);
+    background: var(--divider);
     animation: pulse 1s ease-in-out infinite;
   }
   @keyframes pulse {

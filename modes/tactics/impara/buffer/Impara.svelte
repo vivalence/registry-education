@@ -2,7 +2,7 @@
   import { onMount } from "svelte";
   import { Section } from "@vivalence/drapes";
 
-  const { terminal, buffer } = $props();
+  const { terminal, buffer, surface } = $props();
 
   const ACCENTS = {
     "/emit/vocabolario": "#5b8c5a",
@@ -14,7 +14,7 @@
   let note = $state("");
   let entering = $state("");
 
-  const daemon = () => terminal.daemon ?? terminal.thread?.daemon;
+  const daemon = () => buffer.mode.daemon;
 
   const course = () =>
     daemon().entities.mode.$entities.get().find((mode) => mode.id === buffer.mode.id) ??
@@ -97,13 +97,13 @@
     margin: 0;
     font-family: var(--font-family-serif-heading);
     font-size: var(--font-size-3xl);
-    color: var(--colors-skeleton-1-foreground);
+    color: var(--text-strong);
   }
   header p {
     margin: 0.25rem 0 0;
     font-family: var(--font-family-sans-text);
     font-size: var(--font-size-sm);
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
   .buckets {
     display: flex;
@@ -149,7 +149,7 @@
   .queued {
     font-family: var(--font-family-code);
     font-size: var(--font-size-xs);
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
   .go {
     font-size: var(--font-size-lg);

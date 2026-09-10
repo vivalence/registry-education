@@ -21,7 +21,7 @@ export const drill = new Vector().open(
     }),
   },
   async (ctx) => {
-    const impara = ctx.daemon.modes.tactic?.impara;
+    const impara = ctx.modes.tactic?.impara;
     if (!impara) return { condition: "ERROR", message: "the impara course is not mounted" };
 
     const emission = await impara.emit[ctx.input.bucket]({

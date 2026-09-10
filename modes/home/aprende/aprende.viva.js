@@ -1,4 +1,4 @@
-import { Vector, App, shape } from "@vivalence/typology";
+import { Vector, shape, mime } from "@vivalence/typology";
 import { gather } from "./gather.js";
 
 export { emitter } from "./emitter/index.js";
@@ -12,14 +12,15 @@ export const manifest = {
   name: "Aprende",
   description: "Brazilian Portuguese course",
   traits: [
-    "APPLICATION",
-    "STANDALONE",
+    "VIEWABLE",
     "HARNESSED",
     "CONVERSATIONAL",
     "EXPOSED",
     "EMITTER",
-    "TOOLED",
+    "TOOLING",
   ],
 };
 
-export const app = new App("buffer/Aprende.svelte");
+export const views = [
+  { slug: "aprende", mount: "buffer/Aprende.svelte", mime: mime.dom.svelte },
+];

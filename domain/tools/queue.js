@@ -1,5 +1,5 @@
 import { v, Vector } from "@vivalence/typology";
-import { STATUS } from "../types.js";
+import { STATUS } from "../schematics.js";
 import { line } from "./line.js";
 
 export const queue = new Vector().open(
@@ -25,7 +25,7 @@ export const queue = new Vector().open(
     }),
   },
   async (ctx) => {
-    const literal = ctx.daemon.entities.literal;
+    const literal = ctx.entities.literal;
     const where = ctx.input.symbols?.length ? { symbols: ctx.input.symbols } : {};
     const limit = ctx.input.limit;
 

@@ -20,7 +20,7 @@ export const literals = new Vector().open(
     }),
   },
   async (ctx) => {
-    const found = await ctx.daemon.entities.literal.find(
+    const found = await ctx.entities.literal.find(
       { symbols: { $all: ctx.input.symbols } },
       { populate: ["symbols"] },
     );

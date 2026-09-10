@@ -9,7 +9,7 @@ export const buffer = async (ctx, { set = [], data = {}, ...rest } = {}) => {
     { prompt: ctx.input.prompt, blacklist: ctx.input.blacklist?.literals ?? [] },
   );
   if (empty(resolved)) return [];
-  return ctx.mode.app.buffer({
+  return ctx.mode.buffer({
     data: {
       ...object.omit(types.axes(ctx.input), ["knowables"]),
       set,

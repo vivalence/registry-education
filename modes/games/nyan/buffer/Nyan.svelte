@@ -8,7 +8,7 @@
   import Chrome from "./panels/Chrome.svelte";
   import Controls from "./panels/Controls.svelte";
 
-  const { buffer, terminal } = $props();
+  const { terminal, buffer, surface } = $props();
   const { words: seedWords, owners: seedOwners, ...seedConfig } = buffer.data ?? {};
   const literals = buffer.literals;
 
@@ -85,7 +85,7 @@
     for (const attempt of analysis.attempts) {
       const literal = game.owners[attempt.wordIndex];
       if (!literal) continue; // "" = untracked function word
-      terminal.daemon.connection.call("/review/literal", { literal, signal: SIGNAL(attempt.label) });
+      buffer.mode.daemon.connection.call("/review/literal", { literal, signal: SIGNAL(attempt.label) });
     }
   }
 

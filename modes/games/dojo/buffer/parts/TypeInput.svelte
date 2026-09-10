@@ -17,11 +17,11 @@
   } = $props();
 
   const TONE = {
-    MASTERY: "var(--colors-theme-primary-contrast)",
-    SUCCESS: "var(--colors-system-success-contrast)",
-    NEUTRAL: "var(--colors-theme-secondary-contrast)",
-    MISTAKE: "var(--colors-system-error-contrast)",
-    FAILURE: "var(--colors-system-error-contrast)",
+    MASTERY: "var(--signal-primary-ink)",
+    SUCCESS: "var(--signal-positive-ink)",
+    NEUTRAL: "var(--signal-primary-ink)",
+    MISTAKE: "var(--signal-negative-ink)",
+    FAILURE: "var(--signal-negative-ink)",
   };
   const MISSES = ["MISTAKE", "FAILURE"];
   const LANDINGS = ["SUCCESS", "MASTERY"];
@@ -104,19 +104,19 @@
     min-height: 64px;
     padding: 0.75rem 1.25rem;
     border-radius: 0.5rem;
-    border: 1px solid var(--colors-skeleton-1-boundary);
-    background: color-mix(in srgb, var(--colors-skeleton-1-surface) 50%, var(--colors-skeleton-0-surface));
-    color: var(--text-primary);
+    border: 1px solid var(--boundary);
+    background: color-mix(in srgb, var(--surface-lift) 50%, var(--surface));
+    color: var(--text-strong);
     font-size: var(--font-size-base);
     font-family: var(--font-family-serif-heading);
     outline: none;
     box-sizing: border-box;
   }
   .field::placeholder {
-    color: var(--text-support);
+    color: var(--text-light);
   }
   .field.locked:not(.missed):not(.landed) {
-    color: var(--text-support);
+    color: var(--text-light);
   }
   .field.passive {
     min-height: 44px;
@@ -131,12 +131,12 @@
     -webkit-user-select: none;
   }
   .field.missed {
-    color: var(--colors-system-error-contrast);
-    box-shadow: 0 0 0 3px color-mix(in srgb, var(--colors-system-error-contrast) 28%, transparent);
+    color: var(--signal-negative-ink);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--signal-negative-ink) 28%, transparent);
   }
   .field.landed {
-    color: var(--colors-system-success-contrast);
-    box-shadow: 0 0 0 3px color-mix(in srgb, var(--colors-system-success-contrast) 22%, transparent);
+    color: var(--signal-positive-ink);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--signal-positive-ink) 22%, transparent);
   }
   .btn {
     min-height: 64px;
@@ -151,23 +151,23 @@
   }
   .check {
     border: none;
-    background: var(--colors-theme-primary-surface);
-    color: var(--colors-theme-primary-contrast);
+    background: var(--signal-primary-tint);
+    color: var(--signal-primary-ink);
   }
   .next {
-    border: 1px solid var(--colors-theme-primary-contrast);
-    background: color-mix(in srgb, var(--colors-theme-primary-surface) 35%, transparent);
-    color: var(--colors-theme-primary-contrast);
+    border: 1px solid var(--signal-primary-ink);
+    background: color-mix(in srgb, var(--signal-primary-tint) 35%, transparent);
+    color: var(--signal-primary-ink);
   }
   .next.missed {
-    border-color: var(--colors-system-error-contrast);
-    background: var(--colors-system-error-surface);
-    color: var(--colors-system-error-contrast);
+    border-color: var(--signal-negative-ink);
+    background: var(--signal-negative-tint);
+    color: var(--signal-negative-ink);
   }
   .next.landed {
-    border-color: var(--colors-system-success-contrast);
-    background: var(--colors-system-success-surface);
-    color: var(--colors-system-success-contrast);
+    border-color: var(--signal-positive-ink);
+    background: var(--signal-positive-tint);
+    color: var(--signal-positive-ink);
   }
   @media (max-width: 640px) {
     .btn {

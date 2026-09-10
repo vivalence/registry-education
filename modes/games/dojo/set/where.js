@@ -31,6 +31,10 @@ export const compile = (query = {}) => {
   if (!compiled.search) delete compiled.search;
   if (blank(compiled.traits)) delete compiled.traits;
   if (compiled.rank && compiled.rank.$lte == null && compiled.rank.$gte == null) delete compiled.rank;
+  if (compiled.rank) {
+    compiled.trait = { ...(compiled.trait ?? {}), RANKED: { rank: compiled.rank } };
+    delete compiled.rank;
+  }
   return compiled;
 };
 

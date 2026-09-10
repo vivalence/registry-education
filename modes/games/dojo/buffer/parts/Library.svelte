@@ -69,7 +69,7 @@
     flex-direction: column;
     min-height: 0;
     height: 100%;
-    background: var(--colors-skeleton-1-surface);
+    background: var(--surface-lift);
   }
   .head {
     flex: none;
@@ -83,9 +83,9 @@
     width: 1.6rem;
     height: 1.6rem;
     border-radius: 0.2rem;
-    border: 1px solid var(--colors-theme-primary-contrast);
-    background: var(--colors-skeleton-2-surface);
-    color: var(--colors-theme-primary-contrast);
+    border: 1px solid var(--signal-primary-ink);
+    background: var(--surface-sunk);
+    color: var(--signal-primary-ink);
     font-family: var(--font-family-code);
     font-size: var(--font-size-xs);
     cursor: pointer;
@@ -96,7 +96,7 @@
     font-size: var(--font-size-2xs);
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--text-support);
+    color: var(--text-light);
     opacity: 0.8;
   }
   .scroll {
@@ -126,9 +126,9 @@
     flex: 1;
     min-width: 0;
     text-align: left;
-    border: 1px solid var(--colors-skeleton-1-boundary);
+    border: 1px solid var(--boundary);
     border-radius: 0.2rem;
-    background: var(--colors-skeleton-0-surface);
+    background: var(--surface);
     padding: 0.45rem 0.55rem;
     cursor: pointer;
     display: flex;
@@ -137,17 +137,17 @@
     color: inherit;
   }
   .card:hover {
-    border-color: var(--colors-theme-primary-contrast);
+    border-color: var(--signal-primary-ink);
   }
   .name {
     font-family: var(--font-family-serif-heading);
     font-size: var(--font-size-sm);
-    color: var(--text-primary);
+    color: var(--text-strong);
   }
   .rule {
     font-family: var(--font-family-code);
     font-size: var(--font-size-2xs);
-    color: var(--text-support);
+    color: var(--text-light);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -156,19 +156,19 @@
     flex: none;
     border: none;
     background: transparent;
-    color: var(--text-support);
+    color: var(--text-light);
     cursor: pointer;
     font-size: var(--font-size-xs);
     padding: 0 0.2rem;
   }
   .forget:hover {
-    color: var(--colors-system-error-contrast);
+    color: var(--signal-negative-ink);
   }
   .recent {
     width: 100%;
     text-align: left;
     border: none;
-    border-bottom: 1px solid var(--colors-skeleton-1-boundary);
+    border-bottom: 1px solid var(--boundary);
     background: transparent;
     padding: 0.4rem 0.1rem;
     cursor: pointer;
@@ -178,24 +178,24 @@
     color: inherit;
   }
   .recent:hover {
-    background: var(--colors-skeleton-2-surface);
+    background: var(--surface-sunk);
   }
   .recent .rule {
     flex: 1;
     min-width: 0;
-    color: var(--text-body);
+    color: var(--text-ink);
   }
   .when {
     flex: none;
     font-family: var(--font-family-code);
     font-size: var(--font-size-2xs);
-    color: var(--text-support);
+    color: var(--text-light);
     opacity: 0.7;
   }
   .empty {
     font-family: var(--font-family-sans-text);
     font-size: var(--font-size-2xs);
-    color: var(--text-support);
+    color: var(--text-light);
     line-height: 1.5;
   }
 </style>

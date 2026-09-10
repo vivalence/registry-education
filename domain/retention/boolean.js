@@ -42,8 +42,9 @@ export default {
   encode,
   evolve,
   assess,
+  strength: (held) => (held.state === true ? 1 : 0),
   sql: {
-    strength: (table) =>
-      `CASE WHEN json_extract(${table}.state, '$') = 1 THEN 1.0 ELSE 0.0 END`,
+    strength: (at) =>
+      `CASE WHEN json_extract(${at("state")}, '$') = 1 THEN 1.0 ELSE 0.0 END`,
   },
 };

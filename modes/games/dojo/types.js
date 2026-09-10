@@ -216,7 +216,7 @@ export const knowable = v.object({
     .optional(),
   asset: v
     .object({})
-    .desc("VOCALIZED asset descriptor — the view resolves it against daemon cargo.")
+    .desc('VOCALIZED asset descriptor — the view finds the File row on its path. Example: { path: "sentences/sei-sicuro.mp3" }')
     .optional(),
   literal: v.string().desc("Persisted literal id — reviews land here. Absent = retention untouched.").optional(),
   judge: v.enum(["MATCH", "LLM"]).desc("Emitter-stamped, never caller-set. /generate stamps LLM.").optional(),

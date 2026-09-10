@@ -37,20 +37,20 @@
     min-height: 56px;
     padding: 0.875rem 1.125rem;
     border-radius: 0.625rem;
-    border: 1px solid var(--colors-skeleton-1-boundary);
-    background: color-mix(in srgb, var(--colors-skeleton-1-surface) 70%, var(--colors-skeleton-2-surface));
-    color: var(--text-primary);
+    border: 1px solid var(--boundary);
+    background: color-mix(in srgb, var(--surface-lift) 70%, var(--surface-sunk));
+    color: var(--text-strong);
     cursor: pointer;
     text-align: left;
     transition: all 0.12s;
   }
   .option:hover:not(:disabled) {
-    border-color: var(--text-support);
+    border-color: var(--text-light);
   }
   .key {
     font-family: var(--font-family-code);
     font-size: var(--font-size-xs);
-    color: var(--text-support);
+    color: var(--text-light);
     width: 1rem;
     flex-shrink: 0;
   }
@@ -60,14 +60,14 @@
     line-height: 1.35;
   }
   .correct {
-    background: color-mix(in srgb, var(--colors-system-success-surface) 80%, transparent);
-    border-color: var(--colors-system-success-contrast);
-    color: var(--colors-system-success-contrast);
+    background: color-mix(in srgb, var(--signal-positive-tint) 80%, transparent);
+    border-color: var(--signal-positive-ink);
+    color: var(--signal-positive-ink);
   }
   .wrong {
-    background: color-mix(in srgb, var(--colors-system-error-surface) 80%, transparent);
-    border-color: var(--colors-system-error-contrast);
-    color: var(--colors-system-error-contrast);
+    background: color-mix(in srgb, var(--signal-negative-tint) 80%, transparent);
+    border-color: var(--signal-negative-ink);
+    color: var(--signal-negative-ink);
   }
   .dimmed {
     opacity: 0.35;

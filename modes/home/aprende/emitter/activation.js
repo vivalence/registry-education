@@ -11,7 +11,7 @@ export const activation = new Vector().open(
     }),
   },
   async (ctx) => {
-    const pool = await ctx.daemon.entities.literal.feed(
+    const pool = await ctx.entities.literal.feed(
       { symbols: ["word"] },
       { limit: Math.ceil(ctx.input.count * POOL_FACTOR) },
     );
@@ -19,7 +19,7 @@ export const activation = new Vector().open(
     if (!literals.length) return [];
 
     ctx.pool.add(
-      await ctx.daemon.modes.game.nyan.emit.literals({
+      await ctx.modes.game.nyan.emit.literals({
         literals,
         gameplay: ctx.input.gameplay,
         thread: ctx.input.thread,

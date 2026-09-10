@@ -33,7 +33,7 @@ const EMITTER_RIDDLE_INPUT = v.object({
 export const emitter = new Vector().open(
   { nature: "/riddle/fromSymbols", input: EMITTER_RIDDLE_INPUT },
   async (ctx) => {
-    const language = ctx.daemon.statics.language;
+    const language = ctx.statics.language;
     const count = ctx.input.numberOfRiddles;
     console.log("emitter/riddle/fromSymbols {input}", { input: ctx.input, count, language });
 
@@ -41,22 +41,24 @@ export const emitter = new Vector().open(
     if (ctx.input.literals?.length) scope.push({ id: { $in: ctx.input.literals } });
     if (ctx.input.symbols?.length) scope.push({ symbols: { slug: { $in: ctx.input.symbols } } });
     const pool = scope.length
-      ? await ctx.daemon.entities.literal.find(scope.length === 1 ? scope[0] : { $or: scope }, {})
+      ? await ctx.entities.literal.find(scope.length === 1 ? scope[0] : { $or: scope }, {})
       : [];
     console.log("emitter/riddle/fromSymbols {pool}", { pool });
     if (!pool.length) return;
 
-    const level = await ctx.daemon.entities.literal.sample(
+    const level = await ctx.entities.literal.sample(
       { symbols: ["word"] },
       {
         status: ["LEARNING", "KNOWN", "UNKNOWN"],
         limit: ctx.input.levelPoolSize,
-        populate: ["retentions", "retentions.strength"],
+        populate: ["notes"],
       },
     );
 
     console.log("emitter/riddle/fromSymbols {level}", { level });
-    const { output } = await ctx.daemon.cortex.hallucinate.object.render({
+    const activity = await ctx.entities.activity.control({ user: ctx.user?.id ?? null, mode: ctx.mode.id, thread: ctx.thread?.id ?? null });
+    const { output } = await ctx.cortex.hallucinate.object.render({
+      controller: activity.controller,
       policy: { tune: "capable" },
       system: {
         identity: hal.emitter.identity(language),
@@ -78,7 +80,7 @@ export const emitter = new Vector().open(
       const literals = pool.filter((literal) => cast.literals?.includes(literal.slug));
 
       ctx.pool.add(
-        ctx.mode.app.buffer({
+        ctx.mode.buffer({
           data: {
             riddle: cast.riddle,
             answer: cast.answer,

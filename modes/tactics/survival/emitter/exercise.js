@@ -4,7 +4,7 @@ function failedTokenIndices(sentence) {
   const failedSlugs = new Set(
     sentence.uses
       .getItems()
-      .filter((word) => word.retention?.is?.failed)
+      .filter((word) => word.assess()?.is.failed)
       .map((word) => word.slug),
   );
   if (!failedSlugs.size) return [];
@@ -18,17 +18,17 @@ function failedTokenIndices(sentence) {
 }
 
 export default async (ctx) => {
-  const game = ctx.daemon.modes.game;
+  const game = ctx.modes.game;
   const where = { ontology: "sentence", ...ctx.input.where };
-  const opts = { blacklist: ctx.input.blacklist, populate: ["uses.retentions", "retentions"] };
+  const opts = { blacklist: ctx.input.blacklist, populate: ["uses.notes", "notes"] };
 
   const [sentences, errorSentences] = await Promise.all([
-    ctx.daemon.entities.literal.feed(where, { ...opts, limit: ctx.input.limit ?? 3 }),
-    ctx.daemon.entities.literal.byLastSignal(["MISTAKE", "FAILURE"], where, { ...opts, limit: 3 }),
+    ctx.entities.literal.feed(where, { ...opts, limit: ctx.input.limit ?? 3 }),
+    ctx.entities.literal.byLastSignal(["MISTAKE", "FAILURE"], where, { ...opts, limit: 3 }),
   ]);
   if (!sentences.length) return;
 
-  const virgin = sentences.filter((sentence) => !sentence.retention);
+  const virgin = sentences.filter((sentence) => !sentence.assess());
   for (const sentence of virgin) {
     ctx.pool.add(
       game["dojo"].emit.shadow.literals({
@@ -39,14 +39,14 @@ export default async (ctx) => {
     );
   }
 
-  const reviewed = sentences.filter((sentence) => sentence.retention);
+  const reviewed = sentences.filter((sentence) => sentence.assess());
   const vocalized = reviewed.filter((sentence) => sentence.traits?.includes("VOCALIZED"));
   const written = reviewed.filter((sentence) => !sentence.traits?.includes("VOCALIZED"));
 
   const practice = ctx.pool.section();
 
   for (const sentence of vocalized) {
-    if (sentence.retention.is.virgin || sentence.retention.is.failed) {
+    if (sentence.assess().is.virgin || sentence.assess().is.failed) {
       practice.add(
         game["dojo"].emit.listen.literal({
           literal: sentence,
@@ -68,7 +68,7 @@ export default async (ctx) => {
   }
 
   for (const sentence of written) {
-    if (sentence.retention.is.virgin || sentence.retention.is.failed) {
+    if (sentence.assess().is.virgin || sentence.assess().is.failed) {
       practice.add(
         game["dojo"].emit.shadow.literals({
           literal: sentence,

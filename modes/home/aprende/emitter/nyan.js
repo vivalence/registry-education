@@ -13,7 +13,7 @@ export const nyan = new Vector().open(
     }),
   },
   async (ctx) => {
-    const pool = await ctx.daemon.entities.literal.feed(
+    const pool = await ctx.entities.literal.feed(
       { symbols: [ctx.input.ontology] },
       { limit: Math.ceil(ctx.input.count * POOL_FACTOR) },
     );
@@ -21,7 +21,7 @@ export const nyan = new Vector().open(
     if (!literals.length) return [];
 
     ctx.pool.add(
-      await ctx.daemon.modes.game.nyan.emit.literals({
+      await ctx.modes.game.nyan.emit.literals({
         literals,
         gameplay: ctx.input.gameplay,
         layout: ctx.input.layout,

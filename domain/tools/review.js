@@ -1,5 +1,5 @@
 import { v, Vector } from "@vivalence/typology";
-import { SIGNAL } from "../types.js";
+import { SIGNAL } from "../schematics.js";
 
 export const review = new Vector().open(
   {
@@ -9,6 +9,7 @@ export const review = new Vector().open(
       "MASTERY — effortless and fast · SUCCESS — correct · NEUTRAL — shown or skipped · MISTAKE — wrong but close · FAILURE — blank or wrong.",
       "One call per exchange, at the end, carrying every exercised literal. Never the same literal twice in one call. Never review plain conversation — only items actually exercised.",
       "Each review reschedules the item and answers with its new status and next date; an exchange you do not review never happened.",
+      "EXCEPT when a reviewer rides the session: if review rounds already appear in the history without you calling this tool, reviews are wired in automatically — then never call this yourself unless explicitly instructed.",
     ].join("\n"),
     input: v.object({
       reviews: v.array(
@@ -29,28 +30,24 @@ export const review = new Vector().open(
     }
 
     const lines = [];
-    const retentions = [];
+    const reviewed = [];
     for (const item of ctx.input.reviews) {
-      const literal = await ctx.daemon.entities.literal.findOne(
-        ctx.daemon.entities.literal.reference(item.literal),
+      const literal = await ctx.entities.literal.findOne(
+        ctx.entities.literal.reference(item.literal),
       );
       if (!literal) {
         lines.push(`${item.literal} — not in the corpus`);
         continue;
       }
-      const retention = await ctx.daemon.call["/review/literal"]({
+      const note = await ctx.call["/review/literal"]({
         user: ctx.user,
         mode: ctx.mode,
         thread: ctx.thread ? { id: ctx.thread } : null,
         input: { literal: literal.slug, signal: item.signal },
       });
-      lines.push(
-        `${literal.slug} ${item.signal} → ${retention.status}, next ${
-          retention.nextAt?.toISOString().slice(0, 10) ?? "—"
-        }`,
-      );
-      retentions.push(retention);
+      lines.push(`${literal.slug} ${item.signal} → ${note.trait.RETAINED.status}, next ${note.trait.RETAINED.due?.slice(0, 10) ?? "—"}`);
+      reviewed.push(note);
     }
-    return { message: lines.join("\n"), entities: { retention: retentions } };
+    return { message: lines.join("\n"), entities: { note: reviewed } };
   },
 );

@@ -44,13 +44,13 @@ const themes = [
 
 const assess = (words) => {
   const total = words.length;
-  const virgin = words.filter((word) => !word.retention || word.retention.is.virgin).length;
-  const weak = words.filter((word) => word.retention?.is.weak).length;
-  const failed = words.filter((word) => word.retention?.is.failed).length;
-  const strong = words.filter((word) => word.retention?.is.strong).length;
-  const withRetention = words.filter((word) => word.retention).length;
+  const virgin = words.filter((word) => !word.assess() || word.assess().is.virgin).length;
+  const weak = words.filter((word) => word.assess()?.is.weak).length;
+  const failed = words.filter((word) => word.assess()?.is.failed).length;
+  const strong = words.filter((word) => word.assess()?.is.strong).length;
+  const withRetention = words.filter((word) => word.assess()).length;
   const avgStrength = total
-    ? words.reduce((sum, word) => sum + (word.retention?.strength ?? 0), 0) / total
+    ? words.reduce((sum, word) => sum + (word.assess()?.strength ?? 0), 0) / total
     : 0;
   return { total, virgin, weak, failed, strong, withRetention, avgStrength };
 };
@@ -61,23 +61,22 @@ const weakness = ({ avgStrength, virgin, failed, strong, total }) =>
 export default async (ctx) => {
   // console.log(`[buildup] input.where=${JSON.stringify(ctx.input.where ?? {})}`);
 
-  const all = await ctx.daemon.entities.literal.find(
+  const all = await ctx.entities.literal.find(
     {
       ...ctx.input.where,
       ontology: "word",
       symbols: [...(ctx.input.where?.symbols ?? [])],
     },
-    { populate: ["retentions", "retentions.strength", "symbols"] },
+    { populate: ["notes", "symbols"] },
   );
   if (!all.length) {
     // console.log(`[buildup] empty pool — abort`);
     return;
   }
 
-  const totalWords = await ctx.daemon.entities.literal.count({ ontology: "word" });
-  const retentionsLoaded = all.filter((word) => word.retention).length;
-  const strengthSample = all.find((word) => word.retention)?.retention?.strength;
-  // console.log(`[buildup] pool=${all.length} of ${totalWords} ontology=word; with-retention=${retentionsLoaded}; sample-strength=${strengthSample}`);
+  const totalWords = await ctx.entities.literal.count({ ontology: "word" });
+  const retentionsLoaded = all.filter((word) => word.assess()).length;
+  const strengthSample = all.find((word) => word.assess())?.assess()?.strength;
 
   const ranked = themes
     .map((theme) => {
@@ -106,10 +105,10 @@ export default async (ctx) => {
   // console.log(`[buildup] themes present=${present.length} missing=${missing.length} from ${all.length} words`); if (missing.length) {console.log(`[buildup] missing themes (n=0 in pool): ${missing.map((b) => `${b.label}[${b.symbols.join(",")}]`).join(" | ")}`);}
   // for (const bucket of present) {const { total, virgin, weak, failed, strong, withRetention, avgStrength } = bucket.assessment; const chosen = bucket === picked ? "✓" : " "; console.log(`[buildup] ${chosen} ${bucket.weakness.toFixed(2).padStart(7)}  ${bucket.label.padEnd(24)} ` + `n=${total} eng=${withRetention} virgin=${virgin} weak=${weak} failed=${failed} strong=${strong} avgS=${avgStrength.toFixed(3)}`,);}
   const wordWeakness = (word) => {
-    if (!word.retention) return 2;
-    const strength = word.retention.strength ?? 0;
-    const failedBoost = word.retention.is.failed ? 1 : 0;
-    const virginBoost = word.retention.is.virgin ? 1 : 0;
+    if (!word.assess()) return 2;
+    const strength = word.assess().strength ?? 0;
+    const failedBoost = word.assess().is.failed ? 1 : 0;
+    const virginBoost = word.assess().is.virgin ? 1 : 0;
     return 1 - strength + failedBoost + virginBoost;
   };
 
@@ -117,11 +116,11 @@ export default async (ctx) => {
   const focus = [...picked.words].sort((a, b) => wordWeakness(b) - wordWeakness(a)).slice(0, limit);
 
   const distractors = picked.words;
-  const game = ctx.daemon.modes.game;
+  const game = ctx.modes.game;
 
   // console.log(`[buildup] picked "${picked.label}" — focusing ${focus.length}/${picked.words.length}`);
 
-  const virgins = focus.filter((word) => !word.retention || word.retention.is.virgin);
+  const virgins = focus.filter((word) => !word.assess() || word.assess().is.virgin);
   if (virgins.length) {
     ctx.pool.add(
       game.exhibit.emit.present({
@@ -133,7 +132,7 @@ export default async (ctx) => {
   }
 
   for (const word of focus) {
-    if (!word.retention || word.retention.is.virgin) {
+    if (!word.assess() || word.assess().is.virgin) {
       ctx.pool.add(
         game.judge.emit.literal({
           literal: word,
@@ -142,7 +141,7 @@ export default async (ctx) => {
           speed: { rate: "SLOW" },
         }),
       );
-    } else if (word.retention.is.failed) {
+    } else if (word.assess().is.failed) {
       ctx.pool.add(
         game.judge.emit.literal({
           literal: word,
@@ -151,7 +150,7 @@ export default async (ctx) => {
           speed: { rate: "FAST" },
         }),
       );
-    } else if (word.retention.is.weak) {
+    } else if (word.assess().is.weak) {
       ctx.pool.add(game["dojo"].emit.write.literals({ literal: word, recall: "LEARNING" }));
     }
   }

@@ -1,5 +1,5 @@
 import { v, Vector } from "@vivalence/typology";
-import { STATUS } from "../types.js";
+import { STATUS } from "../schematics.js";
 
 export const progress = new Vector().open(
   {
@@ -10,18 +10,19 @@ export const progress = new Vector().open(
   },
   async (ctx) => {
     const now = Date.now();
-    const [total, retentions, weakest, symbols] = await Promise.all([
-      ctx.daemon.entities.literal.count({}),
-      ctx.daemon.entities.retention.find({}, { fields: ["status", "nextAt"] }),
-      ctx.daemon.entities.literal.byStrength({}, { limit: 10 }),
-      ctx.daemon.entities.symbol.find({}, { fields: ["slug"] }),
+    const [total, retained, weakest, symbols] = await Promise.all([
+      ctx.entities.literal.count({}),
+      ctx.entities.note.find({ traits: "RETAINED" }),
+      ctx.entities.literal.byStrength({}, { limit: 10 }),
+      ctx.entities.symbol.find({}, { fields: ["slug"] }),
     ]);
 
     const byStatus = Object.fromEntries(STATUS.map((status) => [status, 0]));
     let due = 0;
-    for (const retention of retentions) {
-      byStatus[retention.status] = (byStatus[retention.status] ?? 0) + 1;
-      if (retention.nextAt && retention.nextAt.getTime() <= now) due += 1;
+    for (const note of retained) {
+      const held = note.trait.RETAINED;
+      byStatus[held.status] = (byStatus[held.status] ?? 0) + 1;
+      if (held.due && Date.parse(held.due) <= now) due += 1;
     }
 
     const domains = symbols
@@ -30,7 +31,7 @@ export const progress = new Vector().open(
 
     const message = [
       "[Learner report]",
-      `Vocabulary: ${total} literals · ${retentions.length} with retention ` +
+      `Vocabulary: ${total} literals · ${retained.length} with retention ` +
       `(${STATUS.map((status) => `${status.toLowerCase()} ${byStatus[status]}`).join(" · ")}) · ` +
       `${due} due for review.`,
       weakest.length

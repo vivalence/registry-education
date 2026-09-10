@@ -1,3 +1,7 @@
+
+const notesOf = (literal) =>
+  Array.isArray(literal.notes) ? literal.notes : literal.notes?.isInitialized?.() ? literal.notes.getItems() : [];
+const retained = (literal) => notesOf(literal).find((note) => note.traits?.includes("RETAINED"))?.trait?.RETAINED;
 const FACETS = { infinitive: "lemma", tense: "tense", mood: "mood", person: "person", number: "number" };
 
 const VERBAL = ["tense", "mood"];
@@ -25,8 +29,8 @@ export const fromLiteral = (literal) => ({
   tokens: literal.trait?.ANNOTATED?.tokens,
   asset: literal.trait?.VOCALIZED?.asset,
   literal: literal.id,
-  signal: literal.retention?.lastSignal ?? literal.retentions?.[0]?.lastSignal ?? undefined,
-  status: literal.retention?.status ?? literal.retentions?.[0]?.status ?? undefined,
+  signal: retained(literal)?.lastSignal ?? undefined,
+  status: retained(literal)?.status ?? undefined,
 });
 
 export const speakable = (knowable) => Boolean(knowable?.known && knowable?.learning);

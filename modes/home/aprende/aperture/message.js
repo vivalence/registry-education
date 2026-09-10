@@ -14,7 +14,7 @@ export const message = new Vector().open(
     //   input: ctx.daemon.input,
     //   harness: ctx.mode.harness,
     //   tool: ctx.mode.tool,
-    //   cortex: ctx.daemon.cortex,
+    //   cortex: ctx.cortex,
     //   hallucination: ctx.hallucination,
     //   keys: Object.keys(ctx),
     // });

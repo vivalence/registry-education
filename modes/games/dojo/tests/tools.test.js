@@ -1,7 +1,9 @@
 import { specimen, shape } from "@vivalence/typology";
 import { mountMode } from "@vivalence/runtime/scenarios";
+import { viewable } from "./viewable.js";
 
 import * as dojo from "../dojo.viva.js";
+import * as domain from "../../../../domain/domain.viva.js";
 import * as knowables from "../buffer/knowables.js";
 
 specimen.describe("dojo tools", () => {
@@ -9,7 +11,8 @@ specimen.describe("dojo tools", () => {
   let tools;
 
   specimen.beforeAll(async () => {
-    scenario = await mountMode(dojo);
+    scenario = await mountMode(dojo, { domain });
+    viewable(scenario, dojo);
     tools = shape.object(scenario.mode.tools);
   });
 
@@ -45,7 +48,7 @@ specimen.describe("dojo tools", () => {
 
   specimen.it("provision with a declared set pins literals by slug and carries the axes", async () => {
     await scenario.scoped(async () => {
-      const [pinned] = await scenario.daemon.entities.literal.find({}, { limit: 1 });
+      const [pinned] = await scenario.daemon.entities.literal.find({ ontology: "word" }, { limit: 1 });
       const result = await tools.provision({
         set: [{ pick: "literals", literals: [pinned.slug] }],
         streak: 2,
@@ -62,7 +65,7 @@ specimen.describe("dojo tools", () => {
 
   specimen.it("every tool buffer survives the wire and admits playable knowables — the client's own fold", async () => {
     await scenario.scoped(async () => {
-      const terminal = { daemon: { getAsset: () => null } };
+      const files = [];
       const emissions = [
         await tools.provision({ count: 3 }),
         await tools.provision({ symbols: ["greeting"], count: 3 }),
@@ -72,7 +75,7 @@ specimen.describe("dojo tools", () => {
       for (const emission of emissions) {
         const [minted] = emission.buffer;
         const wired = JSON.parse(JSON.stringify(minted.toJSON?.() ?? minted));
-        const admitted = knowables.carried(terminal, wired);
+        const admitted = knowables.carried(files, wired);
         specimen.expect(admitted.length).toBeGreaterThanOrEqual(1);
         for (const knowable of admitted) {
           specimen.expect(typeof knowable.known).toBe("string");
@@ -106,7 +109,7 @@ specimen.describe("dojo tools", () => {
         const result = await tools.generate({ count: 2 });
         const [minted] = result.buffer;
         const wired = JSON.parse(JSON.stringify(minted.toJSON?.() ?? minted));
-        const admitted = knowables.carried({ daemon: { getAsset: () => null } }, wired);
+        const admitted = knowables.carried([], wired);
         specimen.expect(admitted.length).toBe(2);
         for (const knowable of admitted) {
           specimen.expect(knowable.judge).toBe("LLM");
@@ -116,6 +119,61 @@ specimen.describe("dojo tools", () => {
         if (original) Object.defineProperty(scenario.daemon, "cortex", original);
         else delete scenario.daemon.cortex;
       }
+    });
+  });
+
+  specimen.it("generate anchors force drilled literals into the composition — cortex stubbed", async () => {
+    await scenario.scoped(async () => {
+      const [anchor] = await scenario.daemon.entities.literal.find(
+        { ontology: "word" },
+        { limit: 1 },
+      );
+      let request;
+      const stubbed = {
+        hallucinate: {
+          object: {
+            render: async (input) => {
+              request = input;
+              return {
+                output: {
+                  object: {
+                    sentences: [
+                      {
+                        known: `about ${anchor.trait.TRANSLATED.known}`,
+                        learning: `sobre ${anchor.trait.TRANSLATED.learning}`,
+                      },
+                    ],
+                  },
+                },
+              };
+            },
+          },
+        },
+      };
+      const original = Object.getOwnPropertyDescriptor(scenario.daemon, "cortex");
+      Object.defineProperty(scenario.daemon, "cortex", { value: stubbed, configurable: true });
+      try {
+        const result = await tools.generate({ count: 1, anchors: [anchor.slug] });
+        specimen.expect(request.system.anchors).toContain(anchor.trait.TRANSLATED.learning);
+        const [minted] = result.buffer;
+        const [knowable] = minted.data.knowables;
+        const token = knowable.tokens.find((entry) => entry.literal === anchor.id);
+        specimen.expect(token).toBeDefined();
+        specimen.expect(token.gloss).toBe(anchor.trait.TRANSLATED.known);
+      } finally {
+        if (original) Object.defineProperty(scenario.daemon, "cortex", original);
+        else delete scenario.daemon.cortex;
+      }
+    });
+  });
+
+  specimen.it("symbols searches the catalog with literal counts", async () => {
+    await scenario.scoped(async () => {
+      const result = await tools.symbols({ search: "greeting" });
+      specimen.expect(result.message).toContain("greeting");
+      specimen.expect(result.message).toMatch(/\d+ literals?/);
+      const empty = await tools.symbols({ search: "no-such-symbol-anywhere" });
+      specimen.expect(empty.message).toContain("no symbols match");
     });
   });
 

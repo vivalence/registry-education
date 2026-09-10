@@ -1,4 +1,4 @@
-import { object, App, Vector, v } from "@vivalence/typology";
+import { object, Vector, v, mime } from "@vivalence/typology";
 
 const manifest = {
   type: "game",
@@ -7,31 +7,32 @@ const manifest = {
   description:
     "Connect literal pairs across two columns. Batch mode. Failure is sticky per literal.",
   version: "0.1.0",
-  traits: ["APPLICATION", "EMITTER"],
+  traits: ["VIEWABLE", "EMITTER"],
 };
 
 const ontology = ["word", "sentence"];
 
-const app = new App(
-  "buffer/Match.svelte",
-  v.buffer({
-    data: {
-      recall: v
-        .string({ default: "LEARNING" })
-        .desc("LEARNING: known left ↔ learning right, KNOWN: reversed"),
-      gameplay: v
-        .string({ default: "TRANSLATE" })
-        .desc("TRANSLATE: match TRANSLATED pairs, DESCRIBE: match descriptions to literals"),
-      descriptions: v
-        .array(v.string().desc("Parallel to literals — left-column text for describe gameplay"))
-        .optional(),
-    },
-  }),
-);
+const buffer = v.buffer({
+  data: {
+    recall: v
+      .string({ default: "LEARNING" })
+      .desc("LEARNING: known left ↔ learning right, KNOWN: reversed"),
+    gameplay: v
+      .string({ default: "TRANSLATE" })
+      .desc("TRANSLATE: match TRANSLATED pairs, DESCRIBE: match descriptions to literals"),
+    descriptions: v
+      .array(v.string().desc("Parallel to literals — left-column text for describe gameplay"))
+      .optional(),
+  },
+});
+
+const views = [
+  { slug: "match", mount: "buffer/Match.svelte", mime: mime.dom.svelte },
+];
 
 const emitter = new Vector()
   .open("/batch", async (ctx) => {
-    return ctx.mode.app.buffer({
+    return ctx.mode.buffer({
       data: {
         recall: ctx.input.recall ?? "LEARNING",
         gameplay: ctx.input.gameplay ?? "TRANSLATE",
@@ -42,12 +43,12 @@ const emitter = new Vector()
   })
   .open("/feed", async (ctx) => {
     const limit = ctx.input.limit ?? 6;
-    const literals = await ctx.daemon.entities.literal.feed(
+    const literals = await ctx.entities.literal.feed(
       object.merge(ctx.input.where, { ontology: { $in: ontology } }),
       { limit, blacklist: ctx.input.blacklist },
     );
     if (literals.length < 2) return [];
-    return ctx.mode.app.buffer({
+    return ctx.mode.buffer({
       data: {
         recall: ctx.input.recall ?? "LEARNING",
         gameplay: ctx.input.gameplay ?? "TRANSLATE",
@@ -71,4 +72,4 @@ const dataset = {
   ],
 };
 
-export { manifest, app, emitter, dataset };
+export { manifest, buffer, views, emitter, dataset };

@@ -1,12 +1,12 @@
 <script>
   import { Desk } from "@vivalence/drapes";
 
-  const { terminal, buffer } = $props();
+  const { terminal, buffer, surface } = $props();
 
   const data = buffer.data ?? {};
   const recall = data.recall ?? "LEARNING";
   const gameplay = data.gameplay ?? "TRANSLATE";
-  const language = terminal.daemon.statics?.language ?? {};
+  const language = buffer.mode.daemon.statics?.language ?? {};
   const descriptions = data.descriptions ?? [];
 
   let literals = $state(buffer.literals ?? []);
@@ -56,7 +56,7 @@
   }
 
   if (!literals.length) {
-    terminal.daemon.connection.call("/pick/literal/feed", { limit: 4 }).then((lits) => {
+    buffer.mode.daemon.connection.call("/pick/literal/feed", { limit: 4 }).then((lits) => {
       literals = lits ?? [];
       init(literals);
       loading = false;
@@ -113,7 +113,7 @@
     if (connections.length !== literals.length) return;
 
     for (const lit of literals) {
-      terminal.daemon.connection.call("/review/literal", {
+      buffer.mode.daemon.connection.call("/review/literal", {
         signal: errored.has(lit.id) ? "MISTAKE" : "SUCCESS",
         scope: { literal: lit.id },
       });
@@ -204,12 +204,12 @@
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--colors-theme-primary-contrast);
+    color: var(--signal-primary-ink);
   }
   .meta-count {
     font-family: var(--font-family-code);
     font-size: var(--font-size-xs);
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
   }
 
   .grid {
@@ -231,9 +231,9 @@
     min-height: 48px;
     padding: 0.75rem 0.875rem;
     border-radius: 0.5rem;
-    border: 1px solid var(--colors-skeleton-1-boundary);
-    background: color-mix(in srgb, var(--colors-skeleton-1-surface) 70%, var(--colors-skeleton-2-surface));
-    color: var(--colors-palette-gray-100);
+    border: 1px solid var(--boundary);
+    background: color-mix(in srgb, var(--surface-lift) 70%, var(--surface-sunk));
+    color: var(--text-light);
     font-size: var(--font-size-base);
     font-family: var(--font-family-serif-heading);
     cursor: pointer;
@@ -245,22 +245,22 @@
     display: block;
   }
   .cell:hover:not(:disabled) {
-    border-color: var(--colors-skeleton-1-contrast);
+    border-color: var(--text-strong);
   }
 
   .cell-selected {
-    border-color: var(--colors-theme-primary-contrast);
-    background: color-mix(in srgb, var(--colors-theme-primary-surface) 40%, transparent);
+    border-color: var(--signal-primary-ink);
+    background: color-mix(in srgb, var(--signal-primary-tint) 40%, transparent);
   }
 
   .cell-connected {
     opacity: 0.25;
     pointer-events: none;
-    border-color: var(--colors-system-success-contrast);
+    border-color: var(--signal-positive-ink);
   }
 
   .cell-failed {
-    border-color: var(--colors-system-error-contrast);
+    border-color: var(--signal-negative-ink);
     animation: shake 0.3s ease;
   }
 
@@ -278,7 +278,7 @@
   }
   .dot {
     width: 6px; height: 6px; border-radius: 50%;
-    background: var(--colors-skeleton-1-boundary);
+    background: var(--divider);
     animation: pulse 1s ease-in-out infinite;
   }
   @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
@@ -287,7 +287,7 @@
     display: block;
     text-align: center;
     padding: 1rem;
-    color: var(--colors-skeleton-1-boundary);
+    color: var(--boundary);
     font-size: var(--font-size-sm);
     font-family: var(--font-family-code);
   }

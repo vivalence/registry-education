@@ -1,7 +1,7 @@
 <script>
   import { Asset } from "@vivalence/drapes";
 
-  const { answer, example, asset = null, label } = $props();
+  const { answer, example, file = null, label } = $props();
 </script>
 
 <div class="divider"></div>
@@ -12,14 +12,14 @@
       <p class="answer">{answer}</p>
       {#if example}<p class="example">{example}</p>{/if}
     </div>
-    {#if asset}<Asset autoplay={true} variant="dot" {asset} />{/if}
+    {#if file}<Asset autoplay={true} variant="dot" {file} />{/if}
   </div>
 </div>
 
 <style>
   .divider {
     height: 1px;
-    background: var(--colors-skeleton-1-boundary);
+    background: var(--divider);
     margin: 1.5rem 0;
   }
   .reveal {
@@ -30,7 +30,7 @@
   .label {
     font-family: var(--font-family-code);
     font-size: var(--font-size-xs);
-    color: var(--text-support);
+    color: var(--text-light);
   }
   .row {
     display: flex;
@@ -44,14 +44,14 @@
   .answer {
     font-family: var(--font-family-serif-heading);
     font-size: var(--font-size-xl);
-    color: var(--colors-theme-primary-contrast);
+    color: var(--signal-primary-ink);
     margin: 0;
     line-height: 1.2;
   }
   .example {
     font-family: var(--font-family-serif-heading);
     font-size: var(--font-size-base);
-    color: var(--text-support);
+    color: var(--text-light);
     font-style: italic;
     margin: 0.75rem 0 0 0;
   }

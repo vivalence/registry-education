@@ -5542,5 +5542,383 @@ export default [
         "slug": "proficiency.cefr.a1"
       }
     ]
+  },
+  {
+    "slug": "subir.imperative",
+    "traits": [
+      "RANKED",
+      "CONJUGATED"
+    ],
+    "trait": {
+      "RANKED": {
+        "rank": 90000
+      },
+      "CONJUGATED": {
+        "infinitive": "subir.verb.infinitive",
+        "paradigm": {
+          "secondSingular": "subir.verb.imperative.second.singular",
+          "thirdSingular": "subir.verb.imperative.third.singular"
+        }
+      }
+    },
+    "symbols": [
+      {
+        "slug": "conjugation"
+      },
+      {
+        "slug": "word.lemma.subir"
+      },
+      {
+        "slug": "word.mood.imperative"
+      },
+      {
+        "slug": "word.suffix.ir"
+      },
+      {
+        "slug": "word.regularity.regular"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "bajar.imperative",
+    "traits": [
+      "RANKED",
+      "CONJUGATED"
+    ],
+    "trait": {
+      "RANKED": {
+        "rank": 90000
+      },
+      "CONJUGATED": {
+        "infinitive": "bajar.verb.infinitive",
+        "paradigm": {
+          "secondSingular": "bajar.verb.imperative.second.singular",
+          "thirdSingular": "bajar.verb.imperative.third.singular"
+        }
+      }
+    },
+    "symbols": [
+      {
+        "slug": "conjugation"
+      },
+      {
+        "slug": "word.lemma.bajar"
+      },
+      {
+        "slug": "word.mood.imperative"
+      },
+      {
+        "slug": "word.suffix.ar"
+      },
+      {
+        "slug": "word.regularity.regular"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "girar.imperative",
+    "traits": [
+      "RANKED",
+      "CONJUGATED"
+    ],
+    "trait": {
+      "RANKED": {
+        "rank": 90000
+      },
+      "CONJUGATED": {
+        "infinitive": "girar.verb.infinitive",
+        "paradigm": {
+          "secondSingular": "girar.verb.imperative.second.singular",
+          "thirdSingular": "girar.verb.imperative.third.singular"
+        }
+      }
+    },
+    "symbols": [
+      {
+        "slug": "conjugation"
+      },
+      {
+        "slug": "word.lemma.girar"
+      },
+      {
+        "slug": "word.mood.imperative"
+      },
+      {
+        "slug": "word.suffix.ar"
+      },
+      {
+        "slug": "word.regularity.regular"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "parar.imperative",
+    "traits": [
+      "RANKED",
+      "CONJUGATED"
+    ],
+    "trait": {
+      "RANKED": {
+        "rank": 90000
+      },
+      "CONJUGATED": {
+        "infinitive": "parar.verb.infinitive",
+        "paradigm": {
+          "secondSingular": "parar.verb.imperative.second.singular",
+          "thirdSingular": "parar.verb.imperative.third.singular"
+        }
+      }
+    },
+    "symbols": [
+      {
+        "slug": "conjugation"
+      },
+      {
+        "slug": "word.lemma.parar"
+      },
+      {
+        "slug": "word.mood.imperative"
+      },
+      {
+        "slug": "word.suffix.ar"
+      },
+      {
+        "slug": "word.regularity.regular"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "cortar.imperative",
+    "traits": [
+      "RANKED",
+      "CONJUGATED"
+    ],
+    "trait": {
+      "RANKED": {
+        "rank": 90000
+      },
+      "CONJUGATED": {
+        "infinitive": "cortar.verb.infinitive",
+        "paradigm": {
+          "secondSingular": "cortar.verb.imperative.second.singular",
+          "thirdSingular": "cortar.verb.imperative.third.singular"
+        }
+      }
+    },
+    "symbols": [
+      {
+        "slug": "conjugation"
+      },
+      {
+        "slug": "word.lemma.cortar"
+      },
+      {
+        "slug": "word.mood.imperative"
+      },
+      {
+        "slug": "word.suffix.ar"
+      },
+      {
+        "slug": "word.regularity.regular"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "poner.imperative",
+    "traits": [
+      "RANKED",
+      "CONJUGATED"
+    ],
+    "trait": {
+      "RANKED": {
+        "rank": 90000
+      },
+      "CONJUGATED": {
+        "infinitive": "poner.verb.infinitive",
+        "paradigm": {
+          "secondSingular": "poner.verb.imperative.second.singular",
+          "thirdSingular": "poner.verb.imperative.third.singular"
+        }
+      }
+    },
+    "symbols": [
+      {
+        "slug": "conjugation"
+      },
+      {
+        "slug": "word.lemma.poner"
+      },
+      {
+        "slug": "word.mood.imperative"
+      },
+      {
+        "slug": "word.suffix.er"
+      },
+      {
+        "slug": "word.regularity.irregular"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "freír.imperative",
+    "traits": [
+      "RANKED",
+      "CONJUGATED"
+    ],
+    "trait": {
+      "RANKED": {
+        "rank": 90000
+      },
+      "CONJUGATED": {
+        "infinitive": "freír.verb.infinitive",
+        "paradigm": {
+          "secondSingular": "freír.verb.imperative.second.singular",
+          "thirdSingular": "freír.verb.imperative.third.singular"
+        }
+      }
+    },
+    "symbols": [
+      {
+        "slug": "conjugation"
+      },
+      {
+        "slug": "word.lemma.freír"
+      },
+      {
+        "slug": "word.mood.imperative"
+      },
+      {
+        "slug": "word.suffix.ir"
+      },
+      {
+        "slug": "word.regularity.irregular"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "servir.imperative",
+    "traits": [
+      "RANKED",
+      "CONJUGATED"
+    ],
+    "trait": {
+      "RANKED": {
+        "rank": 90000
+      },
+      "CONJUGATED": {
+        "infinitive": "servir.verb.infinitive",
+        "paradigm": {
+          "secondSingular": "servir.verb.imperative.second.singular",
+          "thirdSingular": "servir.verb.imperative.third.singular"
+        }
+      }
+    },
+    "symbols": [
+      {
+        "slug": "conjugation"
+      },
+      {
+        "slug": "word.lemma.servir"
+      },
+      {
+        "slug": "word.mood.imperative"
+      },
+      {
+        "slug": "word.suffix.ir"
+      },
+      {
+        "slug": "word.regularity.irregular"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "ir.imperative",
+    "traits": [
+      "RANKED",
+      "CONJUGATED"
+    ],
+    "trait": {
+      "RANKED": {
+        "rank": 90000
+      },
+      "CONJUGATED": {
+        "infinitive": "ir.verb.infinitive",
+        "paradigm": {
+          "secondSingular": "ir.verb.imperative.second.singular",
+          "thirdSingular": "ir.verb.imperative.third.singular"
+        }
+      }
+    },
+    "symbols": [
+      {
+        "slug": "conjugation"
+      },
+      {
+        "slug": "word.lemma.ir"
+      },
+      {
+        "slug": "word.mood.imperative"
+      },
+      {
+        "slug": "word.suffix.ir"
+      },
+      {
+        "slug": "word.regularity.irregular"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
   }
 ]

@@ -21,7 +21,7 @@ const subject = (
 ${pool
   .map(
     (literal) =>
-      `  ${literal.slug} · ${literal.trait?.TRANSLATED?.learning} (${literal.trait?.TRANSLATED?.known}) · ${literal.retention?.strength ?? "new"} · ${literal.retention?.status ?? "UNTOUCHED"}`,
+      `  ${literal.slug} · ${literal.trait?.TRANSLATED?.learning} (${literal.trait?.TRANSLATED?.known}) · ${literal.assess()?.strength ?? "new"} · ${literal.assess()?.status ?? "UNTOUCHED"}`,
   )
   .join("\n")}`;
 
@@ -31,7 +31,7 @@ const ceiling = (
 ${sample
   .map(
     (literal) =>
-      `  ${literal.slug} · ${literal.retention?.strength ?? "new"} · ${literal.retention?.status ?? "UNTOUCHED"}`,
+      `  ${literal.slug} · ${literal.assess()?.strength ?? "new"} · ${literal.assess()?.status ?? "UNTOUCHED"}`,
   )
   .join("\n")}
 Pitch every riddle at THIS level and never above it — no word harder than the learner already knows, and speak in their vocabulary.`;

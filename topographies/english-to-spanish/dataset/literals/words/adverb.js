@@ -1916,5 +1916,81 @@ export default [
         "slug": "functional.negation"
       }
     ]
+  },
+  {
+    "slug": "arriba.adverb",
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "up",
+        "learning": "arriba"
+      },
+      "EXEMPLIFIED": {
+        "known": "Go up!",
+        "learning": "¡Arriba!"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.arriba"
+      },
+      {
+        "slug": "word.part-of-speech.adverb"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
+  },
+  {
+    "slug": "abajo.adverb",
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ],
+    "trait": {
+      "TRANSLATED": {
+        "known": "down",
+        "learning": "abajo"
+      },
+      "EXEMPLIFIED": {
+        "known": "Go down!",
+        "learning": "¡Abajo!"
+      },
+      "RANKED": {
+        "rank": 90000
+      }
+    },
+    "symbols": [
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.abajo"
+      },
+      {
+        "slug": "word.part-of-speech.adverb"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "domain.mando"
+      }
+    ]
   }
 ]

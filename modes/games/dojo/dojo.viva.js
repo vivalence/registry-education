@@ -1,4 +1,4 @@
-import { App, v } from "@vivalence/typology";
+import { mime, v } from "@vivalence/typology";
 import * as types from "./types.js";
 
 export { emitter } from "./emitter/index.js";
@@ -13,12 +13,10 @@ export const manifest = {
   description:
     "One rep machine over words, sentences and conjugation forms — prompt, gameplay, preview, streak, continuous and limit all free to combine.",
   version: "0.1.0",
-  traits: ["APPLICATION", "EMITTER", "INTENTED", "STANDALONE", "EXPOSED", "TOOLED"],
+  traits: ["VIEWABLE", "EMITTER", "INTENTED", "EXPOSED", "TOOLING"],
 };
 
-export const app = new App(
-  "buffer/Dojo.svelte",
-  v
+export const buffer = v
     .buffer({
       data: {
         recall: types.recall,
@@ -53,5 +51,9 @@ Every attempt sends its review signal; streak accounting is session-local.
 gameplay and recall accept a pool (array) — one value drawn per knowable.
 Presets (meet, recognize, write, shadow, listen, drill, mixed, ultra) are emitter-side axis bundles — nothing in this buffer knows about them.
 The buffer carries its own continuous machinery: data.continuous re-resolves data.set on completion, blacklisting what was played. Thread AIMED+QUEUEING re-pull on release is an alternative outer loop.`,
-    ),
-);
+    );
+
+export const views = [
+  { slug: "dojo", mount: "buffer/Dojo.svelte", mime: mime.dom.svelte },
+  { slug: "dojo", mount: "buffer/dojo.jsx", mime: mime.tty.solid },
+];
