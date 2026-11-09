@@ -343,6 +343,17 @@ import * as workbenchState from "./workbench.js";
     stored.write({ saved: $state.snapshot(saved) });
   }
 
+  function adopt(entries) {
+    const cast = entries.map((entry) => {
+      const clauses = types.set.cast(entry.set);
+      const errors = [...types.set.errors(clauses)];
+      if (errors.length) throw new Error(`[dojo] import "${entry.name}": ${errors.map((error) => error.message).join("; ")}`);
+      return { name: entry.name, set: clauses, axes: object.pluck(entry.axes ?? {}, types.SETUP), at: Date.now() };
+    });
+    saved = [...cast, ...saved.filter((other) => !cast.some((entry) => entry.name === other.name))];
+    stored.write({ saved: $state.snapshot(saved) });
+  }
+
   const resolveSet = (clauses) =>
     buffer.mode.connection.call("/resolve", { set: clauses, prompt: axes.prompt });
 
@@ -689,7 +700,7 @@ import * as workbenchState from "./workbench.js";
     {startLabel}
     {committing}
     playing={locked}
-    library={{ saved, recents, summary, onload: reuse, onforget: forget }}
+    library={{ saved, recents, summary, onload: reuse, onforget: forget, onimport: adopt }}
     builder={{
       editing,
       traits,

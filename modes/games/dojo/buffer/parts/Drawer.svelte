@@ -295,6 +295,10 @@
   .rail-button {
     width: 1.6rem;
     height: 1.6rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
     border-radius: 0.2rem;
     border: 1px solid var(--boundary-soft);
     background: transparent;
@@ -325,6 +329,7 @@
     box-sizing: border-box;
     position: relative;
     flex: none;
+    overflow: auto;
   }
   .column.build {
     flex: 1 1 320px;

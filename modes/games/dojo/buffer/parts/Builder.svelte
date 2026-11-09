@@ -492,7 +492,7 @@
   </div>
 
   <div class="split" class:narrow role="separator" aria-orientation="horizontal" title="drag to resize the results" onpointerdown={grabSplit} onpointermove={dragSplit} onpointerup={releaseSplit} onpointercancel={releaseSplit}></div>
-  <div class="results" bind:this={resultsElement} style:flex={split ? `0 0 ${split}px` : null}>
+  <div class="results" bind:this={resultsElement} style:flex={split ? `0 0 ${Math.min(split, Math.max(RESULTS_MIN, builderHeight - FORM_MIN))}px` : null}>
     <div class="results-head">
       <span class="big" class:none={!rows.length}>{resolving ? "…" : rows.length}</span>
       <span class="results-note">

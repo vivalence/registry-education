@@ -5,6 +5,7 @@ export { emitter } from "./emitter/index.js";
 export { aperture } from "./aperture/index.js";
 export { dataset } from "./dataset/index.js";
 export { tools } from "./tools/index.js";
+export { harness } from "./harness.js";
 
 export const manifest = {
   type: "game",
@@ -13,7 +14,7 @@ export const manifest = {
   description:
     "One rep machine over words, sentences and conjugation forms — prompt, gameplay, preview, streak, continuous and limit all free to combine.",
   version: "0.1.0",
-  traits: ["VIEWABLE", "EMITTER", "INTENTED", "EXPOSED", "TOOLING"],
+  traits: ["VIEWABLE", "EMITTER", "INTENTED", "EXPOSED", "TOOLING", "HARNESSED"],
 };
 
 export const buffer = v

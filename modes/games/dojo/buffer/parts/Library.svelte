@@ -1,5 +1,17 @@
 <script>
-  const { saved = [], recents = [], summary, closable = false, onload, onforget, onclose } = $props();
+  const { saved = [], recents = [], summary, closable = false, onload, onforget, onclose, onimport } = $props();
+
+  const exported = () => {
+    const href = URL.createObjectURL(new Blob([JSON.stringify(saved, null, 2)], { type: "application/json" }));
+    Object.assign(document.createElement("a"), { href, download: "dojo-sets.json" }).click();
+    URL.revokeObjectURL(href);
+  };
+  const imported = async (event) => {
+    const file = event.target.files[0];
+    event.target.value = "";
+    if (!file) return;
+    onimport(JSON.parse(await file.text()));
+  };
 
   const ago = (stamp) => {
     if (!stamp) return "";
@@ -15,6 +27,10 @@
   <div class="head">
     {#if closable}<button class="close" onclick={onclose}>×</button>{/if}
     <span class="title">library</span>
+    <span class="port">
+      <button class="port-button" disabled={!saved.length} onclick={exported}>export</button>
+      <label class="port-button">import<input type="file" accept="application/json" hidden onchange={imported} /></label>
+    </span>
   </div>
   <div class="scroll">
     <section>
@@ -82,6 +98,10 @@
     flex: none;
     width: 1.6rem;
     height: 1.6rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
     border-radius: 0.2rem;
     border: 1px solid var(--signal-primary-ink);
     background: var(--surface-sunk);
@@ -98,6 +118,29 @@
     text-transform: uppercase;
     color: var(--text-light);
     opacity: 0.8;
+  }
+  .port {
+    margin-left: auto;
+    display: flex;
+    gap: 0.3rem;
+  }
+  .port-button {
+    border: 1px solid var(--boundary);
+    border-radius: 0.2rem;
+    background: var(--surface);
+    color: var(--text-light);
+    font-family: var(--font-family-code);
+    font-size: var(--font-size-2xs);
+    padding: 0.15rem 0.4rem;
+    cursor: pointer;
+  }
+  .port-button:hover {
+    border-color: var(--signal-primary-ink);
+    color: var(--signal-primary-ink);
+  }
+  .port-button:disabled {
+    opacity: 0.5;
+    cursor: default;
   }
   .scroll {
     flex: 1;

@@ -213,6 +213,9 @@
     width: 28px;
     height: 28px;
     padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 0.25rem;
     border: 1px solid color-mix(in srgb, var(--boundary) 60%, transparent);
     background: transparent;
