@@ -3,13 +3,7 @@ export default [
     "slug": "adiós.interjection",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.adiós"
-      },
-      {
-        "slug": "word.part-of-speech.interjection"
+        "slug": "domain.social"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -18,7 +12,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.social"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.adiós"
+      },
+      {
+        "slug": "word.part-of-speech.interjection"
       }
     ],
     "trait": {
@@ -46,6 +46,21 @@ export default [
     "slug": "gracias.interjection",
     "symbols": [
       {
+        "slug": "domain.social"
+      },
+      {
+        "slug": "functional.politeness"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
       },
       {
@@ -53,21 +68,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.interjection"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.politeness"
-      },
-      {
-        "slug": "domain.social"
       }
     ],
     "trait": {
@@ -75,6 +75,7 @@ export default [
         "known": "Thank you very much",
         "learning": "Muchas gracias"
       },
+      "LABELED": {},
       "RANKED": {
         "fpm": 724,
         "rank": 16,
@@ -98,16 +99,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "hola-como-estas"
+      }
+    ],
     "slug": "hola.interjection",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.hola"
-      },
-      {
-        "slug": "word.part-of-speech.interjection"
+        "slug": "domain.social"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -116,7 +116,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.social"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.hola"
+      },
+      {
+        "slug": "word.part-of-speech.interjection"
       }
     ],
     "trait": {
@@ -150,13 +156,10 @@ export default [
     "slug": "perdón.interjection",
     "symbols": [
       {
-        "slug": "word"
+        "slug": "domain.social"
       },
       {
-        "slug": "word.lemma.perdón"
-      },
-      {
-        "slug": "word.part-of-speech.interjection"
+        "slug": "functional.politeness"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -165,10 +168,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.politeness"
+        "slug": "word"
       },
       {
-        "slug": "domain.social"
+        "slug": "word.lemma.perdón"
+      },
+      {
+        "slug": "word.part-of-speech.interjection"
       }
     ],
     "trait": {
@@ -202,13 +208,13 @@ export default [
     "slug": "vale.interjection",
     "symbols": [
       {
-        "slug": "word"
+        "slug": "domain.social"
       },
       {
-        "slug": "word.lemma.vale"
+        "slug": "functional.discourse"
       },
       {
-        "slug": "word.part-of-speech.interjection"
+        "slug": "proficiency.castilianism"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -217,13 +223,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "proficiency.castilianism"
+        "slug": "word"
       },
       {
-        "slug": "functional.discourse"
+        "slug": "word.lemma.vale"
       },
       {
-        "slug": "domain.social"
+        "slug": "word.part-of-speech.interjection"
       }
     ],
     "trait": {

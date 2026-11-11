@@ -54,7 +54,7 @@ export const generate = async (ctx) => {
   const activity = await ctx.entities.activity.control({ user: ctx.user?.id ?? null, mode: ctx.mode.id, thread: ctx.thread?.id ?? null });
   const render = await ctx.cortex.hallucinate.object.render({
     controller: activity.controller,
-    policy: { tune: "capable" },
+    policy: { tier: "capable" },
     system: {
       identity: hal.generate.identity(language),
       pool: hal.generate.pool(vocabulary),
@@ -78,7 +78,7 @@ export const generate = async (ctx) => {
     ]),
   );
 
-  const knowables = (render.output.object?.sentences ?? []).slice(0, count).map((sentence) => ({
+  const knowables = (render.product.object?.sentences ?? []).slice(0, count).map((sentence) => ({
     ontology: "sentence",
     known: sentence.known,
     learning: sentence.learning,

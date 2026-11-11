@@ -9,19 +9,33 @@
       "module": "@commons/hallucinator/anthropic",
       "secrets": {
         "key": "${SECRET_VIVA_ANTHROPIC_API_KEY}"
-      }
+      },
+      "faculties": [
+        { "type": "dialogue", "id": "claude-opus-5-5", "tune": [1.0, 0.8, 0.1], "context": 1000000, "thinking": true },
+        { "type": "dialogue", "id": "claude-sonnet-5-5", "tune": [0.6, 0.6, 0.5], "context": 1000000, "thinking": true },
+        { "type": "dialogue", "id": "claude-haiku-5-5", "tune": [0.25, 0.95, 0.5], "context": 1000000, "thinking": true }
+      ]
     },
     {
       "module": "@commons/hallucinator/elevenlabs",
       "secrets": {
         "key": "${SECRET_VIVA_ELEVENLABS_API_KEY}"
-      }
+      },
+      "faculties": [
+        { "type": "speech", "id": "luiza", "model": "eleven_flash_v2_5", "voice": "21m00Tcm4TlvDq8ikWAM", "tune": [0.3, 0.4, 0.1] },
+        { "type": "speech", "id": "leandro", "model": "eleven_flash_v2_5", "voice": "EXAVITQu4vr4xnSDxMaL", "tune": [0.5, 0.5, 0.1] },
+        { "type": "verbatim", "id": "scribe_v3_live", "model": "scribe_v3_live", "tune": [0.8, 0.9, 0.7] }
+      ]
     },
     {
       "module": "@commons/hallucinator/deepgram",
       "secrets": {
         "key": "${SECRET_VIVA_DEEPGRAM_API_KEY}"
-      }
+      },
+      "faculties": [
+        { "type": "verbatim", "id": "nova-3", "model": "nova-3", "tune": [0.5, 0.9, 0.6] },
+        { "type": "verbatim", "id": "flux-general-multi", "model": "flux-general-multi", "tune": [0.6, 0.8, 0.4] }
+      ]
     }
   ],
   "clients": [
@@ -95,6 +109,7 @@
         "@education/game/dojo",
         "@education/game/nyan",
         "@education/game/riddler",
+        "@education/game/wakaru",
         "@education/game/comando",
         "@education/game/cocina"
       ],

@@ -33,6 +33,8 @@
     onadvance,
     onjudge,
     onphase,
+    sound,
+    onsound,
     onchrome,
     retain = false,
   } = $props();
@@ -366,6 +368,8 @@
       {hinted}
       {compact}
       onhint={() => (hinted = !hinted)}
+      {sound}
+      {onsound}
       {onchrome} />
 
     {#if table}

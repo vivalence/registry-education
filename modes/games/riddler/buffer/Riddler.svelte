@@ -55,7 +55,7 @@
     } catch (error) {
       console.error("[riddler] /assistant/resolve ✗", error);
     } finally {
-      terminal.buffer = null;
+      terminal.setBuffer(null);
     }
   }
 

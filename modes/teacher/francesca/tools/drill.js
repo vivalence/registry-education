@@ -30,12 +30,12 @@ export const drill = new Vector().open(
       thread: ctx.thread,
     });
 
-    const buffers = emission.output.buffer ?? [];
+    const buffers = emission.product.buffer ?? [];
     return {
       message: buffers.length
         ? `${buffers.length === 1 ? "one exercise" : `${buffers.length} exercises`} on screen from ${ctx.input.bucket}.`
         : `nothing to drill in ${ctx.input.bucket} for these filters.`,
-      ...emission.output,
+      ...emission.product,
     };
   },
 );

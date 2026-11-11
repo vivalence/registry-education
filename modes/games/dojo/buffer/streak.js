@@ -3,10 +3,12 @@ import { array } from "@vivalence/typology";
 export const begin = (knowables, streak, dress) => ({
   streak: streak ?? 0,
   attempts: 0,
+  done: [],
   pending: knowables.map((knowable, index) => ({
     index,
-    runs: 0,
+    streak: 0,
     reps: 0,
+    missed: false,
     ...(dress && { worn: [dress(index, [])] }),
   })),
 });
@@ -33,24 +35,29 @@ export const current = (state) => state.pending[0] ?? null;
 
 export const complete = (state) => state.pending.length === 0;
 
+export const clean = (state, anhieb = 0) =>
+  state.done.every((entry) => !entry.missed && entry.reps === Math.max(1, state.streak - anhieb));
+
 export const first = (state) => (current(state)?.reps ?? 0) === 0;
 
 export const record = (state, success, anhieb = 0) => {
   const [head, ...rest] = state.pending;
   if (!head) return state;
-  const credit = head.reps === 0 && success ? 1 + anhieb : success ? head.runs + 1 : 0;
-  const entry = { ...head, reps: head.reps + 1, runs: credit, missed: !success };
+  const credit = head.reps === 0 && success ? 1 + anhieb : success ? head.streak + 1 : 0;
+  const entry = { ...head, reps: head.reps + 1, streak: credit, missed: !success };
+  const landed = entry.streak >= state.streak;
   return {
     ...state,
     attempts: state.attempts + 1,
-    pending: entry.runs >= state.streak ? rest : [...rest, entry],
+    pending: landed ? rest : [...rest, entry],
+    done: landed ? [...state.done, entry] : state.done,
   };
 };
 
 export const settle = (state) => {
   const [head, ...rest] = state.pending;
   if (!head) return state;
-  return { ...state, attempts: state.attempts + 1, pending: rest };
+  return { ...state, attempts: state.attempts + 1, pending: rest, done: [...state.done, head] };
 };
 
 export const focus = (state, index) => {

@@ -18,12 +18,12 @@ export const drill = new Vector().open(
   },
   async (ctx) => {
     const emission = await ctx.mode.emit.drill({ ...ctx.input, thread: ctx.thread });
-    const buffers = emission.output.buffer;
+    const buffers = emission.product.buffer;
     return {
       message: buffers.length
         ? `Drill started — ${buffers.length === 1 ? "one exercise" : `${buffers.length} exercises`} on screen.`
         : "Nothing due for review right now.",
-      ...emission.output,
+      ...emission.product,
     };
   },
 );

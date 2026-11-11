@@ -59,7 +59,7 @@ const rig = ({ synthesized }) => {
     cortex: { hallucinate: { speech: { render: async () => synthesized } } },
   };
 
-  const call = shape.object(new Vector().use(shard.context.spread(contexts.host, daemon)).graft(tools));
+  const call = shape.object(new Vector().use(shard.context.spread(contexts.daemonDie, daemon)).graft(tools));
   return { call, daemon, literals, received, flushed: () => flushed };
 };
 

@@ -1,4 +1,5 @@
 import { time } from "@vivalence/typology";
+import { PROFILE } from "../schematics.js";
 
 const POSITIVE = ["MASTERY", "SUCCESS", "NEUTRAL"];
 
@@ -43,10 +44,24 @@ const evolve = (signal, retention) => {
   return { state, ...assess({ state }) };
 };
 
+const STREAK = [
+  [PROFILE.GRADUATED, 8],
+  [PROFILE.KNOWN, 5],
+  [PROFILE.LEARNING, 2],
+  [0, 0],
+];
+
+const scale = (percent) => {
+  const [, streak] = STREAK.find(([from]) => percent >= from);
+  const state = { streak, total: 0, successes: 0 };
+  return { state, ...assess({ state }) };
+};
+
 export default {
   type: "COUNTER",
   encode,
   evolve,
+  scale,
   assess,
   strength: (held) => Math.min((held.state?.streak ?? 0) / 8, 1),
   sql: {

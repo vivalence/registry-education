@@ -30,14 +30,14 @@
     {#if landed}
       <span class="key" class:landed>{dense ? label : "answer"}</span>
       <span class="value right">{answer}</span>
-      <span class="dot">{#if file}<Asset {file} variant="dot" autoplay={true} />{/if}</span>
+      <span class="audio">{#if file}<Asset {file} variant="dot" autoplay={true} />{/if}</span>
     {:else}
       <span class="key">you wrote</span>
       <span class="value wrong">{typed?.trim() || "—"}</span>
-      <span class="dot"></span>
+      <span class="audio"></span>
       <span class="key">expected</span>
       <span class="value right">{answer}</span>
-      <span class="dot">{#if file}<Asset {file} variant="dot" autoplay={true} />{/if}</span>
+      <span class="audio">{#if file}<Asset {file} variant="dot" autoplay={true} />{/if}</span>
     {/if}
   </div>
 
@@ -117,7 +117,7 @@
     min-width: 0;
     overflow-wrap: anywhere;
   }
-  .dot {
+  .audio {
     display: flex;
     align-items: center;
     align-self: center;

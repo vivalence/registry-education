@@ -46,4 +46,11 @@ export const aperture = new Aperture()
     if (!literal) return { status: "bounce", message: "literal not found" };
 
     return ctx.entities.literal.review(literal, signal);
-  });
+  })
+
+  .open("/scale/literal", (input, ctx) =>
+    ctx.entities.literal.scale(input.where, {
+      percent: input.percent,
+      direction: input.direction,
+    }),
+  );

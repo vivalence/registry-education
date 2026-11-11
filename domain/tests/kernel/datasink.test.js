@@ -1,4 +1,4 @@
-import { specimen, sleep } from "@vivalence/typology";
+import { specimen, sleep, Twitch } from "@vivalence/typology";
 import { traits } from "@vivalence/runtime";
 import { world } from "../scenarios/italian.js";
 import { datasink } from "../../../topographies/english-to-italian/italian.viva.js";
@@ -35,8 +35,13 @@ specimen.describe("the italian topography's DATASINK drains on /after/literal/up
       await rig.em.flush();
       await rig.settle();
     });
-    mode = { manifest: { type: "topography", slug: "english-to-italian", traits: ["DATASINK"] }, module: { datasink, source: { dirname: directory } } };
+    mode = {
+      manifest: { type: "topography", slug: "english-to-italian", traits: ["DATASINK"] },
+      module: { datasink, source: { dirname: directory } },
+      twitch: new Twitch(),
+    };
     await DATASINK(mode, rig.daemons.italian).finalize();
+    rig.daemons.italian.twitch.graft(mode.twitch);
   });
 
   specimen.afterAll(async () => {

@@ -1,7 +1,75 @@
 export default [
   {
+    "in": [
+      {
+        "slug": "ayudas-a-tu-madre"
+      },
+      {
+        "slug": "ayudo-a-mi-madre"
+      },
+      {
+        "slug": "empiezo-a-trabajar"
+      },
+      {
+        "slug": "fuimos-a-la-playa"
+      },
+      {
+        "slug": "ire-a-la-fiesta"
+      },
+      {
+        "slug": "llamas-a-tu-madre"
+      },
+      {
+        "slug": "llamo-a-mi-madre"
+      },
+      {
+        "slug": "llego-a-casa"
+      },
+      {
+        "slug": "mi-madre-hace-la-comida"
+      },
+      {
+        "slug": "no-veo-a-nadie"
+      },
+      {
+        "slug": "vamos-a-casa"
+      },
+      {
+        "slug": "vamos-a-la-playa"
+      },
+      {
+        "slug": "ve-a-casa"
+      },
+      {
+        "slug": "veo-a-alguien"
+      },
+      {
+        "slug": "veo-a-mi-amigo"
+      },
+      {
+        "slug": "voy-a-la-farmacia"
+      },
+      {
+        "slug": "voy-al-mercado"
+      },
+      {
+        "slug": "vuelvo-a-casa"
+      }
+    ],
     "slug": "a.adposition",
     "symbols": [
+      {
+        "slug": "functional.grammar"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -10,18 +78,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adposition"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.grammar"
       }
     ],
     "trait": {
@@ -46,8 +102,83 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "fui-al-hotel"
+      },
+      {
+        "slug": "fui-al-mercado"
+      },
+      {
+        "slug": "ire-al-medico"
+      },
+      {
+        "slug": "voy-al-aeropuerto"
+      },
+      {
+        "slug": "voy-al-cine"
+      },
+      {
+        "slug": "voy-al-mercado"
+      }
+    ],
+    "slug": "al.contraction",
+    "symbols": [
+      {
+        "slug": "functional.grammar"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.al"
+      },
+      {
+        "slug": "word.part-of-speech.adposition"
+      },
+      {
+        "slug": "word.part-of-speech.determiner"
+      }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "I am going to the bathroom",
+        "learning": "Voy al baño"
+      },
+      "RANKED": {
+        "fpm": 5500,
+        "rank": 68,
+        "zipf": 6.74
+      },
+      "TRANSLATED": {
+        "known": "to the (masc.)",
+        "learning": "al"
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ]
+  },
+  {
     "slug": "ante.adposition",
     "symbols": [
+      {
+        "slug": "functional.grammar"
+      },
+      {
+        "slug": "proficiency.cefr.a2"
+      },
       {
         "slug": "word"
       },
@@ -56,12 +187,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adposition"
-      },
-      {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "functional.grammar"
       }
     ],
     "trait": {
@@ -86,8 +211,19 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-gato-esta-bajo-la-mesa"
+      }
+    ],
     "slug": "bajo.adposition",
     "symbols": [
+      {
+        "slug": "functional.grammar"
+      },
+      {
+        "slug": "proficiency.cefr.a2"
+      },
       {
         "slug": "word"
       },
@@ -96,12 +232,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adposition"
-      },
-      {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "functional.grammar"
       }
     ],
     "trait": {
@@ -126,8 +256,31 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "como-con-tenedor"
+      },
+      {
+        "slug": "estoy-con-mi-amigo"
+      },
+      {
+        "slug": "no-hablo-con-nadie"
+      }
+    ],
     "slug": "con.adposition",
     "symbols": [
+      {
+        "slug": "functional.grammar"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -136,18 +289,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adposition"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.grammar"
       }
     ],
     "trait": {
@@ -181,6 +322,12 @@ export default [
     "slug": "contra.adposition",
     "symbols": [
       {
+        "slug": "functional.grammar"
+      },
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
         "slug": "word"
       },
       {
@@ -188,12 +335,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adposition"
-      },
-      {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "functional.grammar"
       }
     ],
     "trait": {
@@ -218,8 +359,40 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "bebo-de-la-botella"
+      },
+      {
+        "slug": "donde-esta-la-estacion"
+      },
+      {
+        "slug": "quiero-que-hables"
+      },
+      {
+        "slug": "quiero-una-taza-de-cafe"
+      },
+      {
+        "slug": "salgo-de-casa"
+      },
+      {
+        "slug": "vengo-de-casa"
+      }
+    ],
     "slug": "de.adposition",
     "symbols": [
+      {
+        "slug": "functional.grammar"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -228,18 +401,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adposition"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.grammar"
       }
     ],
     "trait": {
@@ -247,6 +408,7 @@ export default [
         "known": "A cup of coffee",
         "learning": "Una taza de café"
       },
+      "LABELED": {},
       "RANKED": {
         "fpm": 64600,
         "rank": 1,
@@ -264,16 +426,64 @@ export default [
     ]
   },
   {
-    "slug": "desde.adposition",
+    "in": [
+      {
+        "slug": "el-pajaro-esta-encima-del-arbol"
+      }
+    ],
+    "slug": "del.contraction",
     "symbols": [
+      {
+        "slug": "functional.grammar"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
       {
-        "slug": "word.lemma.desde"
+        "slug": "word.lemma.del"
       },
       {
         "slug": "word.part-of-speech.adposition"
+      },
+      {
+        "slug": "word.part-of-speech.determiner"
+      }
+    ],
+    "trait": {
+      "EXEMPLIFIED": {
+        "known": "The owner of the flat",
+        "learning": "El dueño del piso"
+      },
+      "RANKED": {
+        "fpm": 10200,
+        "rank": 69,
+        "zipf": 7.01
+      },
+      "TRANSLATED": {
+        "known": "of the (masc.)",
+        "learning": "del"
+      }
+    },
+    "traits": [
+      "TRANSLATED",
+      "EXEMPLIFIED",
+      "RANKED"
+    ]
+  },
+  {
+    "slug": "desde.adposition",
+    "symbols": [
+      {
+        "slug": "functional.grammar"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -282,7 +492,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.grammar"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.desde"
+      },
+      {
+        "slug": "word.part-of-speech.adposition"
       }
     ],
     "trait": {
@@ -310,13 +526,7 @@ export default [
     "slug": "durante.adposition",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.durante"
-      },
-      {
-        "slug": "word.part-of-speech.adposition"
+        "slug": "functional.grammar"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -325,7 +535,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.grammar"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.durante"
+      },
+      {
+        "slug": "word.part-of-speech.adposition"
       }
     ],
     "trait": {
@@ -350,8 +566,76 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "comemos-en-casa"
+      },
+      {
+        "slug": "compro-en-el-supermercado"
+      },
+      {
+        "slug": "entro-en-el-banco"
+      },
+      {
+        "slug": "entro-en-la-casa"
+      },
+      {
+        "slug": "estare-en-el-hotel"
+      },
+      {
+        "slug": "estoy-en-casa-y-leo"
+      },
+      {
+        "slug": "estuve-en-casa"
+      },
+      {
+        "slug": "estuve-en-la-playa"
+      },
+      {
+        "slug": "hoy-como-en-casa"
+      },
+      {
+        "slug": "la-taza-esta-en-la-mesa"
+      },
+      {
+        "slug": "leo-en-la-biblioteca"
+      },
+      {
+        "slug": "manana-comere-en-casa"
+      },
+      {
+        "slug": "paso-el-dia-en-casa"
+      },
+      {
+        "slug": "trabajo-en-la-oficina"
+      },
+      {
+        "slug": "vivia-en-la-ciudad"
+      },
+      {
+        "slug": "vivo-en-un-piso-pequeno"
+      },
+      {
+        "slug": "voy-en-avion"
+      },
+      {
+        "slug": "voy-en-bicicleta"
+      }
+    ],
     "slug": "en.adposition",
     "symbols": [
+      {
+        "slug": "functional.grammar"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -360,18 +644,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adposition"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.grammar"
       }
     ],
     "trait": {
@@ -402,16 +674,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "la-silla-esta-entre-la-mesa-y-la-cama"
+      }
+    ],
     "slug": "entre.adposition",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.entre"
-      },
-      {
-        "slug": "word.part-of-speech.adposition"
+        "slug": "functional.grammar"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -420,7 +691,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.grammar"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.entre"
+      },
+      {
+        "slug": "word.part-of-speech.adposition"
       }
     ],
     "trait": {
@@ -448,6 +725,12 @@ export default [
     "slug": "hacia.adposition",
     "symbols": [
       {
+        "slug": "functional.grammar"
+      },
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
         "slug": "word"
       },
       {
@@ -455,12 +738,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adposition"
-      },
-      {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "functional.grammar"
       }
     ],
     "trait": {
@@ -488,13 +765,7 @@ export default [
     "slug": "hasta.adposition",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.hasta"
-      },
-      {
-        "slug": "word.part-of-speech.adposition"
+        "slug": "functional.grammar"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -503,7 +774,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.grammar"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.hasta"
+      },
+      {
+        "slug": "word.part-of-speech.adposition"
       }
     ],
     "trait": {
@@ -537,6 +814,18 @@ export default [
     "slug": "para.adposition",
     "symbols": [
       {
+        "slug": "functional.grammar"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
       },
       {
@@ -544,18 +833,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adposition"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.grammar"
       }
     ],
     "trait": {
@@ -586,8 +863,28 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "no-podre-ir"
+      },
+      {
+        "slug": "quiero-la-cuenta"
+      }
+    ],
     "slug": "por.adposition",
     "symbols": [
+      {
+        "slug": "functional.grammar"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -596,18 +893,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adposition"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.grammar"
       }
     ],
     "trait": {
@@ -641,6 +926,12 @@ export default [
     "slug": "según.adposition",
     "symbols": [
       {
+        "slug": "functional.grammar"
+      },
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
         "slug": "word"
       },
       {
@@ -648,12 +939,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adposition"
-      },
-      {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "functional.grammar"
       }
     ],
     "trait": {
@@ -678,16 +963,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "quiero-cafe-sin-azucar"
+      }
+    ],
     "slug": "sin.adposition",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.sin"
-      },
-      {
-        "slug": "word.part-of-speech.adposition"
+        "slug": "functional.grammar"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -696,7 +980,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.grammar"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.sin"
+      },
+      {
+        "slug": "word.part-of-speech.adposition"
       }
     ],
     "trait": {
@@ -727,16 +1017,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-libro-esta-sobre-la-mesa"
+      }
+    ],
     "slug": "sobre.adposition",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.sobre"
-      },
-      {
-        "slug": "word.part-of-speech.adposition"
+        "slug": "functional.grammar"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -745,7 +1034,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.grammar"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.sobre"
+      },
+      {
+        "slug": "word.part-of-speech.adposition"
       }
     ],
     "trait": {
@@ -773,6 +1068,12 @@ export default [
     "slug": "tras.adposition",
     "symbols": [
       {
+        "slug": "functional.grammar"
+      },
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
         "slug": "word"
       },
       {
@@ -780,12 +1081,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adposition"
-      },
-      {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "functional.grammar"
       }
     ],
     "trait": {

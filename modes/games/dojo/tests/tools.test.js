@@ -91,7 +91,7 @@ specimen.describe("dojo tools", () => {
         hallucinate: {
           object: {
             render: async () => ({
-              output: {
+              product: {
                 object: {
                   sentences: [
                     { known: "Good morning, how are you?", learning: "Bom dia, como vai?" },
@@ -135,7 +135,7 @@ specimen.describe("dojo tools", () => {
             render: async (input) => {
               request = input;
               return {
-                output: {
+                product: {
                   object: {
                     sentences: [
                       {

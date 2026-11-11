@@ -170,7 +170,7 @@ specimen.describe("dojo aperture", () => {
     });
   });
 
-  specimen.it("/session keeps the live session on the buffer; /setup carries it; omitting it clears", async () => {
+  specimen.it("/round keeps the round on the buffer quietly; /setup carries it; a misfit is refused; omitting it clears", async () => {
     await scenario.scoped(async () => {
       const bare = await scenario.mode.buffer({ thread: scenario.fixtures.thread.id });
       await scenario.daemon.entities.em.flush();
@@ -178,25 +178,31 @@ specimen.describe("dojo aperture", () => {
       const broadcasts = [];
       scenario.daemon.twitch.open("/after/buffer/update", (ctx) => broadcasts.push(ctx.input.entity?.id));
 
-      const session = { phase: "playing", queue: [{ ontology: "word", known: "hello", learning: "ciao" }], reps: 1 };
-      const kept = await scenario.authedConn.call("/mode/game/dojo/session", { buffer: bare.id, session });
-      specimen.expect(kept.session).toBe(true);
+      const round = {
+        phase: "playing",
+        tally: { attempts: 1, reps: 1, rounds: 1, reviews: 1, elapsed: 4, satisfied: 0 },
+        played: [],
+        queue: [{ knowable: 0, recall: "KNOWN", gameplay: "TYPE", prompt: "TEXT", streak: 0, reps: 1, missed: true }],
+      };
+      const kept = await scenario.authedConn.call("/mode/game/dojo/round", { buffer: bare.id, round });
+      specimen.expect(kept.round).toBe(true);
       specimen.expect(broadcasts).toEqual([]);
 
       const setup = await scenario.authedConn.call("/mode/game/dojo/setup", { buffer: bare.id, gameplay: "TYPE" });
-      specimen.expect(setup.data.session).toEqual(session);
+      specimen.expect(setup.data.round).toEqual(round);
 
-      const heartbeat = { phase: "playing", reps: 2 };
-      const seen = broadcasts.length;
-      await scenario.authedConn.call("/mode/game/dojo/session", { buffer: bare.id, session: heartbeat });
-      specimen.expect(broadcasts.length).toBe(seen);
-      const inherited = await scenario.authedConn.call("/mode/game/dojo/setup", { buffer: bare.id, gameplay: "TYPE" });
-      specimen.expect(inherited.data.session).toEqual({ ...heartbeat, queue: session.queue });
+      const misfit = { phase: "playing", queue: [{ known: "hello", learning: "ciao" }] };
+      const refused = await scenario.authedConn
+        .call("/mode/game/dojo/round", { buffer: bare.id, round: misfit })
+        .then(() => null, (error) => error);
+      specimen.expect(refused).not.toBeNull();
+      const untouched = await scenario.authedConn.call("/mode/game/dojo/setup", { buffer: bare.id, gameplay: "TYPE" });
+      specimen.expect(untouched.data.round).toEqual(round);
 
-      const cleared = await scenario.authedConn.call("/mode/game/dojo/session", { buffer: bare.id });
-      specimen.expect(cleared.session).toBe(false);
+      const cleared = await scenario.authedConn.call("/mode/game/dojo/round", { buffer: bare.id });
+      specimen.expect(cleared.round).toBe(false);
       const after = await scenario.authedConn.call("/mode/game/dojo/setup", { buffer: bare.id, gameplay: "TYPE" });
-      specimen.expect(after.data.session).toBeUndefined();
+      specimen.expect(after.data.round).toBeUndefined();
       specimen.expect(broadcasts.filter((id) => id === bare.id).length).toBeGreaterThanOrEqual(1);
     });
   });

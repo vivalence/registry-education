@@ -1,21 +1,17 @@
 export default [
   {
+    "in": [
+      {
+        "slug": "el-abogado-es-bueno"
+      },
+      {
+        "slug": "necesito-un-abogado"
+      }
+    ],
     "slug": "abogado.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.abogado"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.work"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -24,7 +20,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.work"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.abogado"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -52,19 +60,7 @@ export default [
     "slug": "abrigo.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.abrigo"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.clothing"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -73,7 +69,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.clothing"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.abrigo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -101,19 +109,7 @@ export default [
     "slug": "abril.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.abril"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.month"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -122,7 +118,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.month"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.abril"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -147,22 +155,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "mi-abuela-es-vieja"
+      }
+    ],
     "slug": "abuela.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.abuela"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.family"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -171,7 +172,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.family"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.abuela"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -199,19 +212,7 @@ export default [
     "slug": "abuelo.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.abuelo"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.family"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -220,7 +221,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.family"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.abuelo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -245,22 +258,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "voy-al-aeropuerto"
+      }
+    ],
     "slug": "aeropuerto.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.aeropuerto"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.travel"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -269,7 +275,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.travel"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.aeropuerto"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -297,19 +315,7 @@ export default [
     "slug": "agosto.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.agosto"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.month"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -318,7 +324,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.month"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.agosto"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -343,34 +361,54 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "bebo-agua"
+      },
+      {
+        "slug": "como-pan-y-bebo-agua"
+      },
+      {
+        "slug": "el-agua-esta-clara"
+      },
+      {
+        "slug": "quiero-agua-porque-tengo-sed"
+      },
+      {
+        "slug": "quiero-cafe-o-agua"
+      },
+      {
+        "slug": "solo-quiero-agua"
+      }
+    ],
     "slug": "agua.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.agua"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.food"
       },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
-        "slug": "proficiency.survival"
-      },
-      {
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.food"
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.agua"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -395,22 +433,21 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "estoy-con-mi-amigo"
+      },
+      {
+        "slug": "mi-amigo-es-divertido"
+      },
+      {
+        "slug": "veo-a-mi-amigo"
+      }
+    ],
     "slug": "amigo.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.amigo"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.relationship"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -419,7 +456,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.relationship"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.amigo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -447,19 +496,7 @@ export default [
     "slug": "amor.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.amor"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.relationship"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -468,7 +505,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.relationship"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.amor"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -493,22 +542,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "comere-arroz"
+      },
+      {
+        "slug": "como-arroz"
+      }
+    ],
     "slug": "arroz.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.arroz"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.food"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -517,7 +562,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.food"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.arroz"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -542,22 +599,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-artista-es-bueno"
+      }
+    ],
     "slug": "artista.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.artista"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.work"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -566,7 +616,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.work"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.artista"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -591,22 +653,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "espero-el-autobus"
+      }
+    ],
     "slug": "autobús.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.autobús"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.transport"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -615,7 +670,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.transport"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.autobús"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -640,22 +707,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-avion-es-rapido"
+      },
+      {
+        "slug": "voy-en-avion"
+      }
+    ],
     "slug": "avión.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.avión"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.transport"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -664,7 +727,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.transport"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.avión"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -689,22 +764,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "necesite-ayuda"
+      },
+      {
+        "slug": "necesito-ayuda"
+      }
+    ],
     "slug": "ayuda.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.ayuda"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.health"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -713,7 +784,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.health"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.ayuda"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -738,22 +821,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "quiero-cafe-sin-azucar"
+      }
+    ],
     "slug": "azúcar.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.azúcar"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.food"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -762,7 +838,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.food"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.azúcar"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -790,31 +878,31 @@ export default [
     "slug": "año.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.año"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.time"
       },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
-        "slug": "proficiency.survival"
-      },
-      {
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.time"
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.año"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -839,22 +927,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-banco-esta-cerca"
+      },
+      {
+        "slug": "entro-en-el-banco"
+      }
+    ],
     "slug": "banco.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.banco"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.money"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -863,7 +947,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.money"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.banco"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -888,22 +984,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-barco-es-grande"
+      }
+    ],
     "slug": "barco.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.barco"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.transport"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -912,7 +1001,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.transport"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.barco"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -937,22 +1038,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "donde-esta-el-bano"
+      },
+      {
+        "slug": "el-bano-esta-lejos"
+      }
+    ],
     "slug": "baño.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.baño"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.home"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -961,7 +1058,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.home"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.baño"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -992,22 +1101,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-bebe-es-pequeno"
+      },
+      {
+        "slug": "tendre-un-bebe"
+      }
+    ],
     "slug": "bebé.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.bebé"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.family"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1016,7 +1121,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.family"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.bebé"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -1041,22 +1158,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "leo-en-la-biblioteca"
+      }
+    ],
     "slug": "biblioteca.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.biblioteca"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.city"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1065,7 +1175,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.city"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.biblioteca"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -1090,22 +1212,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "voy-en-bicicleta"
+      }
+    ],
     "slug": "bicicleta.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.bicicleta"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.transport"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1114,7 +1229,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.transport"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.bicicleta"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -1139,22 +1266,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "tengo-un-billete"
+      }
+    ],
     "slug": "billete.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.billete"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.transport"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1163,7 +1283,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.transport"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.billete"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -1191,19 +1323,7 @@ export default [
     "slug": "boca.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.boca"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.body"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1212,7 +1332,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.body"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.boca"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -1237,22 +1369,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "como-un-bocadillo"
+      }
+    ],
     "slug": "bocadillo.noun",
     "symbols": [
       {
-        "slug": "word"
+        "slug": "domain.food"
       },
       {
-        "slug": "word.lemma.bocadillo"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "proficiency.castilianism"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1261,10 +1389,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "proficiency.castilianism"
+        "slug": "word"
       },
       {
-        "slug": "domain.food"
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.bocadillo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -1289,22 +1426,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "bebo-de-la-botella"
+      },
+      {
+        "slug": "la-botella-esta-llena"
+      }
+    ],
     "slug": "botella.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.botella"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.home"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1313,7 +1446,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.home"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.botella"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -1341,19 +1486,7 @@ export default [
     "slug": "brazo.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.brazo"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.body"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1362,7 +1495,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.body"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.brazo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -1387,22 +1532,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-caballo-es-fuerte"
+      }
+    ],
     "slug": "caballo.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.caballo"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.animals"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1411,7 +1549,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.animals"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.caballo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -1439,19 +1589,7 @@ export default [
     "slug": "cabeza.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.cabeza"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.body"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1460,7 +1598,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.body"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.cabeza"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -1485,22 +1635,39 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-cafe-es-mas-caliente"
+      },
+      {
+        "slug": "el-cafe-esta-caliente"
+      },
+      {
+        "slug": "me-gusta-el-cafe"
+      },
+      {
+        "slug": "querria-un-cafe"
+      },
+      {
+        "slug": "quiero-cafe-o-agua"
+      },
+      {
+        "slug": "quiero-cafe-sin-azucar"
+      },
+      {
+        "slug": "quiero-un-cafe"
+      },
+      {
+        "slug": "quiero-una-taza-de-cafe"
+      },
+      {
+        "slug": "te-gusta-el-cafe"
+      }
+    ],
     "slug": "café.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.café"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.food"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1509,7 +1676,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.food"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.café"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -1543,19 +1722,7 @@ export default [
     "slug": "calle.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.calle"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.city"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1564,7 +1731,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.city"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.calle"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -1589,22 +1768,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "hace-calor"
+      }
+    ],
     "slug": "calor.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.calor"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.weather"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1613,7 +1785,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.weather"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.calor"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -1638,22 +1822,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "la-silla-esta-entre-la-mesa-y-la-cama"
+      }
+    ],
     "slug": "cama.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.cama"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.home"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1662,7 +1839,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.home"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.cama"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -1687,22 +1876,21 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-camarero-es-amable"
+      },
+      {
+        "slug": "el-camarero-es-joven"
+      },
+      {
+        "slug": "mi-padre-es-camarero"
+      }
+    ],
     "slug": "camarero.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.camarero"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.work"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1711,7 +1899,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.work"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.camarero"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -1736,22 +1936,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "llevo-una-camisa"
+      }
+    ],
     "slug": "camisa.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.camisa"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.clothing"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1760,7 +1953,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.clothing"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.camisa"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -1788,25 +1993,25 @@ export default [
     "slug": "camión.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.camión"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.mando"
       },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
-        "slug": "domain.mando"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.camión"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -1829,22 +2034,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "no-comi-carne"
+      },
+      {
+        "slug": "no-como-carne"
+      }
+    ],
     "slug": "carne.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.carne"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.food"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1853,7 +2054,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.food"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.carne"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -1878,22 +2091,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "escribo-una-carta"
+      }
+    ],
     "slug": "carta.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.carta"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.education"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1902,7 +2108,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.education"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.carta"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -1927,34 +2145,90 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "comemos-en-casa"
+      },
+      {
+        "slug": "entro-en-la-casa"
+      },
+      {
+        "slug": "es-mas-grande-que-mi-casa"
+      },
+      {
+        "slug": "esta-casa-es-grande"
+      },
+      {
+        "slug": "esta-casa-es-mejor-que-esa"
+      },
+      {
+        "slug": "estoy-en-casa-y-leo"
+      },
+      {
+        "slug": "estuve-en-casa"
+      },
+      {
+        "slug": "hoy-como-en-casa"
+      },
+      {
+        "slug": "llego-a-casa"
+      },
+      {
+        "slug": "manana-comere-en-casa"
+      },
+      {
+        "slug": "nuestra-casa-es-grande"
+      },
+      {
+        "slug": "paso-el-dia-en-casa"
+      },
+      {
+        "slug": "salgo-de-casa"
+      },
+      {
+        "slug": "vamos-a-casa"
+      },
+      {
+        "slug": "ve-a-casa"
+      },
+      {
+        "slug": "vengo-de-casa"
+      },
+      {
+        "slug": "veo-la-casa"
+      },
+      {
+        "slug": "vuelvo-a-casa"
+      }
+    ],
     "slug": "casa.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.casa"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.home"
       },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
-        "slug": "proficiency.survival"
-      },
-      {
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.home"
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.casa"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -1988,28 +2262,28 @@ export default [
     "slug": "cebolla.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.cebolla"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
-      {
         "slug": "domain.food"
+      },
+      {
+        "slug": "domain.mando"
       },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
-        "slug": "domain.mando"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.cebolla"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -2035,19 +2309,7 @@ export default [
     "slug": "cerveza.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.cerveza"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.food"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -2056,7 +2318,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.food"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.cerveza"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -2081,22 +2355,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "me-gusta-el-chocolate"
+      }
+    ],
     "slug": "chocolate.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.chocolate"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.food"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -2105,7 +2372,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.food"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.chocolate"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -2130,22 +2409,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "miro-el-cielo"
+      },
+      {
+        "slug": "veo-el-cielo"
+      }
+    ],
     "slug": "cielo.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.cielo"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.nature"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -2154,7 +2429,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.nature"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.cielo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -2179,22 +2466,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "me-gusta-el-cine"
+      },
+      {
+        "slug": "voy-al-cine"
+      }
+    ],
     "slug": "cine.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.cine"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.entertainment"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -2203,7 +2486,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.entertainment"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.cine"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -2228,22 +2523,21 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "conoces-la-ciudad"
+      },
+      {
+        "slug": "conozco-la-ciudad"
+      },
+      {
+        "slug": "vivia-en-la-ciudad"
+      }
+    ],
     "slug": "ciudad.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.ciudad"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.city"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -2252,7 +2546,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.city"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.ciudad"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -2277,22 +2583,39 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-coche-es-lento"
+      },
+      {
+        "slug": "el-coche-es-mas-caro-que-el-tren"
+      },
+      {
+        "slug": "el-coche-es-rojo"
+      },
+      {
+        "slug": "el-coche-esta-sucio"
+      },
+      {
+        "slug": "el-tren-es-mas-rapido-que-el-coche"
+      },
+      {
+        "slug": "ese-coche-es-peor"
+      },
+      {
+        "slug": "ese-coche-es-rojo"
+      },
+      {
+        "slug": "tienes-un-coche"
+      }
+    ],
     "slug": "coche.noun",
     "symbols": [
       {
-        "slug": "word"
+        "slug": "domain.transport"
       },
       {
-        "slug": "word.lemma.coche"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "proficiency.castilianism"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -2301,10 +2624,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "proficiency.castilianism"
+        "slug": "word"
       },
       {
-        "slug": "domain.transport"
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.coche"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -2329,22 +2661,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "soy-cocinero"
+      }
+    ],
     "slug": "cocinero.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.cocinero"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.work"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -2353,7 +2678,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.work"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.cocinero"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -2378,22 +2715,30 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "hare-la-comida"
+      },
+      {
+        "slug": "haz-la-comida"
+      },
+      {
+        "slug": "hice-la-comida"
+      },
+      {
+        "slug": "la-comida-esta-muy-buena"
+      },
+      {
+        "slug": "mi-madre-hace-la-comida"
+      },
+      {
+        "slug": "quiero-que-hagas-la-comida"
+      }
+    ],
     "slug": "comida.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.comida"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.food"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -2402,7 +2747,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.food"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.comida"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -2433,22 +2790,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "soy-conductor"
+      }
+    ],
     "slug": "conductor.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.conductor"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.work"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -2457,7 +2807,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.work"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.conductor"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -2485,19 +2847,7 @@ export default [
     "slug": "corazón.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.corazón"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.body"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -2506,7 +2856,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.body"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.corazón"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -2531,22 +2893,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "uso-una-cuchara"
+      }
+    ],
     "slug": "cuchara.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.cuchara"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.home"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -2555,7 +2910,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.home"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.cuchara"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -2580,22 +2947,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-cuchillo-es-grande"
+      }
+    ],
     "slug": "cuchillo.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.cuchillo"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.home"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -2604,7 +2964,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.home"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.cuchillo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -2632,19 +3004,7 @@ export default [
     "slug": "cuello.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.cuello"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.body"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -2653,7 +3013,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.body"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.cuello"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -2678,22 +3050,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "pago-la-cuenta"
+      },
+      {
+        "slug": "quiero-la-cuenta"
+      }
+    ],
     "slug": "cuenta.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.cuenta"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.money"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -2702,7 +3070,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.money"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.cuenta"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -2730,19 +3110,7 @@ export default [
     "slug": "dedo.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.dedo"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.body"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -2751,7 +3119,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.body"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.dedo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -2779,25 +3159,25 @@ export default [
     "slug": "derecha.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.derecha"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.mando"
       },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
-        "slug": "domain.mando"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.derecha"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -2823,19 +3203,7 @@ export default [
     "slug": "diciembre.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.diciembre"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.month"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -2844,7 +3212,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.month"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.diciembre"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -2878,19 +3258,7 @@ export default [
     "slug": "diente.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.diente"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.body"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -2899,7 +3267,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.body"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.diente"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -2924,22 +3304,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "es-importante-que-tengas-dinero"
+      },
+      {
+        "slug": "no-tengo-dinero"
+      }
+    ],
     "slug": "dinero.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.dinero"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.money"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -2948,7 +3324,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.money"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.dinero"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -2982,19 +3370,7 @@ export default [
     "slug": "domingo.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.domingo"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.weekday"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -3003,7 +3379,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.weekday"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.domingo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -3034,34 +3422,42 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "paso-el-dia-en-casa"
+      },
+      {
+        "slug": "vamos-a-la-playa"
+      }
+    ],
     "slug": "día.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.día"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.time"
       },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
-        "slug": "proficiency.survival"
-      },
-      {
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.time"
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.día"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -3095,19 +3491,7 @@ export default [
     "slug": "enero.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.enero"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.month"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -3116,7 +3500,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.month"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.enero"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -3147,22 +3543,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-enfermero-trabaja"
+      }
+    ],
     "slug": "enfermero.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.enfermero"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.work"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -3171,7 +3560,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.work"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.enfermero"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -3196,22 +3597,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "quiero-una-ensalada"
+      }
+    ],
     "slug": "ensalada.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.ensalada"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.food"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -3220,7 +3614,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.food"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.ensalada"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -3248,19 +3654,7 @@ export default [
     "slug": "escuela.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.escuela"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.education"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -3269,7 +3663,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.education"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.escuela"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -3294,22 +3700,36 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "ayer-hable-espanol"
+      },
+      {
+        "slug": "es-importante-que-sepas-espanol"
+      },
+      {
+        "slug": "estudias-espanol"
+      },
+      {
+        "slug": "estudio-espanol"
+      },
+      {
+        "slug": "habla-espanol"
+      },
+      {
+        "slug": "hablas-espanol"
+      },
+      {
+        "slug": "manana-hablare-espanol"
+      },
+      {
+        "slug": "no-hablo-espanol"
+      }
+    ],
     "slug": "español.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.español"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.education"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -3318,7 +3738,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.education"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.español"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -3343,22 +3775,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "donde-esta-la-estacion"
+      }
+    ],
     "slug": "estación.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.estación"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.city"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -3367,7 +3792,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.city"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.estación"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -3392,19 +3829,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "yo-soy-estudiante"
+      }
+    ],
     "slug": "estudiante.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.estudiante"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.education"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -3413,7 +3846,16 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.education"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.estudiante"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -3441,19 +3883,7 @@ export default [
     "slug": "euro.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.euro"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.money"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -3462,7 +3892,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.money"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.euro"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -3490,25 +3932,25 @@ export default [
     "slug": "explorador.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.explorador"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.mando"
       },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
-        "slug": "domain.mando"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.explorador"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -3531,22 +3973,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "voy-a-la-farmacia"
+      }
+    ],
     "slug": "farmacia.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.farmacia"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.city"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -3555,7 +3990,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.city"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.farmacia"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -3583,19 +4030,7 @@ export default [
     "slug": "febrero.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.febrero"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.month"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -3604,7 +4039,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.month"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.febrero"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -3635,22 +4082,21 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "ire-a-la-fiesta"
+      },
+      {
+        "slug": "la-fiesta-es-hoy"
+      },
+      {
+        "slug": "le-gusta-la-fiesta"
+      }
+    ],
     "slug": "fiesta.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.fiesta"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.entertainment"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -3659,7 +4105,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.entertainment"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.fiesta"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -3684,22 +4142,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "la-flor-es-bonita"
+      }
+    ],
     "slug": "flor.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.flor"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.nature"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -3708,7 +4159,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.nature"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.flor"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -3733,22 +4196,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "quiero-esta-foto"
+      }
+    ],
     "slug": "foto.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.foto"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.entertainment"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -3757,7 +4213,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.entertainment"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.foto"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -3782,22 +4250,21 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "come-la-fruta"
+      },
+      {
+        "slug": "comia-fruta"
+      },
+      {
+        "slug": "compramos-fruta"
+      }
+    ],
     "slug": "fruta.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.fruta"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.food"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -3806,7 +4273,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.food"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.fruta"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -3831,22 +4310,24 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-gato-es-pequeno"
+      },
+      {
+        "slug": "el-gato-esta-bajo-la-mesa"
+      },
+      {
+        "slug": "el-gato-esta-fuera"
+      },
+      {
+        "slug": "tenia-un-gato"
+      }
+    ],
     "slug": "gato.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.gato"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.animals"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -3855,7 +4336,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.animals"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.gato"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -3883,19 +4376,7 @@ export default [
     "slug": "gente.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.gente"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.social"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -3904,7 +4385,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.social"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.gente"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -3929,22 +4422,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "la-habitacion-es-pequena"
+      }
+    ],
     "slug": "habitación.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.habitación"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.home"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -3953,7 +4439,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.home"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.habitación"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -3978,22 +4476,21 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "cuando-comemos"
+      },
+      {
+        "slug": "tengo-hambre"
+      },
+      {
+        "slug": "tengo-hambre-y-sed"
+      }
+    ],
     "slug": "hambre.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.hambre"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.state"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -4002,7 +4499,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.state"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.hambre"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -4027,22 +4536,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "quiero-un-helado"
+      }
+    ],
     "slug": "helado.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.helado"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.food"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -4051,7 +4553,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.food"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.helado"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -4076,22 +4590,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "mi-hermana-es-inteligente"
+      },
+      {
+        "slug": "mi-hermana-es-menor"
+      }
+    ],
     "slug": "hermana.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.hermana"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.family"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -4100,7 +4610,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.family"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.hermana"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -4125,22 +4647,24 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "mi-hermano-es-alto"
+      },
+      {
+        "slug": "mi-hermano-es-ingeniero"
+      },
+      {
+        "slug": "mi-hermano-es-mayor"
+      },
+      {
+        "slug": "mi-hermano-es-simpatico"
+      }
+    ],
     "slug": "hermano.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.hermano"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.family"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -4149,7 +4673,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.family"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.hermano"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -4174,22 +4710,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "tu-hija-es-guapa"
+      }
+    ],
     "slug": "hija.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.hija"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.family"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -4198,7 +4727,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.family"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.hija"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -4223,22 +4764,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "quiero-que-hables"
+      }
+    ],
     "slug": "hijo.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.hijo"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.family"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -4247,7 +4781,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.family"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.hijo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -4272,34 +4818,42 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "aquel-hombre-es-viejo"
+      },
+      {
+        "slug": "ese-hombre-es-antipatico"
+      }
+    ],
     "slug": "hombre.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.hombre"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.social"
       },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
-        "slug": "proficiency.survival"
-      },
-      {
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.social"
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.hombre"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -4333,19 +4887,7 @@ export default [
     "slug": "hora.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.hora"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.time"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -4354,7 +4896,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.time"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.hora"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -4382,19 +4936,7 @@ export default [
     "slug": "hospital.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.hospital"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.health"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -4403,7 +4945,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.health"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.hospital"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -4428,22 +4982,24 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-hotel-esta-aqui"
+      },
+      {
+        "slug": "el-hotel-esta-lleno"
+      },
+      {
+        "slug": "estare-en-el-hotel"
+      },
+      {
+        "slug": "fui-al-hotel"
+      }
+    ],
     "slug": "hotel.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.hotel"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.travel"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -4452,7 +5008,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.travel"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.hotel"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -4477,22 +5045,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "voy-al-mercado"
+      }
+    ],
     "slug": "huevo.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.huevo"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.food"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -4501,7 +5062,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.food"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.huevo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -4526,22 +5099,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "tengo-una-idea"
+      }
+    ],
     "slug": "idea.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.idea"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.mind"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -4550,7 +5116,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.mind"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.idea"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -4578,19 +5156,7 @@ export default [
     "slug": "iglesia.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.iglesia"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.city"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -4599,7 +5165,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.city"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.iglesia"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -4624,22 +5202,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "mi-hermano-es-ingeniero"
+      }
+    ],
     "slug": "ingeniero.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.ingeniero"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.work"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -4648,7 +5219,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.work"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.ingeniero"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -4676,25 +5259,25 @@ export default [
     "slug": "izquierda.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.izquierda"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.mando"
       },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
-        "slug": "domain.mando"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.izquierda"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -4717,22 +5300,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-jamon-es-bueno"
+      },
+      {
+        "slug": "me-gusta-el-jamon"
+      }
+    ],
     "slug": "jamón.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.jamón"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.food"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -4741,7 +5320,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.food"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.jamón"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -4766,22 +5357,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "mi-jefe-es-bueno"
+      }
+    ],
     "slug": "jefe.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.jefe"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.work"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -4790,7 +5374,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.work"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.jefe"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -4818,19 +5414,7 @@ export default [
     "slug": "juego.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.juego"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.entertainment"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -4839,7 +5423,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.entertainment"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.juego"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -4867,19 +5463,7 @@ export default [
     "slug": "jueves.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.jueves"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.weekday"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -4888,7 +5472,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.weekday"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.jueves"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -4922,19 +5518,7 @@ export default [
     "slug": "julio.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.julio"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.month"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -4943,7 +5527,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.month"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.julio"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -4977,19 +5573,7 @@ export default [
     "slug": "junio.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.junio"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.month"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -4998,7 +5582,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.month"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.junio"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -5032,19 +5628,7 @@ export default [
     "slug": "leche.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.leche"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.food"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -5053,7 +5637,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.food"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.leche"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -5078,22 +5674,45 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "doy-un-libro"
+      },
+      {
+        "slug": "el-libro-es-nuevo"
+      },
+      {
+        "slug": "el-libro-esta-abierto"
+      },
+      {
+        "slug": "el-libro-esta-encima"
+      },
+      {
+        "slug": "el-libro-esta-sobre-la-mesa"
+      },
+      {
+        "slug": "este-libro-es-bueno"
+      },
+      {
+        "slug": "este-libro-es-mejor"
+      },
+      {
+        "slug": "le-gusta-el-libro"
+      },
+      {
+        "slug": "leo-un-libro"
+      },
+      {
+        "slug": "quiero-este-libro"
+      },
+      {
+        "slug": "tengo-un-libro-y-una-pelicula"
+      }
+    ],
     "slug": "libro.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.libro"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.education"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -5102,7 +5721,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.education"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.libro"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -5127,22 +5758,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "encuentro-la-llave"
+      },
+      {
+        "slug": "no-encuentro-la-llave"
+      }
+    ],
     "slug": "llave.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.llave"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.home"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -5151,7 +5778,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.home"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.llave"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -5179,19 +5818,7 @@ export default [
     "slug": "lluvia.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.lluvia"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.weather"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -5200,7 +5827,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.weather"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.lluvia"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -5225,22 +5864,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-lugar-es-bonito"
+      }
+    ],
     "slug": "lugar.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.lugar"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.space"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -5249,7 +5881,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.space"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.lugar"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -5274,22 +5918,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "hoy-es-lunes"
+      }
+    ],
     "slug": "lunes.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.lunes"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.weekday"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -5298,7 +5935,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.weekday"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.lunes"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -5329,22 +5978,30 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "ayudas-a-tu-madre"
+      },
+      {
+        "slug": "ayudo-a-mi-madre"
+      },
+      {
+        "slug": "llamas-a-tu-madre"
+      },
+      {
+        "slug": "llamo-a-mi-madre"
+      },
+      {
+        "slug": "mi-madre-hace-la-comida"
+      },
+      {
+        "slug": "su-madre-es-buena"
+      }
+    ],
     "slug": "madre.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.madre"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.family"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -5353,7 +6010,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.family"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.madre"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -5378,22 +6047,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "llevo-la-maleta"
+      },
+      {
+        "slug": "tengo-una-maleta"
+      }
+    ],
     "slug": "maleta.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.maleta"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.travel"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -5402,7 +6067,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.travel"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.maleta"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -5430,19 +6107,7 @@ export default [
     "slug": "mano.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.mano"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.body"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -5451,7 +6116,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.body"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.mano"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -5476,22 +6153,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "quiero-una-manzana"
+      }
+    ],
     "slug": "manzana.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.manzana"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.food"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -5500,7 +6170,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.food"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.manzana"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -5525,22 +6207,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "uso-un-mapa"
+      }
+    ],
     "slug": "mapa.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.mapa"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.travel"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -5549,7 +6224,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.travel"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.mapa"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -5574,22 +6261,21 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "me-gusta-el-mar"
+      },
+      {
+        "slug": "miro-el-mar"
+      },
+      {
+        "slug": "veo-el-mar"
+      }
+    ],
     "slug": "mar.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.mar"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.nature"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -5598,7 +6284,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.nature"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.mar"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -5626,19 +6324,7 @@ export default [
     "slug": "martes.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.martes"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.weekday"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -5647,7 +6333,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.weekday"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.martes"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -5681,19 +6379,7 @@ export default [
     "slug": "marzo.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.marzo"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.month"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -5702,7 +6388,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.month"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.marzo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -5736,19 +6434,7 @@ export default [
     "slug": "mayo.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.mayo"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.month"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -5757,7 +6443,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.month"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.mayo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -5788,22 +6486,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "leo-el-menu"
+      }
+    ],
     "slug": "menú.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.menú"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.food"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -5812,7 +6503,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.food"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.menú"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -5837,22 +6540,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "fui-al-mercado"
+      }
+    ],
     "slug": "mercado.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.mercado"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.city"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -5861,7 +6557,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.city"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.mercado"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -5889,19 +6597,7 @@ export default [
     "slug": "mes.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.mes"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.time"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -5910,7 +6606,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.time"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.mes"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -5935,22 +6643,27 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-gato-esta-bajo-la-mesa"
+      },
+      {
+        "slug": "el-libro-esta-sobre-la-mesa"
+      },
+      {
+        "slug": "la-silla-esta-entre-la-mesa-y-la-cama"
+      },
+      {
+        "slug": "la-taza-esta-en-la-mesa"
+      },
+      {
+        "slug": "pongo-la-mesa"
+      }
+    ],
     "slug": "mesa.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.mesa"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.home"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -5959,7 +6672,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.home"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.mesa"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -5984,22 +6709,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "uso-el-metro"
+      }
+    ],
     "slug": "metro.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.metro"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.transport"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -6008,7 +6726,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.transport"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.metro"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -6033,22 +6763,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "tengo-miedo"
+      }
+    ],
     "slug": "miedo.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.miedo"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.mind"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -6057,7 +6780,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.mind"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.miedo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -6085,19 +6820,7 @@ export default [
     "slug": "minuto.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.minuto"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.time"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -6106,7 +6829,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.time"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.minuto"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -6134,19 +6869,7 @@ export default [
     "slug": "miércoles.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.miércoles"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.weekday"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -6155,7 +6878,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.weekday"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.miércoles"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -6189,19 +6924,7 @@ export default [
     "slug": "momento.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.momento"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.time"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -6210,7 +6933,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.time"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.momento"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -6235,34 +6970,39 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "esa-mujer-es-alta"
+      }
+    ],
     "slug": "mujer.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.mujer"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.social"
       },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
-        "slug": "proficiency.survival"
-      },
-      {
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.social"
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.mujer"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -6293,22 +7033,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-museo-esta-cerrado"
+      }
+    ],
     "slug": "museo.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.museo"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.city"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -6317,7 +7050,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.city"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.museo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -6342,22 +7087,24 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-medico-es-bueno"
+      },
+      {
+        "slug": "ire-al-medico"
+      },
+      {
+        "slug": "mi-padre-es-medico"
+      },
+      {
+        "slug": "necesito-un-medico"
+      }
+    ],
     "slug": "médico.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.médico"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.health"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -6366,7 +7113,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.health"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.médico"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -6397,22 +7156,21 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "no-tengo-movil"
+      },
+      {
+        "slug": "uso-el-movil"
+      }
+    ],
     "slug": "móvil.noun",
     "symbols": [
       {
-        "slug": "word"
+        "slug": "domain.city"
       },
       {
-        "slug": "word.lemma.móvil"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "proficiency.castilianism"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -6421,10 +7179,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "proficiency.castilianism"
+        "slug": "word"
       },
       {
-        "slug": "domain.city"
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.móvil"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -6449,22 +7216,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "la-musica-es-buena"
+      },
+      {
+        "slug": "me-gusta-la-musica"
+      }
+    ],
     "slug": "música.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.música"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.entertainment"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -6473,7 +7236,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.entertainment"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.música"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -6501,19 +7276,7 @@ export default [
     "slug": "naranja.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.naranja"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.food"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -6522,7 +7285,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.food"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.naranja"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -6550,19 +7325,7 @@ export default [
     "slug": "nariz.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.nariz"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.body"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -6571,7 +7334,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.body"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.nariz"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -6596,22 +7371,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-nino-es-tonto"
+      }
+    ],
     "slug": "niño.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.niño"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.social"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -6620,7 +7388,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.social"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.niño"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -6645,22 +7425,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "la-noche-es-oscura"
+      }
+    ],
     "slug": "noche.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.noche"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.time"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -6669,7 +7442,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.time"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.noche"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -6694,22 +7479,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "escribo-mi-nombre"
+      }
+    ],
     "slug": "nombre.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.nombre"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.social"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -6718,7 +7496,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.social"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.nombre"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -6746,19 +7536,7 @@ export default [
     "slug": "noviembre.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.noviembre"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.month"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -6767,7 +7545,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.month"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.noviembre"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -6798,22 +7588,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "mi-novio-es-alto"
+      }
+    ],
     "slug": "novio.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.novio"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.relationship"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -6822,7 +7605,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.relationship"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.novio"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -6850,19 +7645,7 @@ export default [
     "slug": "número.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.número"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "functional.number"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -6871,7 +7654,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.number"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.número"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -6899,19 +7694,7 @@ export default [
     "slug": "octubre.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.octubre"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.month"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -6920,7 +7703,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.month"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.octubre"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -6951,22 +7746,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "trabajo-en-la-oficina"
+      }
+    ],
     "slug": "oficina.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.oficina"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.work"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -6975,7 +7763,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.work"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.oficina"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -7003,19 +7803,7 @@ export default [
     "slug": "ojo.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.ojo"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.body"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -7024,7 +7812,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.body"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.ojo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -7052,19 +7852,7 @@ export default [
     "slug": "oreja.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.oreja"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.body"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -7073,7 +7861,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.body"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.oreja"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -7098,22 +7898,30 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "mi-padre-es-camarero"
+      },
+      {
+        "slug": "mi-padre-es-medico"
+      },
+      {
+        "slug": "mi-padre-es-secretario"
+      },
+      {
+        "slug": "mi-padre-es-serio"
+      },
+      {
+        "slug": "nuestro-padre-trabaja"
+      },
+      {
+        "slug": "soy-menos-alto-que-mi-padre"
+      }
+    ],
     "slug": "padre.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.padre"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.family"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -7122,7 +7930,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.family"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.padre"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -7147,22 +7967,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "la-paella-es-buena"
+      }
+    ],
     "slug": "paella.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.paella"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.food"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -7171,7 +7984,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.food"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.paella"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -7199,19 +8024,7 @@ export default [
     "slug": "palabra.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.palabra"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.education"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -7220,7 +8033,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.education"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.palabra"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -7245,22 +8070,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "comeria-pan"
+      },
+      {
+        "slug": "comes-pan"
+      },
+      {
+        "slug": "comi-pan"
+      },
+      {
+        "slug": "comia-pan"
+      },
+      {
+        "slug": "como-pan-y-bebo-agua"
+      },
+      {
+        "slug": "compro-pan"
+      },
+      {
+        "slug": "no-puedo-comer-pan"
+      }
+    ],
     "slug": "pan.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.pan"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.food"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -7269,7 +8105,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.food"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.pan"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -7297,19 +8145,7 @@ export default [
     "slug": "pantalón.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.pantalón"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.clothing"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -7318,7 +8154,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.clothing"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.pantalón"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -7346,19 +8194,7 @@ export default [
     "slug": "papel.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.papel"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.education"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -7367,7 +8203,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.education"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.papel"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -7392,22 +8240,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-parque-es-grande"
+      }
+    ],
     "slug": "parque.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.parque"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.city"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -7416,7 +8257,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.city"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.parque"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -7441,22 +8294,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "como-una-patata"
+      }
+    ],
     "slug": "patata.noun",
     "symbols": [
       {
-        "slug": "word"
+        "slug": "domain.food"
       },
       {
-        "slug": "word.lemma.patata"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "proficiency.castilianism"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -7465,10 +8314,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "proficiency.castilianism"
+        "slug": "word"
       },
       {
-        "slug": "domain.food"
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.patata"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -7496,19 +8354,7 @@ export default [
     "slug": "pelo.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.pelo"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.body"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -7517,7 +8363,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.body"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.pelo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -7542,22 +8400,21 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "la-pelicula-es-divertida"
+      },
+      {
+        "slug": "tengo-un-libro-y-una-pelicula"
+      },
+      {
+        "slug": "veo-una-pelicula"
+      }
+    ],
     "slug": "película.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.película"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.entertainment"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -7566,7 +8423,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.entertainment"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.película"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -7591,22 +8460,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "leo-el-periodico"
+      }
+    ],
     "slug": "periódico.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.periódico"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.education"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -7615,7 +8477,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.education"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.periódico"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -7640,22 +8514,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-perro-esta-dentro"
+      }
+    ],
     "slug": "perro.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.perro"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.animals"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -7664,7 +8531,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.animals"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.perro"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -7692,19 +8571,7 @@ export default [
     "slug": "persona.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.persona"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.social"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -7713,7 +8580,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.social"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.persona"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -7738,22 +8617,21 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "comi-pescado"
+      },
+      {
+        "slug": "el-pescado-esta-rico"
+      },
+      {
+        "slug": "no-me-gusta-el-pescado"
+      }
+    ],
     "slug": "pescado.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.pescado"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.food"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -7762,7 +8640,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.food"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.pescado"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -7790,19 +8680,7 @@ export default [
     "slug": "pie.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.pie"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.body"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -7811,7 +8689,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.body"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.pie"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -7839,19 +8729,7 @@ export default [
     "slug": "pierna.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.pierna"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.body"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -7860,7 +8738,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.body"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.pierna"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -7885,22 +8775,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-pintor-trabaja"
+      }
+    ],
     "slug": "pintor.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.pintor"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.work"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -7909,7 +8792,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.work"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.pintor"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -7934,22 +8829,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "vivo-en-un-piso-pequeno"
+      }
+    ],
     "slug": "piso.noun",
     "symbols": [
       {
-        "slug": "word"
+        "slug": "domain.home"
       },
       {
-        "slug": "word.lemma.piso"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "proficiency.castilianism"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -7958,10 +8849,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "proficiency.castilianism"
+        "slug": "word"
       },
       {
-        "slug": "domain.home"
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.piso"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -7986,22 +8886,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-plato-esta-limpio"
+      }
+    ],
     "slug": "plato.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.plato"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.home"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -8010,7 +8903,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.home"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.plato"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -8035,22 +8940,24 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "estuve-en-la-playa"
+      },
+      {
+        "slug": "fuimos-a-la-playa"
+      },
+      {
+        "slug": "nos-gusta-la-playa"
+      },
+      {
+        "slug": "vamos-a-la-playa"
+      }
+    ],
     "slug": "playa.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.playa"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.travel"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -8059,7 +8966,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.travel"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.playa"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -8087,19 +9006,7 @@ export default [
     "slug": "plaza.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.plaza"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.city"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -8108,7 +9015,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.city"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.plaza"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -8133,22 +9052,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-policia-esta-aqui"
+      }
+    ],
     "slug": "policía.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.policía"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.work"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -8157,7 +9069,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.work"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.policía"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -8182,22 +9106,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "como-pollo"
+      },
+      {
+        "slug": "no-como-pollo"
+      }
+    ],
     "slug": "pollo.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.pollo"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.food"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -8206,7 +9126,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.food"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.pollo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -8231,22 +9163,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "la-pregunta-es-importante"
+      }
+    ],
     "slug": "pregunta.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.pregunta"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.education"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -8255,7 +9180,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.education"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.pregunta"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -8280,22 +9217,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "mi-prima-es-alta"
+      }
+    ],
     "slug": "prima.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.prima"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.family"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -8304,7 +9234,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.family"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.prima"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -8329,22 +9271,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "tengo-un-primo"
+      }
+    ],
     "slug": "primo.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.primo"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.family"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -8353,7 +9288,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.family"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.primo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -8378,22 +9325,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "tengo-prisa"
+      },
+      {
+        "slug": "tengo-prisa-pero-espero"
+      }
+    ],
     "slug": "prisa.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.prisa"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.state"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -8402,7 +9345,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.state"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.prisa"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -8427,22 +9382,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "tengo-un-problema"
+      },
+      {
+        "slug": "tuve-un-problema"
+      }
+    ],
     "slug": "problema.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.problema"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.mind"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -8451,7 +9402,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.mind"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.problema"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -8485,19 +9448,7 @@ export default [
     "slug": "profesor.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.profesor"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.education"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -8506,7 +9457,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.education"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.profesor"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -8531,22 +9494,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-puente-es-grande"
+      }
+    ],
     "slug": "puente.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.puente"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.city"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -8555,7 +9511,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.city"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.puente"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -8580,22 +9548,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "abre-la-puerta"
+      },
+      {
+        "slug": "la-puerta-esta-abierta"
+      }
+    ],
     "slug": "puerta.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.puerta"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.home"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -8604,7 +9568,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.home"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.puerta"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -8629,22 +9605,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-pajaro-es-pequeno"
+      },
+      {
+        "slug": "el-pajaro-esta-encima-del-arbol"
+      }
+    ],
     "slug": "pájaro.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.pájaro"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.animals"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -8653,7 +9625,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.animals"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.pájaro"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -8681,19 +9665,7 @@ export default [
     "slug": "queso.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.queso"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.food"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -8702,7 +9674,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.food"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.queso"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -8727,22 +9711,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "este-regalo-es-bonito"
+      }
+    ],
     "slug": "regalo.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.regalo"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.social"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -8751,7 +9728,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.social"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.regalo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -8779,19 +9768,7 @@ export default [
     "slug": "reloj.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.reloj"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.city"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -8800,7 +9777,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.city"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.reloj"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -8825,22 +9814,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-restaurante-esta-abierto"
+      },
+      {
+        "slug": "el-restaurante-esta-cerca"
+      }
+    ],
     "slug": "restaurante.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.restaurante"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.city"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -8849,7 +9834,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.city"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.restaurante"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -8874,22 +9871,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "la-ropa-esta-limpia"
+      }
+    ],
     "slug": "ropa.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.ropa"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.clothing"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -8898,7 +9888,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.clothing"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.ropa"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -8926,19 +9928,7 @@ export default [
     "slug": "río.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.río"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.nature"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -8947,7 +9937,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.nature"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.río"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -8972,22 +9974,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "necesito-sal"
+      }
+    ],
     "slug": "sal.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.sal"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.food"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -8996,7 +9991,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.food"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.sal"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -9021,22 +10028,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "mi-padre-es-secretario"
+      }
+    ],
     "slug": "secretario.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.secretario"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.work"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -9045,7 +10045,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.work"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.secretario"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -9070,22 +10082,21 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "quiero-agua-porque-tengo-sed"
+      },
+      {
+        "slug": "tengo-hambre-y-sed"
+      },
+      {
+        "slug": "tengo-sed"
+      }
+    ],
     "slug": "sed.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.sed"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.state"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -9094,7 +10105,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.state"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.sed"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -9119,22 +10142,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "paso-una-semana-aqui"
+      }
+    ],
     "slug": "semana.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.semana"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.time"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -9143,7 +10159,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.time"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.semana"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -9171,19 +10199,7 @@ export default [
     "slug": "septiembre.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.septiembre"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.month"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -9192,7 +10208,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.month"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.septiembre"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -9226,19 +10254,7 @@ export default [
     "slug": "servilleta.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.servilleta"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.home"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -9247,7 +10263,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.home"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.servilleta"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -9275,19 +10303,7 @@ export default [
     "slug": "señor.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.señor"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.social"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -9296,7 +10312,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.social"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.señor"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -9324,19 +10352,7 @@ export default [
     "slug": "señora.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.señora"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.social"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -9345,7 +10361,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.social"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.señora"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -9370,22 +10398,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "la-silla-es-nueva"
+      },
+      {
+        "slug": "la-silla-esta-entre-la-mesa-y-la-cama"
+      }
+    ],
     "slug": "silla.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.silla"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.home"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -9394,7 +10418,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.home"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.silla"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -9419,22 +10455,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "hace-sol"
+      }
+    ],
     "slug": "sol.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.sol"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.weather"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -9443,7 +10472,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.weather"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.sol"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -9471,25 +10512,25 @@ export default [
     "slug": "soldado.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.soldado"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.mando"
       },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
-        "slug": "domain.mando"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.soldado"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -9512,22 +10553,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "quiero-sopa"
+      }
+    ],
     "slug": "sopa.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.sopa"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.food"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -9536,7 +10570,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.food"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.sopa"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -9561,22 +10607,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "tengo-suerte"
+      },
+      {
+        "slug": "tuve-suerte"
+      }
+    ],
     "slug": "suerte.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.suerte"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.mind"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -9585,7 +10627,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.mind"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.suerte"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -9610,22 +10664,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "tengo-sueno"
+      }
+    ],
     "slug": "sueño.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.sueño"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.state"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -9634,7 +10681,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.state"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.sueño"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -9659,22 +10718,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "compro-en-el-supermercado"
+      },
+      {
+        "slug": "voy-al-mercado"
+      }
+    ],
     "slug": "supermercado.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.supermercado"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.city"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -9683,7 +10738,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.city"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.supermercado"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -9711,19 +10778,7 @@ export default [
     "slug": "sábado.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.sábado"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.weekday"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -9732,7 +10787,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.weekday"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.sábado"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -9763,22 +10830,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "la-tarde-es-larga"
+      },
+      {
+        "slug": "no-podre-ir"
+      }
+    ],
     "slug": "tarde.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.tarde"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.time"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -9787,7 +10850,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.time"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.tarde"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -9812,22 +10887,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "necesito-un-taxi"
+      }
+    ],
     "slug": "taxi.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.taxi"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.transport"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -9836,7 +10904,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.transport"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.taxi"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -9861,22 +10941,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "la-taza-esta-en-la-mesa"
+      },
+      {
+        "slug": "quiero-una-taza-de-cafe"
+      }
+    ],
     "slug": "taza.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.taza"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.home"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -9885,7 +10961,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.home"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.taza"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -9910,22 +10998,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "donde-esta-el-telefono"
+      }
+    ],
     "slug": "teléfono.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.teléfono"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.city"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -9934,7 +11015,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.city"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.teléfono"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -9959,22 +11052,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "como-con-tenedor"
+      },
+      {
+        "slug": "necesito-un-tenedor"
+      }
+    ],
     "slug": "tenedor.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.tenedor"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.home"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -9983,7 +11072,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.home"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.tenedor"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -10008,34 +11109,42 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "no-tengo-tiempo"
+      },
+      {
+        "slug": "tendre-tiempo"
+      }
+    ],
     "slug": "tiempo.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.tiempo"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.time"
       },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
-        "slug": "proficiency.survival"
-      },
-      {
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.time"
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.tiempo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -10060,22 +11169,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "la-tienda-esta-cerrada"
+      }
+    ],
     "slug": "tienda.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.tienda"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.city"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -10084,7 +11186,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.city"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.tienda"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -10109,22 +11223,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-tomate-es-rojo"
+      }
+    ],
     "slug": "tomate.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.tomate"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.food"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -10133,7 +11240,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.food"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.tomate"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -10158,22 +11277,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "la-tortilla-es-buena"
+      }
+    ],
     "slug": "tortilla.noun",
     "symbols": [
       {
-        "slug": "word"
+        "slug": "domain.food"
       },
       {
-        "slug": "word.lemma.tortilla"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "proficiency.castilianism"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -10182,10 +11297,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "proficiency.castilianism"
+        "slug": "word"
       },
       {
-        "slug": "domain.food"
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.tortilla"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -10210,22 +11334,21 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "buscas-trabajo"
+      },
+      {
+        "slug": "busco-trabajo"
+      },
+      {
+        "slug": "busco-trabajo-pero-no-lo-encuentro"
+      }
+    ],
     "slug": "trabajo.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.trabajo"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.work"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -10234,7 +11357,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.work"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.trabajo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -10259,22 +11394,21 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "donde-esta-la-estacion"
+      },
+      {
+        "slug": "el-coche-es-mas-caro-que-el-tren"
+      },
+      {
+        "slug": "el-tren-es-mas-rapido-que-el-coche"
+      }
+    ],
     "slug": "tren.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.tren"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.transport"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -10283,7 +11417,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.transport"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.tren"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -10308,22 +11454,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "mi-tia-es-joven"
+      },
+      {
+        "slug": "mi-tia-es-simpatica"
+      }
+    ],
     "slug": "tía.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.tía"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.family"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -10332,7 +11474,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.family"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.tía"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -10357,22 +11511,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "mi-tio-vive-aqui"
+      }
+    ],
     "slug": "tío.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.tío"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.family"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -10381,7 +11528,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.family"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.tío"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -10406,22 +11565,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-vaso-esta-vacio"
+      },
+      {
+        "slug": "necesito-un-vaso"
+      }
+    ],
     "slug": "vaso.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.vaso"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.home"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -10430,7 +11585,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.home"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.vaso"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -10455,22 +11622,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "abri-la-ventana"
+      },
+      {
+        "slug": "abro-la-ventana"
+      }
+    ],
     "slug": "ventana.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.ventana"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.home"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -10479,7 +11642,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.home"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.ventana"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -10504,22 +11679,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "compramos-fruta"
+      }
+    ],
     "slug": "verdura.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.verdura"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.food"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -10528,7 +11696,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.food"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.verdura"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -10556,19 +11736,7 @@ export default [
     "slug": "vestido.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.vestido"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.clothing"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -10577,7 +11745,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.clothing"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.vestido"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -10605,19 +11785,7 @@ export default [
     "slug": "vez.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.vez"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.time"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -10626,7 +11794,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.time"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.vez"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -10651,22 +11831,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-viaje-es-largo"
+      }
+    ],
     "slug": "viaje.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.viaje"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.travel"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -10675,7 +11848,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.travel"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.viaje"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -10703,19 +11888,7 @@ export default [
     "slug": "viernes.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.viernes"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.weekday"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -10724,7 +11897,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.weekday"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.viernes"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -10755,22 +11940,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "no-bebo-vino"
+      }
+    ],
     "slug": "vino.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.vino"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.food"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -10779,7 +11957,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.food"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.vino"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -10804,22 +11994,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-zapato-es-negro"
+      },
+      {
+        "slug": "el-zapato-esta-debajo"
+      }
+    ],
     "slug": "zapato.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.zapato"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.clothing"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -10828,7 +12014,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.clothing"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.zapato"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {
@@ -10853,22 +12051,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-arbol-es-grande"
+      },
+      {
+        "slug": "el-pajaro-esta-encima-del-arbol"
+      }
+    ],
     "slug": "árbol.noun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.árbol"
-      },
-      {
-        "slug": "word.part-of-speech.noun"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.nature"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -10877,7 +12071,19 @@ export default [
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "domain.nature"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.árbol"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.noun"
       }
     ],
     "trait": {

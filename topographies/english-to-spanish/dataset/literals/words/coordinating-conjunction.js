@@ -1,7 +1,24 @@
 export default [
   {
+    "in": [
+      {
+        "slug": "quiero-cafe-o-agua"
+      }
+    ],
     "slug": "o.coordinating-conjunction",
     "symbols": [
+      {
+        "slug": "functional.connector"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -10,18 +27,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.coordinating-conjunction"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.connector"
       }
     ],
     "trait": {
@@ -52,8 +57,34 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "busco-trabajo-pero-no-lo-encuentro"
+      },
+      {
+        "slug": "estoy-cansado-pero-trabajo"
+      },
+      {
+        "slug": "no-comprendo"
+      },
+      {
+        "slug": "tengo-prisa-pero-espero"
+      }
+    ],
     "slug": "pero.coordinating-conjunction",
     "symbols": [
+      {
+        "slug": "functional.connector"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -62,18 +93,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.coordinating-conjunction"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.connector"
       }
     ],
     "trait": {
@@ -104,8 +123,40 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "como-pan-y-bebo-agua"
+      },
+      {
+        "slug": "compramos-fruta"
+      },
+      {
+        "slug": "estoy-en-casa-y-leo"
+      },
+      {
+        "slug": "la-silla-esta-entre-la-mesa-y-la-cama"
+      },
+      {
+        "slug": "tengo-hambre-y-sed"
+      },
+      {
+        "slug": "tengo-un-libro-y-una-pelicula"
+      }
+    ],
     "slug": "y.coordinating-conjunction",
     "symbols": [
+      {
+        "slug": "functional.connector"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -114,18 +165,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.coordinating-conjunction"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.connector"
       }
     ],
     "trait": {

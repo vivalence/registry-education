@@ -13,6 +13,12 @@ const STRENGTH = strength("n0");
 
 const virgin = (held) => !held.status || held.status === "UNTOUCHED";
 
+const DIRECTION = {
+  advance: (current, target) => target > current,
+  drop: (current, target) => target < current,
+  set: () => true,
+};
+
 const schematic = v.object({
   driver: v.enum(Object.keys(retention.drivers)).default("BAYESIAN"),
   status: v.enum(STATUS).default("UNKNOWN"),
@@ -27,7 +33,7 @@ export const RETAINED = traits.define("RETAINED", {
   schematic,
   repository: {
     retention(row) {
-      return this.findOne({ literal: row, traits: "RETAINED" });
+      return this.findOne({ literal: row, trait: { RETAINED: { $ne: null } } });
     },
     evolve(note, signal) {
       const held = this.claim(note, "RETAINED");
@@ -37,6 +43,23 @@ export const RETAINED = traits.define("RETAINED", {
       note.trait = {
         ...note.trait,
         RETAINED: { ...held, ...result, due: new Date(result.nextAt).toISOString(), lastAt: Date.now(), lastSignal: given.enum },
+      };
+      return note;
+    },
+    scale(note, percent, direction = "advance") {
+      const held = this.claim(note, "RETAINED");
+      const driver = retention.drivers[held.driver];
+      const scaled = driver.scale(percent);
+      const current = held.lastAt == null ? 0 : driver.assess(held).nextIn;
+      if (!DIRECTION[direction](current, scaled.nextIn)) return null;
+      note.trait = {
+        ...note.trait,
+        RETAINED: {
+          ...held,
+          ...scaled,
+          due: new Date(scaled.nextAt).toISOString(),
+          lastAt: Date.now(),
+        },
       };
       return note;
     },

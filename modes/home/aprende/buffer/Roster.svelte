@@ -76,7 +76,7 @@
   );
 
   // load = the transparent terminal setter; the stall reacts and renders the buffer.
-  const load = (buffer) => (terminal.buffer = buffer);
+  const load = (buffer) => terminal.setBuffer(buffer);
 </script>
 
 {#if roster.length}

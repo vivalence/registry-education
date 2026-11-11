@@ -103,8 +103,8 @@ export const playable = (files, knowable, axes) =>
   (!types.listening(axes.prompt) || audible(files, knowable));
 
 export const carriers = (buffer) => [
-  ...(buffer.literals ?? []).map(fold.fromLiteral),
-  ...((buffer.data ?? {}).knowables ?? []),
+  ...fold.items(buffer.literals).map(fold.card),
+  ...((buffer.data ?? {}).knowables ?? []).map((knowable, position) => ({ ...knowable, position })),
 ];
 
 export const order = (list, random) => (types.shuffling(random) ? array.shuffle(list) : list);
@@ -125,5 +125,11 @@ export const carried = (files, buffer) => admit(files, carriers(buffer), buffer.
 export const refetch = async (buffer, { set = [], prompt, blacklist = [] } = {}) => {
   if (!set.length) return [];
   const resolved = await buffer.mode.connection.call("/resolve", { set, prompt, blacklist });
-  return (resolved?.clauses ?? []).flatMap((entry) => [...entry.literals, ...entry.knowables]);
+  const clauses = resolved?.clauses ?? [];
+  return [
+    ...clauses.flatMap((entry) => entry.literals),
+    ...clauses
+      .flatMap((entry) => entry.knowables)
+      .map((knowable, position) => ({ ...knowable, position })),
+  ];
 };

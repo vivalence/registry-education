@@ -1,7 +1,27 @@
 export default [
   {
+    "in": [
+      {
+        "slug": "quiero-algo"
+      },
+      {
+        "slug": "quiero-ver-algo"
+      }
+    ],
     "slug": "algo.pronoun",
     "symbols": [
+      {
+        "slug": "functional.pronoun"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -10,18 +30,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.pronoun"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.pronoun"
       }
     ],
     "trait": {
@@ -46,8 +54,28 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "alguien-esta-aqui"
+      },
+      {
+        "slug": "veo-a-alguien"
+      }
+    ],
     "slug": "alguien.pronoun",
     "symbols": [
+      {
+        "slug": "functional.pronoun"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -56,18 +84,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.pronoun"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.pronoun"
       }
     ],
     "trait": {
@@ -92,28 +108,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "aquel-hombre-es-viejo"
+      }
+    ],
     "slug": "aquel.pronoun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.aquel"
-      },
-      {
-        "slug": "word.part-of-speech.pronoun"
-      },
-      {
-        "slug": "word.number.singular"
-      },
-      {
-        "slug": "word.gender.masculine"
+        "slug": "functional.pronoun"
       },
       {
         "slug": "proficiency.cefr.a2"
       },
       {
-        "slug": "functional.pronoun"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.aquel"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.pronoun"
       }
     ],
     "trait": {
@@ -141,25 +162,25 @@ export default [
     "slug": "aquella.pronoun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.aquella"
-      },
-      {
-        "slug": "word.part-of-speech.pronoun"
-      },
-      {
-        "slug": "word.number.singular"
-      },
-      {
-        "slug": "word.gender.feminine"
+        "slug": "functional.pronoun"
       },
       {
         "slug": "proficiency.cefr.a2"
       },
       {
-        "slug": "functional.pronoun"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.aquella"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.pronoun"
       }
     ],
     "trait": {
@@ -184,8 +205,25 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "cuanto-es"
+      }
+    ],
     "slug": "cuánto.pronoun",
     "symbols": [
+      {
+        "slug": "functional.question"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -194,18 +232,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.pronoun"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.question"
       }
     ],
     "trait": {
@@ -230,37 +256,42 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "ella-es-seria"
+      }
+    ],
     "slug": "ella.pronoun",
     "symbols": [
+      {
+        "slug": "functional.pronoun"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
       {
+        "slug": "word.gender.feminine"
+      },
+      {
         "slug": "word.lemma.ella"
+      },
+      {
+        "slug": "word.number.singular"
       },
       {
         "slug": "word.part-of-speech.pronoun"
       },
       {
         "slug": "word.person.third"
-      },
-      {
-        "slug": "word.number.singular"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.pronoun"
       }
     ],
     "trait": {
@@ -294,22 +325,7 @@ export default [
     "slug": "ellas.pronoun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.ellas"
-      },
-      {
-        "slug": "word.part-of-speech.pronoun"
-      },
-      {
-        "slug": "word.person.third"
-      },
-      {
-        "slug": "word.number.plural"
-      },
-      {
-        "slug": "word.gender.feminine"
+        "slug": "functional.pronoun"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -318,7 +334,22 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.pronoun"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.ellas"
+      },
+      {
+        "slug": "word.number.plural"
+      },
+      {
+        "slug": "word.part-of-speech.pronoun"
+      },
+      {
+        "slug": "word.person.third"
       }
     ],
     "trait": {
@@ -346,34 +377,34 @@ export default [
     "slug": "ellos.pronoun",
     "symbols": [
       {
+        "slug": "functional.pronoun"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
       },
       {
+        "slug": "word.gender.masculine"
+      },
+      {
         "slug": "word.lemma.ellos"
+      },
+      {
+        "slug": "word.number.plural"
       },
       {
         "slug": "word.part-of-speech.pronoun"
       },
       {
         "slug": "word.person.third"
-      },
-      {
-        "slug": "word.number.plural"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.pronoun"
       }
     ],
     "trait": {
@@ -398,34 +429,42 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "esa-mujer-es-alta"
+      },
+      {
+        "slug": "esta-casa-es-mejor-que-esa"
+      }
+    ],
     "slug": "esa.pronoun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.esa"
-      },
-      {
-        "slug": "word.part-of-speech.pronoun"
-      },
-      {
-        "slug": "word.number.singular"
-      },
-      {
-        "slug": "word.gender.feminine"
+        "slug": "functional.pronoun"
       },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
-        "slug": "proficiency.survival"
-      },
-      {
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "functional.pronoun"
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.esa"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.pronoun"
       }
     ],
     "trait": {
@@ -450,34 +489,45 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "ese-coche-es-peor"
+      },
+      {
+        "slug": "ese-coche-es-rojo"
+      },
+      {
+        "slug": "ese-hombre-es-antipatico"
+      }
+    ],
     "slug": "ese.pronoun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.ese"
-      },
-      {
-        "slug": "word.part-of-speech.pronoun"
-      },
-      {
-        "slug": "word.number.singular"
-      },
-      {
-        "slug": "word.gender.masculine"
+        "slug": "functional.pronoun"
       },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
-        "slug": "proficiency.survival"
-      },
-      {
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "functional.pronoun"
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.ese"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.pronoun"
       }
     ],
     "trait": {
@@ -502,34 +552,39 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "no-quiero-eso"
+      }
+    ],
     "slug": "eso.pronoun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.eso"
-      },
-      {
-        "slug": "word.part-of-speech.pronoun"
-      },
-      {
-        "slug": "word.number.singular"
-      },
-      {
-        "slug": "word.gender.neuter"
+        "slug": "functional.pronoun"
       },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
-        "slug": "proficiency.survival"
-      },
-      {
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "functional.pronoun"
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.neuter"
+      },
+      {
+        "slug": "word.lemma.eso"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.pronoun"
       }
     ],
     "trait": {
@@ -554,34 +609,45 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "esta-casa-es-grande"
+      },
+      {
+        "slug": "esta-casa-es-mejor-que-esa"
+      },
+      {
+        "slug": "quiero-esta-foto"
+      }
+    ],
     "slug": "esta.pronoun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.esta"
-      },
-      {
-        "slug": "word.part-of-speech.pronoun"
-      },
-      {
-        "slug": "word.number.singular"
-      },
-      {
-        "slug": "word.gender.feminine"
+        "slug": "functional.pronoun"
       },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
-        "slug": "proficiency.survival"
-      },
-      {
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "functional.pronoun"
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.esta"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.pronoun"
       }
     ],
     "trait": {
@@ -606,34 +672,51 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "comes-pan"
+      },
+      {
+        "slug": "este-libro-es-bueno"
+      },
+      {
+        "slug": "este-libro-es-mejor"
+      },
+      {
+        "slug": "este-regalo-es-bonito"
+      },
+      {
+        "slug": "quiero-este-libro"
+      }
+    ],
     "slug": "este.pronoun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.este"
-      },
-      {
-        "slug": "word.part-of-speech.pronoun"
-      },
-      {
-        "slug": "word.number.singular"
-      },
-      {
-        "slug": "word.gender.masculine"
+        "slug": "functional.pronoun"
       },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
-        "slug": "proficiency.survival"
-      },
-      {
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "functional.pronoun"
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.este"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.pronoun"
       }
     ],
     "trait": {
@@ -658,34 +741,42 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "esto-es-bueno"
+      },
+      {
+        "slug": "podria-comer"
+      }
+    ],
     "slug": "esto.pronoun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.esto"
-      },
-      {
-        "slug": "word.part-of-speech.pronoun"
-      },
-      {
-        "slug": "word.number.singular"
-      },
-      {
-        "slug": "word.gender.neuter"
+        "slug": "functional.pronoun"
       },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
-        "slug": "proficiency.survival"
-      },
-      {
         "slug": "proficiency.high-frequency"
       },
       {
-        "slug": "functional.pronoun"
+        "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.neuter"
+      },
+      {
+        "slug": "word.lemma.esto"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.pronoun"
       }
     ],
     "trait": {
@@ -710,37 +801,42 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "la-veo"
+      }
+    ],
     "slug": "la.pronoun",
     "symbols": [
+      {
+        "slug": "functional.pronoun"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
       {
+        "slug": "word.gender.feminine"
+      },
+      {
         "slug": "word.lemma.la"
+      },
+      {
+        "slug": "word.number.singular"
       },
       {
         "slug": "word.part-of-speech.pronoun"
       },
       {
         "slug": "word.person.third"
-      },
-      {
-        "slug": "word.number.singular"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.pronoun"
       }
     ],
     "trait": {
@@ -768,34 +864,34 @@ export default [
     "slug": "las.pronoun",
     "symbols": [
       {
+        "slug": "functional.pronoun"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
       },
       {
+        "slug": "word.gender.feminine"
+      },
+      {
         "slug": "word.lemma.las"
+      },
+      {
+        "slug": "word.number.plural"
       },
       {
         "slug": "word.part-of-speech.pronoun"
       },
       {
         "slug": "word.person.third"
-      },
-      {
-        "slug": "word.number.plural"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.pronoun"
       }
     ],
     "trait": {
@@ -820,8 +916,28 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "le-gusta-el-libro"
+      },
+      {
+        "slug": "le-gusta-la-fiesta"
+      }
+    ],
     "slug": "le.pronoun",
     "symbols": [
+      {
+        "slug": "functional.pronoun"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -829,25 +945,13 @@ export default [
         "slug": "word.lemma.le"
       },
       {
+        "slug": "word.number.singular"
+      },
+      {
         "slug": "word.part-of-speech.pronoun"
       },
       {
         "slug": "word.person.third"
-      },
-      {
-        "slug": "word.number.singular"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.pronoun"
       }
     ],
     "trait": {
@@ -875,31 +979,31 @@ export default [
     "slug": "les.pronoun",
     "symbols": [
       {
+        "slug": "functional.pronoun"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
       },
       {
         "slug": "word.lemma.les"
       },
       {
+        "slug": "word.number.plural"
+      },
+      {
         "slug": "word.part-of-speech.pronoun"
       },
       {
         "slug": "word.person.third"
-      },
-      {
-        "slug": "word.number.plural"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.pronoun"
       }
     ],
     "trait": {
@@ -924,37 +1028,45 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "busco-trabajo-pero-no-lo-encuentro"
+      },
+      {
+        "slug": "lo-quiero"
+      }
+    ],
     "slug": "lo.pronoun",
     "symbols": [
+      {
+        "slug": "functional.pronoun"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
       {
+        "slug": "word.gender.masculine"
+      },
+      {
         "slug": "word.lemma.lo"
+      },
+      {
+        "slug": "word.number.singular"
       },
       {
         "slug": "word.part-of-speech.pronoun"
       },
       {
         "slug": "word.person.third"
-      },
-      {
-        "slug": "word.number.singular"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.pronoun"
       }
     ],
     "trait": {
@@ -982,34 +1094,34 @@ export default [
     "slug": "los.pronoun",
     "symbols": [
       {
+        "slug": "functional.pronoun"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
       },
       {
+        "slug": "word.gender.masculine"
+      },
+      {
         "slug": "word.lemma.los"
+      },
+      {
+        "slug": "word.number.plural"
       },
       {
         "slug": "word.part-of-speech.pronoun"
       },
       {
         "slug": "word.person.third"
-      },
-      {
-        "slug": "word.number.plural"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.pronoun"
       }
     ],
     "trait": {
@@ -1034,8 +1146,58 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "comes-pan"
+      },
+      {
+        "slug": "me-ayuda"
+      },
+      {
+        "slug": "me-gusta-comer"
+      },
+      {
+        "slug": "me-gusta-el-cafe"
+      },
+      {
+        "slug": "me-gusta-el-chocolate"
+      },
+      {
+        "slug": "me-gusta-el-cine"
+      },
+      {
+        "slug": "me-gusta-el-jamon"
+      },
+      {
+        "slug": "me-gusta-el-mar"
+      },
+      {
+        "slug": "me-gusta-la-musica"
+      },
+      {
+        "slug": "me-gusta-leer"
+      },
+      {
+        "slug": "me-llama"
+      },
+      {
+        "slug": "no-me-gusta-el-pescado"
+      }
+    ],
     "slug": "me.pronoun",
     "symbols": [
+      {
+        "slug": "functional.pronoun"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -1043,25 +1205,13 @@ export default [
         "slug": "word.lemma.me"
       },
       {
+        "slug": "word.number.singular"
+      },
+      {
         "slug": "word.part-of-speech.pronoun"
       },
       {
         "slug": "word.person.first"
-      },
-      {
-        "slug": "word.number.singular"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.pronoun"
       }
     ],
     "trait": {
@@ -1069,6 +1219,7 @@ export default [
         "known": "She calls me every day",
         "learning": "Ella me llama cada día"
       },
+      "LABELED": {},
       "RANKED": {
         "fpm": 5010,
         "rank": 21,
@@ -1092,13 +1243,111 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "ayudo-a-mi-madre"
+      },
+      {
+        "slug": "es-mas-grande-que-mi-casa"
+      },
+      {
+        "slug": "escribo-mi-nombre"
+      },
+      {
+        "slug": "estoy-con-mi-amigo"
+      },
+      {
+        "slug": "llamo-a-mi-madre"
+      },
+      {
+        "slug": "mi-abuela-es-vieja"
+      },
+      {
+        "slug": "mi-amigo-es-divertido"
+      },
+      {
+        "slug": "mi-hermana-es-inteligente"
+      },
+      {
+        "slug": "mi-hermana-es-menor"
+      },
+      {
+        "slug": "mi-hermano-es-alto"
+      },
+      {
+        "slug": "mi-hermano-es-ingeniero"
+      },
+      {
+        "slug": "mi-hermano-es-mayor"
+      },
+      {
+        "slug": "mi-hermano-es-simpatico"
+      },
+      {
+        "slug": "mi-jefe-es-bueno"
+      },
+      {
+        "slug": "mi-madre-hace-la-comida"
+      },
+      {
+        "slug": "mi-novio-es-alto"
+      },
+      {
+        "slug": "mi-padre-es-camarero"
+      },
+      {
+        "slug": "mi-padre-es-medico"
+      },
+      {
+        "slug": "mi-padre-es-secretario"
+      },
+      {
+        "slug": "mi-padre-es-serio"
+      },
+      {
+        "slug": "mi-prima-es-alta"
+      },
+      {
+        "slug": "mi-tia-es-joven"
+      },
+      {
+        "slug": "mi-tia-es-simpatica"
+      },
+      {
+        "slug": "mi-tio-vive-aqui"
+      },
+      {
+        "slug": "quiero-que-hables"
+      },
+      {
+        "slug": "soy-menos-alto-que-mi-padre"
+      },
+      {
+        "slug": "veo-a-mi-amigo"
+      }
+    ],
     "slug": "mi.pronoun",
     "symbols": [
+      {
+        "slug": "functional.pronoun"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
       {
         "slug": "word.lemma.mi"
+      },
+      {
+        "slug": "word.number.singular"
       },
       {
         "slug": "word.part-of-speech.pronoun"
@@ -1107,22 +1356,7 @@ export default [
         "slug": "word.person.first"
       },
       {
-        "slug": "word.number.singular"
-      },
-      {
         "slug": "word.possessive.yes"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.pronoun"
       }
     ],
     "trait": {
@@ -1153,8 +1387,37 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "no-como-nada"
+      },
+      {
+        "slug": "no-necesito-nada"
+      },
+      {
+        "slug": "no-quiero-nada"
+      },
+      {
+        "slug": "no-se-nada"
+      },
+      {
+        "slug": "no-tengo-nada"
+      }
+    ],
     "slug": "nada.pronoun",
     "symbols": [
+      {
+        "slug": "functional.negation"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -1163,18 +1426,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.pronoun"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.negation"
       }
     ],
     "trait": {
@@ -1199,8 +1450,28 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "no-hablo-con-nadie"
+      },
+      {
+        "slug": "no-veo-a-nadie"
+      }
+    ],
     "slug": "nadie.pronoun",
     "symbols": [
+      {
+        "slug": "functional.negation"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -1209,18 +1480,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.pronoun"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.negation"
       }
     ],
     "trait": {
@@ -1245,8 +1504,34 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "no-nos-gusta-esperar"
+      },
+      {
+        "slug": "nos-ayuda"
+      },
+      {
+        "slug": "nos-gusta-la-playa"
+      },
+      {
+        "slug": "vamos-a-casa"
+      }
+    ],
     "slug": "nos.pronoun",
     "symbols": [
+      {
+        "slug": "functional.pronoun"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -1254,25 +1539,13 @@ export default [
         "slug": "word.lemma.nos"
       },
       {
+        "slug": "word.number.plural"
+      },
+      {
         "slug": "word.part-of-speech.pronoun"
       },
       {
         "slug": "word.person.first"
-      },
-      {
-        "slug": "word.number.plural"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.pronoun"
       }
     ],
     "trait": {
@@ -1300,34 +1573,34 @@ export default [
     "slug": "nosotros.pronoun",
     "symbols": [
       {
+        "slug": "functional.pronoun"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
       },
       {
+        "slug": "word.gender.masculine"
+      },
+      {
         "slug": "word.lemma.nosotros"
+      },
+      {
+        "slug": "word.number.plural"
       },
       {
         "slug": "word.part-of-speech.pronoun"
       },
       {
         "slug": "word.person.first"
-      },
-      {
-        "slug": "word.number.plural"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.pronoun"
       }
     ],
     "trait": {
@@ -1358,28 +1631,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "nuestra-casa-es-grande"
+      }
+    ],
     "slug": "nuestra.pronoun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.nuestra"
-      },
-      {
-        "slug": "word.part-of-speech.pronoun"
-      },
-      {
-        "slug": "word.person.first"
-      },
-      {
-        "slug": "word.number.plural"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.possessive.yes"
+        "slug": "functional.pronoun"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1388,7 +1648,25 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.pronoun"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.nuestra"
+      },
+      {
+        "slug": "word.number.plural"
+      },
+      {
+        "slug": "word.part-of-speech.pronoun"
+      },
+      {
+        "slug": "word.person.first"
+      },
+      {
+        "slug": "word.possessive.yes"
       }
     ],
     "trait": {
@@ -1413,28 +1691,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "nuestro-padre-trabaja"
+      }
+    ],
     "slug": "nuestro.pronoun",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.nuestro"
-      },
-      {
-        "slug": "word.part-of-speech.pronoun"
-      },
-      {
-        "slug": "word.person.first"
-      },
-      {
-        "slug": "word.number.plural"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.possessive.yes"
+        "slug": "functional.pronoun"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1443,7 +1708,25 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.pronoun"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.nuestro"
+      },
+      {
+        "slug": "word.number.plural"
+      },
+      {
+        "slug": "word.part-of-speech.pronoun"
+      },
+      {
+        "slug": "word.person.first"
+      },
+      {
+        "slug": "word.possessive.yes"
       }
     ],
     "trait": {
@@ -1471,19 +1754,10 @@ export default [
     "slug": "os.pronoun",
     "symbols": [
       {
-        "slug": "word"
+        "slug": "functional.pronoun"
       },
       {
-        "slug": "word.lemma.os"
-      },
-      {
-        "slug": "word.part-of-speech.pronoun"
-      },
-      {
-        "slug": "word.person.second"
-      },
-      {
-        "slug": "word.number.plural"
+        "slug": "proficiency.castilianism"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1492,10 +1766,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "proficiency.castilianism"
+        "slug": "word"
       },
       {
-        "slug": "functional.pronoun"
+        "slug": "word.lemma.os"
+      },
+      {
+        "slug": "word.number.plural"
+      },
+      {
+        "slug": "word.part-of-speech.pronoun"
+      },
+      {
+        "slug": "word.person.second"
       }
     ],
     "trait": {
@@ -1520,8 +1803,25 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "quien-es"
+      }
+    ],
     "slug": "quién.pronoun",
     "symbols": [
+      {
+        "slug": "functional.question"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -1530,18 +1830,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.pronoun"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.question"
       }
     ],
     "trait": {
@@ -1566,8 +1854,28 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "que-haces"
+      },
+      {
+        "slug": "que-quieres"
+      }
+    ],
     "slug": "qué.pronoun",
     "symbols": [
+      {
+        "slug": "functional.question"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -1576,18 +1884,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.pronoun"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.question"
       }
     ],
     "trait": {
@@ -1612,13 +1908,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "su-madre-es-buena"
+      }
+    ],
     "slug": "su.pronoun",
     "symbols": [
+      {
+        "slug": "functional.pronoun"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
       {
         "slug": "word.lemma.su"
+      },
+      {
+        "slug": "word.number.singular"
       },
       {
         "slug": "word.part-of-speech.pronoun"
@@ -1627,22 +1943,7 @@ export default [
         "slug": "word.person.third"
       },
       {
-        "slug": "word.number.singular"
-      },
-      {
         "slug": "word.possessive.yes"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.pronoun"
       }
     ],
     "trait": {
@@ -1650,6 +1951,7 @@ export default [
         "known": "His name is Juan",
         "learning": "Su nombre es Juan"
       },
+      "LABELED": {},
       "RANKED": {
         "fpm": 6030,
         "rank": 20,
@@ -1673,8 +1975,37 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "te-ayudo"
+      },
+      {
+        "slug": "te-busco"
+      },
+      {
+        "slug": "te-gusta-el-cafe"
+      },
+      {
+        "slug": "te-gusta-trabajar"
+      },
+      {
+        "slug": "te-veo"
+      }
+    ],
     "slug": "te.pronoun",
     "symbols": [
+      {
+        "slug": "functional.pronoun"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -1682,25 +2013,13 @@ export default [
         "slug": "word.lemma.te"
       },
       {
+        "slug": "word.number.singular"
+      },
+      {
         "slug": "word.part-of-speech.pronoun"
       },
       {
         "slug": "word.person.second"
-      },
-      {
-        "slug": "word.number.singular"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.pronoun"
       }
     ],
     "trait": {
@@ -1708,6 +2027,7 @@ export default [
         "known": "I love you very much",
         "learning": "Te quiero mucho"
       },
+      "LABELED": {},
       "RANKED": {
         "fpm": 3310,
         "rank": 22,
@@ -1731,13 +2051,39 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "ayudas-a-tu-madre"
+      },
+      {
+        "slug": "llamas-a-tu-madre"
+      },
+      {
+        "slug": "tu-hija-es-guapa"
+      }
+    ],
     "slug": "tu.pronoun",
     "symbols": [
+      {
+        "slug": "functional.pronoun"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
       {
         "slug": "word.lemma.tu"
+      },
+      {
+        "slug": "word.number.singular"
       },
       {
         "slug": "word.part-of-speech.pronoun"
@@ -1746,22 +2092,7 @@ export default [
         "slug": "word.person.second"
       },
       {
-        "slug": "word.number.singular"
-      },
-      {
         "slug": "word.possessive.yes"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.pronoun"
       }
     ],
     "trait": {
@@ -1769,6 +2100,7 @@ export default [
         "known": "Your car is new",
         "learning": "Tu coche es nuevo"
       },
+      "LABELED": {},
       "RANKED": {
         "fpm": 1660,
         "rank": 18,
@@ -1786,8 +2118,28 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "soy-mas-alto-que-tu"
+      },
+      {
+        "slug": "soy-mas-fuerte-que-tu"
+      }
+    ],
     "slug": "tú.pronoun",
     "symbols": [
+      {
+        "slug": "functional.pronoun"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -1795,25 +2147,13 @@ export default [
         "slug": "word.lemma.tú"
       },
       {
+        "slug": "word.number.singular"
+      },
+      {
         "slug": "word.part-of-speech.pronoun"
       },
       {
         "slug": "word.person.second"
-      },
-      {
-        "slug": "word.number.singular"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.pronoun"
       }
     ],
     "trait": {
@@ -1847,19 +2187,10 @@ export default [
     "slug": "usted.pronoun",
     "symbols": [
       {
-        "slug": "word"
+        "slug": "functional.politeness"
       },
       {
-        "slug": "word.lemma.usted"
-      },
-      {
-        "slug": "word.part-of-speech.pronoun"
-      },
-      {
-        "slug": "word.person.third"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "functional.pronoun"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1868,10 +2199,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.pronoun"
+        "slug": "word"
       },
       {
-        "slug": "functional.politeness"
+        "slug": "word.lemma.usted"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.pronoun"
+      },
+      {
+        "slug": "word.person.third"
       }
     ],
     "trait": {
@@ -1905,19 +2245,10 @@ export default [
     "slug": "ustedes.pronoun",
     "symbols": [
       {
-        "slug": "word"
+        "slug": "functional.politeness"
       },
       {
-        "slug": "word.lemma.ustedes"
-      },
-      {
-        "slug": "word.part-of-speech.pronoun"
-      },
-      {
-        "slug": "word.person.third"
-      },
-      {
-        "slug": "word.number.plural"
+        "slug": "functional.pronoun"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1926,10 +2257,19 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.pronoun"
+        "slug": "word"
       },
       {
-        "slug": "functional.politeness"
+        "slug": "word.lemma.ustedes"
+      },
+      {
+        "slug": "word.number.plural"
+      },
+      {
+        "slug": "word.part-of-speech.pronoun"
+      },
+      {
+        "slug": "word.person.third"
       }
     ],
     "trait": {
@@ -1957,22 +2297,10 @@ export default [
     "slug": "vosotros.pronoun",
     "symbols": [
       {
-        "slug": "word"
+        "slug": "functional.pronoun"
       },
       {
-        "slug": "word.lemma.vosotros"
-      },
-      {
-        "slug": "word.part-of-speech.pronoun"
-      },
-      {
-        "slug": "word.person.second"
-      },
-      {
-        "slug": "word.number.plural"
-      },
-      {
-        "slug": "word.gender.masculine"
+        "slug": "proficiency.castilianism"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1981,10 +2309,22 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "proficiency.castilianism"
+        "slug": "word"
       },
       {
-        "slug": "functional.pronoun"
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.vosotros"
+      },
+      {
+        "slug": "word.number.plural"
+      },
+      {
+        "slug": "word.part-of-speech.pronoun"
+      },
+      {
+        "slug": "word.person.second"
       }
     ],
     "trait": {
@@ -2012,25 +2352,10 @@ export default [
     "slug": "vuestra.pronoun",
     "symbols": [
       {
-        "slug": "word"
+        "slug": "functional.pronoun"
       },
       {
-        "slug": "word.lemma.vuestra"
-      },
-      {
-        "slug": "word.part-of-speech.pronoun"
-      },
-      {
-        "slug": "word.person.second"
-      },
-      {
-        "slug": "word.number.plural"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.possessive.yes"
+        "slug": "proficiency.castilianism"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -2039,10 +2364,25 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "proficiency.castilianism"
+        "slug": "word"
       },
       {
-        "slug": "functional.pronoun"
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.vuestra"
+      },
+      {
+        "slug": "word.number.plural"
+      },
+      {
+        "slug": "word.part-of-speech.pronoun"
+      },
+      {
+        "slug": "word.person.second"
+      },
+      {
+        "slug": "word.possessive.yes"
       }
     ],
     "trait": {
@@ -2070,25 +2410,10 @@ export default [
     "slug": "vuestro.pronoun",
     "symbols": [
       {
-        "slug": "word"
+        "slug": "functional.pronoun"
       },
       {
-        "slug": "word.lemma.vuestro"
-      },
-      {
-        "slug": "word.part-of-speech.pronoun"
-      },
-      {
-        "slug": "word.person.second"
-      },
-      {
-        "slug": "word.number.plural"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.possessive.yes"
+        "slug": "proficiency.castilianism"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -2097,10 +2422,25 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "proficiency.castilianism"
+        "slug": "word"
       },
       {
-        "slug": "functional.pronoun"
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.vuestro"
+      },
+      {
+        "slug": "word.number.plural"
+      },
+      {
+        "slug": "word.part-of-speech.pronoun"
+      },
+      {
+        "slug": "word.person.second"
+      },
+      {
+        "slug": "word.possessive.yes"
       }
     ],
     "trait": {
@@ -2125,8 +2465,31 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "hoy-como-en-casa"
+      },
+      {
+        "slug": "no-podre-ir"
+      },
+      {
+        "slug": "yo-tampoco"
+      }
+    ],
     "slug": "yo.pronoun",
     "symbols": [
+      {
+        "slug": "functional.pronoun"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -2134,25 +2497,13 @@ export default [
         "slug": "word.lemma.yo"
       },
       {
+        "slug": "word.number.singular"
+      },
+      {
         "slug": "word.part-of-speech.pronoun"
       },
       {
         "slug": "word.person.first"
-      },
-      {
-        "slug": "word.number.singular"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.pronoun"
       }
     ],
     "trait": {
@@ -2186,34 +2537,34 @@ export default [
     "slug": "él.pronoun",
     "symbols": [
       {
+        "slug": "functional.pronoun"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
       },
       {
+        "slug": "word.gender.masculine"
+      },
+      {
         "slug": "word.lemma.él"
+      },
+      {
+        "slug": "word.number.singular"
       },
       {
         "slug": "word.part-of-speech.pronoun"
       },
       {
         "slug": "word.person.third"
-      },
-      {
-        "slug": "word.number.singular"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.pronoun"
       }
     ],
     "trait": {

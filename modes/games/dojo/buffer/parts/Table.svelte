@@ -38,7 +38,7 @@
   {#each tokens as token, index (token.slot ?? index)}
     {@const cell = cells[index]}
     {@const current = active?.index === index}
-    {@const reached = session.pending.find((entry) => entry.index === index)?.runs ?? session.streak ?? 0}
+    {@const reached = session.pending.find((entry) => entry.index === index)?.streak ?? session.streak ?? 0}
     {@const runs = session.streak > 1 ? Array.from({ length: session.streak }, (value, position) => position < reached) : []}
     <div
       class="cell-row"

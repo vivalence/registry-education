@@ -21,12 +21,63 @@ specimen.describe("dojo streak fold", () => {
     specimen.expect(state.attempts).toBe(3);
   });
 
-  specimen.it("streak N requeues on failure with runs reset", () => {
+  specimen.it("clean: a set finished without one miss, single pass or streak N with anhieb", () => {
+    const walk = (state, answers, anhieb) =>
+      answers.reduce((walked, success) => streak.record(walked, success, anhieb), state);
+    specimen.expect(streak.clean(walk(streak.begin(SET), [true, true, true]))).toBe(true);
+    specimen.expect(streak.clean(walk(streak.begin(SET), [true, false, true]))).toBe(false);
+    const twice = streak.begin(SET.slice(0, 1), 2);
+    specimen.expect(streak.clean(walk(twice, [true, true]))).toBe(true);
+    specimen.expect(streak.clean(walk(twice, [true, false, true, true]))).toBe(false);
+    specimen.expect(streak.clean(walk(twice, [true], 1), 1)).toBe(true);
+    specimen.expect(streak.clean(walk(twice, [false, true, true], 1), 1)).toBe(false);
+    specimen.expect(streak.clean(streak.settle(streak.begin(SET.slice(0, 1))))).toBe(false);
+  });
+
+  specimen.it("a landed card leaves pending for done, its counters kept", () => {
+    let state = streak.begin(SET.slice(0, 2), 1);
+    state = streak.record(state, false);
+    state = streak.record(state, true);
+    specimen.expect(state.pending.map((entry) => entry.index)).toEqual([0]);
+    specimen.expect(state.done).toEqual([{ index: 1, streak: 1, reps: 1, missed: false }]);
+    state = streak.settle(state);
+    specimen.expect(state.done.map((entry) => entry.index)).toEqual([1, 0]);
+    specimen.expect(streak.complete(state)).toBe(true);
+  });
+
+  specimen.it("the round schema takes a round of references and refuses the old copied shape", () => {
+    const round = {
+      phase: "playing",
+      tally: { attempts: 3, reps: 3, rounds: 1, reviews: 2, elapsed: 41, satisfied: 1 },
+      played: ["01a1b1c0-dd81-730d-bca1-0e610c32bca5"],
+      queue: [
+        {
+          literal: "01a1b1c0-dd81-730d-bca1-0e610c32bca5",
+          recall: "KNOWN",
+          gameplay: "TYPE",
+          prompt: "TEXT",
+          streak: 0,
+          reps: 1,
+          missed: true,
+        },
+        { knowable: 0, recall: "LEARNING", gameplay: "FLIP", prompt: "TEXT", streak: 2, reps: 1, missed: false },
+      ],
+    };
+    specimen.expect(types.round.faults(round)).toEqual([]);
+    const old = {
+      session: { streak: 2, attempts: 0, pending: [{ index: 0, runs: 0, reps: 0 }] },
+      queue: [{ ontology: "word", known: "hello", learning: "hola" }],
+      phase: "playing",
+    };
+    specimen.expect(types.round.faults(old).map((fault) => fault.at)).toEqual(["/", "/queue/0"]);
+  });
+
+  specimen.it("streak N requeues on failure with its streak reset", () => {
     let state = streak.begin(SET.slice(0, 1), 2);
     state = streak.record(state, true);
-    specimen.expect(state.pending[0].runs).toBe(1);
+    specimen.expect(state.pending[0].streak).toBe(1);
     state = streak.record(state, false);
-    specimen.expect(state.pending[0].runs).toBe(0);
+    specimen.expect(state.pending[0].streak).toBe(0);
     state = streak.record(state, true);
     state = streak.record(state, true);
     specimen.expect(streak.complete(state)).toBe(true);
@@ -41,17 +92,17 @@ specimen.describe("dojo streak fold", () => {
     specimen.expect(JSON.stringify(before)).toBe(snapshot);
   });
 
-  specimen.it("anhieb credits extra runs only on a first-rep landing", () => {
+  specimen.it("anhieb credits an extra streak only on a first-rep landing", () => {
     let state = streak.begin(SET.slice(0, 1), 3);
     state = streak.record(state, true, 1);
-    specimen.expect(state.pending[0].runs).toBe(2);
+    specimen.expect(state.pending[0].streak).toBe(2);
     state = streak.record(state, true, 1);
     specimen.expect(streak.complete(state)).toBe(true);
 
     let late = streak.begin(SET.slice(0, 1), 3);
     late = streak.record(late, false, 1);
     late = streak.record(late, true, 1);
-    specimen.expect(late.pending[0].runs).toBe(1);
+    specimen.expect(late.pending[0].streak).toBe(1);
   });
 
   specimen.it("focus moves the picked entry to the head and never mutates", () => {
@@ -219,6 +270,80 @@ specimen.describe("dojo judge", () => {
     const graded = judge.evaluate({ typed: "it is on the table", knowable: annotated, recall: "KNOWN", language: english });
     specimen.expect(graded.signal).toBe("SUCCESS");
     specimen.expect(graded.tokens.map((token) => token.signal)).toEqual(["SUCCESS", "SUCCESS", "SUCCESS"]);
+  });
+
+  specimen.it("a whole-sentence match lands every token, even when a contraction folds the typed words", () => {
+    const english = { contractions: { "'s": ["is", "has"], "n't": ["not"] } };
+    const hablo = {
+      ontology: "sentence",
+      known: "I do not speak Spanish",
+      learning: "No hablo español.",
+      tokens: [
+        { form: "No", gloss: "not" },
+        { form: "hablo", gloss: "I speak" },
+        { form: "español", gloss: "Spanish" },
+      ],
+    };
+    const bano = {
+      ontology: "sentence",
+      known: "Where is the bathroom?",
+      learning: "¿Dónde está el baño?",
+      tokens: [
+        { form: "Dónde", gloss: "where" },
+        { form: "está", gloss: "is" },
+        { form: "el", gloss: "the" },
+        { form: "baño", gloss: "bathroom" },
+      ],
+    };
+    const signals = (typed, knowable) => {
+      const graded = judge.evaluate({ typed, knowable, recall: "KNOWN", language: english });
+      return [graded.signal, ...graded.tokens.map((token) => token.signal)];
+    };
+    specimen.expect(signals("i dont speak spanish", hablo)).toEqual(["SUCCESS", "SUCCESS", "SUCCESS", "SUCCESS"]);
+    specimen.expect(signals("where is the bathroom", bano)).toEqual(["SUCCESS", "SUCCESS", "SUCCESS", "SUCCESS", "SUCCESS"]);
+    specimen.expect(signals("where is the kitchen", bano)[0]).toBe("MISTAKE");
+  });
+
+  specimen.it("a partial answer lands its right words, the contraction folding none of them away", () => {
+    const english = { contractions: { "'s": ["is", "has"] } };
+    const bano = {
+      ontology: "sentence",
+      known: "Where is the bathroom?",
+      learning: "¿Dónde está el baño?",
+      tokens: [
+        { form: "Dónde", gloss: "where" },
+        { form: "está", gloss: "is" },
+        { form: "el", gloss: "the" },
+        { form: "baño", gloss: "bathroom" },
+      ],
+    };
+    const graded = judge.evaluate({ typed: "where is the toilet", knowable: bano, recall: "KNOWN", language: english });
+    specimen.expect(graded.signal).toBe("MISTAKE");
+    specimen.expect(graded.tokens.map((token) => token.signal)).toEqual(["SUCCESS", "SUCCESS", "SUCCESS", "MISTAKE"]);
+  });
+
+  specimen.it("a typed contraction lands the token the expected sentence folds into it", () => {
+    const english = { contractions: { "n't": ["not"] } };
+    const hablo = {
+      ontology: "sentence",
+      known: "I do not speak Spanish",
+      learning: "No hablo español.",
+      tokens: [
+        { form: "No", gloss: "not" },
+        { form: "hablo", gloss: "I speak" },
+        { form: "español", gloss: "Spanish" },
+      ],
+    };
+    const graded = judge.evaluate({ typed: "i dont speak english", knowable: hablo, recall: "KNOWN", language: english });
+    specimen.expect(graded.signal).toBe("MISTAKE");
+    specimen.expect(graded.tokens.map((token) => token.signal)).toEqual(["SUCCESS", "SUCCESS", "MISTAKE"]);
+  });
+
+  specimen.it("spanish statics fold the informal spellings on LEARNING", async () => {
+    const { spanish } = await import("../../../../topographies/english-to-spanish/statics/language.js");
+    const going = { ontology: "sentence", known: "I'm going home", learning: "Voy para casa." };
+    specimen.expect(judge.evaluate({ typed: "voy pa' casa", knowable: going, recall: "LEARNING", language: spanish }).signal).toBe("SUCCESS");
+    specimen.expect(judge.evaluate({ typed: "voy pa' casa", knowable: going, recall: "LEARNING" }).signal).toBe("MISTAKE");
   });
 
   specimen.it("method derives from the knowable and gameplay, never a caller prop", () => {

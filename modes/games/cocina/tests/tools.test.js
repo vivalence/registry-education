@@ -32,7 +32,7 @@ describe("cocina tools — begin · speak · react · command, the model's hands
     });
     armed = new Vector()
       .graft(tools)
-      .use(shard.context.spread(contexts.host, scenario.daemon))
+      .use(shard.context.spread(contexts.daemonDie, scenario.daemon))
       .use(shard.context.bind("mode", scenario.mode))
       .use(shard.context.bind("user", scenario.fixtures.user))
       .use(shard.context.bind("thread", thread.id));

@@ -350,6 +350,15 @@ specimen.describe("review — a RETAINED note per user·literal, a TRACED child 
       const missed = await italian.literal.byLastSignal(["MISTAKE"], {}, { limit: 50 });
       specimen.expect(missed.map((entry) => entry.slug)).toContain("review.fresh");
     }));
+
+  specimen.it("a second review of one literal updates its RETAINED note, never mints a second", () =>
+    run(async () => {
+      const literal = await italian.literal.findOne({ slug: "review.fresh" });
+      const first = await italian.literal.review(literal, "SUCCESS");
+      const second = await italian.literal.review(literal, "MISTAKE");
+      specimen.expect(second.id).toBe(first.id);
+      specimen.expect(second.trait.RETAINED.lastSignal).toBe("MISTAKE");
+    }));
 });
 
 specimen.describe("literal — the corpus word: search, card, reference, symbol facets, uses", { sanitizeResources: false, sanitizeOps: false }, () => {

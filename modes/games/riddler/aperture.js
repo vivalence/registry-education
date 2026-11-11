@@ -20,16 +20,16 @@ export const aperture = new Vector().open(
     ];
 
     const activity = await ctx.entities.activity.control({ user: ctx.user?.id ?? null, mode: ctx.mode.id, thread: ctx.thread?.id ?? null });
-    const { output } = await ctx.cortex.hallucinate.object.render({
+    const { product } = await ctx.cortex.hallucinate.object.render({
       controller: activity.controller,
-      policy: { tune: "eager" },
+      policy: { tier: "fast" },
       turns: buffer.data.history,
       output: { schema: hal.assistant.output },
     });
 
     buffer.data.history = [
       ...buffer.data.history,
-      { role: "assistant", parts: [{ type: "text", text: output.object.message }] },
+      { role: "assistant", parts: [{ type: "text", text: product.object.message }] },
     ];
 
     const verdict = await ctx.cortex.hallucinate.choice.render({
@@ -47,10 +47,10 @@ export const aperture = new Vector().open(
     await ctx.entities.em.flush();
 
     return {
-      message: output.object.message,
-      taunt: output.object.taunt,
-      hint: output.object.hint,
-      resolvable: output.object.resolvable,
+      message: product.object.message,
+      taunt: product.object.taunt,
+      hint: product.object.hint,
+      resolvable: product.object.resolvable,
       resolved,
     };
   },
@@ -71,7 +71,7 @@ export const aperture = new Vector().open(
   //     const dialogue = buffer.data.history.filter((turn) => turn.role !== "system");
 
   //     const { output } = await ctx.cortex
-  //       .hallucination({ tune: "balanced" })
+  //       .hallucination({ tier: "balanced" })
   //       .context.extend("dialogue", buffer.data.history)
   //       .output.schema(hal.evaluation.output)
   //       .entities.turn.append(

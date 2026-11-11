@@ -61,7 +61,7 @@ export const tools = new Vector().open(
       ? await game.emit.symbols({ ...input, symbols: ctx.input.symbols, count: ctx.input.count })
       : await game.emit.feed({ ...input, count: ctx.input.count });
 
-    const buffers = emission.output.buffer ?? [];
+    const buffers = emission.product.buffer ?? [];
     const [buffer] = buffers;
     const carried = buffer
       ? (buffer.literals?.getItems?.() ?? buffer.literals ?? []).length +
@@ -77,7 +77,7 @@ export const tools = new Vector().open(
           ].join(", ") +
           "."
         : "nothing to rep for these filters — the draw came back empty.",
-      ...emission.output,
+      ...emission.product,
     };
   },
 )

@@ -224,7 +224,7 @@ export const knowable = v.object({
 
 export const knowables = v
   .array(knowable)
-  .desc("Direct knowables — caller-authored sets, /generate output, or resolved conjugation tables.")
+  .desc("Direct knowables — caller-authored sets or /generate output. Conjugation rows stay literals.")
   .optional();
 
 export const AXES = {
@@ -353,4 +353,71 @@ export const set = v
   .array(clause)
   .desc(
     "The declared set — clauses union in order, each drawing past what earlier clauses already took. Materialized into the buffer's literals + data.knowables on commission.",
+  );
+
+export const PHASES = ["playing", "drawing", "done"];
+
+export const OUTCOMES = ["complete", "limit"];
+
+const tallied = (description, example) =>
+  v.integer({ minimum: 0 }).desc(description).example(example);
+
+export const entry = v
+  .object({
+    literal: v
+      .rel(v.literal())
+      .desc("The literal this card is built from, fresh on every mount. Absent = authored or generated.")
+      .example("01a1b1c0-dd81-730d-bca1-0e610c32bca5")
+      .optional(),
+    knowable: v
+      .integer({ minimum: 0 })
+      .desc("Position in data.knowables, for a card without a literal: an authored pair, /generate output.")
+      .example(0)
+      .optional(),
+    recall: v.enum(RECALLS).desc("The side the player produces this rep.").example("KNOWN"),
+    gameplay: v.enum(GAMEPLAYS).desc("How this rep is played.").example("TYPE"),
+    prompt: v.enum(PROMPTS).desc("How this rep is shown.").example("TEXT"),
+    streak: tallied(
+      "Right answers in a row toward the buffer's streak. A miss resets it; a first-try landing earns 1 + anhieb.",
+      1,
+    ),
+    reps: tallied("Times this card was played in the round.", 2),
+    missed: v.boolean().desc("The last answer on this card was wrong.").example(false),
+  })
+  .desc("One card of the round: what it is, how it is dressed, how far it got.");
+
+export const round = v
+  .object({
+    phase: v
+      .enum(PHASES)
+      .desc("playing: a rep is up. drawing: a continuous refill is in flight. done: the round ended.")
+      .example("playing"),
+    tally: v
+      .object({
+        attempts: tallied("Answers given, settled cards included.", 5),
+        reps: tallied("Reps played, against limit.reps.", 5),
+        rounds: v
+          .integer({ minimum: 1 })
+          .desc("Rounds chained by a continuous buffer, this one included.")
+          .example(1),
+        reviews: tallied("Reviews sent to the literals.", 4),
+        elapsed: tallied("Seconds played, against limit.seconds.", 41),
+        satisfied: tallied("Cards done: the last N of the queue.", 2),
+      })
+      .desc("The round's counters."),
+    outcome: v
+      .enum(OUTCOMES)
+      .desc("Why the round ended; only when phase is done.")
+      .example("complete")
+      .optional(),
+    played: v
+      .array(v.rel(v.literal()))
+      .desc("Literal ids played across chained rounds: the refill's blacklist.")
+      .example(["01a1b1c0-dd81-730d-bca1-0e610c32bca5"]),
+    queue: v
+      .array(entry)
+      .desc("Every card of the round: the pending ones in play order, then the satisfied ones."),
+  })
+  .desc(
+    "The round in progress, at buffer.data.round. Cards are referenced, never copied: the view rebuilds each from its literal.",
   );

@@ -119,7 +119,7 @@
     const before = new Set(buffer.thread.$buffers.get().map((entry) => entry.id));
     await buffer.mode.emit[route]({ ...input, thread: buffer.thread.id });
     const fresh = buffer.thread.$buffers.get().find((entry) => !before.has(entry.id));
-    if (fresh) terminal.buffer = fresh;
+    if (fresh) terminal.setBuffer(fresh);
     return !!fresh;
   }
 
