@@ -14,7 +14,7 @@ export const manifest = {
   description:
     "One rep machine over words, sentences and conjugation forms — prompt, gameplay, preview, streak, continuous and limit all free to combine.",
   version: "0.1.0",
-  traits: ["VIEWABLE", "EMITTER", "INTENTED", "EXPOSED", "TOOLING", "HARNESSED"],
+  traits: ["VIEWABLE", "EMITTER", "INTENTED", "EXPOSED", "TOOLING", "HARNESS"],
 };
 
 export const buffer = v
@@ -36,7 +36,7 @@ export const buffer = v
       literals: v
         .array(v.rel(v.literal()))
         .desc(
-          "The materialized set — data.set resolved into this buffer by an emitter or by /commission. Reviews land per literal; data.knowables carries authored pairs and resolved conjugation forms beside it.",
+          "The materialized set — data.set resolved into this buffer by an emitter or by /commission. Reviews land per literal, a conjugation row included; data.knowables carries authored pairs and /generate output beside it.",
         ),
 
       symbols: v
@@ -45,7 +45,7 @@ export const buffer = v
     })
     .desc(
       `Dojo: one rep machine over knowables (words, sentences, conjugation forms), all axes free to combine.
-The buffer IS the dojo: data.set declares the material (clauses: pick + repository query + cap, unioned in order), the axes say how it is played, literals + data.knowables are the materialization. Knowable carriers UNION: literals (corpus) + data.knowables (authored/generated/resolved conjugation forms).
+The buffer IS the dojo: data.set declares the material (clauses: pick + repository query + cap, unioned in order), the axes say how it is played, literals + data.knowables are the materialization. Knowable carriers UNION: literals (corpus, conjugation rows built into tables by the view) + data.knowables (authored/generated). data.round holds the round in progress by reference.
 Nothing plays until the declared set is materialized — by an emitter, an agent tool, or /commission — and the learner presses start.
 Judging is automatic, never configured: FLIP -> self-grade, PICK -> identity, TYPE -> forgiving match unless the knowable is stamped judge LLM (then the /judge aperture grades it: MASTERY...FAILURE with NEUTRAL for acceptable alternatives).
 Every attempt sends its review signal; streak accounting is session-local.

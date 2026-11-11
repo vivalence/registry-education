@@ -13,8 +13,8 @@ export const manifest = {
   description: "Brazilian Portuguese course",
   traits: [
     "VIEWABLE",
-    "HARNESSED",
-    "CONVERSATIONAL",
+    "HARNESS",
+    "CONVERSATION",
     "EXPOSED",
     "EMITTER",
     "TOOLING",

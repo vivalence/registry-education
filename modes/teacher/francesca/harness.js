@@ -4,7 +4,7 @@ import paladin from "@vivalence/paladin";
 export const primer = await paladin.prime.directory(new Path(import.meta.resolve("./primer")));
 
 export const harness = new Vector().use(async (ctx, next) => {
-  ctx.hallucination.policy.tune ??= "fast";
+  ctx.hallucination.policy.tier ??= "fast";
   await next();
 });
 
@@ -92,7 +92,7 @@ async function appraise(ctx) {
         "The appraisal of the latest exchange. Every entry becomes a spaced-repetition review that reschedules the item — an over-report inflates the learner's record, an under-report loses a rep.",
       ),
   });
-  const reviews = (render.output?.object?.reviews ?? []).filter(
+  const reviews = (render.product?.object?.reviews ?? []).filter(
     (review, index, all) =>
       !prior.has(review.literal) &&
       all.findIndex((other) => other.literal === review.literal) === index,
@@ -122,7 +122,7 @@ async function appraise(ctx) {
     {
       type: "tool_result",
       id,
-      output: { message: lines.join("\n"), entities: { note: reviewed } },
+      product: { message: lines.join("\n"), entities: { note: reviewed } },
     },
   ];
   await ctx.entities.em.flush();

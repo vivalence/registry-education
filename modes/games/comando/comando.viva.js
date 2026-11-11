@@ -9,7 +9,7 @@ export const manifest = {
   name: "Comando",
   description: "Language as the controller — a board of units, goals and hazards; the commander speaks Spanish, the learner obeys, then commands. The model converses, the tools move the board and grade the lexemes.",
   version: "0.2.0",
-  traits: ["VIEWABLE", "HARNESSED", "TOOLING", "CONVERSATIONAL"],
+  traits: ["VIEWABLE", "HARNESS", "TOOLING", "CONVERSATION"],
 };
 
 const LEXEME = v.object({

@@ -102,12 +102,39 @@ export const RETAINED = traits.define("RETAINED", {
     async review(row, signal) {
       const notes = this.entities.note;
       const note = (await notes.retention(row)) ??
-        notes.create({ ...this.owner(), literal: row, slug: `retention.${row.slug}`, traits: ["RETAINED"], trait: { RETAINED: {} } });
+        notes.create({ ...this.owner(), daemon: row.daemon, literal: row, slug: `retention.${row.slug}`, traits: ["RETAINED"], trait: { RETAINED: {} } });
       notes.evolve(note, signal);
       const { status, due } = note.trait.RETAINED;
       notes.create({ ...this.owner(), literal: row, parent: note, slug: `trace.${crypto.randomUUID()}`, traits: ["TRACED"], trait: { TRACED: { signal, snapshot: { status, due } } } });
       await this.em.flush();
       return note;
+    },
+
+    async scale(where, { percent, direction }) {
+      const notes = this.entities.note;
+      const literals = await this.find(this.constrain(where), { populate: ["notes"] });
+      const scaled = [];
+      const kept = [];
+      for (const literal of literals) {
+        const held = retained(literal);
+        if (!held && direction === "drop") {
+          kept.push(literal);
+          continue;
+        }
+        const note =
+          held ??
+          notes.create({
+            ...this.owner(),
+            daemon: literal.daemon,
+            literal,
+            slug: `retention.${literal.slug}`,
+            traits: ["RETAINED"],
+            trait: { RETAINED: {} },
+          });
+        (notes.scale(note, percent, direction) ? scaled : kept).push(literal);
+      }
+      await this.em.flush();
+      return { scaled, kept };
     },
   },
   entity: {

@@ -1,27 +1,32 @@
 export default [
   {
+    "in": [
+      {
+        "slug": "la-puerta-esta-abierta"
+      }
+    ],
     "slug": "abierto.adjective.feminine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.abierto"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.abierto"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -46,28 +51,36 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-libro-esta-abierto"
+      },
+      {
+        "slug": "el-restaurante-esta-abierto"
+      }
+    ],
     "slug": "abierto.adjective.masculine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.abierto"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.abierto"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -92,28 +105,36 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "esa-mujer-es-alta"
+      },
+      {
+        "slug": "mi-prima-es-alta"
+      }
+    ],
     "slug": "alto.adjective.feminine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.alto"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.alto"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -138,28 +159,42 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "mi-hermano-es-alto"
+      },
+      {
+        "slug": "mi-novio-es-alto"
+      },
+      {
+        "slug": "soy-mas-alto-que-tu"
+      },
+      {
+        "slug": "soy-menos-alto-que-mi-padre"
+      }
+    ],
     "slug": "alto.adjective.masculine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.alto"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.alto"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -184,8 +219,19 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-camarero-es-amable"
+      }
+    ],
     "slug": "amable.adjective",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -193,16 +239,10 @@ export default [
         "slug": "word.lemma.amable"
       },
       {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -230,25 +270,25 @@ export default [
     "slug": "amarillo.adjective.feminine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.amarillo"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.feminine"
       },
       {
+        "slug": "word.lemma.amarillo"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -276,25 +316,25 @@ export default [
     "slug": "amarillo.adjective.masculine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.amarillo"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.masculine"
       },
       {
+        "slug": "word.lemma.amarillo"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -322,25 +362,25 @@ export default [
     "slug": "antipático.adjective.feminine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.antipático"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.feminine"
       },
       {
+        "slug": "word.lemma.antipático"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -365,28 +405,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "ese-hombre-es-antipatico"
+      }
+    ],
     "slug": "antipático.adjective.masculine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.antipático"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.antipático"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -411,8 +456,19 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-coche-es-rojo"
+      }
+    ],
     "slug": "azul.adjective",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -420,16 +476,10 @@ export default [
         "slug": "word.lemma.azul"
       },
       {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -457,25 +507,25 @@ export default [
     "slug": "bajo.adjective.feminine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.bajo"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.feminine"
       },
       {
+        "slug": "word.lemma.bajo"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -503,25 +553,25 @@ export default [
     "slug": "bajo.adjective.masculine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.bajo"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.masculine"
       },
       {
+        "slug": "word.lemma.bajo"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -549,25 +599,25 @@ export default [
     "slug": "barato.adjective.feminine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.barato"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.feminine"
       },
       {
+        "slug": "word.lemma.barato"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -595,25 +645,25 @@ export default [
     "slug": "barato.adjective.masculine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.barato"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.masculine"
       },
       {
+        "slug": "word.lemma.barato"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -641,25 +691,25 @@ export default [
     "slug": "blanco.adjective.feminine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.blanco"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.feminine"
       },
       {
+        "slug": "word.lemma.blanco"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -687,25 +737,25 @@ export default [
     "slug": "blanco.adjective.masculine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.blanco"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.masculine"
       },
       {
+        "slug": "word.lemma.blanco"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -730,28 +780,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "la-flor-es-bonita"
+      }
+    ],
     "slug": "bonito.adjective.feminine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.bonito"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.bonito"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -776,28 +831,36 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-lugar-es-bonito"
+      },
+      {
+        "slug": "este-regalo-es-bonito"
+      }
+    ],
     "slug": "bonito.adjective.masculine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.bonito"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.bonito"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -822,31 +885,48 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "la-comida-esta-muy-buena"
+      },
+      {
+        "slug": "la-musica-es-buena"
+      },
+      {
+        "slug": "la-paella-es-buena"
+      },
+      {
+        "slug": "la-tortilla-es-buena"
+      },
+      {
+        "slug": "su-madre-es-buena"
+      }
+    ],
     "slug": "bueno.adjective.feminine.singular",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.bueno"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
-      {
         "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
       },
       {
         "slug": "proficiency.survival"
       },
       {
-        "slug": "proficiency.high-frequency"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.bueno"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -871,31 +951,54 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-abogado-es-bueno"
+      },
+      {
+        "slug": "el-artista-es-bueno"
+      },
+      {
+        "slug": "el-jamon-es-bueno"
+      },
+      {
+        "slug": "el-medico-es-bueno"
+      },
+      {
+        "slug": "este-libro-es-bueno"
+      },
+      {
+        "slug": "esto-es-bueno"
+      },
+      {
+        "slug": "mi-jefe-es-bueno"
+      }
+    ],
     "slug": "bueno.adjective.masculine.singular",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.bueno"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
-      {
         "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
       },
       {
         "slug": "proficiency.survival"
       },
       {
-        "slug": "proficiency.high-frequency"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.bueno"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -926,8 +1029,22 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-cafe-es-mas-caliente"
+      },
+      {
+        "slug": "el-cafe-esta-caliente"
+      }
+    ],
     "slug": "caliente.adjective",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -935,16 +1052,10 @@ export default [
         "slug": "word.lemma.caliente"
       },
       {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -978,25 +1089,25 @@ export default [
     "slug": "cansado.adjective.feminine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.cansado"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.feminine"
       },
       {
+        "slug": "word.lemma.cansado"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -1021,28 +1132,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "estoy-cansado-pero-trabajo"
+      }
+    ],
     "slug": "cansado.adjective.masculine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.cansado"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.cansado"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -1070,25 +1186,25 @@ export default [
     "slug": "caro.adjective.feminine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.caro"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.feminine"
       },
       {
+        "slug": "word.lemma.caro"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -1113,28 +1229,36 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-coche-es-mas-caro-que-el-tren"
+      },
+      {
+        "slug": "es-bastante-caro"
+      }
+    ],
     "slug": "caro.adjective.masculine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.caro"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.caro"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -1159,28 +1283,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "la-tienda-esta-cerrada"
+      }
+    ],
     "slug": "cerrado.adjective.feminine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.cerrado"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.cerrado"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -1205,28 +1334,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-museo-esta-cerrado"
+      }
+    ],
     "slug": "cerrado.adjective.masculine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.cerrado"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.cerrado"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -1251,28 +1385,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-agua-esta-clara"
+      }
+    ],
     "slug": "claro.adjective.feminine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.claro"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.claro"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -1300,25 +1439,25 @@ export default [
     "slug": "claro.adjective.masculine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.claro"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.masculine"
       },
       {
+        "slug": "word.lemma.claro"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -1346,25 +1485,25 @@ export default [
     "slug": "contento.adjective.feminine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.contento"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.feminine"
       },
       {
+        "slug": "word.lemma.contento"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -1392,25 +1531,25 @@ export default [
     "slug": "contento.adjective.masculine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.contento"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.masculine"
       },
       {
+        "slug": "word.lemma.contento"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -1438,25 +1577,25 @@ export default [
     "slug": "corto.adjective.feminine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.corto"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.feminine"
       },
       {
+        "slug": "word.lemma.corto"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -1484,25 +1623,25 @@ export default [
     "slug": "corto.adjective.masculine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.corto"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.masculine"
       },
       {
+        "slug": "word.lemma.corto"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -1530,22 +1669,22 @@ export default [
     "slug": "diferente.adjective",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
       },
       {
         "slug": "word.lemma.diferente"
       },
       {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -1573,22 +1712,22 @@ export default [
     "slug": "difícil.adjective",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
       },
       {
         "slug": "word.lemma.difícil"
       },
       {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -1613,28 +1752,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "la-pelicula-es-divertida"
+      }
+    ],
     "slug": "divertido.adjective.feminine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.divertido"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.divertido"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -1659,28 +1803,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "mi-amigo-es-divertido"
+      }
+    ],
     "slug": "divertido.adjective.masculine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.divertido"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.divertido"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -1708,25 +1857,25 @@ export default [
     "slug": "duro.adjective.feminine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.duro"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.feminine"
       },
       {
+        "slug": "word.lemma.duro"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -1754,25 +1903,25 @@ export default [
     "slug": "duro.adjective.masculine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.duro"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.masculine"
       },
       {
+        "slug": "word.lemma.duro"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -1800,25 +1949,25 @@ export default [
     "slug": "enfermo.adjective.feminine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.enfermo"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.feminine"
       },
       {
+        "slug": "word.lemma.enfermo"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -1843,28 +1992,36 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "estoy-enfermo"
+      },
+      {
+        "slug": "no-trabajo-porque-estoy-enfermo"
+      }
+    ],
     "slug": "enfermo.adjective.masculine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.enfermo"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.enfermo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -1892,25 +2049,25 @@ export default [
     "slug": "feo.adjective.feminine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.feo"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.feminine"
       },
       {
+        "slug": "word.lemma.feo"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -1938,25 +2095,25 @@ export default [
     "slug": "feo.adjective.masculine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.feo"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.masculine"
       },
       {
+        "slug": "word.lemma.feo"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -1984,25 +2141,25 @@ export default [
     "slug": "frío.adjective.feminine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.frío"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.feminine"
       },
       {
+        "slug": "word.lemma.frío"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -2030,25 +2187,25 @@ export default [
     "slug": "frío.adjective.masculine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.frío"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.masculine"
       },
       {
+        "slug": "word.lemma.frío"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -2079,8 +2236,25 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-caballo-es-fuerte"
+      },
+      {
+        "slug": "es-importante-que-sea-fuerte"
+      },
+      {
+        "slug": "soy-mas-fuerte-que-tu"
+      }
+    ],
     "slug": "fuerte.adjective",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -2088,16 +2262,10 @@ export default [
         "slug": "word.lemma.fuerte"
       },
       {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -2122,8 +2290,22 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "sera-facil"
+      },
+      {
+        "slug": "seria-facil"
+      }
+    ],
     "slug": "fácil.adjective",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -2131,16 +2313,10 @@ export default [
         "slug": "word.lemma.fácil"
       },
       {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -2165,8 +2341,43 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-arbol-es-grande"
+      },
+      {
+        "slug": "el-barco-es-grande"
+      },
+      {
+        "slug": "el-cuchillo-es-grande"
+      },
+      {
+        "slug": "el-parque-es-grande"
+      },
+      {
+        "slug": "el-puente-es-grande"
+      },
+      {
+        "slug": "es-mas-grande-que-mi-casa"
+      },
+      {
+        "slug": "esta-casa-es-grande"
+      },
+      {
+        "slug": "nuestra-casa-es-grande"
+      }
+    ],
     "slug": "grande.adjective",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -2174,19 +2385,10 @@ export default [
         "slug": "word.lemma.grande"
       },
       {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -2220,22 +2422,22 @@ export default [
     "slug": "gris.adjective",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
       },
       {
         "slug": "word.lemma.gris"
       },
       {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -2260,28 +2462,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "tu-hija-es-guapa"
+      }
+    ],
     "slug": "guapo.adjective.feminine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.guapo"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.guapo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -2309,25 +2516,25 @@ export default [
     "slug": "guapo.adjective.masculine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.guapo"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.masculine"
       },
       {
+        "slug": "word.lemma.guapo"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -2352,8 +2559,31 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "es-importante-que-coma"
+      },
+      {
+        "slug": "es-importante-que-sea-fuerte"
+      },
+      {
+        "slug": "es-importante-que-sepas-espanol"
+      },
+      {
+        "slug": "es-importante-que-tengas-dinero"
+      },
+      {
+        "slug": "la-pregunta-es-importante"
+      }
+    ],
     "slug": "importante.adjective",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -2361,16 +2591,10 @@ export default [
         "slug": "word.lemma.importante"
       },
       {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -2401,8 +2625,19 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "mi-hermana-es-inteligente"
+      }
+    ],
     "slug": "inteligente.adjective",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -2410,16 +2645,10 @@ export default [
         "slug": "word.lemma.inteligente"
       },
       {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -2447,22 +2676,22 @@ export default [
     "slug": "interesante.adjective",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
       },
       {
         "slug": "word.lemma.interesante"
       },
       {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -2487,8 +2716,22 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-camarero-es-joven"
+      },
+      {
+        "slug": "mi-tia-es-joven"
+      }
+    ],
     "slug": "joven.adjective",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -2496,16 +2739,10 @@ export default [
         "slug": "word.lemma.joven"
       },
       {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -2530,28 +2767,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "la-tarde-es-larga"
+      }
+    ],
     "slug": "largo.adjective.feminine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.largo"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.largo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -2576,28 +2818,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-viaje-es-largo"
+      }
+    ],
     "slug": "largo.adjective.masculine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.largo"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.largo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -2625,25 +2872,25 @@ export default [
     "slug": "lento.adjective.feminine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.lento"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.feminine"
       },
       {
+        "slug": "word.lemma.lento"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -2668,28 +2915,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-coche-es-lento"
+      }
+    ],
     "slug": "lento.adjective.masculine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.lento"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.lento"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -2717,22 +2969,22 @@ export default [
     "slug": "libre.adjective",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
       },
       {
         "slug": "word.lemma.libre"
       },
       {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -2757,28 +3009,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "la-ropa-esta-limpia"
+      }
+    ],
     "slug": "limpio.adjective.feminine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.limpio"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.limpio"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -2803,28 +3060,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-plato-esta-limpio"
+      }
+    ],
     "slug": "limpio.adjective.masculine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.limpio"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.limpio"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -2849,28 +3111,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "la-botella-esta-llena"
+      }
+    ],
     "slug": "lleno.adjective.feminine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.lleno"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.lleno"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -2895,28 +3162,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-hotel-esta-lleno"
+      }
+    ],
     "slug": "lleno.adjective.masculine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.lleno"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.lleno"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -2944,25 +3216,25 @@ export default [
     "slug": "malo.adjective.feminine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.malo"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.feminine"
       },
       {
+        "slug": "word.lemma.malo"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -2990,25 +3262,25 @@ export default [
     "slug": "malo.adjective.masculine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.malo"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.masculine"
       },
       {
+        "slug": "word.lemma.malo"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -3036,22 +3308,22 @@ export default [
     "slug": "marrón.adjective",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
       },
       {
         "slug": "word.lemma.marrón"
       },
       {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -3076,8 +3348,19 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "mi-hermano-es-mayor"
+      }
+    ],
     "slug": "mayor.adjective",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -3085,16 +3368,10 @@ export default [
         "slug": "word.lemma.mayor"
       },
       {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -3122,25 +3399,25 @@ export default [
     "slug": "medio.adjective",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.medio"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.mando"
       },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
-        "slug": "domain.mando"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.medio"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -3163,8 +3440,22 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "esta-casa-es-mejor-que-esa"
+      },
+      {
+        "slug": "este-libro-es-mejor"
+      }
+    ],
     "slug": "mejor.adjective",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -3172,16 +3463,10 @@ export default [
         "slug": "word.lemma.mejor"
       },
       {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -3206,8 +3491,19 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "mi-hermana-es-menor"
+      }
+    ],
     "slug": "menor.adjective",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -3215,16 +3511,10 @@ export default [
         "slug": "word.lemma.menor"
       },
       {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -3252,25 +3542,25 @@ export default [
     "slug": "mismo.adjective.feminine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.mismo"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.feminine"
       },
       {
+        "slug": "word.lemma.mismo"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -3298,25 +3588,25 @@ export default [
     "slug": "mismo.adjective.masculine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.mismo"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.masculine"
       },
       {
+        "slug": "word.lemma.mismo"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -3344,25 +3634,25 @@ export default [
     "slug": "negro.adjective.feminine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.negro"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.feminine"
       },
       {
+        "slug": "word.lemma.negro"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -3387,28 +3677,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-zapato-es-negro"
+      }
+    ],
     "slug": "negro.adjective.masculine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.negro"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.negro"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -3433,28 +3728,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "la-silla-es-nueva"
+      }
+    ],
     "slug": "nuevo.adjective.feminine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.nuevo"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.nuevo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -3479,28 +3779,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-libro-es-nuevo"
+      }
+    ],
     "slug": "nuevo.adjective.masculine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.nuevo"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.nuevo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -3531,28 +3836,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "estas-ocupada"
+      }
+    ],
     "slug": "ocupado.adjective.feminine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.ocupado"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.ocupado"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -3577,28 +3887,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "estoy-ocupado"
+      }
+    ],
     "slug": "ocupado.adjective.masculine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.ocupado"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.ocupado"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -3623,28 +3938,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "la-noche-es-oscura"
+      }
+    ],
     "slug": "oscuro.adjective.feminine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.oscuro"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.oscuro"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -3672,25 +3992,25 @@ export default [
     "slug": "oscuro.adjective.masculine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.oscuro"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.masculine"
       },
       {
+        "slug": "word.lemma.oscuro"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -3715,8 +4035,19 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "ese-coche-es-peor"
+      }
+    ],
     "slug": "peor.adjective",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -3724,16 +4055,10 @@ export default [
         "slug": "word.lemma.peor"
       },
       {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -3758,28 +4083,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "la-habitacion-es-pequena"
+      }
+    ],
     "slug": "pequeño.adjective.feminine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.pequeño"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.pequeño"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -3804,28 +4134,42 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-bebe-es-pequeno"
+      },
+      {
+        "slug": "el-gato-es-pequeno"
+      },
+      {
+        "slug": "el-pajaro-es-pequeno"
+      },
+      {
+        "slug": "vivo-en-un-piso-pequeno"
+      }
+    ],
     "slug": "pequeño.adjective.masculine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.pequeño"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.pequeño"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -3856,8 +4200,19 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "es-posible"
+      }
+    ],
     "slug": "posible.adjective",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -3865,16 +4220,10 @@ export default [
         "slug": "word.lemma.posible"
       },
       {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -3902,25 +4251,25 @@ export default [
     "slug": "rico.adjective.feminine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.rico"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.feminine"
       },
       {
+        "slug": "word.lemma.rico"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -3945,28 +4294,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-pescado-esta-rico"
+      }
+    ],
     "slug": "rico.adjective.masculine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.rico"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.rico"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -3994,25 +4348,25 @@ export default [
     "slug": "rojo.adjective",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.rojo"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
+        "slug": "domain.mando"
       },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
-        "slug": "domain.mando"
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.rojo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -4038,25 +4392,25 @@ export default [
     "slug": "rojo.adjective.feminine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.rojo"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.feminine"
       },
       {
+        "slug": "word.lemma.rojo"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -4081,28 +4435,36 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-tomate-es-rojo"
+      },
+      {
+        "slug": "ese-coche-es-rojo"
+      }
+    ],
     "slug": "rojo.adjective.masculine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.rojo"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.rojo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -4130,25 +4492,25 @@ export default [
     "slug": "rápido.adjective.feminine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.rápido"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.feminine"
       },
       {
+        "slug": "word.lemma.rápido"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -4173,28 +4535,36 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-avion-es-rapido"
+      },
+      {
+        "slug": "el-tren-es-mas-rapido-que-el-coche"
+      }
+    ],
     "slug": "rápido.adjective.masculine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.rápido"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.rápido"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -4219,28 +4589,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "ella-es-seria"
+      }
+    ],
     "slug": "serio.adjective.feminine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.serio"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.serio"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -4265,28 +4640,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "mi-padre-es-serio"
+      }
+    ],
     "slug": "serio.adjective.masculine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.serio"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.serio"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -4311,28 +4691,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "mi-tia-es-simpatica"
+      }
+    ],
     "slug": "simpático.adjective.feminine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.simpático"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.simpático"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -4357,28 +4742,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "mi-hermano-es-simpatico"
+      }
+    ],
     "slug": "simpático.adjective.masculine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.simpático"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.simpático"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -4406,25 +4796,25 @@ export default [
     "slug": "sucio.adjective.feminine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.sucio"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.feminine"
       },
       {
+        "slug": "word.lemma.sucio"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -4449,28 +4839,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-coche-esta-sucio"
+      }
+    ],
     "slug": "sucio.adjective.masculine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.sucio"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.sucio"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -4498,25 +4893,25 @@ export default [
     "slug": "tonto.adjective.feminine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.tonto"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.feminine"
       },
       {
+        "slug": "word.lemma.tonto"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -4541,28 +4936,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-nino-es-tonto"
+      }
+    ],
     "slug": "tonto.adjective.masculine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.tonto"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.tonto"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -4587,8 +4987,19 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "estoy-triste"
+      }
+    ],
     "slug": "triste.adjective",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -4596,16 +5007,10 @@ export default [
         "slug": "word.lemma.triste"
       },
       {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -4633,25 +5038,25 @@ export default [
     "slug": "vacío.adjective.feminine.singular",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
-      },
-      {
-        "slug": "word.lemma.vacío"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
       },
       {
         "slug": "word.gender.feminine"
       },
       {
+        "slug": "word.lemma.vacío"
+      },
+      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -4676,28 +5081,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-vaso-esta-vacio"
+      }
+    ],
     "slug": "vacío.adjective.masculine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.vacío"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.vacío"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -4725,22 +5135,22 @@ export default [
     "slug": "verde.adjective",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
       },
       {
         "slug": "word.lemma.verde"
       },
       {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
         "slug": "word.number.singular"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -4765,28 +5175,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "mi-abuela-es-vieja"
+      }
+    ],
     "slug": "viejo.adjective.feminine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.viejo"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.feminine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.feminine"
+      },
+      {
+        "slug": "word.lemma.viejo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {
@@ -4811,28 +5226,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "aquel-hombre-es-viejo"
+      }
+    ],
     "slug": "viejo.adjective.masculine.singular",
     "symbols": [
-      {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.viejo"
-      },
-      {
-        "slug": "word.part-of-speech.adjective"
-      },
-      {
-        "slug": "word.gender.masculine"
-      },
-      {
-        "slug": "word.number.singular"
-      },
       {
         "slug": "proficiency.cefr.a1"
       },
       {
         "slug": "proficiency.survival"
+      },
+      {
+        "slug": "word"
+      },
+      {
+        "slug": "word.gender.masculine"
+      },
+      {
+        "slug": "word.lemma.viejo"
+      },
+      {
+        "slug": "word.number.singular"
+      },
+      {
+        "slug": "word.part-of-speech.adjective"
       }
     ],
     "trait": {

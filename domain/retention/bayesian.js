@@ -1,5 +1,6 @@
 import * as ebisu from "ebisu-js";
 import { time } from "@vivalence/typology";
+import { PROFILE } from "../schematics.js";
 
 const DECAY = 0.5;
 const HALFLIFE_MIN = 0.01;
@@ -13,19 +14,45 @@ const TAU = {
   FAILURE: 0.08,
 };
 
+const HOURS = [
+  [0, 1 / 60],
+  [10, 1],
+  [50, 24 * 30],
+  [100, 24 * 365],
+];
+
+const halflife = (percent) => {
+  const upper = HOURS.findIndex(([at]) => percent <= at) || 1;
+  const [from, low] = HOURS[upper - 1];
+  const [to, high] = HOURS[upper];
+  return low * (high / low) ** ((percent - from) / (to - from));
+};
+
+const percent = (hours) => {
+  if (hours <= HOURS[0][1]) return 0;
+  if (hours >= HOURS.at(-1)[1]) return 100;
+  const upper = HOURS.findIndex(([, at]) => hours <= at);
+  const [from, low] = HOURS[upper - 1];
+  const [to, high] = HOURS[upper];
+  return from + ((to - from) * Math.log(hours / low)) / Math.log(high / low);
+};
+
+const reached = (nextIn) => {
+  const at = Math.round(percent(nextIn) * 100) / 100;
+  const [status] = Object.entries(PROFILE).findLast(([, from]) => from <= at) ?? ["UNKNOWN"];
+  return status;
+};
+
 const assess = ({ state }) => {
   const nextIn = ebisu.modelToPercentileDecay(state, DECAY);
   const nextAt = time.futureDatetime(nextIn);
-  const status = !state
-    ? "UNTOUCHED"
-    : nextIn > 24 * 45
-      ? "GRADUATED"
-      : nextIn > 24 * 7
-        ? "KNOWN"
-        : nextIn >= 6
-          ? "LEARNING"
-          : "UNKNOWN";
+  const status = !state ? "UNTOUCHED" : reached(nextIn);
   return { status, nextIn, nextAt };
+};
+
+const scale = (percent) => {
+  const state = ebisu.defaultModel(halflife(percent), 4, 4);
+  return { state, ...assess({ state }) };
 };
 
 const encode = (signal) => {
@@ -88,6 +115,7 @@ export default {
   type: "BAYESIAN",
   encode,
   evolve,
+  scale,
   assess,
   strength: (held, now) => Math.exp(-(Math.max(now - held.lastAt, 0) / 3_600_000) / held.state[2]),
   sql: {

@@ -1,5 +1,5 @@
 <script>
-  import { Asset, Desk } from "@vivalence/drapes";
+  import { Asset, Desk } from "@vivalence/drapes/svelte";
 
   const { terminal, buffer, surface } = $props();
   const files = terminal.client.runtime.entities.file.$entities;

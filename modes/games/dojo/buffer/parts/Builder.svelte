@@ -1,5 +1,5 @@
 <script>
-  import { drag, preferences, visible } from "@vivalence/drapes";
+  import { drag, preferences, visible } from "@vivalence/drapes/svelte";
   import * as types from "../../types.js";
   import { label as pickLabel } from "../../set/describe.js";
   import { blank, CAP_DEFAULT } from "../workbench.js";

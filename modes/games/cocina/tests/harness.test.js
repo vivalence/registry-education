@@ -29,7 +29,7 @@ describe("cocina harness — what the model is handed", () => {
   const probe = (avenue) => {
     const vector = new Vector().graft(harness);
     vector.branch(avenue).open("/probe", async (ctx) => ({ system: await shape.primer.load(ctx.hallucination.primer, ctx) }));
-    return scenario.scoped(() => steer.dispatch.invoke(vector, `${avenue}/probe`, steer.strategy.direct)({ ...shard.context.lift(contexts.host, scenario.daemon), mode: scenario.mode, thread, hallucination: { policy: {}, primer: new Vector() }, input: {} }));
+    return scenario.scoped(() => steer.dispatch.invoke(vector, `${avenue}/probe`, steer.strategy.direct)({ ...shard.context.lift(contexts.daemonDie, scenario.daemon), mode: scenario.mode, thread, hallucination: { policy: {}, primer: new Vector() }, input: {} }));
   };
 
   it("P-sections: role and lexicon at the root; format and screen on the dialogue only; the lexicon lists tier 0 with retention", async () => {
@@ -55,7 +55,7 @@ describe("cocina harness — what the model is handed", () => {
   });
 
   it("P-screen: once begin ran on the thread, the screen carries the rail", async () => {
-    const armed = new Vector().graft(tools).use(shard.context.spread(contexts.host, scenario.daemon)).use(shard.context.bind("mode", scenario.mode)).use(shard.context.bind("user", scenario.fixtures.user)).use(shard.context.bind("thread", thread.id));
+    const armed = new Vector().graft(tools).use(shard.context.spread(contexts.daemonDie, scenario.daemon)).use(shard.context.bind("mode", scenario.mode)).use(shard.context.bind("user", scenario.fixtures.user)).use(shard.context.bind("thread", thread.id));
     await scenario.scoped(() => steer.dispatch.invoke(armed, "/begin", steer.strategy.guarded)({}));
     const dialogue = await probe("/dialogue");
     expect(dialogue.system.screen.split("\n")[1]).toBe("phase OBEY · tier 0 · tempo ×1 · obeyed 0/3 · commands 0/0");

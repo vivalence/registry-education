@@ -1,5 +1,5 @@
 <script>
-  import { visible } from "@vivalence/drapes";
+  import { visible } from "@vivalence/drapes/svelte";
 
   const {
     value = 0,

@@ -1,6 +1,6 @@
 <script>
   import { string } from "@vivalence/typology";
-  import { Keyboard, Asset, ViewportLock, Desk, persist } from "@vivalence/drapes";
+  import { Keyboard, Asset, ViewportLock, Desk, persist } from "@vivalence/drapes/svelte";
 
   const { terminal, buffer, surface } = $props();
   const files = terminal.client.runtime.entities.file.$entities;

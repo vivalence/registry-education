@@ -21,12 +21,12 @@ export const riddle = new Vector().open(
   async (ctx) => {
     const symbols = ctx.input.symbols?.length ? ctx.input.symbols : DEFAULT_SYMBOLS;
     const emission = await ctx.mode.emit.riddle({ ...ctx.input, symbols, thread: ctx.thread });
-    const buffers = emission.output.buffer;
+    const buffers = emission.product.buffer;
     return {
       message: buffers.length
         ? `${buffers.length === 1 ? "One riddle" : `${buffers.length} riddles`} on screen.`
         : "No vocabulary matched that selection.",
-      ...emission.output,
+      ...emission.product,
     };
   },
 );

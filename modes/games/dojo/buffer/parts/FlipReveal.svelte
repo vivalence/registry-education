@@ -1,5 +1,5 @@
 <script>
-  import { Asset } from "@vivalence/drapes";
+  import { Asset } from "@vivalence/drapes/svelte";
 
   const { answer, example, file = null, label } = $props();
 </script>

@@ -6,5 +6,5 @@ export const manifest = {
   slug: "francesca",
   name: "Francesca",
   description: "Italian conversation tutor.",
-  traits: ["CONVERSATIONAL", "HARNESSED", "TOOLING", "AGENTIC", "PRIMER"],
+  traits: ["CONVERSATION", "HARNESS", "TOOLING", "PRIMER"],
 };

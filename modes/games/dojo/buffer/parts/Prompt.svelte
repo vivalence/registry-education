@@ -1,5 +1,5 @@
 <script>
-  import { Asset, Pip } from "@vivalence/drapes";
+  import { Asset, Pip } from "@vivalence/drapes/svelte";
   import * as fold from "../../fold.js";
 
   const {
@@ -19,6 +19,8 @@
     compact = false,
     turn = null,
     onhint,
+    sound,
+    onsound,
     onchrome,
   } = $props();
 
@@ -65,7 +67,7 @@
   const hint = $derived(listening ? shown : (hintExample ?? (answer ? mask(answer) : null)));
 
   const pips = $derived(
-    axes.streak ? Array.from({ length: axes.streak }, (value, index) => index < status.runs) : [],
+    axes.streak ? Array.from({ length: axes.streak }, (value, index) => index < status.streak) : [],
   );
 
   const bits = $derived(
@@ -99,7 +101,7 @@
 
   <div class="aside">
     {#if pips.length}
-      <div class="pips" title="{status.runs} of {axes.streak} consecutive">
+      <div class="pips" title="{status.streak} of {axes.streak} consecutive">
         {#each pips as filled, index (index)}
           <Pip size={7} tone={filled ? "primary" : "muted"} />
         {/each}
@@ -109,6 +111,11 @@
       <span class="fact" class:urgent={bit.urgent}>{bit.label}</span>
     {/each}
     <button class="knob" class:open={hinted} onclick={onhint} title="hint (h)">?</button>
+    <button
+      class="knob"
+      class:open={sound}
+      onclick={onsound}
+      title={sound ? "sounds — turn them off" : "sounds — turn them on"}>♪</button>
     {#if onchrome}
       <button class="knob" onclick={onchrome} title="chrome (\)">◨</button>
     {/if}

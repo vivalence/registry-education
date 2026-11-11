@@ -4,6 +4,7 @@ import { v } from "@vivalence/typology";
 // acquisition ladder) and trace signals (per-exercise outcomes).
 export const STATUS = ["UNTOUCHED", "UNKNOWN", "LEARNING", "KNOWN", "GRADUATED"];
 export const SIGNAL = ["MASTERY", "SUCCESS", "NEUTRAL", "MISTAKE", "FAILURE"];
+export const PROFILE = { UNKNOWN: 3, LEARNING: 15, KNOWN: 36, GRADUATED: 60 };
 
 export const TUTOR_MESSAGE_INPUT = v.object({
   prompt: v.string().desc("The learner's message to the tutor."),

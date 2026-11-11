@@ -1,5 +1,5 @@
 <script>
-  import { visible } from "@vivalence/drapes";
+  import { visible } from "@vivalence/drapes/svelte";
   import { describe } from "../../set/describe.js";
 
   const { clauses = [], total = 0, resolving = false, editingIndex = null, onedit, onremove, onclear, onsave } = $props();

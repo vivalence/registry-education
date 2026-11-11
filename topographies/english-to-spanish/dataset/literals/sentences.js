@@ -3,6 +3,12 @@ export default [
     "slug": "abre-la-puerta",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "sentence"
       },
       {
@@ -13,12 +19,6 @@ export default [
       },
       {
         "slug": "sentence.polarity.positive"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
       }
     ],
     "trait": {
@@ -65,11 +65,28 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "abrir.verb.imperative.second.singular"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "puerta.noun"
+      }
     ]
   },
   {
     "slug": "abri-la-ventana",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -80,16 +97,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.past"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.past"
       }
     ],
     "trait": {
@@ -130,11 +141,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "abrir.verb.indicative.past.first.singular"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "ventana.noun"
+      }
     ]
   },
   {
     "slug": "abro-la-ventana",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -145,16 +173,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -195,11 +217,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "abrir.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "ventana.noun"
+      }
     ]
   },
   {
     "slug": "alguien-esta-aqui",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -210,16 +249,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -260,11 +293,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "alguien.pronoun"
+      },
+      {
+        "slug": "aquí.adverb"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "aquel-hombre-es-viejo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -275,16 +325,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -332,11 +376,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "aquel.pronoun"
+      },
+      {
+        "slug": "hombre.noun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "viejo.adjective.masculine.singular"
+      }
     ]
   },
   {
     "slug": "ayer-hable-espanol",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -347,16 +411,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.past"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.past"
       }
     ],
     "trait": {
@@ -397,11 +455,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "ayer.adverb"
+      },
+      {
+        "slug": "español.noun"
+      },
+      {
+        "slug": "hablar.verb.indicative.past.first.singular"
+      }
     ]
   },
   {
     "slug": "ayudas-a-tu-madre",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -415,16 +490,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -472,11 +541,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "a.adposition"
+      },
+      {
+        "slug": "ayudar.verb.indicative.present.second.singular"
+      },
+      {
+        "slug": "madre.noun"
+      },
+      {
+        "slug": "tu.pronoun"
+      }
     ]
   },
   {
     "slug": "ayudo-a-mi-madre",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -487,16 +576,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -544,11 +627,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "a.adposition"
+      },
+      {
+        "slug": "ayudar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "madre.noun"
+      },
+      {
+        "slug": "mi.pronoun"
+      }
     ]
   },
   {
     "slug": "bebo-agua",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -559,16 +662,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -602,11 +699,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "agua.noun"
+      },
+      {
+        "slug": "beber.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "bebo-de-la-botella",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -617,16 +728,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -674,11 +779,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "beber.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "botella.noun"
+      },
+      {
+        "slug": "de.adposition"
+      },
+      {
+        "slug": "la.determiner"
+      }
     ]
   },
   {
     "slug": "buscas-trabajo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -692,16 +817,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -735,11 +854,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "buscar.verb.indicative.present.second.singular"
+      },
+      {
+        "slug": "trabajo.noun"
+      }
     ]
   },
   {
     "slug": "busco-trabajo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -750,16 +883,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -793,11 +920,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "buscar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "trabajo.noun"
+      }
     ]
   },
   {
     "slug": "busco-trabajo-pero-no-lo-encuentro",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -808,16 +949,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -879,11 +1014,37 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "buscar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "encontrar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "lo.pronoun"
+      },
+      {
+        "slug": "no.adverb"
+      },
+      {
+        "slug": "pero.coordinating-conjunction"
+      },
+      {
+        "slug": "trabajo.noun"
+      }
     ]
   },
   {
     "slug": "casi-nunca-como",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -894,16 +1055,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -944,11 +1099,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "casi.adverb"
+      },
+      {
+        "slug": "comer.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "nunca.adverb"
+      }
     ]
   },
   {
     "slug": "come-la-fruta",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -960,12 +1132,6 @@ export default [
       },
       {
         "slug": "sentence.polarity.positive"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
       }
     ],
     "trait": {
@@ -1006,11 +1172,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "comer.verb.imperative.second.singular"
+      },
+      {
+        "slug": "fruta.noun"
+      },
+      {
+        "slug": "la.determiner"
+      }
     ]
   },
   {
     "slug": "comemos-en-casa",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -1021,16 +1204,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -1077,11 +1254,28 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "casa.noun"
+      },
+      {
+        "slug": "comer.verb.indicative.present.first.plural"
+      },
+      {
+        "slug": "en.adposition"
+      }
     ]
   },
   {
     "slug": "comere-arroz",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -1092,16 +1286,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.future"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.future"
       }
     ],
     "trait": {
@@ -1135,11 +1323,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "arroz.noun"
+      },
+      {
+        "slug": "comer.verb.indicative.future.first.singular"
+      }
     ]
   },
   {
     "slug": "comeria-pan",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -1151,12 +1353,6 @@ export default [
       },
       {
         "slug": "sentence.polarity.positive"
-      },
-      {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
       }
     ],
     "trait": {
@@ -1190,11 +1386,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "comer.verb.conditional.first.singular"
+      },
+      {
+        "slug": "pan.noun"
+      }
     ]
   },
   {
     "slug": "comes-pan",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -1208,16 +1418,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -1278,11 +1482,34 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "comer.verb.infinitive"
+      },
+      {
+        "slug": "este.pronoun"
+      },
+      {
+        "slug": "me.pronoun"
+      },
+      {
+        "slug": "pan.noun"
+      },
+      {
+        "slug": "poder.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "comi-pan",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -1293,16 +1520,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.past"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.past"
       }
     ],
     "trait": {
@@ -1342,11 +1563,25 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "comer.verb.indicative.past.first.singular"
+      },
+      {
+        "slug": "pan.noun"
+      }
     ]
   },
   {
     "slug": "comi-pescado",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -1357,16 +1592,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.past"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.past"
       }
     ],
     "trait": {
@@ -1400,11 +1629,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "comer.verb.indicative.past.first.singular"
+      },
+      {
+        "slug": "pescado.noun"
+      }
     ]
   },
   {
     "slug": "comia-fruta",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -1415,16 +1658,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.imperfect"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.imperfect"
       }
     ],
     "trait": {
@@ -1458,11 +1695,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "comer.verb.indicative.imperfect.first.singular"
+      },
+      {
+        "slug": "fruta.noun"
+      }
     ]
   },
   {
     "slug": "comia-pan",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -1473,16 +1724,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.imperfect"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.imperfect"
       }
     ],
     "trait": {
@@ -1516,11 +1761,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "comer.verb.indicative.imperfect.first.singular"
+      },
+      {
+        "slug": "pan.noun"
+      }
     ]
   },
   {
     "slug": "como-arroz",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -1531,16 +1790,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -1574,11 +1827,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "arroz.noun"
+      },
+      {
+        "slug": "comer.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "como-con-tenedor",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -1589,16 +1856,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -1639,11 +1900,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "comer.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "con.adposition"
+      },
+      {
+        "slug": "tenedor.noun"
+      }
     ]
   },
   {
     "slug": "como-despues",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -1654,16 +1932,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -1697,11 +1969,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "comer.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "después.adverb"
+      }
     ]
   },
   {
     "slug": "como-pan-y-bebo-agua",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -1712,16 +1998,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -1776,11 +2056,34 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "agua.noun"
+      },
+      {
+        "slug": "beber.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "comer.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "pan.noun"
+      },
+      {
+        "slug": "y.coordinating-conjunction"
+      }
     ]
   },
   {
     "slug": "como-pollo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -1791,16 +2094,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -1834,11 +2131,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "comer.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "pollo.noun"
+      }
     ]
   },
   {
     "slug": "como-un-bocadillo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -1849,16 +2160,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -1899,11 +2204,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "bocadillo.noun"
+      },
+      {
+        "slug": "comer.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "un.determiner"
+      }
     ]
   },
   {
     "slug": "como-una-patata",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -1914,16 +2236,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -1964,11 +2280,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "comer.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "patata.noun"
+      },
+      {
+        "slug": "una.determiner"
+      }
     ]
   },
   {
     "slug": "compramos-fruta",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -1979,16 +2312,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -2056,11 +2383,37 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "comprar.verb.infinitive"
+      },
+      {
+        "slug": "fruta.noun"
+      },
+      {
+        "slug": "que.subordinating-conjunction"
+      },
+      {
+        "slug": "tener.verb.indicative.present.first.plural"
+      },
+      {
+        "slug": "verdura.noun"
+      },
+      {
+        "slug": "y.coordinating-conjunction"
+      }
     ]
   },
   {
     "slug": "compro-en-el-supermercado",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -2071,16 +2424,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -2128,11 +2475,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "comprar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "en.adposition"
+      },
+      {
+        "slug": "supermercado.noun"
+      }
     ]
   },
   {
     "slug": "compro-pan",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -2143,16 +2510,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -2186,11 +2547,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "comprar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "pan.noun"
+      }
     ]
   },
   {
     "slug": "conoces-la-ciudad",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -2204,16 +2579,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -2254,11 +2623,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "ciudad.noun"
+      },
+      {
+        "slug": "conocer.verb.indicative.present.second.singular"
+      },
+      {
+        "slug": "la.determiner"
+      }
     ]
   },
   {
     "slug": "conozco-la-ciudad",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -2269,16 +2655,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -2319,11 +2699,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "ciudad.noun"
+      },
+      {
+        "slug": "conocer.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "la.determiner"
+      }
     ]
   },
   {
     "slug": "creo-que-si",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -2334,16 +2731,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -2384,11 +2775,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "creer.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "que.subordinating-conjunction"
+      },
+      {
+        "slug": "sí.adverb"
+      }
     ]
   },
   {
     "slug": "cuando-comemos",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -2402,16 +2810,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -2465,11 +2867,31 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "comer.verb.indicative.present.first.plural"
+      },
+      {
+        "slug": "cuándo.adverb"
+      },
+      {
+        "slug": "hambre.noun"
+      },
+      {
+        "slug": "tener.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "cuanto-es",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -2483,16 +2905,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -2532,11 +2948,25 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "cuánto.pronoun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "digo-que-si",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -2547,16 +2977,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -2597,11 +3021,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "decir.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "que.subordinating-conjunction"
+      },
+      {
+        "slug": "sí.adverb"
+      }
     ]
   },
   {
     "slug": "donde-esta-el-bano",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -2615,16 +3056,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -2678,11 +3113,31 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "baño.noun"
+      },
+      {
+        "slug": "dónde.adverb"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "donde-esta-el-telefono",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -2696,16 +3151,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -2772,11 +3221,34 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "dónde.adverb"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "más.adverb"
+      },
+      {
+        "slug": "teléfono.noun"
+      }
     ]
   },
   {
     "slug": "donde-esta-la-estacion",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -2790,16 +3262,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -2867,11 +3333,37 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "de.adposition"
+      },
+      {
+        "slug": "dónde.adverb"
+      },
+      {
+        "slug": "estación.noun"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "tren.noun"
+      }
     ]
   },
   {
     "slug": "doy-un-libro",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -2882,16 +3374,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -2932,11 +3418,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "dar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "libro.noun"
+      },
+      {
+        "slug": "un.determiner"
+      }
     ]
   },
   {
     "slug": "el-abogado-es-bueno",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -2947,16 +3450,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -3004,11 +3501,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "abogado.noun"
+      },
+      {
+        "slug": "bueno.adjective.masculine.singular"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "el-agua-esta-clara",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -3019,16 +3536,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -3076,11 +3587,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "agua.noun"
+      },
+      {
+        "slug": "claro.adjective.feminine.singular"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "el-arbol-es-grande",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -3091,16 +3622,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -3148,11 +3673,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "grande.adjective"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "árbol.noun"
+      }
     ]
   },
   {
     "slug": "el-artista-es-bueno",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -3163,16 +3708,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -3220,11 +3759,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "artista.noun"
+      },
+      {
+        "slug": "bueno.adjective.masculine.singular"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "el-avion-es-rapido",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -3235,16 +3794,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -3292,11 +3845,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "avión.noun"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "rápido.adjective.masculine.singular"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "el-banco-esta-cerca",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -3307,16 +3880,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -3364,11 +3931,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "banco.noun"
+      },
+      {
+        "slug": "cerca.adverb"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "el-bano-esta-lejos",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -3379,16 +3966,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -3436,11 +4017,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "baño.noun"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "lejos.adverb"
+      }
     ]
   },
   {
     "slug": "el-barco-es-grande",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -3451,16 +4052,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -3508,11 +4103,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "barco.noun"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "grande.adjective"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "el-bebe-es-pequeno",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -3523,16 +4138,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -3580,11 +4189,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "bebé.noun"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "pequeño.adjective.masculine.singular"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "el-caballo-es-fuerte",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -3595,16 +4224,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -3652,11 +4275,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "caballo.noun"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "fuerte.adjective"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "el-cafe-es-mas-caliente",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -3667,16 +4310,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -3731,11 +4368,34 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "café.noun"
+      },
+      {
+        "slug": "caliente.adjective"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "más.adverb"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "el-cafe-esta-caliente",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -3746,16 +4406,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -3809,11 +4463,31 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "café.noun"
+      },
+      {
+        "slug": "caliente.adjective"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "el-camarero-es-amable",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -3824,16 +4498,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -3881,11 +4549,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "amable.adjective"
+      },
+      {
+        "slug": "camarero.noun"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "el-camarero-es-joven",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -3896,16 +4584,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -3953,11 +4635,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "camarero.noun"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "joven.adjective"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "el-coche-es-lento",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -3968,16 +4670,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -4025,11 +4721,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "coche.noun"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "lento.adjective.masculine.singular"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "el-coche-es-mas-caro-que-el-tren",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -4040,16 +4756,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -4125,11 +4835,40 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "caro.adjective.masculine.singular"
+      },
+      {
+        "slug": "coche.noun"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "más.adverb"
+      },
+      {
+        "slug": "que.subordinating-conjunction"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "tren.noun"
+      }
     ]
   },
   {
     "slug": "el-coche-es-rojo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -4140,16 +4879,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -4203,11 +4936,31 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "azul.adjective"
+      },
+      {
+        "slug": "coche.noun"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "el-coche-esta-sucio",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -4218,16 +4971,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -4275,11 +5022,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "coche.noun"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "sucio.adjective.masculine.singular"
+      }
     ]
   },
   {
     "slug": "el-cuchillo-es-grande",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -4290,16 +5057,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -4347,11 +5108,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "cuchillo.noun"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "grande.adjective"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "el-enfermero-trabaja",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -4362,16 +5143,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -4412,11 +5187,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "enfermero.noun"
+      },
+      {
+        "slug": "trabajar.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "el-gato-es-pequeno",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -4427,16 +5219,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -4490,11 +5276,31 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "gato.noun"
+      },
+      {
+        "slug": "pequeño.adjective.masculine.singular"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "el-gato-esta-bajo-la-mesa",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -4505,16 +5311,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -4576,11 +5376,37 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "bajo.adposition"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "gato.noun"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "mesa.noun"
+      }
     ]
   },
   {
     "slug": "el-gato-esta-fuera",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -4591,16 +5417,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -4648,11 +5468,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "fuera.adverb"
+      },
+      {
+        "slug": "gato.noun"
+      }
     ]
   },
   {
     "slug": "el-hotel-esta-aqui",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -4663,16 +5503,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -4725,11 +5559,28 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "hotel.noun"
+      }
     ]
   },
   {
     "slug": "el-hotel-esta-lleno",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -4740,16 +5591,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -4797,11 +5642,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "hotel.noun"
+      },
+      {
+        "slug": "lleno.adjective.masculine.singular"
+      }
     ]
   },
   {
     "slug": "el-jamon-es-bueno",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -4812,16 +5677,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -4869,11 +5728,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "bueno.adjective.masculine.singular"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "jamón.noun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "el-libro-es-nuevo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -4884,16 +5763,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -4947,11 +5820,31 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "libro.noun"
+      },
+      {
+        "slug": "nuevo.adjective.masculine.singular"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "el-libro-esta-abierto",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -4962,16 +5855,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -5019,11 +5906,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "abierto.adjective.masculine.singular"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "libro.noun"
+      }
     ]
   },
   {
     "slug": "el-libro-esta-encima",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -5034,16 +5941,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -5091,11 +5992,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "encima.adverb"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "libro.noun"
+      }
     ]
   },
   {
     "slug": "el-libro-esta-sobre-la-mesa",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -5106,16 +6027,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -5177,11 +6092,37 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "libro.noun"
+      },
+      {
+        "slug": "mesa.noun"
+      },
+      {
+        "slug": "sobre.adposition"
+      }
     ]
   },
   {
     "slug": "el-lugar-es-bonito",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -5192,16 +6133,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -5249,11 +6184,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "bonito.adjective.masculine.singular"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "lugar.noun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "el-medico-es-bueno",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -5264,16 +6219,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -5321,11 +6270,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "bueno.adjective.masculine.singular"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "médico.noun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "el-museo-esta-cerrado",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -5336,16 +6305,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -5393,11 +6356,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "cerrado.adjective.masculine.singular"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "museo.noun"
+      }
     ]
   },
   {
     "slug": "el-nino-es-tonto",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -5408,16 +6391,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -5465,11 +6442,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "niño.noun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "tonto.adjective.masculine.singular"
+      }
     ]
   },
   {
     "slug": "el-pajaro-es-pequeno",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -5480,16 +6477,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -5537,11 +6528,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "pequeño.adjective.masculine.singular"
+      },
+      {
+        "slug": "pájaro.noun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "el-pajaro-esta-encima-del-arbol",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -5552,16 +6563,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -5623,11 +6628,37 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "del.contraction"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "encima.adverb"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "pájaro.noun"
+      },
+      {
+        "slug": "árbol.noun"
+      }
     ]
   },
   {
     "slug": "el-parque-es-grande",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -5638,16 +6669,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -5695,11 +6720,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "grande.adjective"
+      },
+      {
+        "slug": "parque.noun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "el-perro-esta-dentro",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -5710,16 +6755,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -5767,11 +6806,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "dentro.adverb"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "perro.noun"
+      }
     ]
   },
   {
     "slug": "el-pescado-esta-rico",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -5782,16 +6841,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -5839,11 +6892,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "pescado.noun"
+      },
+      {
+        "slug": "rico.adjective.masculine.singular"
+      }
     ]
   },
   {
     "slug": "el-pintor-trabaja",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -5854,16 +6927,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -5904,11 +6971,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "pintor.noun"
+      },
+      {
+        "slug": "trabajar.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "el-plato-esta-limpio",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -5919,16 +7003,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -5976,11 +7054,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "limpio.adjective.masculine.singular"
+      },
+      {
+        "slug": "plato.noun"
+      }
     ]
   },
   {
     "slug": "el-policia-esta-aqui",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -5991,16 +7089,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -6048,11 +7140,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "aquí.adverb"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "policía.noun"
+      }
     ]
   },
   {
     "slug": "el-puente-es-grande",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -6063,16 +7175,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -6120,11 +7226,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "grande.adjective"
+      },
+      {
+        "slug": "puente.noun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "el-restaurante-esta-abierto",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -6135,16 +7261,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -6192,11 +7312,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "abierto.adjective.masculine.singular"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "restaurante.noun"
+      }
     ]
   },
   {
     "slug": "el-restaurante-esta-cerca",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -6207,16 +7347,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -6264,11 +7398,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "cerca.adverb"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "restaurante.noun"
+      }
     ]
   },
   {
     "slug": "el-tomate-es-rojo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -6279,16 +7433,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -6336,11 +7484,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "rojo.adjective.masculine.singular"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "tomate.noun"
+      }
     ]
   },
   {
     "slug": "el-tren-es-mas-rapido-que-el-coche",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -6351,16 +7519,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -6436,11 +7598,40 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "coche.noun"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "más.adverb"
+      },
+      {
+        "slug": "que.subordinating-conjunction"
+      },
+      {
+        "slug": "rápido.adjective.masculine.singular"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "tren.noun"
+      }
     ]
   },
   {
     "slug": "el-vaso-esta-vacio",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -6451,16 +7642,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -6508,11 +7693,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "vacío.adjective.masculine.singular"
+      },
+      {
+        "slug": "vaso.noun"
+      }
     ]
   },
   {
     "slug": "el-viaje-es-largo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -6523,16 +7728,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -6580,11 +7779,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "largo.adjective.masculine.singular"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "viaje.noun"
+      }
     ]
   },
   {
     "slug": "el-zapato-es-negro",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -6595,16 +7814,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -6652,11 +7865,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "negro.adjective.masculine.singular"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "zapato.noun"
+      }
     ]
   },
   {
     "slug": "el-zapato-esta-debajo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -6667,16 +7900,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -6724,11 +7951,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "debajo.adverb"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "zapato.noun"
+      }
     ]
   },
   {
     "slug": "ella-es-seria",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -6739,16 +7986,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -6789,11 +8030,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "ella.pronoun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "serio.adjective.feminine.singular"
+      }
     ]
   },
   {
     "slug": "empiezo-a-trabajar",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -6804,16 +8062,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -6854,11 +8106,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "a.adposition"
+      },
+      {
+        "slug": "empezar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "trabajar.verb.infinitive"
+      }
     ]
   },
   {
     "slug": "encuentro-la-llave",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -6869,16 +8138,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -6919,11 +8182,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "encontrar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "llave.noun"
+      }
     ]
   },
   {
     "slug": "entro-en-el-banco",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -6934,16 +8214,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -6991,11 +8265,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "banco.noun"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "en.adposition"
+      },
+      {
+        "slug": "entrar.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "entro-en-la-casa",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -7006,16 +8300,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -7063,11 +8351,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "casa.noun"
+      },
+      {
+        "slug": "en.adposition"
+      },
+      {
+        "slug": "entrar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "la.determiner"
+      }
     ]
   },
   {
     "slug": "es-bastante-caro",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -7078,16 +8386,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -7128,11 +8430,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "bastante.adverb"
+      },
+      {
+        "slug": "caro.adjective.masculine.singular"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "es-importante-que-coma",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -7143,16 +8462,10 @@ export default [
         "slug": "sentence.mood.subjunctive"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -7200,11 +8513,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "comer.verb.subjunctive.present.first.singular"
+      },
+      {
+        "slug": "importante.adjective"
+      },
+      {
+        "slug": "que.subordinating-conjunction"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "es-importante-que-sea-fuerte",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -7215,16 +8548,10 @@ export default [
         "slug": "sentence.mood.subjunctive"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -7279,11 +8606,34 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "fuerte.adjective"
+      },
+      {
+        "slug": "importante.adjective"
+      },
+      {
+        "slug": "que.subordinating-conjunction"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "ser.verb.subjunctive.present.first.singular"
+      }
     ]
   },
   {
     "slug": "es-importante-que-sepas-espanol",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -7294,16 +8644,10 @@ export default [
         "slug": "sentence.mood.subjunctive"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -7358,11 +8702,34 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "español.noun"
+      },
+      {
+        "slug": "importante.adjective"
+      },
+      {
+        "slug": "que.subordinating-conjunction"
+      },
+      {
+        "slug": "saber.verb.subjunctive.present.second.singular"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "es-importante-que-tengas-dinero",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -7373,16 +8740,10 @@ export default [
         "slug": "sentence.mood.subjunctive"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -7437,11 +8798,34 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "dinero.noun"
+      },
+      {
+        "slug": "importante.adjective"
+      },
+      {
+        "slug": "que.subordinating-conjunction"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "tener.verb.subjunctive.present.second.singular"
+      }
     ]
   },
   {
     "slug": "es-mas-grande-que-mi-casa",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -7452,16 +8836,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -7523,11 +8901,37 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "casa.noun"
+      },
+      {
+        "slug": "grande.adjective"
+      },
+      {
+        "slug": "mi.pronoun"
+      },
+      {
+        "slug": "más.adverb"
+      },
+      {
+        "slug": "que.subordinating-conjunction"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "es-posible",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -7538,16 +8942,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -7581,11 +8979,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "posible.adjective"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "esa-mujer-es-alta",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -7596,16 +9008,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -7653,11 +9059,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "alto.adjective.feminine.singular"
+      },
+      {
+        "slug": "esa.pronoun"
+      },
+      {
+        "slug": "mujer.noun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "escribes-mucho",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -7671,16 +9097,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -7714,11 +9134,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "escribir.verb.indicative.present.second.singular"
+      },
+      {
+        "slug": "mucho.adverb"
+      }
     ]
   },
   {
     "slug": "escribo-mi-nombre",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -7729,16 +9163,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -7779,11 +9207,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "escribir.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "mi.pronoun"
+      },
+      {
+        "slug": "nombre.noun"
+      }
     ]
   },
   {
     "slug": "escribo-una-carta",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -7794,16 +9239,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -7844,11 +9283,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "carta.noun"
+      },
+      {
+        "slug": "escribir.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "una.determiner"
+      }
     ]
   },
   {
     "slug": "ese-coche-es-peor",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -7859,16 +9315,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -7916,11 +9366,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "coche.noun"
+      },
+      {
+        "slug": "ese.pronoun"
+      },
+      {
+        "slug": "peor.adjective"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "ese-coche-es-rojo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -7931,16 +9401,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -7988,11 +9452,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "coche.noun"
+      },
+      {
+        "slug": "ese.pronoun"
+      },
+      {
+        "slug": "rojo.adjective.masculine.singular"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "ese-hombre-es-antipatico",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -8003,16 +9487,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -8060,11 +9538,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "antipático.adjective.masculine.singular"
+      },
+      {
+        "slug": "ese.pronoun"
+      },
+      {
+        "slug": "hombre.noun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "espero-aqui",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -8075,16 +9573,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -8118,11 +9610,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "aquí.adverb"
+      },
+      {
+        "slug": "esperar.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "espero-el-autobus",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -8133,16 +9639,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -8183,11 +9683,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "autobús.noun"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "esperar.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "esta-casa-es-grande",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -8198,16 +9715,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -8255,11 +9766,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "casa.noun"
+      },
+      {
+        "slug": "esta.pronoun"
+      },
+      {
+        "slug": "grande.adjective"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "esta-casa-es-mejor-que-esa",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -8270,16 +9801,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -8341,11 +9866,37 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "casa.noun"
+      },
+      {
+        "slug": "esa.pronoun"
+      },
+      {
+        "slug": "esta.pronoun"
+      },
+      {
+        "slug": "mejor.adjective"
+      },
+      {
+        "slug": "que.subordinating-conjunction"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "estare-en-el-hotel",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -8356,16 +9907,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.future"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.future"
       }
     ],
     "trait": {
@@ -8413,11 +9958,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "en.adposition"
+      },
+      {
+        "slug": "estar.verb.indicative.future.first.singular"
+      },
+      {
+        "slug": "hotel.noun"
+      }
     ]
   },
   {
     "slug": "estas-ocupada",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -8431,16 +9996,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -8474,11 +10033,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "estar.verb.indicative.present.second.singular"
+      },
+      {
+        "slug": "ocupado.adjective.feminine.singular"
+      }
     ]
   },
   {
     "slug": "este-libro-es-bueno",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -8489,16 +10062,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -8546,11 +10113,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "bueno.adjective.masculine.singular"
+      },
+      {
+        "slug": "este.pronoun"
+      },
+      {
+        "slug": "libro.noun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "este-libro-es-mejor",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -8561,16 +10148,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -8618,11 +10199,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "este.pronoun"
+      },
+      {
+        "slug": "libro.noun"
+      },
+      {
+        "slug": "mejor.adjective"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "este-regalo-es-bonito",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -8633,16 +10234,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -8690,11 +10285,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "bonito.adjective.masculine.singular"
+      },
+      {
+        "slug": "este.pronoun"
+      },
+      {
+        "slug": "regalo.noun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "esto-es-bueno",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -8705,16 +10320,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -8755,11 +10364,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "bueno.adjective.masculine.singular"
+      },
+      {
+        "slug": "esto.pronoun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "estoy-bien-gracias",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -8770,16 +10396,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -8819,11 +10439,25 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "bien.adverb"
+      },
+      {
+        "slug": "estar.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "estoy-cansado-pero-trabajo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -8834,16 +10468,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -8891,11 +10519,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "cansado.adjective.masculine.singular"
+      },
+      {
+        "slug": "estar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "pero.coordinating-conjunction"
+      },
+      {
+        "slug": "trabajar.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "estoy-con-mi-amigo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -8906,16 +10554,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -8963,11 +10605,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "amigo.noun"
+      },
+      {
+        "slug": "con.adposition"
+      },
+      {
+        "slug": "estar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "mi.pronoun"
+      }
     ]
   },
   {
     "slug": "estoy-delante",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -8978,16 +10640,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -9021,11 +10677,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "delante.adverb"
+      },
+      {
+        "slug": "estar.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "estoy-detras",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -9036,16 +10706,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -9079,11 +10743,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "detrás.adverb"
+      },
+      {
+        "slug": "estar.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "estoy-en-casa-y-leo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -9094,16 +10772,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -9158,11 +10830,34 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "casa.noun"
+      },
+      {
+        "slug": "en.adposition"
+      },
+      {
+        "slug": "estar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "leer.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "y.coordinating-conjunction"
+      }
     ]
   },
   {
     "slug": "estoy-enfermo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -9173,16 +10868,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -9216,11 +10905,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "enfermo.adjective.masculine.singular"
+      },
+      {
+        "slug": "estar.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "estoy-ocupado",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -9231,16 +10934,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -9274,11 +10971,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "estar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "ocupado.adjective.masculine.singular"
+      }
     ]
   },
   {
     "slug": "estoy-triste",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -9289,16 +11000,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -9332,11 +11037,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "estar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "triste.adjective"
+      }
     ]
   },
   {
     "slug": "estudias-espanol",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -9350,16 +11069,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -9393,11 +11106,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "español.noun"
+      },
+      {
+        "slug": "estudiar.verb.indicative.present.second.singular"
+      }
     ]
   },
   {
     "slug": "estudio-espanol",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -9408,16 +11135,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -9451,11 +11172,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "español.noun"
+      },
+      {
+        "slug": "estudiar.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "estuve-en-casa",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -9469,16 +11204,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.past"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.past"
       }
     ],
     "trait": {
@@ -9531,11 +11260,28 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "casa.noun"
+      },
+      {
+        "slug": "en.adposition"
+      },
+      {
+        "slug": "estar.verb.indicative.past.second.singular"
+      }
     ]
   },
   {
     "slug": "estuve-en-la-playa",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -9546,16 +11292,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.past"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.past"
       }
     ],
     "trait": {
@@ -9603,11 +11343,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "en.adposition"
+      },
+      {
+        "slug": "estar.verb.indicative.past.first.singular"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "playa.noun"
+      }
     ]
   },
   {
     "slug": "fui-al-hotel",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -9618,16 +11378,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.past"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.past"
       }
     ],
     "trait": {
@@ -9668,11 +11422,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "al.contraction"
+      },
+      {
+        "slug": "hotel.noun"
+      },
+      {
+        "slug": "ir.verb.indicative.past.first.singular"
+      }
     ]
   },
   {
     "slug": "fui-al-mercado",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -9683,16 +11454,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.past"
-      },
-      {
         "slug": "sentence.polarity.negative"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.past"
       }
     ],
     "trait": {
@@ -9746,11 +11511,31 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "al.contraction"
+      },
+      {
+        "slug": "ir.verb.indicative.past.first.singular"
+      },
+      {
+        "slug": "mercado.noun"
+      },
+      {
+        "slug": "no.adverb"
+      }
     ]
   },
   {
     "slug": "fuimos-a-la-playa",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -9761,16 +11546,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.past"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.past"
       }
     ],
     "trait": {
@@ -9824,11 +11603,31 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "a.adposition"
+      },
+      {
+        "slug": "ir.verb.indicative.past.first.plural"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "playa.noun"
+      }
     ]
   },
   {
     "slug": "habla-espanol",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -9840,12 +11639,6 @@ export default [
       },
       {
         "slug": "sentence.polarity.positive"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
       }
     ],
     "trait": {
@@ -9879,11 +11672,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "español.noun"
+      },
+      {
+        "slug": "hablar.verb.imperative.second.singular"
+      }
     ]
   },
   {
     "slug": "hablas-espanol",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -9897,16 +11704,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -9946,11 +11747,25 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "español.noun"
+      },
+      {
+        "slug": "hablar.verb.indicative.present.second.singular"
+      }
     ]
   },
   {
     "slug": "hablo-despacio",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -9961,16 +11776,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -10004,11 +11813,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "despacio.adverb"
+      },
+      {
+        "slug": "hablar.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "hace-calor",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -10019,16 +11842,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -10062,11 +11879,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "calor.noun"
+      },
+      {
+        "slug": "hacer.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "hace-sol",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -10077,16 +11908,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -10126,11 +11951,25 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "hacer.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "sol.noun"
+      }
     ]
   },
   {
     "slug": "hare-la-comida",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -10141,16 +11980,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.future"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.future"
       }
     ],
     "trait": {
@@ -10197,11 +12030,28 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "comida.noun"
+      },
+      {
+        "slug": "hacer.verb.indicative.future.first.plural"
+      },
+      {
+        "slug": "la.determiner"
+      }
     ]
   },
   {
     "slug": "haz-la-comida",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -10213,12 +12063,6 @@ export default [
       },
       {
         "slug": "sentence.polarity.positive"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
       }
     ],
     "trait": {
@@ -10259,11 +12103,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "comida.noun"
+      },
+      {
+        "slug": "hacer.verb.imperative.second.singular"
+      },
+      {
+        "slug": "la.determiner"
+      }
     ]
   },
   {
     "slug": "hice-la-comida",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -10274,16 +12135,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.past"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.past"
       }
     ],
     "trait": {
@@ -10324,11 +12179,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "comida.noun"
+      },
+      {
+        "slug": "hacer.verb.indicative.past.first.singular"
+      },
+      {
+        "slug": "la.determiner"
+      }
     ]
   },
   {
     "slug": "hola-como-estas",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -10342,19 +12214,13 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
         "slug": "sentence.politeness.informal"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -10369,26 +12235,32 @@ export default [
           },
           {
             "deprel": "advmod",
-            "form": "cómo",
-            "gloss": "how",
-            "index": 1,
-            "literal": "cómo.adverb"
+            "form": "qué",
+            "gloss": "what",
+            "index": 1
+          },
+          {
+            "deprel": "fixed",
+            "form": "tal",
+            "gloss": "such",
+            "index": 2
           },
           {
             "deprel": "root",
             "form": "estás",
             "gloss": "you are",
-            "index": 2,
+            "index": 3,
             "literal": "estar.verb.indicative.present.second.singular"
           }
         ]
       },
+      "LABELED": {},
       "RANKED": {
         "rank": 1
       },
       "TRANSLATED": {
         "known": "Hi, how are you?",
-        "learning": "¡Hola! ¿Cómo estás?"
+        "learning": "¡Hola! ¿Qué tal estás?"
       },
       "VOCALIZED": {
         "asset": {
@@ -10401,11 +12273,28 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "cómo.adverb"
+      },
+      {
+        "slug": "estar.verb.indicative.present.second.singular"
+      },
+      {
+        "slug": "hola.interjection"
+      }
     ]
   },
   {
     "slug": "hoy-como-en-casa",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -10416,16 +12305,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -10479,11 +12362,31 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "casa.noun"
+      },
+      {
+        "slug": "comer.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "en.adposition"
+      },
+      {
+        "slug": "yo.pronoun"
+      }
     ]
   },
   {
     "slug": "hoy-es-lunes",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -10497,16 +12400,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -10553,11 +12450,28 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "hoy.adverb"
+      },
+      {
+        "slug": "lunes.noun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "ire-a-la-fiesta",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -10568,16 +12482,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.future"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.future"
       }
     ],
     "trait": {
@@ -10625,11 +12533,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "a.adposition"
+      },
+      {
+        "slug": "fiesta.noun"
+      },
+      {
+        "slug": "ir.verb.indicative.future.first.singular"
+      },
+      {
+        "slug": "la.determiner"
+      }
     ]
   },
   {
     "slug": "ire-al-medico",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -10640,16 +12568,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.future"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.future"
       }
     ],
     "trait": {
@@ -10690,11 +12612,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "al.contraction"
+      },
+      {
+        "slug": "ir.verb.indicative.future.first.singular"
+      },
+      {
+        "slug": "médico.noun"
+      }
     ]
   },
   {
     "slug": "la-botella-esta-llena",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -10705,16 +12644,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -10762,11 +12695,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "botella.noun"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "lleno.adjective.feminine.singular"
+      }
     ]
   },
   {
     "slug": "la-comida-esta-muy-buena",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -10777,16 +12730,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -10840,11 +12787,31 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "bueno.adjective.feminine.singular"
+      },
+      {
+        "slug": "comida.noun"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "la.determiner"
+      }
     ]
   },
   {
     "slug": "la-fiesta-es-hoy",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -10855,16 +12822,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -10912,11 +12873,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "fiesta.noun"
+      },
+      {
+        "slug": "hoy.adverb"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "la-flor-es-bonita",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -10927,16 +12908,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -10984,11 +12959,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "bonito.adjective.feminine.singular"
+      },
+      {
+        "slug": "flor.noun"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "la-habitacion-es-pequena",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -10999,16 +12994,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -11069,11 +13058,34 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "bastante.adverb"
+      },
+      {
+        "slug": "habitación.noun"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "pequeño.adjective.feminine.singular"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "la-musica-es-buena",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -11084,16 +13096,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -11141,11 +13147,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "bueno.adjective.feminine.singular"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "música.noun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "la-noche-es-oscura",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -11156,16 +13182,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -11213,11 +13233,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "noche.noun"
+      },
+      {
+        "slug": "oscuro.adjective.feminine.singular"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "la-paella-es-buena",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -11228,16 +13268,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -11285,11 +13319,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "bueno.adjective.feminine.singular"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "paella.noun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "la-pelicula-es-divertida",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -11300,16 +13354,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -11357,11 +13405,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "divertido.adjective.feminine.singular"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "película.noun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "la-pregunta-es-importante",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -11372,16 +13440,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -11429,11 +13491,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "importante.adjective"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "pregunta.noun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "la-puerta-esta-abierta",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -11444,16 +13526,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -11501,11 +13577,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "abierto.adjective.feminine.singular"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "puerta.noun"
+      }
     ]
   },
   {
     "slug": "la-ropa-esta-limpia",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -11516,16 +13612,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -11573,11 +13663,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "limpio.adjective.feminine.singular"
+      },
+      {
+        "slug": "ropa.noun"
+      }
     ]
   },
   {
     "slug": "la-silla-es-nueva",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -11588,16 +13698,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -11645,11 +13749,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "nuevo.adjective.feminine.singular"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "silla.noun"
+      }
     ]
   },
   {
     "slug": "la-silla-esta-entre-la-mesa-y-la-cama",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -11660,16 +13784,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -11752,11 +13870,40 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "cama.noun"
+      },
+      {
+        "slug": "entre.adposition"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "mesa.noun"
+      },
+      {
+        "slug": "silla.noun"
+      },
+      {
+        "slug": "y.coordinating-conjunction"
+      }
     ]
   },
   {
     "slug": "la-tarde-es-larga",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -11767,16 +13914,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -11824,11 +13965,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "largo.adjective.feminine.singular"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "tarde.noun"
+      }
     ]
   },
   {
     "slug": "la-taza-esta-en-la-mesa",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -11839,16 +14000,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -11910,11 +14065,34 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "en.adposition"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "mesa.noun"
+      },
+      {
+        "slug": "taza.noun"
+      }
     ]
   },
   {
     "slug": "la-tienda-esta-cerrada",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -11925,16 +14103,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -11982,11 +14154,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "cerrado.adjective.feminine.singular"
+      },
+      {
+        "slug": "estar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "tienda.noun"
+      }
     ]
   },
   {
     "slug": "la-tortilla-es-buena",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -11997,16 +14189,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -12054,11 +14240,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "bueno.adjective.feminine.singular"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "tortilla.noun"
+      }
     ]
   },
   {
     "slug": "la-veo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -12069,16 +14275,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -12112,11 +14312,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "la.pronoun"
+      },
+      {
+        "slug": "ver.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "le-gusta-el-libro",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -12127,16 +14341,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -12184,11 +14392,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "gustar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "le.pronoun"
+      },
+      {
+        "slug": "libro.noun"
+      }
     ]
   },
   {
     "slug": "le-gusta-la-fiesta",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -12199,16 +14427,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -12256,11 +14478,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "fiesta.noun"
+      },
+      {
+        "slug": "gustar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "le.pronoun"
+      }
     ]
   },
   {
     "slug": "leo-el-menu",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -12271,16 +14513,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -12321,11 +14557,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "leer.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "menú.noun"
+      }
     ]
   },
   {
     "slug": "leo-el-periodico",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -12336,16 +14589,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -12386,11 +14633,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "leer.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "periódico.noun"
+      }
     ]
   },
   {
     "slug": "leo-en-la-biblioteca",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -12401,16 +14665,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -12458,11 +14716,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "biblioteca.noun"
+      },
+      {
+        "slug": "en.adposition"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "leer.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "leo-un-libro",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -12473,16 +14751,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -12523,11 +14795,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "leer.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "libro.noun"
+      },
+      {
+        "slug": "un.determiner"
+      }
     ]
   },
   {
     "slug": "llamas-a-tu-madre",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -12541,16 +14830,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -12598,11 +14881,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "a.adposition"
+      },
+      {
+        "slug": "llamar.verb.indicative.present.second.singular"
+      },
+      {
+        "slug": "madre.noun"
+      },
+      {
+        "slug": "tu.pronoun"
+      }
     ]
   },
   {
     "slug": "llamo-a-mi-madre",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -12613,16 +14916,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -12670,11 +14967,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "a.adposition"
+      },
+      {
+        "slug": "llamar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "madre.noun"
+      },
+      {
+        "slug": "mi.pronoun"
+      }
     ]
   },
   {
     "slug": "llego-a-casa",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -12685,16 +15002,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -12735,11 +15046,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "a.adposition"
+      },
+      {
+        "slug": "casa.noun"
+      },
+      {
+        "slug": "llegar.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "llego-pronto",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -12750,16 +15078,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -12793,11 +15115,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "llegar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "pronto.adverb"
+      }
     ]
   },
   {
     "slug": "llevo-la-maleta",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -12808,16 +15144,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -12858,11 +15188,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "llevar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "maleta.noun"
+      }
     ]
   },
   {
     "slug": "llevo-una-camisa",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -12873,16 +15220,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -12923,11 +15264,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "camisa.noun"
+      },
+      {
+        "slug": "llevar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "una.determiner"
+      }
     ]
   },
   {
     "slug": "lo-quiero",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -12938,16 +15296,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -12981,11 +15333,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "lo.pronoun"
+      },
+      {
+        "slug": "querer.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "manana-comere-en-casa",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -12996,16 +15362,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.future"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.future"
       }
     ],
     "trait": {
@@ -13053,11 +15413,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "casa.noun"
+      },
+      {
+        "slug": "comer.verb.indicative.future.first.singular"
+      },
+      {
+        "slug": "en.adposition"
+      },
+      {
+        "slug": "mañana.adverb"
+      }
     ]
   },
   {
     "slug": "manana-hablare-espanol",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -13068,16 +15448,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.future"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.future"
       }
     ],
     "trait": {
@@ -13118,11 +15492,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "español.noun"
+      },
+      {
+        "slug": "hablar.verb.indicative.future.first.singular"
+      },
+      {
+        "slug": "mañana.adverb"
+      }
     ]
   },
   {
     "slug": "me-ayuda",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -13133,16 +15524,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -13176,11 +15561,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "ayudar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "me.pronoun"
+      }
     ]
   },
   {
     "slug": "me-gusta-comer",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -13191,16 +15590,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -13241,11 +15634,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "comer.verb.infinitive"
+      },
+      {
+        "slug": "gustar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "me.pronoun"
+      }
     ]
   },
   {
     "slug": "me-gusta-el-cafe",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -13256,16 +15666,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -13313,11 +15717,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "café.noun"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "gustar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "me.pronoun"
+      }
     ]
   },
   {
     "slug": "me-gusta-el-chocolate",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -13328,16 +15752,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -13385,11 +15803,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "chocolate.noun"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "gustar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "me.pronoun"
+      }
     ]
   },
   {
     "slug": "me-gusta-el-cine",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -13400,16 +15838,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -13457,11 +15889,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "cine.noun"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "gustar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "me.pronoun"
+      }
     ]
   },
   {
     "slug": "me-gusta-el-jamon",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -13472,16 +15924,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -13529,11 +15975,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "gustar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "jamón.noun"
+      },
+      {
+        "slug": "me.pronoun"
+      }
     ]
   },
   {
     "slug": "me-gusta-el-mar",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -13544,16 +16010,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -13601,11 +16061,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "gustar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "mar.noun"
+      },
+      {
+        "slug": "me.pronoun"
+      }
     ]
   },
   {
     "slug": "me-gusta-la-musica",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -13616,16 +16096,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -13673,11 +16147,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "gustar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "me.pronoun"
+      },
+      {
+        "slug": "música.noun"
+      }
     ]
   },
   {
     "slug": "me-gusta-leer",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -13688,16 +16182,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -13738,11 +16226,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "gustar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "leer.verb.infinitive"
+      },
+      {
+        "slug": "me.pronoun"
+      }
     ]
   },
   {
     "slug": "me-llama",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -13753,16 +16258,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -13796,11 +16295,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "llamar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "me.pronoun"
+      }
     ]
   },
   {
     "slug": "mi-abuela-es-vieja",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -13811,16 +16324,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -13868,11 +16375,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "abuela.noun"
+      },
+      {
+        "slug": "mi.pronoun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "viejo.adjective.feminine.singular"
+      }
     ]
   },
   {
     "slug": "mi-amigo-es-divertido",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -13883,16 +16410,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -13940,11 +16461,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "amigo.noun"
+      },
+      {
+        "slug": "divertido.adjective.masculine.singular"
+      },
+      {
+        "slug": "mi.pronoun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "mi-hermana-es-inteligente",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -13955,16 +16496,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -14012,11 +16547,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "hermana.noun"
+      },
+      {
+        "slug": "inteligente.adjective"
+      },
+      {
+        "slug": "mi.pronoun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "mi-hermana-es-menor",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -14027,16 +16582,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -14084,11 +16633,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "hermana.noun"
+      },
+      {
+        "slug": "menor.adjective"
+      },
+      {
+        "slug": "mi.pronoun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "mi-hermano-es-alto",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -14099,16 +16668,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -14156,11 +16719,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "alto.adjective.masculine.singular"
+      },
+      {
+        "slug": "hermano.noun"
+      },
+      {
+        "slug": "mi.pronoun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "mi-hermano-es-ingeniero",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -14171,16 +16754,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -14228,11 +16805,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "hermano.noun"
+      },
+      {
+        "slug": "ingeniero.noun"
+      },
+      {
+        "slug": "mi.pronoun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "mi-hermano-es-mayor",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -14243,16 +16840,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -14300,11 +16891,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "hermano.noun"
+      },
+      {
+        "slug": "mayor.adjective"
+      },
+      {
+        "slug": "mi.pronoun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "mi-hermano-es-simpatico",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -14315,16 +16926,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -14372,11 +16977,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "hermano.noun"
+      },
+      {
+        "slug": "mi.pronoun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "simpático.adjective.masculine.singular"
+      }
     ]
   },
   {
     "slug": "mi-jefe-es-bueno",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -14387,16 +17012,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -14444,11 +17063,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "bueno.adjective.masculine.singular"
+      },
+      {
+        "slug": "jefe.noun"
+      },
+      {
+        "slug": "mi.pronoun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "mi-madre-hace-la-comida",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -14459,16 +17098,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -14550,11 +17183,40 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "a.adposition"
+      },
+      {
+        "slug": "ayudar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "comida.noun"
+      },
+      {
+        "slug": "hacer.verb.infinitive"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "madre.noun"
+      },
+      {
+        "slug": "mi.pronoun"
+      }
     ]
   },
   {
     "slug": "mi-novio-es-alto",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -14565,16 +17227,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -14622,11 +17278,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "alto.adjective.masculine.singular"
+      },
+      {
+        "slug": "mi.pronoun"
+      },
+      {
+        "slug": "novio.noun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "mi-padre-es-camarero",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -14637,16 +17313,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -14694,11 +17364,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "camarero.noun"
+      },
+      {
+        "slug": "mi.pronoun"
+      },
+      {
+        "slug": "padre.noun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "mi-padre-es-medico",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -14709,16 +17399,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -14772,11 +17456,31 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "mi.pronoun"
+      },
+      {
+        "slug": "médico.noun"
+      },
+      {
+        "slug": "padre.noun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "mi-padre-es-secretario",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -14787,16 +17491,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -14844,11 +17542,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "mi.pronoun"
+      },
+      {
+        "slug": "padre.noun"
+      },
+      {
+        "slug": "secretario.noun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "mi-padre-es-serio",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -14859,16 +17577,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -14916,11 +17628,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "mi.pronoun"
+      },
+      {
+        "slug": "padre.noun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "serio.adjective.masculine.singular"
+      }
     ]
   },
   {
     "slug": "mi-prima-es-alta",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -14931,16 +17663,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -14988,11 +17714,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "alto.adjective.feminine.singular"
+      },
+      {
+        "slug": "mi.pronoun"
+      },
+      {
+        "slug": "prima.noun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "mi-tia-es-joven",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -15003,16 +17749,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -15060,11 +17800,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "joven.adjective"
+      },
+      {
+        "slug": "mi.pronoun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "tía.noun"
+      }
     ]
   },
   {
     "slug": "mi-tia-es-simpatica",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -15075,16 +17835,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -15132,11 +17886,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "mi.pronoun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "simpático.adjective.feminine.singular"
+      },
+      {
+        "slug": "tía.noun"
+      }
     ]
   },
   {
     "slug": "mi-tio-vive-aqui",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -15147,16 +17921,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -15204,11 +17972,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "aquí.adverb"
+      },
+      {
+        "slug": "mi.pronoun"
+      },
+      {
+        "slug": "tío.noun"
+      },
+      {
+        "slug": "vivir.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "miro-el-cielo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -15219,16 +18007,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -15269,11 +18051,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "cielo.noun"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "mirar.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "miro-el-mar",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -15284,16 +18083,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -15334,11 +18127,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "mar.noun"
+      },
+      {
+        "slug": "mirar.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "necesite-ayuda",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -15349,16 +18159,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.past"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.past"
       }
     ],
     "trait": {
@@ -15392,11 +18196,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "ayuda.noun"
+      },
+      {
+        "slug": "necesitar.verb.indicative.past.first.singular"
+      }
     ]
   },
   {
     "slug": "necesito-ayuda",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -15407,16 +18225,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -15456,11 +18268,25 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "ayuda.noun"
+      },
+      {
+        "slug": "necesitar.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "necesito-sal",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -15471,16 +18297,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -15514,11 +18334,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "necesitar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "sal.noun"
+      }
     ]
   },
   {
     "slug": "necesito-un-abogado",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -15529,16 +18363,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -15579,11 +18407,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "abogado.noun"
+      },
+      {
+        "slug": "necesitar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "un.determiner"
+      }
     ]
   },
   {
     "slug": "necesito-un-medico",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -15594,16 +18439,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -15650,11 +18489,28 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "médico.noun"
+      },
+      {
+        "slug": "necesitar.verb.indicative.present.third.plural"
+      },
+      {
+        "slug": "un.determiner"
+      }
     ]
   },
   {
     "slug": "necesito-un-taxi",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -15665,16 +18521,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -15715,11 +18565,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "necesitar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "taxi.noun"
+      },
+      {
+        "slug": "un.determiner"
+      }
     ]
   },
   {
     "slug": "necesito-un-tenedor",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -15730,16 +18597,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -15780,11 +18641,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "necesitar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "tenedor.noun"
+      },
+      {
+        "slug": "un.determiner"
+      }
     ]
   },
   {
     "slug": "necesito-un-vaso",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -15795,16 +18673,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -15845,11 +18717,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "necesitar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "un.determiner"
+      },
+      {
+        "slug": "vaso.noun"
+      }
     ]
   },
   {
     "slug": "no-bebo-vino",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -15860,16 +18749,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.negative"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -15916,11 +18799,28 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "beber.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "no.adverb"
+      },
+      {
+        "slug": "vino.noun"
+      }
     ]
   },
   {
     "slug": "no-comi-carne",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -15931,16 +18831,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.past"
-      },
-      {
         "slug": "sentence.polarity.negative"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.past"
       }
     ],
     "trait": {
@@ -15981,11 +18875,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "carne.noun"
+      },
+      {
+        "slug": "comer.verb.indicative.past.first.singular"
+      },
+      {
+        "slug": "no.adverb"
+      }
     ]
   },
   {
     "slug": "no-como-carne",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -15996,16 +18907,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.negative"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -16052,11 +18957,28 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "carne.noun"
+      },
+      {
+        "slug": "comer.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "no.adverb"
+      }
     ]
   },
   {
     "slug": "no-como-nada",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -16067,16 +18989,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.negative"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -16117,11 +19033,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "comer.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "nada.pronoun"
+      },
+      {
+        "slug": "no.adverb"
+      }
     ]
   },
   {
     "slug": "no-como-pollo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -16132,16 +19065,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.negative"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -16182,11 +19109,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "comer.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "no.adverb"
+      },
+      {
+        "slug": "pollo.noun"
+      }
     ]
   },
   {
     "slug": "no-comprendo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -16197,19 +19141,13 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.negative"
       },
       {
         "slug": "sentence.politeness.formal"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -16262,11 +19200,28 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "comprender.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "no.adverb"
+      },
+      {
+        "slug": "pero.coordinating-conjunction"
+      }
     ]
   },
   {
     "slug": "no-creo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -16277,16 +19232,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.negative"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -16320,11 +19269,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "creer.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "no.adverb"
+      }
     ]
   },
   {
     "slug": "no-encuentro-la-llave",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -16335,16 +19298,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.negative"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -16392,11 +19349,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "encontrar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "llave.noun"
+      },
+      {
+        "slug": "no.adverb"
+      }
     ]
   },
   {
     "slug": "no-hablo-con-nadie",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -16407,16 +19384,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.negative"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -16464,11 +19435,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "con.adposition"
+      },
+      {
+        "slug": "hablar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "nadie.pronoun"
+      },
+      {
+        "slug": "no.adverb"
+      }
     ]
   },
   {
     "slug": "no-hablo-espanol",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -16479,16 +19470,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.negative"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -16535,11 +19520,28 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "español.noun"
+      },
+      {
+        "slug": "hablar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "no.adverb"
+      }
     ]
   },
   {
     "slug": "no-me-gusta-el-pescado",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -16550,16 +19552,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.negative"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -16614,11 +19610,34 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "gustar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "me.pronoun"
+      },
+      {
+        "slug": "no.adverb"
+      },
+      {
+        "slug": "pescado.noun"
+      }
     ]
   },
   {
     "slug": "no-necesito-nada",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -16629,16 +19648,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.negative"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -16679,11 +19692,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "nada.pronoun"
+      },
+      {
+        "slug": "necesitar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "no.adverb"
+      }
     ]
   },
   {
     "slug": "no-nos-gusta-esperar",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -16694,16 +19724,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.negative"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -16751,11 +19775,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "esperar.verb.infinitive"
+      },
+      {
+        "slug": "gustar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "no.adverb"
+      },
+      {
+        "slug": "nos.pronoun"
+      }
     ]
   },
   {
     "slug": "no-podre-ir",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -16766,16 +19810,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.future"
-      },
-      {
         "slug": "sentence.polarity.negative"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.future"
       }
     ],
     "trait": {
@@ -16871,11 +19909,49 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "ir.verb.infinitive"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "mañana.adverb"
+      },
+      {
+        "slug": "no.adverb"
+      },
+      {
+        "slug": "poder.verb.indicative.future.first.singular"
+      },
+      {
+        "slug": "por.adposition"
+      },
+      {
+        "slug": "porque.subordinating-conjunction"
+      },
+      {
+        "slug": "tarde.noun"
+      },
+      {
+        "slug": "trabajar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "yo.pronoun"
+      }
     ]
   },
   {
     "slug": "no-puedo-comer-pan",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -16886,16 +19962,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.negative"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -16943,11 +20013,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "comer.verb.infinitive"
+      },
+      {
+        "slug": "no.adverb"
+      },
+      {
+        "slug": "pan.noun"
+      },
+      {
+        "slug": "poder.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "no-quiero-eso",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -16958,16 +20048,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.negative"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -17008,11 +20092,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "eso.pronoun"
+      },
+      {
+        "slug": "no.adverb"
+      },
+      {
+        "slug": "querer.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "no-quiero-nada",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -17023,16 +20124,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.negative"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -17073,11 +20168,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "nada.pronoun"
+      },
+      {
+        "slug": "no.adverb"
+      },
+      {
+        "slug": "querer.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "no-se",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -17088,16 +20200,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.negative"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -17137,11 +20243,25 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "no.adverb"
+      },
+      {
+        "slug": "saber.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "no-se-nada",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -17152,16 +20272,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.negative"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -17202,11 +20316,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "nada.pronoun"
+      },
+      {
+        "slug": "no.adverb"
+      },
+      {
+        "slug": "saber.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "no-tengo-dinero",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -17217,16 +20348,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.negative"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -17273,11 +20398,28 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "dinero.noun"
+      },
+      {
+        "slug": "no.adverb"
+      },
+      {
+        "slug": "tener.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "no-tengo-movil",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -17288,16 +20430,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.negative"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -17351,11 +20487,31 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "móvil.noun"
+      },
+      {
+        "slug": "no.adverb"
+      },
+      {
+        "slug": "tener.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "ya.adverb"
+      }
     ]
   },
   {
     "slug": "no-tengo-nada",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -17366,16 +20522,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.negative"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -17416,11 +20566,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "nada.pronoun"
+      },
+      {
+        "slug": "no.adverb"
+      },
+      {
+        "slug": "tener.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "no-tengo-tiempo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -17431,16 +20598,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.negative"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -17481,11 +20642,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "no.adverb"
+      },
+      {
+        "slug": "tener.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "tiempo.noun"
+      }
     ]
   },
   {
     "slug": "no-trabajo-porque-estoy-enfermo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -17496,16 +20674,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.negative"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -17560,11 +20732,34 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "enfermo.adjective.masculine.singular"
+      },
+      {
+        "slug": "estar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "no.adverb"
+      },
+      {
+        "slug": "porque.subordinating-conjunction"
+      },
+      {
+        "slug": "trabajar.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "no-veo-a-nadie",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -17575,16 +20770,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.negative"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -17632,11 +20821,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "a.adposition"
+      },
+      {
+        "slug": "nadie.pronoun"
+      },
+      {
+        "slug": "no.adverb"
+      },
+      {
+        "slug": "ver.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "nos-ayuda",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -17647,16 +20856,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -17690,11 +20893,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "ayudar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "nos.pronoun"
+      }
     ]
   },
   {
     "slug": "nos-gusta-la-playa",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -17705,16 +20922,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -17762,11 +20973,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "gustar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "nos.pronoun"
+      },
+      {
+        "slug": "playa.noun"
+      }
     ]
   },
   {
     "slug": "nuestra-casa-es-grande",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -17777,16 +21008,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -17834,11 +21059,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "casa.noun"
+      },
+      {
+        "slug": "grande.adjective"
+      },
+      {
+        "slug": "nuestra.pronoun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "nuestro-padre-trabaja",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -17849,16 +21094,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -17899,11 +21138,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "nuestro.pronoun"
+      },
+      {
+        "slug": "padre.noun"
+      },
+      {
+        "slug": "trabajar.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "pagas-mucho",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -17917,16 +21173,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -17960,11 +21210,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "mucho.adverb"
+      },
+      {
+        "slug": "pagar.verb.indicative.present.second.singular"
+      }
     ]
   },
   {
     "slug": "pago-la-cuenta",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -17975,16 +21239,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -18025,11 +21283,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "cuenta.noun"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "pagar.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "paso-el-dia-en-casa",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -18040,16 +21315,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -18104,11 +21373,34 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "casa.noun"
+      },
+      {
+        "slug": "día.noun"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "en.adposition"
+      },
+      {
+        "slug": "pasar.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "paso-una-semana-aqui",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -18119,16 +21411,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -18176,11 +21462,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "aquí.adverb"
+      },
+      {
+        "slug": "pasar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "semana.noun"
+      },
+      {
+        "slug": "una.determiner"
+      }
     ]
   },
   {
     "slug": "pensamos-mucho",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -18191,16 +21497,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -18234,11 +21534,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "mucho.adverb"
+      },
+      {
+        "slug": "pensar.verb.indicative.present.first.plural"
+      }
     ]
   },
   {
     "slug": "pienso-mucho",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -18249,16 +21563,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -18292,11 +21600,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "mucho.adverb"
+      },
+      {
+        "slug": "pensar.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "podria-comer",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -18311,12 +21633,6 @@ export default [
       },
       {
         "slug": "sentence.polarity.positive"
-      },
-      {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
       }
     ],
     "trait": {
@@ -18370,11 +21686,31 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "comer.verb.infinitive"
+      },
+      {
+        "slug": "cómo.adverb"
+      },
+      {
+        "slug": "esto.pronoun"
+      },
+      {
+        "slug": "poder.verb.conditional.first.singular"
+      }
     ]
   },
   {
     "slug": "pongo-la-mesa",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -18385,16 +21721,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -18435,11 +21765,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "mesa.noun"
+      },
+      {
+        "slug": "poner.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "que-haces",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -18453,16 +21800,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -18502,11 +21843,25 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "hacer.verb.indicative.present.second.singular"
+      },
+      {
+        "slug": "qué.pronoun"
+      }
     ]
   },
   {
     "slug": "que-quieres",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -18520,16 +21875,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -18569,11 +21918,25 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "querer.verb.indicative.present.second.singular"
+      },
+      {
+        "slug": "qué.pronoun"
+      }
     ]
   },
   {
     "slug": "querria-un-cafe",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -18585,12 +21948,6 @@ export default [
       },
       {
         "slug": "sentence.polarity.positive"
-      },
-      {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
       }
     ],
     "trait": {
@@ -18631,11 +21988,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "café.noun"
+      },
+      {
+        "slug": "querer.verb.conditional.first.singular"
+      },
+      {
+        "slug": "un.determiner"
+      }
     ]
   },
   {
     "slug": "quien-es",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -18649,16 +22023,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -18698,11 +22066,25 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "quién.pronoun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      }
     ]
   },
   {
     "slug": "quiero-agua-porque-tengo-sed",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -18713,16 +22095,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -18777,11 +22153,34 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "agua.noun"
+      },
+      {
+        "slug": "porque.subordinating-conjunction"
+      },
+      {
+        "slug": "querer.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "sed.noun"
+      },
+      {
+        "slug": "tener.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "quiero-algo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -18792,16 +22191,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -18835,11 +22228,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "algo.pronoun"
+      },
+      {
+        "slug": "querer.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "quiero-cafe-o-agua",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -18850,16 +22257,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -18907,11 +22308,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "agua.noun"
+      },
+      {
+        "slug": "café.noun"
+      },
+      {
+        "slug": "o.coordinating-conjunction"
+      },
+      {
+        "slug": "querer.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "quiero-cafe-sin-azucar",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -18922,16 +22343,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -18979,11 +22394,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "azúcar.noun"
+      },
+      {
+        "slug": "café.noun"
+      },
+      {
+        "slug": "querer.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "sin.adposition"
+      }
     ]
   },
   {
     "slug": "quiero-esta-foto",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -18994,16 +22429,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -19044,11 +22473,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "esta.pronoun"
+      },
+      {
+        "slug": "foto.noun"
+      },
+      {
+        "slug": "querer.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "quiero-este-libro",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -19059,16 +22505,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -19109,11 +22549,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "este.pronoun"
+      },
+      {
+        "slug": "libro.noun"
+      },
+      {
+        "slug": "querer.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "quiero-la-cuenta",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -19124,16 +22581,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -19186,11 +22637,28 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "cuenta.noun"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "por.adposition"
+      }
     ]
   },
   {
     "slug": "quiero-que-comas",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -19201,16 +22669,10 @@ export default [
         "slug": "sentence.mood.subjunctive"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -19251,11 +22713,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "comer.verb.subjunctive.present.second.singular"
+      },
+      {
+        "slug": "que.subordinating-conjunction"
+      },
+      {
+        "slug": "querer.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "quiero-que-hables",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -19266,16 +22745,10 @@ export default [
         "slug": "sentence.mood.subjunctive"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.negative"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -19350,11 +22823,40 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "de.adposition"
+      },
+      {
+        "slug": "hablar.verb.subjunctive.present.second.singular"
+      },
+      {
+        "slug": "hijo.noun"
+      },
+      {
+        "slug": "mi.pronoun"
+      },
+      {
+        "slug": "no.adverb"
+      },
+      {
+        "slug": "que.subordinating-conjunction"
+      },
+      {
+        "slug": "querer.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "quiero-que-hagas-la-comida",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -19365,16 +22867,10 @@ export default [
         "slug": "sentence.mood.subjunctive"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -19429,11 +22925,34 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "comida.noun"
+      },
+      {
+        "slug": "hacer.verb.subjunctive.present.second.singular"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "que.subordinating-conjunction"
+      },
+      {
+        "slug": "querer.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "quiero-que-vivas-aqui",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -19444,16 +22963,10 @@ export default [
         "slug": "sentence.mood.subjunctive"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -19501,11 +23014,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "aquí.adverb"
+      },
+      {
+        "slug": "que.subordinating-conjunction"
+      },
+      {
+        "slug": "querer.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "vivir.verb.subjunctive.present.second.singular"
+      }
     ]
   },
   {
     "slug": "quiero-sopa",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -19516,16 +23049,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -19565,11 +23092,25 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "querer.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "sopa.noun"
+      }
     ]
   },
   {
     "slug": "quiero-trabajar",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -19580,16 +23121,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -19629,11 +23164,25 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "querer.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "trabajar.verb.infinitive"
+      }
     ]
   },
   {
     "slug": "quiero-un-cafe",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -19644,16 +23193,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -19693,11 +23236,25 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "café.noun"
+      },
+      {
+        "slug": "querer.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "quiero-un-helado",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -19708,16 +23265,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -19758,11 +23309,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "helado.noun"
+      },
+      {
+        "slug": "querer.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "un.determiner"
+      }
     ]
   },
   {
     "slug": "quiero-una-ensalada",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -19773,16 +23341,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -19823,11 +23385,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "ensalada.noun"
+      },
+      {
+        "slug": "querer.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "una.determiner"
+      }
     ]
   },
   {
     "slug": "quiero-una-manzana",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -19838,16 +23417,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -19894,11 +23467,28 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "manzana.noun"
+      },
+      {
+        "slug": "querer.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "una.determiner"
+      }
     ]
   },
   {
     "slug": "quiero-una-taza-de-cafe",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -19909,16 +23499,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -19973,11 +23557,34 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "café.noun"
+      },
+      {
+        "slug": "de.adposition"
+      },
+      {
+        "slug": "querer.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "taza.noun"
+      },
+      {
+        "slug": "una.determiner"
+      }
     ]
   },
   {
     "slug": "quiero-ver-algo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -19988,16 +23595,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -20038,11 +23639,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "algo.pronoun"
+      },
+      {
+        "slug": "querer.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "ver.verb.infinitive"
+      }
     ]
   },
   {
     "slug": "salgo-de-casa",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -20053,16 +23671,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -20103,11 +23715,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "casa.noun"
+      },
+      {
+        "slug": "de.adposition"
+      },
+      {
+        "slug": "salir.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "salimos-manana",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -20118,16 +23747,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -20161,11 +23784,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "mañana.adverb"
+      },
+      {
+        "slug": "salir.verb.indicative.present.first.plural"
+      }
     ]
   },
   {
     "slug": "sera-facil",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -20176,16 +23813,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.future"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.future"
       }
     ],
     "trait": {
@@ -20225,11 +23856,25 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "fácil.adjective"
+      },
+      {
+        "slug": "ser.verb.indicative.future.third.singular"
+      }
     ]
   },
   {
     "slug": "seria-facil",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -20241,12 +23886,6 @@ export default [
       },
       {
         "slug": "sentence.polarity.positive"
-      },
-      {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
       }
     ],
     "trait": {
@@ -20280,11 +23919,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "fácil.adjective"
+      },
+      {
+        "slug": "ser.verb.conditional.third.singular"
+      }
     ]
   },
   {
     "slug": "solo-quiero-agua",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -20295,16 +23948,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -20345,11 +23992,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "agua.noun"
+      },
+      {
+        "slug": "querer.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "solo.adverb"
+      }
     ]
   },
   {
     "slug": "son-las-once",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -20360,16 +24024,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -20410,11 +24068,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "las.determiner"
+      },
+      {
+        "slug": "once.numeral"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.plural"
+      }
     ]
   },
   {
     "slug": "soy-cocinero",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -20425,16 +24100,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -20468,11 +24137,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "cocinero.noun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "soy-conductor",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -20483,16 +24166,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -20526,11 +24203,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "conductor.noun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "soy-mas-alto-que-tu",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -20541,16 +24232,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -20605,11 +24290,34 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "alto.adjective.masculine.singular"
+      },
+      {
+        "slug": "más.adverb"
+      },
+      {
+        "slug": "que.subordinating-conjunction"
+      },
+      {
+        "slug": "ser.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "tú.pronoun"
+      }
     ]
   },
   {
     "slug": "soy-mas-fuerte-que-tu",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -20620,16 +24328,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -20684,11 +24386,34 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "fuerte.adjective"
+      },
+      {
+        "slug": "más.adverb"
+      },
+      {
+        "slug": "que.subordinating-conjunction"
+      },
+      {
+        "slug": "ser.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "tú.pronoun"
+      }
     ]
   },
   {
     "slug": "soy-menos-alto-que-mi-padre",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -20699,16 +24424,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -20770,11 +24489,37 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "alto.adjective.masculine.singular"
+      },
+      {
+        "slug": "menos.adverb"
+      },
+      {
+        "slug": "mi.pronoun"
+      },
+      {
+        "slug": "padre.noun"
+      },
+      {
+        "slug": "que.subordinating-conjunction"
+      },
+      {
+        "slug": "ser.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "su-madre-es-buena",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -20785,16 +24530,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -20842,11 +24581,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "bueno.adjective.feminine.singular"
+      },
+      {
+        "slug": "madre.noun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "su.pronoun"
+      }
     ]
   },
   {
     "slug": "te-ayudo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -20857,16 +24616,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -20900,11 +24653,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "ayudar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "te.pronoun"
+      }
     ]
   },
   {
     "slug": "te-busco",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -20915,16 +24682,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -20958,11 +24719,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "buscar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "te.pronoun"
+      }
     ]
   },
   {
     "slug": "te-gusta-el-cafe",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -20976,16 +24751,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -21033,11 +24802,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "café.noun"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "gustar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "te.pronoun"
+      }
     ]
   },
   {
     "slug": "te-gusta-trabajar",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -21051,16 +24840,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -21101,11 +24884,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "gustar.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "te.pronoun"
+      },
+      {
+        "slug": "trabajar.verb.infinitive"
+      }
     ]
   },
   {
     "slug": "te-veo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -21116,16 +24916,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -21159,11 +24953,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "te.pronoun"
+      },
+      {
+        "slug": "ver.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "tendre-tiempo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -21174,16 +24982,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.future"
-      },
-      {
         "slug": "sentence.polarity.negative"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.future"
       }
     ],
     "trait": {
@@ -21244,11 +25046,34 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "no.adverb"
+      },
+      {
+        "slug": "saber.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "si.subordinating-conjunction"
+      },
+      {
+        "slug": "tener.verb.indicative.future.first.singular"
+      },
+      {
+        "slug": "tiempo.noun"
+      }
     ]
   },
   {
     "slug": "tendre-un-bebe",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -21259,16 +25084,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.future"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.future"
       }
     ],
     "trait": {
@@ -21309,11 +25128,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "bebé.noun"
+      },
+      {
+        "slug": "tener.verb.indicative.future.first.singular"
+      },
+      {
+        "slug": "un.determiner"
+      }
     ]
   },
   {
     "slug": "tengo-hambre",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -21324,16 +25160,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -21367,11 +25197,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "hambre.noun"
+      },
+      {
+        "slug": "tener.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "tengo-hambre-y-sed",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -21382,16 +25226,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -21439,11 +25277,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "hambre.noun"
+      },
+      {
+        "slug": "sed.noun"
+      },
+      {
+        "slug": "tener.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "y.coordinating-conjunction"
+      }
     ]
   },
   {
     "slug": "tengo-miedo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -21454,16 +25312,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -21497,11 +25349,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "miedo.noun"
+      },
+      {
+        "slug": "tener.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "tengo-prisa",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -21512,16 +25378,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -21555,11 +25415,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "prisa.noun"
+      },
+      {
+        "slug": "tener.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "tengo-prisa-pero-espero",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -21570,16 +25444,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -21627,11 +25495,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "esperar.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "pero.coordinating-conjunction"
+      },
+      {
+        "slug": "prisa.noun"
+      },
+      {
+        "slug": "tener.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "tengo-sed",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -21642,16 +25530,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -21685,11 +25567,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "sed.noun"
+      },
+      {
+        "slug": "tener.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "tengo-sueno",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -21700,16 +25596,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -21743,11 +25633,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "sueño.noun"
+      },
+      {
+        "slug": "tener.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "tengo-suerte",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -21758,16 +25662,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -21801,11 +25699,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "suerte.noun"
+      },
+      {
+        "slug": "tener.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "tengo-un-billete",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -21816,16 +25728,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -21866,11 +25772,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "billete.noun"
+      },
+      {
+        "slug": "tener.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "un.determiner"
+      }
     ]
   },
   {
     "slug": "tengo-un-libro-y-una-pelicula",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -21881,16 +25804,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -21952,11 +25869,37 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "libro.noun"
+      },
+      {
+        "slug": "película.noun"
+      },
+      {
+        "slug": "tener.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "un.determiner"
+      },
+      {
+        "slug": "una.determiner"
+      },
+      {
+        "slug": "y.coordinating-conjunction"
+      }
     ]
   },
   {
     "slug": "tengo-un-primo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -21967,16 +25910,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -22017,11 +25954,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "primo.noun"
+      },
+      {
+        "slug": "tener.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "un.determiner"
+      }
     ]
   },
   {
     "slug": "tengo-un-problema",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -22032,16 +25986,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -22088,11 +26036,28 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "problema.noun"
+      },
+      {
+        "slug": "tener.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "un.determiner"
+      }
     ]
   },
   {
     "slug": "tengo-una-idea",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -22103,16 +26068,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -22153,11 +26112,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "idea.noun"
+      },
+      {
+        "slug": "tener.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "una.determiner"
+      }
     ]
   },
   {
     "slug": "tengo-una-maleta",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -22168,16 +26144,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -22218,11 +26188,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "maleta.noun"
+      },
+      {
+        "slug": "tener.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "una.determiner"
+      }
     ]
   },
   {
     "slug": "tenia-un-gato",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -22233,16 +26220,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.imperfect"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.imperfect"
       }
     ],
     "trait": {
@@ -22289,11 +26270,28 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "gato.noun"
+      },
+      {
+        "slug": "tener.verb.indicative.imperfect.second.singular"
+      },
+      {
+        "slug": "un.determiner"
+      }
     ]
   },
   {
     "slug": "tienes-un-coche",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -22307,16 +26305,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -22357,11 +26349,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "coche.noun"
+      },
+      {
+        "slug": "tener.verb.indicative.present.second.singular"
+      },
+      {
+        "slug": "un.determiner"
+      }
     ]
   },
   {
     "slug": "trabajamos-juntos",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -22372,16 +26381,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -22415,11 +26418,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "juntos.adverb"
+      },
+      {
+        "slug": "trabajar.verb.indicative.present.first.plural"
+      }
     ]
   },
   {
     "slug": "trabajo-en-la-oficina",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -22430,16 +26447,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -22487,11 +26498,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "en.adposition"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "oficina.noun"
+      },
+      {
+        "slug": "trabajar.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "trabajo-mucho",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -22502,16 +26533,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -22545,11 +26570,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "mucho.adverb"
+      },
+      {
+        "slug": "trabajar.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "tu-hija-es-guapa",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -22560,16 +26599,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -22617,11 +26650,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "guapo.adjective.feminine.singular"
+      },
+      {
+        "slug": "hija.noun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "tu.pronoun"
+      }
     ]
   },
   {
     "slug": "tuve-suerte",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -22632,16 +26685,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.past"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.past"
       }
     ],
     "trait": {
@@ -22675,11 +26722,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "suerte.noun"
+      },
+      {
+        "slug": "tener.verb.indicative.past.first.singular"
+      }
     ]
   },
   {
     "slug": "tuve-un-problema",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -22690,16 +26751,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.past"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.past"
       }
     ],
     "trait": {
@@ -22740,11 +26795,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "problema.noun"
+      },
+      {
+        "slug": "tener.verb.indicative.past.first.singular"
+      },
+      {
+        "slug": "un.determiner"
+      }
     ]
   },
   {
     "slug": "uso-el-metro",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -22755,16 +26827,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -22805,11 +26871,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "metro.noun"
+      },
+      {
+        "slug": "usar.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "uso-el-movil",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -22820,16 +26903,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -22870,11 +26947,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "móvil.noun"
+      },
+      {
+        "slug": "usar.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "uso-un-mapa",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -22885,16 +26979,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -22935,11 +27023,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "mapa.noun"
+      },
+      {
+        "slug": "un.determiner"
+      },
+      {
+        "slug": "usar.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "uso-una-cuchara",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -22950,16 +27055,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -23000,11 +27099,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "cuchara.noun"
+      },
+      {
+        "slug": "una.determiner"
+      },
+      {
+        "slug": "usar.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "vamos-a-casa",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -23015,16 +27131,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -23078,11 +27188,31 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "a.adposition"
+      },
+      {
+        "slug": "casa.noun"
+      },
+      {
+        "slug": "ir.verb.indicative.present.first.plural"
+      },
+      {
+        "slug": "nos.pronoun"
+      }
     ]
   },
   {
     "slug": "vamos-a-la-playa",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -23093,16 +27223,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -23183,11 +27307,40 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "a.adposition"
+      },
+      {
+        "slug": "día.noun"
+      },
+      {
+        "slug": "hacer.verb.indicative.present.third.singular"
+      },
+      {
+        "slug": "ir.verb.indicative.present.first.plural"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "playa.noun"
+      },
+      {
+        "slug": "un.determiner"
+      }
     ]
   },
   {
     "slug": "ve-a-casa",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -23199,12 +27352,6 @@ export default [
       },
       {
         "slug": "sentence.polarity.positive"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
       }
     ],
     "trait": {
@@ -23257,11 +27404,28 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "a.adposition"
+      },
+      {
+        "slug": "casa.noun"
+      },
+      {
+        "slug": "ir.verb.imperative.second.singular"
+      }
     ]
   },
   {
     "slug": "vengo-de-casa",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -23272,16 +27436,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -23322,11 +27480,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "casa.noun"
+      },
+      {
+        "slug": "de.adposition"
+      },
+      {
+        "slug": "venir.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "venimos-pronto",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -23337,16 +27512,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -23380,11 +27549,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "pronto.adverb"
+      },
+      {
+        "slug": "venir.verb.indicative.present.first.plural"
+      }
     ]
   },
   {
     "slug": "veo-a-alguien",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -23395,16 +27578,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -23445,11 +27622,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "a.adposition"
+      },
+      {
+        "slug": "alguien.pronoun"
+      },
+      {
+        "slug": "ver.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "veo-a-mi-amigo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -23460,16 +27654,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -23517,11 +27705,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "a.adposition"
+      },
+      {
+        "slug": "amigo.noun"
+      },
+      {
+        "slug": "mi.pronoun"
+      },
+      {
+        "slug": "ver.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "veo-el-cielo",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -23532,16 +27740,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -23582,11 +27784,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "cielo.noun"
+      },
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "ver.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "veo-el-mar",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -23597,16 +27816,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -23647,11 +27860,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "el.determiner"
+      },
+      {
+        "slug": "mar.noun"
+      },
+      {
+        "slug": "ver.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "veo-la-casa",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -23662,16 +27892,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -23712,11 +27936,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "casa.noun"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "ver.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "veo-una-pelicula",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -23727,16 +27968,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -23777,11 +28012,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "película.noun"
+      },
+      {
+        "slug": "una.determiner"
+      },
+      {
+        "slug": "ver.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "vienes-manana",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -23795,16 +28047,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -23838,11 +28084,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "mañana.adverb"
+      },
+      {
+        "slug": "venir.verb.indicative.present.second.singular"
+      }
     ]
   },
   {
     "slug": "vivia-en-la-ciudad",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -23853,16 +28113,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.imperfect"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.imperfect"
       }
     ],
     "trait": {
@@ -23910,11 +28164,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "ciudad.noun"
+      },
+      {
+        "slug": "en.adposition"
+      },
+      {
+        "slug": "la.determiner"
+      },
+      {
+        "slug": "vivir.verb.indicative.imperfect.first.singular"
+      }
     ]
   },
   {
     "slug": "viviria-aqui",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a2"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -23926,12 +28200,6 @@ export default [
       },
       {
         "slug": "sentence.polarity.positive"
-      },
-      {
-        "slug": "proficiency.cefr.a2"
-      },
-      {
-        "slug": "proficiency.survival"
       }
     ],
     "trait": {
@@ -23965,11 +28233,25 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "aquí.adverb"
+      },
+      {
+        "slug": "vivir.verb.conditional.first.singular"
+      }
     ]
   },
   {
     "slug": "vivo-en-un-piso-pequeno",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -23980,16 +28262,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -24044,11 +28320,34 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "en.adposition"
+      },
+      {
+        "slug": "pequeño.adjective.masculine.singular"
+      },
+      {
+        "slug": "piso.noun"
+      },
+      {
+        "slug": "un.determiner"
+      },
+      {
+        "slug": "vivir.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "voy-a-la-farmacia",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -24059,16 +28358,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -24116,11 +28409,31 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "a.adposition"
+      },
+      {
+        "slug": "farmacia.noun"
+      },
+      {
+        "slug": "ir.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "la.determiner"
+      }
     ]
   },
   {
     "slug": "voy-al-aeropuerto",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -24131,16 +28444,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -24187,11 +28494,28 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "aeropuerto.noun"
+      },
+      {
+        "slug": "al.contraction"
+      },
+      {
+        "slug": "ir.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "voy-al-cine",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -24202,16 +28526,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -24252,11 +28570,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "al.contraction"
+      },
+      {
+        "slug": "cine.noun"
+      },
+      {
+        "slug": "ir.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "voy-al-mercado",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -24267,16 +28602,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -24344,11 +28673,37 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "a.adposition"
+      },
+      {
+        "slug": "al.contraction"
+      },
+      {
+        "slug": "comprar.verb.infinitive"
+      },
+      {
+        "slug": "huevo.noun"
+      },
+      {
+        "slug": "ir.verb.indicative.present.first.singular"
+      },
+      {
+        "slug": "supermercado.noun"
+      }
     ]
   },
   {
     "slug": "voy-en-avion",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -24359,16 +28714,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -24409,11 +28758,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "avión.noun"
+      },
+      {
+        "slug": "en.adposition"
+      },
+      {
+        "slug": "ir.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "voy-en-bicicleta",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -24424,16 +28790,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -24474,11 +28834,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "bicicleta.noun"
+      },
+      {
+        "slug": "en.adposition"
+      },
+      {
+        "slug": "ir.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "vuelvo-a-casa",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -24489,16 +28866,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -24539,11 +28910,28 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "a.adposition"
+      },
+      {
+        "slug": "casa.noun"
+      },
+      {
+        "slug": "volver.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "yo-soy-estudiante",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -24554,16 +28942,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -24603,11 +28985,25 @@ export default [
       "ANNOTATED",
       "VOCALIZED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "estudiante.noun"
+      },
+      {
+        "slug": "ser.verb.indicative.present.first.singular"
+      }
     ]
   },
   {
     "slug": "yo-tampoco",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "sentence"
       },
@@ -24618,16 +29014,10 @@ export default [
         "slug": "sentence.mood.indicative"
       },
       {
-        "slug": "sentence.tense.present"
-      },
-      {
         "slug": "sentence.polarity.positive"
       },
       {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
+        "slug": "sentence.tense.present"
       }
     ],
     "trait": {
@@ -24661,6 +29051,14 @@ export default [
       "TRANSLATED",
       "ANNOTATED",
       "RANKED"
+    ],
+    "uses": [
+      {
+        "slug": "tampoco.adverb"
+      },
+      {
+        "slug": "yo.pronoun"
+      }
     ]
   }
 ];

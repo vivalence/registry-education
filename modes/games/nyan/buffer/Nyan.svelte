@@ -1,5 +1,5 @@
 <script>
-  import { Desk, ViewportLock } from "@vivalence/drapes";
+  import { Desk, ViewportLock } from "@vivalence/drapes/svelte";
   import wordsets from "../data/wordsets.json";
   import { DIVES, ORDERS, analyze, clean, createRun, defaultConfig, press, project } from "./engine.js";
   import Home from "./panels/Home.svelte";

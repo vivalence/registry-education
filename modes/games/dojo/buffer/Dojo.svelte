@@ -1,10 +1,13 @@
 <script>
+  import { onMount } from "svelte";
   import { array, object } from "@vivalence/typology";
-  import { Keyboard, ViewportLock, preferences } from "@vivalence/drapes";
+  import { Keyboard, ViewportLock, preferences } from "@vivalence/drapes/svelte";
   import * as types from "../types.js";
   import * as knowables from "./knowables.js";
+  import * as fold from "../fold.js";
 import * as workbenchState from "./workbench.js";
   import * as streak from "./streak.js";
+  import { chime } from "./chime.js";
   import { describe } from "../set/describe.js";
   import Rep from "./parts/Rep.svelte";
   import Standby from "./parts/Standby.svelte";
@@ -50,31 +53,36 @@ import * as workbenchState from "./workbench.js";
       axes.random,
     );
 
-  const board = (list) => streak.begin(list, axes.streak, dresser(list));
+  const deal = (list) => streak.begin(list, axes.streak, dresser(list));
 
-  const kept = buffer.data?.session ?? null;
-  const resuming = Boolean(kept && LIVE_PHASES.includes(kept.phase) && kept.queue?.length);
+  const POPULATE = ["uses", "uses.symbols", "uses.notes", "symbols", "notes"];
+  const kept = buffer.data?.round ?? null;
 
-  let carriers = $state.raw(knowables.carriers(buffer));
-  let queue = $state.raw(resuming ? clone(kept.queue) : prepare(knowables.admit(files, carriers, axes)));
-  let session = $state.raw(resuming ? clone(kept.session) : board(queue));
-  let phase = $state(resuming ? kept.phase : "idle");
-  let dirty = $state(!resuming && !carriers.length && set.length > 0);
+  const misfits = (round) => types.round.faults(round).map((fault) => `${fault.at} ${fault.reason}`);
+
+  let faults = $state.raw(kept ? misfits(kept) : []);
+  let hydrated = $state(false);
+  let loaded = $state.raw([]);
+  let carriers = $state.raw([]);
+  let queue = $state.raw([]);
+  let board = $state.raw(deal([]));
+  let phase = $state("idle");
+  let dirty = $state(false);
   let preview = $state.raw(null);
   let resolving = $state(false);
   let committing = $state(false);
-  let played = $state.raw(resuming ? clone(kept.played ?? []) : []);
-  let outcome = $state(resuming ? (kept.outcome ?? null) : null);
-  let reps = $state(resuming ? (kept.reps ?? 0) : 0);
-  let sets = $state(resuming ? (kept.sets ?? 1) : 1);
-  let reviews = $state(resuming ? (kept.reviews ?? 0) : 0);
-  let elapsed = $state(resuming ? (kept.elapsed ?? 0) : 0);
+  let played = $state.raw([]);
+  let outcome = $state(null);
+  let reps = $state(0);
+  let rounds = $state(1);
+  let reviews = $state(0);
+  let elapsed = $state(0);
   let drawing = null;
   let inflight = new Set();
 
   const locked = $derived(phase === "playing" || phase === "drawing");
 
-  let drawer = $state(!resuming && !carriers.length);
+  let drawer = $state(false);
   let space = $state("build");
   let side = $state("set");
   let libraryOpen = $state(false);
@@ -93,6 +101,7 @@ import * as workbenchState from "./workbench.js";
   const remembered = stored.read();
   let recents = $state(remembered.recent ?? []);
   let saved = $state(remembered.saved ?? []);
+  let sound = $state(remembered.sound ?? true);
   let panes = $state({
     library: 260,
     set: 280,
@@ -108,7 +117,7 @@ import * as workbenchState from "./workbench.js";
     if (persist) stored.write({ panes: $state.snapshot(panes) });
   }
 
-  const entry = $derived(streak.current(session));
+  const entry = $derived(streak.current(board));
   const aboard = $derived(entry ? queue[entry.index] : null);
   const knowable = $derived(aboard ? { ...aboard, ...streak.wearing(entry) } : null);
   let held = $state.raw(null);
@@ -116,8 +125,8 @@ import * as workbenchState from "./workbench.js";
     if (knowable) held = knowable;
   });
   const staged = $derived(knowable ?? (phase === "drawing" ? held : null));
-  const position = $derived(queue.length - session.pending.length + 1);
-  const satisfied = $derived(queue.length - session.pending.length);
+  const position = $derived(queue.length - board.pending.length + 1);
+  const satisfied = $derived(queue.length - board.pending.length);
   const options = $derived.by(() => {
     if (!entry || !knowable || knowable.gameplay !== "PICK") return [];
     const seen = new Set([knowable.known, knowable.learning]);
@@ -134,8 +143,8 @@ import * as workbenchState from "./workbench.js";
   });
 
   const status = $derived({
-    runs: entry?.runs ?? 0,
-    set: sets,
+    streak: entry?.streak ?? 0,
+    set: rounds,
     reps,
     seconds: axes.limit?.seconds ? Math.max(0, axes.limit.seconds - elapsed) : null,
   });
@@ -161,7 +170,7 @@ import * as workbenchState from "./workbench.js";
   const handleSummary = $derived(
     LIVE_PHASES.includes(phase) && queue.length
       ? [
-          `${satisfied}/${queue.length}/${reps}/${sets}`,
+          `${satisfied}/${queue.length}/${reps}/${rounds}`,
           axes.continuous ? "continuous" : null,
           axesSummary,
         ]
@@ -207,28 +216,127 @@ import * as workbenchState from "./workbench.js";
 
   function readmit() {
     queue = prepare(knowables.admit(files, carriers, axes));
-    session = board(queue);
+    board = deal(queue);
   }
 
+  const cardsOf = (literals) => {
+    const built = literals.map(fold.card);
+    const surfaced = built.filter(fold.table).flatMap(knowables.forms);
+    return new Map([...surfaced, ...built].map((card) => [card.literal, card]));
+  };
+
+  const entryOf = (entry) => {
+    const card = queue[entry.index];
+    return {
+      ...(card.literal ? { literal: card.literal } : { knowable: card.position }),
+      ...object.pluck(streak.wearing(entry) ?? {}, knowables.DRESS),
+      streak: entry.streak,
+      reps: entry.reps,
+      missed: entry.missed,
+    };
+  };
+
   const record = () =>
-    LIVE_PHASES.includes(phase) ? { queue, session, phase, reps, sets, elapsed, played, outcome, reviews } : null;
+    LIVE_PHASES.includes(phase)
+      ? {
+          phase,
+          tally: {
+            attempts: board.attempts,
+            reps,
+            rounds,
+            reviews,
+            elapsed,
+            satisfied: board.done.length,
+          },
+          ...(outcome && { outcome }),
+          played,
+          queue: [...board.pending, ...board.done].map(entryOf),
+        }
+      : null;
+
+  const restore = (round, cards) => {
+    const deck = round.queue.map((entry) =>
+      entry.literal ? cards.get(entry.literal) : buffer.data.knowables?.[entry.knowable],
+    );
+    const lost = round.queue.filter((entry, index) => !deck[index]);
+    if (lost.length) return [`${lost.length} of its cards no longer in the daemon`];
+    const entries = round.queue.map((entry, index) => ({
+      index,
+      streak: entry.streak,
+      reps: entry.reps,
+      missed: entry.missed,
+      worn: [object.pluck(entry, knowables.DRESS)],
+    }));
+    const waiting = entries.length - round.tally.satisfied;
+    queue = deck.map((card, index) =>
+      card.literal ? card : { ...card, position: round.queue[index].knowable },
+    );
+    board = {
+      streak: axes.streak ?? 0,
+      attempts: round.tally.attempts,
+      pending: entries.slice(0, waiting),
+      done: entries.slice(waiting),
+    };
+    phase = round.phase;
+    outcome = round.outcome ?? null;
+    played = round.played;
+    reps = round.tally.reps;
+    rounds = round.tally.rounds;
+    reviews = round.tally.reviews;
+    elapsed = round.tally.elapsed;
+    return [];
+  };
+
+  async function hydrate() {
+    const listed = fold.items(buffer.literals).map((literal) => literal.id ?? literal);
+    const referenced = kept && !faults.length
+      ? kept.queue.map((entry) => entry.literal).filter(Boolean)
+      : [];
+    const ids = array.unique([...listed, ...referenced]);
+    loaded = ids.length
+      ? await buffer.mode.daemon.entities.literal.find({ id: { $in: ids } }, { populate: POPULATE })
+      : [];
+    carriers = knowables.carriers({ literals: loaded, data: buffer.data ?? {} });
+    const resuming = kept && !faults.length && LIVE_PHASES.includes(kept.phase);
+    if (resuming) faults = restore(kept, cardsOf(loaded));
+    if (!resuming || faults.length) {
+      readmit();
+      dirty = !carriers.length && set.length > 0;
+      drawer = !carriers.length && !faults.length;
+    }
+    hydrated = true;
+  }
+
+  function refresh() {
+    const cards = cardsOf(loaded);
+    const fresh = (card) =>
+      card.literal && cards.has(card.literal) ? cards.get(card.literal) : card;
+    carriers = carriers.map(fresh);
+    queue = queue.map(fresh);
+  }
+
+  function reset() {
+    faults = [];
+    phase = "idle";
+    retain(null);
+    latest = null;
+    send();
+    readmit();
+    dirty = declared;
+  }
 
   function retain(snapshot) {
-    const { session: previous, ...rest } = buffer.data ?? {};
-    buffer.data = snapshot ? { ...rest, session: snapshot } : rest;
+    const { round: previous, ...rest } = buffer.data ?? {};
+    buffer.data = snapshot ? { ...rest, round: snapshot } : rest;
   }
 
   let keeping = null;
   let latest = null;
-  let sentQueue = resuming ? queue : null;
   const send = () => {
     keeping = null;
-    const { queue: carried, ...light } = latest ?? {};
-    const session = latest ? (carried === sentQueue ? light : { ...light, queue: carried }) : null;
-    sentQueue = session ? carried : null;
     buffer.mode.connection
-      .call("/session", { buffer: buffer.id, ...(session ? { session } : {}) })
-      .catch((error) => console.warn("[dojo] /session failed", error));
+      .call("/round", { buffer: buffer.id, ...(latest ? { round: latest } : {}) })
+      .catch((error) => console.warn("[dojo] /round failed", error));
   };
   function keep(snapshot) {
     retain(snapshot);
@@ -270,7 +378,7 @@ import * as workbenchState from "./workbench.js";
     setup();
     if (locked) {
       if ("recall" in admitted || "gameplay" in admitted || "prompt" in admitted || "greedy" in admitted || "random" in admitted)
-        session = streak.redress(session, dresser(queue));
+        board = streak.redress(board, dresser(queue));
       return;
     }
     if (promptChanged && !dirty) dirty = declared;
@@ -388,7 +496,8 @@ import * as workbenchState from "./workbench.js";
     try {
       const raw = await buffer.mode.connection.call("/commission", { buffer: buffer.id });
       const fresh = await absorb(raw);
-      carriers = knowables.carriers(fresh);
+      loaded = fold.items(fresh.literals);
+      carriers = knowables.carriers({ literals: loaded, data: fresh.data ?? {} });
       readmit();
       dirty = false;
       if (!queue.length) return false;
@@ -416,11 +525,12 @@ import * as workbenchState from "./workbench.js";
     }
     reps = 0;
     elapsed = 0;
-    sets = 1;
+    rounds = 1;
     outcome = null;
     played = carriers.map((knowable) => knowable.literal).filter(Boolean);
     phase = "playing";
     drawer = false;
+    ring("start");
   }
 
   function again() {
@@ -455,7 +565,7 @@ import * as workbenchState from "./workbench.js";
     carriers = fresh;
     played = [...played, ...fresh.map((knowable) => knowable.literal).filter(Boolean)];
     queue = prepare(admitted);
-    session = board(queue);
+    board = deal(queue);
     phase = "playing";
   }
 
@@ -472,6 +582,16 @@ import * as workbenchState from "./workbench.js";
 
   function closeDrawer() {
     drawer = false;
+  }
+
+  function ring(name) {
+    if (sound) chime(name);
+  }
+
+  function toggleSound() {
+    sound = !sound;
+    stored.write({ sound });
+    ring("rep");
   }
 
   function toggleDrawer() {
@@ -516,8 +636,23 @@ import * as workbenchState from "./workbench.js";
       .catch((error) => console.warn("[dojo] /language failed", error));
   });
 
+  onMount(() => {
+    hydrate().catch((error) => console.warn("[dojo] literal load failed", error));
+  });
+
   $effect(() => {
-    keep(record());
+    if (!hydrated) return;
+    const ids = array.unique(
+      loaded.flatMap((literal) => [literal.id, ...fold.items(literal.uses).map((form) => form.id)]),
+    );
+    if (!ids.length) return;
+    return buffer.mode.daemon.entities.literal.subscribe({ id: { $in: ids } }, refresh);
+  });
+
+  $effect(() => {
+    const snapshot = record();
+    if (!hydrated || faults.length) return;
+    keep(snapshot);
   });
 
   $effect(() => () => {
@@ -554,6 +689,9 @@ import * as workbenchState from "./workbench.js";
   };
 
   function land(result) {
+    const landed = POSITIVE.includes(result.signal);
+    if (!result.literal && !landed) ring("mistake");
+    if (!result.literal && landed && !result.peeked) ring("rep");
     review(soften(result.review ?? result.signal, result.peeked), result.literal ?? knowable.literal);
     for (const token of result.tokens ?? []) review(soften(token.signal, result.peeked), token.literal);
     if (result.picked && result.signal !== "SUCCESS") review("MISTAKE", result.picked.literal);
@@ -565,15 +703,16 @@ import * as workbenchState from "./workbench.js";
 
   function advance(success) {
     if (phase !== "playing") return;
-    const recorded = streak.record(session, success, axes.anhieb ?? 0);
-    const requeued = recorded.pending.length === session.pending.length;
+    const recorded = streak.record(board, success, axes.anhieb ?? 0);
+    const requeued = recorded.pending.length === board.pending.length;
     const dressed = requeued && success && drawn() ? streak.wear(recorded, dresser(queue)) : recorded;
-    session = types.shuffling(axes.random) ? streak.scramble(dressed) : dressed;
+    board = types.shuffling(axes.random) ? streak.scramble(dressed) : dressed;
     reps += 1;
     if (axes.limit?.reps && reps >= axes.limit.reps) return finish("limit");
-    if (!streak.complete(session)) return;
+    if (!streak.complete(board)) return;
+    ring(streak.clean(board, axes.anhieb ?? 0) ? "clean" : "set");
     if (!axes.continuous || !declared) return finish("complete");
-    sets += 1;
+    rounds += 1;
     refill();
   }
 
@@ -593,6 +732,11 @@ import * as workbenchState from "./workbench.js";
     if (event.key === "\\") {
       event.preventDefault();
       toggleDrawer();
+      return;
+    }
+    if (event.key === "Enter" && !repping && phase === "done" && !committing) {
+      event.preventDefault();
+      again();
       return;
     }
     if (event.key === "Enter" && !repping && phase !== "playing" && startable && !committing) {
@@ -615,7 +759,19 @@ import * as workbenchState from "./workbench.js";
       right={phase === "playing" ? "esc toggles" : "esc"}
       onopen={openDrawer} />
 
-    {#if (phase === "playing" || phase === "drawing") && staged}
+    {#if faults.length}
+      <div class="stage">
+        <Standby
+          kicker="saved round"
+          title="This round was saved in a shape the dojo no longer reads."
+          note={faults.join(" · ")}
+          label="reset"
+          onact={reset}
+          secondary={{ label: "open the drawer ▼", onact: openDrawer }} />
+      </div>
+    {:else if !hydrated}
+      <div class="stage"><span class="dot"></span></div>
+    {:else if (phase === "playing" || phase === "drawing") && staged}
       <div class="strip"><div class="fill" style:width="{progress}%"></div></div>
       <div class="play" class:drawing={phase === "drawing"}>
         {#if phase === "drawing"}<div class="veil"><span class="dot"></span></div>{/if}
@@ -633,8 +789,8 @@ import * as workbenchState from "./workbench.js";
           fileOf={(reference) => knowables.fileOf(files, reference)}
           {position}
           total={queue.length}
-          first={streak.first(session)}
-          missed={streak.current(session)?.missed ?? false}
+          first={streak.first(board)}
+          missed={streak.current(board)?.missed ?? false}
           compact={tier === "narrow"}
           prompt={staged.prompt}
           rep={entry}
@@ -642,6 +798,8 @@ import * as workbenchState from "./workbench.js";
           onadvance={advance}
           onjudge={judge}
           onphase={(value) => (repPhase = value)}
+          {sound}
+          onsound={toggleSound}
           onchrome={toggleDrawer} />
       </div>
     {:else if phase === "drawing"}
@@ -650,14 +808,14 @@ import * as workbenchState from "./workbench.js";
       <div class="stage">
         <Standby
           kicker={outcome === "limit" ? "limit reached" : "set complete"}
-          title={outcome === "limit" ? "Released mid-flight." : session.attempts && session.attempts === reviews ? "Clean run." : "Every subject satisfied."}
+          title={outcome === "limit" ? "Released mid-flight." : board.attempts && board.attempts === reviews ? "Clean run." : "Every subject satisfied."}
           stats={[
-            { key: "attempts", value: session.attempts },
+            { key: "attempts", value: board.attempts },
             { key: "subjects", value: queue.length },
-            { key: "sets", value: sets },
+            { key: "rounds", value: rounds },
             { key: "reviews sent", value: reviews },
           ]}
-          label="run it again"
+          label="run again"
           onact={again}
           secondary={{ label: "open the drawer ▼", onact: openDrawer }} />
       </div>

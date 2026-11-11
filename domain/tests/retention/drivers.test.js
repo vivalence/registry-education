@@ -150,3 +150,40 @@ specimen.describe("note.evolve — the RETAINED verb applies a driver's verdict 
     }
   });
 });
+
+specimen.describe("drivers / scale", () => {
+  const notes = { claim: (note, name) => traits.claim(note, name, { RETAINED: RETAINED.schematic }) };
+  const scale = (note, percent, direction) => RETAINED.repository.scale.call(notes, note, percent, direction);
+  const fresh = (driver) => ({ traits: ["RETAINED"], trait: { RETAINED: { ...RETAINED.schematic.create(), driver } } });
+
+  specimen.it("a boolean is true from KNOWN up", () => {
+    specimen.expect(boolean.scale(35.9).state).toBe(false);
+    specimen.expect(boolean.scale(36).state).toBe(true);
+  });
+
+  specimen.it("a counter lands on the streak its status begins at", () => {
+    specimen.expect(counter.scale(3).status).toBe("UNKNOWN");
+    specimen.expect(counter.scale(15).status).toBe("LEARNING");
+    specimen.expect(counter.scale(36).state).toEqual({ streak: 5, total: 0, successes: 0 });
+    specimen.expect(counter.scale(60).status).toBe("GRADUATED");
+  });
+
+  specimen.it("every driver scales a note, its status inside the enum", () => {
+    for (const driver of Object.keys(drivers)) {
+      for (const percent of [0, 15, 36, 60, 100]) {
+        const note = scale(fresh(driver), percent, "set");
+        specimen.expect(RetentionStatus).toContain(note.trait.RETAINED.status);
+        specimen.expect(note.trait.RETAINED.lastAt).toBeTruthy();
+      }
+    }
+  });
+
+  specimen.it("a direction keeps a note it would move the wrong way", () => {
+    const note = scale(fresh("BAYESIAN"), 15, "set");
+    specimen.expect(scale(note, 3, "advance")).toBe(null);
+    specimen.expect(scale(note, 36, "drop")).toBe(null);
+    specimen.expect(scale(note, 36, "advance").trait.RETAINED.status).toBe("KNOWN");
+    specimen.expect(scale(note, 3, "drop").trait.RETAINED.status).toBe("UNKNOWN");
+    specimen.expect(scale(note, 50).trait.RETAINED.status).toBe("KNOWN");
+  });
+});

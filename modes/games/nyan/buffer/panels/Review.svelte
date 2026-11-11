@@ -1,5 +1,5 @@
 <script>
-  import { Canvas, stage } from "@vivalence/drapes";
+  import { Canvas, stage } from "@vivalence/drapes/svelte";
   import { DIVES, LANES, ORDERS, ascending, groupBy, speedline } from "../engine.js";
 
   stage.use(stage.line, stage.scatter, stage.grid, stage.tooltip, stage.legend, stage.renderer);

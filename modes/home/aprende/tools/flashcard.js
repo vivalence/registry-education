@@ -15,10 +15,10 @@ export const flashcard = new Vector().open(
       thread: ctx.thread,
     });
     return {
-      message: emission.output.buffer.length
+      message: emission.product.buffer.length
         ? `Flashcards on screen.`
         : "Nothing available for that selection.",
-      ...emission.output,
+      ...emission.product,
     };
   },
 );

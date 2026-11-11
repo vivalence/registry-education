@@ -55,12 +55,12 @@ export const preset = new Vector().open(
       })
       : await branch.feed({ ...input, count: ctx.input.count });
 
-    const buffers = emission.output.buffer ?? [];
+    const buffers = emission.product.buffer ?? [];
     return {
       message: buffers.length
         ? `${ctx.input.preset} session on screen.`
         : `nothing to rep for these filters — the ${ctx.input.preset} draw came back empty.`,
-      ...emission.output,
+      ...emission.product,
     };
   },
 );

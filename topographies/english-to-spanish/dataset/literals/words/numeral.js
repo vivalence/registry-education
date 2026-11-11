@@ -3,13 +3,7 @@ export default [
     "slug": "catorce.numeral",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.catorce"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
+        "slug": "functional.number"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -18,7 +12,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.number"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.catorce"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
       }
     ],
     "trait": {
@@ -46,13 +46,7 @@ export default [
     "slug": "cero.numeral",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.cero"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
+        "slug": "functional.number"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -61,7 +55,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.number"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.cero"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
       }
     ],
     "trait": {
@@ -95,13 +95,7 @@ export default [
     "slug": "cien.numeral",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.cien"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
+        "slug": "functional.number"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -110,7 +104,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.number"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.cien"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
       }
     ],
     "trait": {
@@ -138,13 +138,7 @@ export default [
     "slug": "cinco.numeral",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.cinco"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
+        "slug": "functional.number"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -153,7 +147,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.number"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.cinco"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
       }
     ],
     "trait": {
@@ -187,13 +187,7 @@ export default [
     "slug": "cincuenta.numeral",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.cincuenta"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
+        "slug": "functional.number"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -202,7 +196,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.number"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.cincuenta"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
       }
     ],
     "trait": {
@@ -230,13 +230,7 @@ export default [
     "slug": "cuarenta.numeral",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.cuarenta"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
+        "slug": "functional.number"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -245,7 +239,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.number"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.cuarenta"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
       }
     ],
     "trait": {
@@ -273,13 +273,7 @@ export default [
     "slug": "cuatro.numeral",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.cuatro"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
+        "slug": "functional.number"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -288,7 +282,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.number"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.cuatro"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
       }
     ],
     "trait": {
@@ -322,13 +322,7 @@ export default [
     "slug": "diecinueve.numeral",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.diecinueve"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
+        "slug": "functional.number"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -337,7 +331,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.number"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.diecinueve"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
       }
     ],
     "trait": {
@@ -365,13 +365,7 @@ export default [
     "slug": "dieciocho.numeral",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.dieciocho"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
+        "slug": "functional.number"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -380,7 +374,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.number"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.dieciocho"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
       }
     ],
     "trait": {
@@ -408,13 +408,7 @@ export default [
     "slug": "diecisiete.numeral",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.diecisiete"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
+        "slug": "functional.number"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -423,7 +417,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.number"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.diecisiete"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
       }
     ],
     "trait": {
@@ -451,13 +451,7 @@ export default [
     "slug": "dieciséis.numeral",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.dieciséis"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
+        "slug": "functional.number"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -466,7 +460,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.number"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.dieciséis"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
       }
     ],
     "trait": {
@@ -494,13 +494,7 @@ export default [
     "slug": "diez.numeral",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.diez"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
+        "slug": "functional.number"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -509,7 +503,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.number"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.diez"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
       }
     ],
     "trait": {
@@ -543,13 +543,7 @@ export default [
     "slug": "doce.numeral",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.doce"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
+        "slug": "functional.number"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -558,7 +552,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.number"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.doce"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
       }
     ],
     "trait": {
@@ -586,6 +586,18 @@ export default [
     "slug": "dos.numeral",
     "symbols": [
       {
+        "slug": "functional.number"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
       },
       {
@@ -593,18 +605,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.numeral"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.number"
       }
     ],
     "trait": {
@@ -638,13 +638,7 @@ export default [
     "slug": "nueve.numeral",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.nueve"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
+        "slug": "functional.number"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -653,7 +647,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.number"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.nueve"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
       }
     ],
     "trait": {
@@ -687,13 +687,7 @@ export default [
     "slug": "ocho.numeral",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.ocho"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
+        "slug": "functional.number"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -702,7 +696,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.number"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.ocho"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
       }
     ],
     "trait": {
@@ -733,16 +733,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "son-las-once"
+      }
+    ],
     "slug": "once.numeral",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.once"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
+        "slug": "functional.number"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -751,7 +750,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.number"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.once"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
       }
     ],
     "trait": {
@@ -779,13 +784,7 @@ export default [
     "slug": "quince.numeral",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.quince"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
+        "slug": "functional.number"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -794,7 +793,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.number"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.quince"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
       }
     ],
     "trait": {
@@ -822,13 +827,7 @@ export default [
     "slug": "seis.numeral",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.seis"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
+        "slug": "functional.number"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -837,7 +836,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.number"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.seis"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
       }
     ],
     "trait": {
@@ -871,13 +876,7 @@ export default [
     "slug": "siete.numeral",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.siete"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
+        "slug": "functional.number"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -886,7 +885,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.number"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.siete"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
       }
     ],
     "trait": {
@@ -920,13 +925,7 @@ export default [
     "slug": "trece.numeral",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.trece"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
+        "slug": "functional.number"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -935,7 +934,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.number"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.trece"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
       }
     ],
     "trait": {
@@ -963,13 +968,7 @@ export default [
     "slug": "treinta.numeral",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.treinta"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
+        "slug": "functional.number"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -978,7 +977,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.number"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.treinta"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
       }
     ],
     "trait": {
@@ -1006,13 +1011,7 @@ export default [
     "slug": "tres.numeral",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.tres"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
+        "slug": "functional.number"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1021,7 +1020,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.number"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.tres"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
       }
     ],
     "trait": {
@@ -1055,6 +1060,18 @@ export default [
     "slug": "uno.numeral",
     "symbols": [
       {
+        "slug": "functional.number"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
       },
       {
@@ -1062,18 +1079,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.numeral"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.number"
       }
     ],
     "trait": {
@@ -1107,13 +1112,7 @@ export default [
     "slug": "veinte.numeral",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.veinte"
-      },
-      {
-        "slug": "word.part-of-speech.numeral"
+        "slug": "functional.number"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1122,7 +1121,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.number"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.veinte"
+      },
+      {
+        "slug": "word.part-of-speech.numeral"
       }
     ],
     "trait": {

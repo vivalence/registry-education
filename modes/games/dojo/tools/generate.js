@@ -39,12 +39,12 @@ export const generate = new Vector().open(
       ...(ctx.thread ? { thread: ctx.thread } : {}),
     });
 
-    const buffers = emission.output.buffer ?? [];
+    const buffers = emission.product.buffer ?? [];
     return {
       message: buffers.length
         ? "generated session on screen — fresh sentences from the learner's vocabulary."
         : "generation drew no vocabulary for these filters.",
-      ...emission.output,
+      ...emission.product,
     };
   },
 );

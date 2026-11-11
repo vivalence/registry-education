@@ -44,12 +44,12 @@ export const conjugations = new Vector().open(
       ...(ctx.thread ? { thread: ctx.thread } : {}),
     });
 
-    const buffers = emission.output.buffer ?? [];
+    const buffers = emission.product.buffer ?? [];
     return {
       message: buffers.length
         ? "conjugation drill on screen."
         : "no paradigms matched these filters.",
-      ...emission.output,
+      ...emission.product,
     };
   },
 );

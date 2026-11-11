@@ -70,7 +70,7 @@ Audio is sourced from Lingua Libre, Wiktionary and Tatoeba (NM1 recordings), CC-
 | Mode | Type | Slug | What it does |
 |---|---|---|---|
 | dataspace | dashboard | `dataspace` | raw view of the daemon's data |
-| francesca | teacher | `francesca` | Italian conversation tutor, HARNESSED + TOOLING, self-reviewing |
+| francesca | teacher | `francesca` | Italian conversation tutor, HARNESS + TOOLING, self-reviewing |
 | dojo | game | `dojo` | the rep machine: FLIP, PICK, TYPE, CONJUGATE over words, sentences and forms; presets meet · recognize · write · shadow · listen · drill · mixed · ultra |
 | nyan | game | `nyan` | typing trainer with learning vocabulary |
 | riddler | game | `riddler` | LLM-generated riddles about a literal or topic using known vocabulary |
@@ -167,23 +167,30 @@ export const hallucinators = [
   {
     module: "@commons/hallucinator/anthropic",
     secrets: { key: () => paladin.secret.get("SECRET_VIVA_ANTHROPIC_API_KEY") },
+    faculties: [
+      { type: "dialogue", id: "claude-sonnet-5-5", tune: [0.6, 0.6, 0.5], context: 1000000, thinking: true },
+    ],
   },
   {
     module: "@commons/hallucinator/openrouter",
-    statics: {
-      models: {
-        fast: { id: "deepseek/deepseek-v4-flash", tune: [0.4, 0.4, 1.0, 1.0], context: 1048576 },
-      },
-    },
     secrets: { key: () => paladin.secret.get("SECRET_VIVA_OPENROUTER_API_KEY") },
+    faculties: [
+      { type: "dialogue", id: "deepseek/deepseek-v4-flash", tune: [0.4, 1.0, 1.0], context: 1048576 },
+    ],
   },
   {
     module: "@commons/hallucinator/elevenlabs",
     secrets: { key: () => paladin.secret.get("SECRET_VIVA_ELEVENLABS_API_KEY") },
+    faculties: [
+      { type: "speech", id: "luiza", model: "eleven_flash_v2_5", voice: "21m00Tcm4TlvDq8ikWAM", tune: [0.3, 0.4, 0.1] },
+    ],
   },
   {
     module: "@commons/hallucinator/deepgram",
     secrets: { key: () => paladin.secret.get("SECRET_VIVA_DEEPGRAM_API_KEY") },
+    faculties: [
+      { type: "verbatim", id: "flux-general-multi", model: "flux-general-multi", tune: [0.6, 0.8, 0.4] },
+    ],
   },
 ];
 
@@ -702,7 +709,6 @@ new EntitySchema({
     buffers:  { kind: "1:m", entity: () => BufferEntity }, // the queue
     phase:    { enum: true, items: () => ThreadPhaseEnum }, // inert · manual · continuous · escort — thread/buffer rendering modes
     counter:  { type: types.integer }, // buffers bound so far — the next buffer's index
-    cursor:   { type: types.integer }, // the buffer on screen
 
     parent:   { kind: "m:1", entity: () => ThreadEntity, nullable: true }, // a thread can fork
     children: { kind: "1:m", entity: () => ThreadEntity },
@@ -720,13 +726,12 @@ The tutor's thread — the one the Trace above happened in:
   "id": "01a0…",
   "user": "019d…",
   "mode": { "type": "teacher", "slug": "francesca" },
-  "traits": ["LABELED", "INTELLIGENT"],
+  "traits": ["LABELED", "HARNESSED"],
   "trait": {
     "LABELED": { "name": "Francesca" },
-    "INTELLIGENT": { "tune": "balanced", "effort": "none" }
+    "HARNESSED": { "tune": "balanced", "effort": "none" }
   },
   "counter": 2,
-  "cursor": 0,
   "phase": "manual",
   "buffers": [],
   "turns": ["01a0…", "…"], // 53 — see Turn below
@@ -734,7 +739,7 @@ The tutor's thread — the one the Trace above happened in:
 }
 ```
 
-`LABELED` is one field, `{ name }` — the display name anima writes on the thread tab. `INTELLIGENT` is the thread's intelligence dial, claim-gated (read only while `traits` includes it) and validated at the harness boundary against `v.entities.INTELLIGENT`:
+`LABELED` is one field, `{ name }` — the display name anima writes on the thread tab. `HARNESSED` is the thread's intelligence dial, claim-gated (read only while `traits` includes it) and cast at hydration against `v.thread.traits`:
 
 
 Every field is optional, and an absent one means *the mode decides*. Which is also the trap in the row above: the live thread claims `LABELED` in `traits` and carries no `LABELED` body at all. Presence in `traits` is the fact; the body is where a trait needs one.
@@ -748,7 +753,6 @@ A dojo thread, for contrast — no turns, one buffer, no traits claimed at all:
   "traits": [],
   "trait": {},
   "counter": 0,
-  "cursor": 0,
   "buffers": ["01a0…"],
   "turns": []
 }
@@ -1426,9 +1430,9 @@ topology     DATASET                         ontological slugs — nothing to ru
 topography   DATASET FILESET DATASINK        corpus and audio files; DATASINK takes harvested rows
 game         APPLICATION EMITTER INTENTED    a buffer shape and a Svelte app;
              EXPOSED TOOLING                  EMITTER is what mints the buffers
-tactic       CONVERSATIONAL HARNESSED TOOLING a curriculum that emits game buffers
-teacher      CONVERSATIONAL HARNESSED        an agent; AGENTIC is what separates it from a tactic
-             TOOLING AGENTIC
+tactic       CONVERSATION HARNESS TOOLING a curriculum that emits game buffers
+teacher      CONVERSATION HARNESS        an agent; it loads another mode's tools with tool_load
+             TOOLING PRIMER
 homepage     APPLICATION EMITTER             where a learner lands; emits into every game
 dashboard    APPLICATION                     raw view, no emission
 ```
@@ -1441,8 +1445,8 @@ dashboard    APPLICATION                     raw view, no emission
   { "type": "topology",   "slug": "word",               "name": "Words after Universal Dependencies", "traits": ["DATASET"], "installed": "6f6f4887" },
   { "type": "topography", "slug": "english-to-italian", "name": "Italian Vocabulary",               "traits": ["DATASET", "FILESET", "DATASINK"], "installed": "8a7bfa24" },
   { "type": "game",       "slug": "dojo",               "name": "Dojo",                             "traits": ["APPLICATION", "EMITTER", "INTENTED", "EXPOSED", "TOOLING"] },
-  { "type": "tactic",     "slug": "harvest",            "name": "Harvest",                          "traits": ["CONVERSATIONAL", "HARNESSED", "TOOLING"] },
-  { "type": "teacher",    "slug": "francesca",          "name": "Francesca",                        "traits": ["CONVERSATIONAL", "HARNESSED", "TOOLING", "AGENTIC"] },
+  { "type": "tactic",     "slug": "harvest",            "name": "Harvest",                          "traits": ["CONVERSATION", "HARNESS", "TOOLING"] },
+  { "type": "teacher",    "slug": "francesca",          "name": "Francesca",                        "traits": ["CONVERSATION", "HARNESS", "TOOLING", "PRIMER"] },
   { "type": "dashboard",  "slug": "dataspace",          "name": "Dataspace",                        "traits": ["APPLICATION"] }
 ]
 ```

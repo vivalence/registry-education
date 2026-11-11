@@ -23,11 +23,12 @@ specimen.describe("domain module — what the runtime mounts", () => {
     specimen.expect(domain.twitch).toBeInstanceOf(Vector);
   });
 
-  specimen.it("exposes the pick + review routes on its aperture and the four tools on its vector", () => {
+  specimen.it("exposes the pick + review routes on its aperture and its four tools plus the runtime's literal · symbol update on its vector", () => {
     const routes = shape.strip(domain.aperture);
     specimen.expect(Object.keys(routes.branches.pick.branches.literal.branches).sort()).toEqual(["byStatus", "byStrength", "due", "feed", "novel"]);
     specimen.expect(Object.keys(routes.branches.review.branches)).toEqual(["literal"]);
-    specimen.expect(Object.keys(shape.strip(domain.tools).branches).sort()).toEqual(["lookup", "progress", "queue", "review"]);
+    specimen.expect(Object.keys(routes.branches.scale.branches)).toEqual(["literal"]);
+    specimen.expect(Object.keys(shape.strip(domain.tools).branches).sort()).toEqual(["literal", "lookup", "progress", "queue", "review", "scale", "symbol"]);
     specimen.expect(domain.resolve).toBeUndefined();
   });
 });

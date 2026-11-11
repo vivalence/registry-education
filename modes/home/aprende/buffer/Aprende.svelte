@@ -1,5 +1,5 @@
 <script>
-  import { Section } from "@vivalence/drapes";
+  import { Section } from "@vivalence/drapes/svelte";
   import Helpdesk from "./Helpdesk.svelte";
   import Roster from "./Roster.svelte";
   import Actions from "./Actions.svelte";

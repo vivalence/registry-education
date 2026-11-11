@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  import { Section } from "@vivalence/drapes";
+  import { Section } from "@vivalence/drapes/svelte";
 
   const { terminal, buffer, surface } = $props();
 

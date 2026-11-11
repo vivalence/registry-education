@@ -1,5 +1,5 @@
 <script>
-  import { persist } from "@vivalence/drapes";
+  import { persist } from "@vivalence/drapes/svelte";
   const {
     value,
     submitted,

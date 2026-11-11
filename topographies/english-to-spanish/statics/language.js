@@ -13,6 +13,12 @@ export const english = {
   },
 };
 
-export const spanish = { contractions: {} };
+export const spanish = {
+  contractions: {
+    "pa'": ["para"],
+    "pa'l": ["para el"],
+    "na'": ["nada"],
+  },
+};
 
 export const statics = { language: { english, spanish } };

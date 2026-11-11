@@ -29,10 +29,10 @@ export const message = new Vector().open(
       thread: ctx.input.thread,
     });
     //
-    if (!render.object?.answer) {
-      console.error("[aprende/message] render.object.answer missing", { render });
-      throw new Error("[aprende/message] render.object.answer missing");
+    if (!render.product.object?.answer) {
+      console.error("[aprende/message] render.product.object.answer missing", { render });
+      throw new Error("[aprende/message] render.product.object.answer missing");
     }
-    return { answer: render.object.answer, render };
+    return { answer: render.product.object.answer, render };
   },
 );

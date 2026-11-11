@@ -1,5 +1,5 @@
 <script>
-  import { Canvas, stage } from "@vivalence/drapes";
+  import { Canvas, stage } from "@vivalence/drapes/svelte";
   import { STATUS_COLOR, ONTOLOGY, DUE, MUTED } from "./palette.js";
 
   stage.use(

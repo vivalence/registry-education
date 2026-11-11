@@ -1,5 +1,5 @@
 <script>
-  import { Desk, Pip } from "@vivalence/drapes";
+  import { Desk, Pip } from "@vivalence/drapes/svelte";
   import * as fold from "../../fold.js";
   import * as judge from "../judge.js";
   import * as knowables from "../knowables.js";
@@ -33,6 +33,8 @@
     onadvance,
     onjudge,
     onphase,
+    sound,
+    onsound,
     onchrome,
     retain = false,
   } = $props();
@@ -366,6 +368,8 @@
       {hinted}
       {compact}
       onhint={() => (hinted = !hinted)}
+      {sound}
+      {onsound}
       {onchrome} />
 
     {#if table}

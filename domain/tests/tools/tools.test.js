@@ -14,8 +14,8 @@ specimen.afterAll(async () => await scenario?.orm?.close());
 specimen.describe("tools — the vector and its four routes", () => {
   specimen.it("exposes progress · lookup · queue · review, each with an input schema on the wire", () => {
     const stripped = shape.strip(scenario.domain.tools);
-    specimen.expect(Object.keys(stripped.branches).sort()).toEqual(["lookup", "progress", "queue", "review"]);
-    for (const name of Object.keys(stripped.branches)) {
+    specimen.expect(Object.keys(stripped.branches).sort()).toEqual(["literal", "lookup", "progress", "queue", "review", "scale", "symbol"]);
+    for (const name of ["lookup", "progress", "queue", "review"]) {
       specimen.expect(stripped.branches[name].effect?.input?.type).toBe("object");
       specimen.expect(typeof scenario.tools[`/${name}`]).toBe("function");
     }
@@ -27,6 +27,23 @@ specimen.describe("tools — the vector and its four routes", () => {
   specimen.it("line: slug · learning (known) · ontology · status", () => {
     specimen.expect(line({ slug: "x", ontology: "word", trait: { TRANSLATED: { known: "k", learning: "l" } }, assess: () => undefined })).toBe("x · l (k) · word · UNTOUCHED");
     specimen.expect(line({ slug: "y", ontology: "sentence", trait: {}, assess: () => ({ status: "KNOWN" }) })).toBe("y ·  () · sentence · KNOWN");
+  });
+});
+
+specimen.describe("tools — the runtime's literal · symbol update, grafted", () => {
+  specimen.it("literal/update merges a trait patch deep, the other side of the translation stays", async () => {
+    const held = await scenario.scoped(() => scenario.daemon.entities.literal.findOneOrFail({ slug: "thanks" }));
+    const before = { ...held.trait.TRANSLATED };
+    const out = await scenario.invoke("/literal/update", { slug: "thanks", trait: { TRANSLATED: { learning: "obrigadíssimo" } } });
+    specimen.expect(out.message).toBe("updated literal thanks");
+    specimen.expect(out.literal[0].trait.TRANSLATED).toEqual({ ...before, learning: "obrigadíssimo" });
+    await scenario.invoke("/literal/update", { slug: "thanks", trait: { TRANSLATED: { learning: before.learning } } });
+  });
+
+  specimen.it("symbol/update writes a symbol's trait data by slug", async () => {
+    const out = await scenario.invoke("/symbol/update", { slug: "greeting", trait: { LABELED: { name: "greeting" } } });
+    specimen.expect(out.message).toBe("updated symbol greeting");
+    specimen.expect(out.symbol[0].trait.LABELED.name).toBe("greeting");
   });
 });
 
@@ -139,7 +156,7 @@ specimen.describe("tools — progress", () => {
     specimen.expect(out.message).toContain("[Learner report]");
     specimen.expect(out.message).toMatch(/Vocabulary: \d+ literals · 4 with retention/);
     specimen.expect(out.message).toMatch(/known 1/);
-    specimen.expect(out.message).toMatch(/learning 1/);
+    specimen.expect(out.message).toMatch(/learning 2/);
     specimen.expect(out.message).toMatch(/1 due for review/);
     specimen.expect(out.message).toContain("Weakest words:");
   });

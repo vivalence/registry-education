@@ -3,6 +3,12 @@ export default [
     "slug": "abajo.adverb",
     "symbols": [
       {
+        "slug": "domain.mando"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
         "slug": "word"
       },
       {
@@ -10,12 +16,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adverb"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "domain.mando"
       }
     ],
     "trait": {
@@ -41,13 +41,7 @@ export default [
     "slug": "ahora.adverb",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.ahora"
-      },
-      {
-        "slug": "word.part-of-speech.adverb"
+        "slug": "functional.time"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -56,7 +50,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.time"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.ahora"
+      },
+      {
+        "slug": "word.part-of-speech.adverb"
       }
     ],
     "trait": {
@@ -84,13 +84,7 @@ export default [
     "slug": "allí.adverb",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.allí"
-      },
-      {
-        "slug": "word.part-of-speech.adverb"
+        "slug": "domain.space"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -99,7 +93,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.space"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.allí"
+      },
+      {
+        "slug": "word.part-of-speech.adverb"
       }
     ],
     "trait": {
@@ -127,13 +127,7 @@ export default [
     "slug": "antes.adverb",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.antes"
-      },
-      {
-        "slug": "word.part-of-speech.adverb"
+        "slug": "functional.time"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -142,7 +136,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.time"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.antes"
+      },
+      {
+        "slug": "word.part-of-speech.adverb"
       }
     ],
     "trait": {
@@ -167,16 +167,33 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "alguien-esta-aqui"
+      },
+      {
+        "slug": "el-policia-esta-aqui"
+      },
+      {
+        "slug": "espero-aqui"
+      },
+      {
+        "slug": "mi-tio-vive-aqui"
+      },
+      {
+        "slug": "paso-una-semana-aqui"
+      },
+      {
+        "slug": "quiero-que-vivas-aqui"
+      },
+      {
+        "slug": "viviria-aqui"
+      }
+    ],
     "slug": "aquí.adverb",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.aquí"
-      },
-      {
-        "slug": "word.part-of-speech.adverb"
+        "slug": "domain.space"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -185,7 +202,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.space"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.aquí"
+      },
+      {
+        "slug": "word.part-of-speech.adverb"
       }
     ],
     "trait": {
@@ -219,6 +242,12 @@ export default [
     "slug": "arriba.adverb",
     "symbols": [
       {
+        "slug": "domain.mando"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
         "slug": "word"
       },
       {
@@ -226,12 +255,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adverb"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "domain.mando"
       }
     ],
     "trait": {
@@ -254,16 +277,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "ayer-hable-espanol"
+      }
+    ],
     "slug": "ayer.adverb",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.ayer"
-      },
-      {
-        "slug": "word.part-of-speech.adverb"
+        "slug": "functional.time"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -272,7 +294,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.time"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.ayer"
+      },
+      {
+        "slug": "word.part-of-speech.adverb"
       }
     ],
     "trait": {
@@ -297,16 +325,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "es-bastante-caro"
+      },
+      {
+        "slug": "la-habitacion-es-pequena"
+      }
+    ],
     "slug": "bastante.adverb",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.bastante"
-      },
-      {
-        "slug": "word.part-of-speech.adverb"
+        "slug": "functional.intensifier"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -315,7 +345,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.intensifier"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.bastante"
+      },
+      {
+        "slug": "word.part-of-speech.adverb"
       }
     ],
     "trait": {
@@ -340,8 +376,22 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "estoy-bien-gracias"
+      }
+    ],
     "slug": "bien.adverb",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -350,15 +400,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adverb"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
       }
     ],
     "trait": {
@@ -389,16 +430,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "casi-nunca-como"
+      }
+    ],
     "slug": "casi.adverb",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.casi"
-      },
-      {
-        "slug": "word.part-of-speech.adverb"
+        "slug": "functional.degree"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -407,7 +447,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.degree"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.casi"
+      },
+      {
+        "slug": "word.part-of-speech.adverb"
       }
     ],
     "trait": {
@@ -432,16 +478,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-banco-esta-cerca"
+      },
+      {
+        "slug": "el-restaurante-esta-cerca"
+      }
+    ],
     "slug": "cerca.adverb",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.cerca"
-      },
-      {
-        "slug": "word.part-of-speech.adverb"
+        "slug": "domain.space"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -450,7 +498,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.space"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.cerca"
+      },
+      {
+        "slug": "word.part-of-speech.adverb"
       }
     ],
     "trait": {
@@ -475,8 +529,25 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "cuando-comemos"
+      }
+    ],
     "slug": "cuándo.adverb",
     "symbols": [
+      {
+        "slug": "functional.question"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -485,18 +556,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adverb"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.question"
       }
     ],
     "trait": {
@@ -521,8 +580,28 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "hola-como-estas"
+      },
+      {
+        "slug": "podria-comer"
+      }
+    ],
     "slug": "cómo.adverb",
     "symbols": [
+      {
+        "slug": "functional.question"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -531,18 +610,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adverb"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.question"
       }
     ],
     "trait": {
@@ -567,16 +634,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-zapato-esta-debajo"
+      }
+    ],
     "slug": "debajo.adverb",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.debajo"
-      },
-      {
-        "slug": "word.part-of-speech.adverb"
+        "slug": "domain.space"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -585,7 +651,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.space"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.debajo"
+      },
+      {
+        "slug": "word.part-of-speech.adverb"
       }
     ],
     "trait": {
@@ -610,16 +682,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "estoy-delante"
+      }
+    ],
     "slug": "delante.adverb",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.delante"
-      },
-      {
-        "slug": "word.part-of-speech.adverb"
+        "slug": "domain.space"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -628,7 +699,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.space"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.delante"
+      },
+      {
+        "slug": "word.part-of-speech.adverb"
       }
     ],
     "trait": {
@@ -656,13 +733,7 @@ export default [
     "slug": "demasiado.adverb",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.demasiado"
-      },
-      {
-        "slug": "word.part-of-speech.adverb"
+        "slug": "functional.intensifier"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -671,7 +742,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.intensifier"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.demasiado"
+      },
+      {
+        "slug": "word.part-of-speech.adverb"
       }
     ],
     "trait": {
@@ -696,16 +773,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-perro-esta-dentro"
+      }
+    ],
     "slug": "dentro.adverb",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.dentro"
-      },
-      {
-        "slug": "word.part-of-speech.adverb"
+        "slug": "domain.space"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -714,7 +790,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.space"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.dentro"
+      },
+      {
+        "slug": "word.part-of-speech.adverb"
       }
     ],
     "trait": {
@@ -739,8 +821,19 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "hablo-despacio"
+      }
+    ],
     "slug": "despacio.adverb",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -749,12 +842,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adverb"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
       }
     ],
     "trait": {
@@ -779,16 +866,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "como-despues"
+      }
+    ],
     "slug": "después.adverb",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.después"
-      },
-      {
-        "slug": "word.part-of-speech.adverb"
+        "slug": "functional.time"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -797,7 +883,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.time"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.después"
+      },
+      {
+        "slug": "word.part-of-speech.adverb"
       }
     ],
     "trait": {
@@ -822,16 +914,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "estoy-detras"
+      }
+    ],
     "slug": "detrás.adverb",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.detrás"
-      },
-      {
-        "slug": "word.part-of-speech.adverb"
+        "slug": "domain.space"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -840,7 +931,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.space"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.detrás"
+      },
+      {
+        "slug": "word.part-of-speech.adverb"
       }
     ],
     "trait": {
@@ -865,16 +962,21 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "donde-esta-el-bano"
+      },
+      {
+        "slug": "donde-esta-el-telefono"
+      },
+      {
+        "slug": "donde-esta-la-estacion"
+      }
+    ],
     "slug": "dónde.adverb",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.dónde"
-      },
-      {
-        "slug": "word.part-of-speech.adverb"
+        "slug": "functional.question"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -883,7 +985,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.question"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.dónde"
+      },
+      {
+        "slug": "word.part-of-speech.adverb"
       }
     ],
     "trait": {
@@ -908,16 +1016,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-libro-esta-encima"
+      },
+      {
+        "slug": "el-pajaro-esta-encima-del-arbol"
+      }
+    ],
     "slug": "encima.adverb",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.encima"
-      },
-      {
-        "slug": "word.part-of-speech.adverb"
+        "slug": "domain.space"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -926,7 +1036,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.space"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.encima"
+      },
+      {
+        "slug": "word.part-of-speech.adverb"
       }
     ],
     "trait": {
@@ -951,16 +1067,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-gato-esta-fuera"
+      }
+    ],
     "slug": "fuera.adverb",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.fuera"
-      },
-      {
-        "slug": "word.part-of-speech.adverb"
+        "slug": "domain.space"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -969,7 +1084,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.space"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.fuera"
+      },
+      {
+        "slug": "word.part-of-speech.adverb"
       }
     ],
     "trait": {
@@ -994,16 +1115,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "hoy-es-lunes"
+      },
+      {
+        "slug": "la-fiesta-es-hoy"
+      }
+    ],
     "slug": "hoy.adverb",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.hoy"
-      },
-      {
-        "slug": "word.part-of-speech.adverb"
+        "slug": "functional.time"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1012,7 +1135,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.time"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.hoy"
+      },
+      {
+        "slug": "word.part-of-speech.adverb"
       }
     ],
     "trait": {
@@ -1043,8 +1172,19 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "trabajamos-juntos"
+      }
+    ],
     "slug": "juntos.adverb",
     "symbols": [
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -1053,12 +1193,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adverb"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
       }
     ],
     "trait": {
@@ -1083,16 +1217,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "el-bano-esta-lejos"
+      }
+    ],
     "slug": "lejos.adverb",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.lejos"
-      },
-      {
-        "slug": "word.part-of-speech.adverb"
+        "slug": "domain.space"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1101,7 +1234,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "domain.space"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.lejos"
+      },
+      {
+        "slug": "word.part-of-speech.adverb"
       }
     ],
     "trait": {
@@ -1129,6 +1268,12 @@ export default [
     "slug": "mal.adverb",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
       },
       {
@@ -1136,12 +1281,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adverb"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
       }
     ],
     "trait": {
@@ -1166,16 +1305,27 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "manana-comere-en-casa"
+      },
+      {
+        "slug": "manana-hablare-espanol"
+      },
+      {
+        "slug": "no-podre-ir"
+      },
+      {
+        "slug": "salimos-manana"
+      },
+      {
+        "slug": "vienes-manana"
+      }
+    ],
     "slug": "mañana.adverb",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.mañana"
-      },
-      {
-        "slug": "word.part-of-speech.adverb"
+        "slug": "functional.time"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1184,7 +1334,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.time"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.mañana"
+      },
+      {
+        "slug": "word.part-of-speech.adverb"
       }
     ],
     "trait": {
@@ -1215,16 +1371,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "soy-menos-alto-que-mi-padre"
+      }
+    ],
     "slug": "menos.adverb",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.menos"
-      },
-      {
-        "slug": "word.part-of-speech.adverb"
+        "slug": "functional.degree"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1233,7 +1388,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.degree"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.menos"
+      },
+      {
+        "slug": "word.part-of-speech.adverb"
       }
     ],
     "trait": {
@@ -1258,8 +1419,37 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "escribes-mucho"
+      },
+      {
+        "slug": "pagas-mucho"
+      },
+      {
+        "slug": "pensamos-mucho"
+      },
+      {
+        "slug": "pienso-mucho"
+      },
+      {
+        "slug": "trabajo-mucho"
+      }
+    ],
     "slug": "mucho.adverb",
     "symbols": [
+      {
+        "slug": "functional.degree"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -1268,18 +1458,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adverb"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.degree"
       }
     ],
     "trait": {
@@ -1307,6 +1485,18 @@ export default [
     "slug": "muy.adverb",
     "symbols": [
       {
+        "slug": "functional.intensifier"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
       },
       {
@@ -1314,18 +1504,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adverb"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.intensifier"
       }
     ],
     "trait": {
@@ -1356,8 +1534,43 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "donde-esta-el-telefono"
+      },
+      {
+        "slug": "el-cafe-es-mas-caliente"
+      },
+      {
+        "slug": "el-coche-es-mas-caro-que-el-tren"
+      },
+      {
+        "slug": "el-tren-es-mas-rapido-que-el-coche"
+      },
+      {
+        "slug": "es-mas-grande-que-mi-casa"
+      },
+      {
+        "slug": "soy-mas-alto-que-tu"
+      },
+      {
+        "slug": "soy-mas-fuerte-que-tu"
+      }
+    ],
     "slug": "más.adverb",
     "symbols": [
+      {
+        "slug": "functional.degree"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -1366,18 +1579,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adverb"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.degree"
       }
     ],
     "trait": {
@@ -1408,8 +1609,109 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "busco-trabajo-pero-no-lo-encuentro"
+      },
+      {
+        "slug": "fui-al-mercado"
+      },
+      {
+        "slug": "no-bebo-vino"
+      },
+      {
+        "slug": "no-comi-carne"
+      },
+      {
+        "slug": "no-como-carne"
+      },
+      {
+        "slug": "no-como-nada"
+      },
+      {
+        "slug": "no-como-pollo"
+      },
+      {
+        "slug": "no-comprendo"
+      },
+      {
+        "slug": "no-creo"
+      },
+      {
+        "slug": "no-encuentro-la-llave"
+      },
+      {
+        "slug": "no-hablo-con-nadie"
+      },
+      {
+        "slug": "no-hablo-espanol"
+      },
+      {
+        "slug": "no-me-gusta-el-pescado"
+      },
+      {
+        "slug": "no-necesito-nada"
+      },
+      {
+        "slug": "no-nos-gusta-esperar"
+      },
+      {
+        "slug": "no-podre-ir"
+      },
+      {
+        "slug": "no-puedo-comer-pan"
+      },
+      {
+        "slug": "no-quiero-eso"
+      },
+      {
+        "slug": "no-quiero-nada"
+      },
+      {
+        "slug": "no-se"
+      },
+      {
+        "slug": "no-se-nada"
+      },
+      {
+        "slug": "no-tengo-dinero"
+      },
+      {
+        "slug": "no-tengo-movil"
+      },
+      {
+        "slug": "no-tengo-nada"
+      },
+      {
+        "slug": "no-tengo-tiempo"
+      },
+      {
+        "slug": "no-trabajo-porque-estoy-enfermo"
+      },
+      {
+        "slug": "no-veo-a-nadie"
+      },
+      {
+        "slug": "quiero-que-hables"
+      },
+      {
+        "slug": "tendre-tiempo"
+      }
+    ],
     "slug": "no.adverb",
     "symbols": [
+      {
+        "slug": "functional.negation"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -1418,18 +1720,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adverb"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.negation"
       }
     ],
     "trait": {
@@ -1454,8 +1744,25 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "casi-nunca-como"
+      }
+    ],
     "slug": "nunca.adverb",
     "symbols": [
+      {
+        "slug": "functional.negation"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -1464,18 +1771,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adverb"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.negation"
       }
     ],
     "trait": {
@@ -1503,13 +1798,7 @@ export default [
     "slug": "poco.adverb",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.poco"
-      },
-      {
-        "slug": "word.part-of-speech.adverb"
+        "slug": "functional.degree"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1518,7 +1807,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.degree"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.poco"
+      },
+      {
+        "slug": "word.part-of-speech.adverb"
       }
     ],
     "trait": {
@@ -1543,16 +1838,18 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "llego-pronto"
+      },
+      {
+        "slug": "venimos-pronto"
+      }
+    ],
     "slug": "pronto.adverb",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.pronto"
-      },
-      {
-        "slug": "word.part-of-speech.adverb"
+        "slug": "functional.time"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1561,7 +1858,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.time"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.pronto"
+      },
+      {
+        "slug": "word.part-of-speech.adverb"
       }
     ],
     "trait": {
@@ -1589,6 +1892,12 @@ export default [
     "slug": "quizás.adverb",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
       },
       {
@@ -1596,12 +1905,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adverb"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
       }
     ],
     "trait": {
@@ -1629,6 +1932,18 @@ export default [
     "slug": "siempre.adverb",
     "symbols": [
       {
+        "slug": "functional.aspect"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
       },
       {
@@ -1636,18 +1951,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adverb"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.aspect"
       }
     ],
     "trait": {
@@ -1672,16 +1975,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "solo-quiero-agua"
+      }
+    ],
     "slug": "solo.adverb",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.solo"
-      },
-      {
-        "slug": "word.part-of-speech.adverb"
+        "slug": "functional.degree"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1690,7 +1992,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.degree"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.solo"
+      },
+      {
+        "slug": "word.part-of-speech.adverb"
       }
     ],
     "trait": {
@@ -1715,8 +2023,28 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "creo-que-si"
+      },
+      {
+        "slug": "digo-que-si"
+      }
+    ],
     "slug": "sí.adverb",
     "symbols": [
+      {
+        "slug": "functional.discourse"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -1725,18 +2053,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adverb"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.discourse"
       }
     ],
     "trait": {
@@ -1770,6 +2086,12 @@ export default [
     "slug": "también.adverb",
     "symbols": [
       {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
+      {
         "slug": "word"
       },
       {
@@ -1777,12 +2099,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adverb"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
       }
     ],
     "trait": {
@@ -1813,16 +2129,15 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "yo-tampoco"
+      }
+    ],
     "slug": "tampoco.adverb",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.tampoco"
-      },
-      {
-        "slug": "word.part-of-speech.adverb"
+        "slug": "functional.negation"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1831,7 +2146,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.negation"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.tampoco"
+      },
+      {
+        "slug": "word.part-of-speech.adverb"
       }
     ],
     "trait": {
@@ -1859,13 +2180,7 @@ export default [
     "slug": "tan.adverb",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.tan"
-      },
-      {
-        "slug": "word.part-of-speech.adverb"
+        "slug": "functional.intensifier"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1874,7 +2189,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.intensifier"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.tan"
+      },
+      {
+        "slug": "word.part-of-speech.adverb"
       }
     ],
     "trait": {
@@ -1902,13 +2223,7 @@ export default [
     "slug": "todavía.adverb",
     "symbols": [
       {
-        "slug": "word"
-      },
-      {
-        "slug": "word.lemma.todavía"
-      },
-      {
-        "slug": "word.part-of-speech.adverb"
+        "slug": "functional.aspect"
       },
       {
         "slug": "proficiency.cefr.a1"
@@ -1917,7 +2232,13 @@ export default [
         "slug": "proficiency.survival"
       },
       {
-        "slug": "functional.aspect"
+        "slug": "word"
+      },
+      {
+        "slug": "word.lemma.todavía"
+      },
+      {
+        "slug": "word.part-of-speech.adverb"
       }
     ],
     "trait": {
@@ -1942,8 +2263,25 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "no-tengo-movil"
+      }
+    ],
     "slug": "ya.adverb",
     "symbols": [
+      {
+        "slug": "functional.aspect"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -1952,18 +2290,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.adverb"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.aspect"
       }
     ],
     "trait": {

@@ -1,7 +1,30 @@
 export default [
   {
+    "in": [
+      {
+        "slug": "no-podre-ir"
+      },
+      {
+        "slug": "no-trabajo-porque-estoy-enfermo"
+      },
+      {
+        "slug": "quiero-agua-porque-tengo-sed"
+      }
+    ],
     "slug": "porque.subordinating-conjunction",
     "symbols": [
+      {
+        "slug": "functional.connector"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -10,18 +33,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.subordinating-conjunction"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.connector"
       }
     ],
     "trait": {
@@ -52,8 +63,76 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "compramos-fruta"
+      },
+      {
+        "slug": "creo-que-si"
+      },
+      {
+        "slug": "digo-que-si"
+      },
+      {
+        "slug": "el-coche-es-mas-caro-que-el-tren"
+      },
+      {
+        "slug": "el-tren-es-mas-rapido-que-el-coche"
+      },
+      {
+        "slug": "es-importante-que-coma"
+      },
+      {
+        "slug": "es-importante-que-sea-fuerte"
+      },
+      {
+        "slug": "es-importante-que-sepas-espanol"
+      },
+      {
+        "slug": "es-importante-que-tengas-dinero"
+      },
+      {
+        "slug": "es-mas-grande-que-mi-casa"
+      },
+      {
+        "slug": "esta-casa-es-mejor-que-esa"
+      },
+      {
+        "slug": "quiero-que-comas"
+      },
+      {
+        "slug": "quiero-que-hables"
+      },
+      {
+        "slug": "quiero-que-hagas-la-comida"
+      },
+      {
+        "slug": "quiero-que-vivas-aqui"
+      },
+      {
+        "slug": "soy-mas-alto-que-tu"
+      },
+      {
+        "slug": "soy-mas-fuerte-que-tu"
+      },
+      {
+        "slug": "soy-menos-alto-que-mi-padre"
+      }
+    ],
     "slug": "que.subordinating-conjunction",
     "symbols": [
+      {
+        "slug": "functional.connector"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -62,18 +141,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.subordinating-conjunction"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.connector"
       }
     ],
     "trait": {
@@ -104,8 +171,25 @@ export default [
     ]
   },
   {
+    "in": [
+      {
+        "slug": "tendre-tiempo"
+      }
+    ],
     "slug": "si.subordinating-conjunction",
     "symbols": [
+      {
+        "slug": "functional.connector"
+      },
+      {
+        "slug": "proficiency.cefr.a1"
+      },
+      {
+        "slug": "proficiency.high-frequency"
+      },
+      {
+        "slug": "proficiency.survival"
+      },
       {
         "slug": "word"
       },
@@ -114,18 +198,6 @@ export default [
       },
       {
         "slug": "word.part-of-speech.subordinating-conjunction"
-      },
-      {
-        "slug": "proficiency.cefr.a1"
-      },
-      {
-        "slug": "proficiency.survival"
-      },
-      {
-        "slug": "proficiency.high-frequency"
-      },
-      {
-        "slug": "functional.connector"
       }
     ],
     "trait": {

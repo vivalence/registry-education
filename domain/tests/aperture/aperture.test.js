@@ -1,4 +1,6 @@
 import { specimen } from "@vivalence/typology";
+import { RequestContext } from "@mikro-orm/core";
+import { UserEntity } from "@vivalence/runtime";
 import { mount } from "../scenarios/domain.js";
 
 let scenario;
@@ -108,6 +110,52 @@ specimen.describe("domain aperture — userspace entities are user-scoped", () =
     const traces = await scenario.userspace.call("/userspace/entities/note/find", { where: { traits: "TRACED" } });
     specimen.expect(traces.length).toBeGreaterThan(0);
     for (const row of traces) specimen.expect(row.user?.id ?? row.user).toBe(scenario.fixtures.user.id);
+  });
+
+  specimen.it("populate: ['notes'] on a literal answers only the caller's notes", async () => {
+    const beef = scenario.fixtures.user;
+    const literal = scenario.daemon.entities.literal;
+    const note = scenario.daemon.entities.note;
+    const as = (user, task) =>
+      RequestContext.create(scenario.orm.em, async () => {
+        RequestContext.getEntityManager().setFilterParams("user", { user: user.id });
+        return task(RequestContext.getEntityManager());
+      });
+
+    const bob = await as(beef, async (em) => {
+      const created = em.create(UserEntity, { slug: "bob" });
+      await em.flush();
+      return created;
+    });
+    await as(bob, async (em) => {
+      for (const slug of ["hello", "thanks"]) {
+        const held = await literal.findOneOrFail({ slug });
+        note.create({
+          user: bob.id,
+          literal: held.id,
+          slug: `retention.${slug}`,
+          traits: ["RETAINED"],
+          trait: { RETAINED: { status: "GRADUATED" } },
+        });
+      }
+      await em.flush();
+    });
+
+    const owners = (user) =>
+      as(user, async () => {
+        const found = await literal.find(
+          { slug: { $in: ["hello", "thanks"] } },
+          { populate: ["notes"] },
+        );
+        return found.flatMap((held) => held.notes.getItems().map((entry) => entry.user.id));
+      });
+
+    const forBeef = await owners(beef);
+    specimen.expect(forBeef.length).toBeGreaterThan(0);
+    for (const owner of forBeef) specimen.expect(owner).toBe(beef.id);
+
+    const forBob = await owners(bob);
+    specimen.expect(forBob).toEqual([bob.id, bob.id]);
   });
 });
 

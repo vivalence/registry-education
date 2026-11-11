@@ -57,9 +57,9 @@ export const emitter = new Vector().open(
 
     console.log("emitter/riddle/fromSymbols {level}", { level });
     const activity = await ctx.entities.activity.control({ user: ctx.user?.id ?? null, mode: ctx.mode.id, thread: ctx.thread?.id ?? null });
-    const { output } = await ctx.cortex.hallucinate.object.render({
+    const { product } = await ctx.cortex.hallucinate.object.render({
       controller: activity.controller,
-      policy: { tune: "capable" },
+      policy: { tier: "capable" },
       system: {
         identity: hal.emitter.identity(language),
         subject: hal.emitter.subject(pool),
@@ -76,7 +76,7 @@ export const emitter = new Vector().open(
       output: { schema: hal.emitter.output },
     });
 
-    for (const cast of (output.object?.riddles ?? []).slice(0, count)) {
+    for (const cast of (product.object?.riddles ?? []).slice(0, count)) {
       const literals = pool.filter((literal) => cast.literals?.includes(literal.slug));
 
       ctx.pool.add(

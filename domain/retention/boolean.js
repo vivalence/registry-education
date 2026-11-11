@@ -1,4 +1,5 @@
 import { time } from "@vivalence/typology";
+import { PROFILE } from "../schematics.js";
 
 const POSITIVE = ["MASTERY", "SUCCESS", "NEUTRAL"];
 
@@ -37,10 +38,16 @@ const evolve = (signal, retention) => {
   return { state, ...assess({ state }) };
 };
 
+const scale = (percent) => {
+  const state = percent >= PROFILE.KNOWN;
+  return { state, ...assess({ state }) };
+};
+
 export default {
   type: "BOOLEAN",
   encode,
   evolve,
+  scale,
   assess,
   strength: (held) => (held.state === true ? 1 : 0),
   sql: {

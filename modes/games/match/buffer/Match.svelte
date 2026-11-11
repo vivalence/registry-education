@@ -1,5 +1,5 @@
 <script>
-  import { Desk } from "@vivalence/drapes";
+  import { Desk } from "@vivalence/drapes/svelte";
 
   const { terminal, buffer, surface } = $props();
 

@@ -353,3 +353,31 @@ specimen.describe("bayesian / stress", () => {
     specimen.expect(sql).toContain("exp(");
   });
 });
+
+specimen.describe("bayesian / scale", () => {
+  specimen.it("a percent anchor is its halflife in hours", () => {
+    specimen.expect(bayesian.scale(0).state[2]).toBe(1 / 60);
+    specimen.expect(bayesian.scale(10).state[2]).toBe(1);
+    specimen.expect(bayesian.scale(50).state[2]).toBe(24 * 30);
+    specimen.expect(bayesian.scale(100).state[2]).toBe(24 * 365);
+  });
+
+  specimen.it("a preset reads back as its own status", () => {
+    specimen.expect(bayesian.scale(3).status).toBe("UNKNOWN");
+    specimen.expect(bayesian.scale(15).status).toBe("LEARNING");
+    specimen.expect(bayesian.scale(36).status).toBe("KNOWN");
+    specimen.expect(bayesian.scale(60).status).toBe("GRADUATED");
+  });
+
+  specimen.it("a status begins at its percent, not below", () => {
+    specimen.expect(bayesian.scale(35.9).status).toBe("LEARNING");
+    specimen.expect(bayesian.scale(2).status).toBe("UNKNOWN");
+  });
+
+  specimen.it("any percent scales: a higher percent is a longer halflife", () => {
+    const drawn = Array.from({ length: 1000 }, () => Math.random() * 100).sort((a, b) => a - b);
+    const hours = drawn.map((percent) => bayesian.scale(percent).nextIn);
+    specimen.expect(hours.every((nextIn) => Number.isFinite(nextIn) && nextIn > 0)).toBe(true);
+    specimen.expect(hours.every((nextIn, at) => !at || nextIn > hours[at - 1])).toBe(true);
+  });
+});

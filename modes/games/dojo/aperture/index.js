@@ -1,4 +1,4 @@
-import { Vector, object, v } from "@vivalence/typology";
+import { ValidationError, Vector, object, v } from "@vivalence/typology";
 import * as hal from "../hal/index.js";
 import * as types from "../types.js";
 import * as fold from "../fold.js";
@@ -63,13 +63,10 @@ const SETUP_INPUT = v.object({
   ...types.AXES,
 });
 
-const SESSION_INPUT = v.object({
-  buffer: v.string().desc("The dojo buffer whose live session is being kept."),
-  session: v
-    .object({})
-    .desc(
-      "The player's session as it stands — streak state, phase, counters; `queue` rides only when it changed (a keep without one inherits the kept queue). Omit = the session is over.",
-    )
+const ROUND_INPUT = v.object({
+  buffer: v.string().desc("The dojo buffer whose round is being kept."),
+  round: types.round
+    .desc("The round as it stands. Omit = the round is over and its key is cleared.")
     .optional(),
 });
 
@@ -89,7 +86,17 @@ const keepQuietly = async (entities, buffer, data) => {
 const held = (ctx) =>
   ctx.entities.buffer.findOneOrFail(
     { id: ctx.input.buffer },
-    { populate: ["literals", "symbols"] },
+    {
+      populate: [
+        "literals",
+        "literals.uses",
+        "literals.uses.symbols",
+        "literals.uses.notes",
+        "literals.symbols",
+        "literals.notes",
+        "symbols",
+      ],
+    },
   );
 
 const review = async (ctx, identifier, grade) => {
@@ -99,8 +106,8 @@ const review = async (ctx, identifier, grade) => {
   return ctx.entities.literal.review(literal, grade);
 };
 
-const row = (literal) => ({
-  ...fold.fromLiteral(literal),
+const row = (cards) => (literal) => ({
+  ...(cards.get(literal.id) ?? fold.fromLiteral(literal)),
   slug: literal.slug,
   rank: literal.rank,
   status: literal.assess()?.status ?? "UNTOUCHED",
@@ -109,7 +116,7 @@ const row = (literal) => ({
 const rows = (resolved) => ({
   clauses: resolved.clauses.map((entry) => ({
     count: entry.count,
-    literals: entry.literals.map(row),
+    literals: entry.literals.map(row(resolved.cards)),
     knowables: entry.knowables,
   })),
   total: resolved.literals.length + resolved.knowables.length,
@@ -133,7 +140,7 @@ export const aperture = new Vector()
     const buffer = await held(ctx);
     const set = ctx.input.set ?? buffer.data?.set ?? [];
     buffer.data = {
-      ...object.pluck(buffer.data ?? {}, ["knowables", "target", "session"]),
+      ...object.pluck(buffer.data ?? {}, ["knowables", "target", "round"]),
       ...object.pluck(ctx.input, types.SETUP),
       set,
     };
@@ -142,15 +149,18 @@ export const aperture = new Vector()
     return buffer;
   })
 
-  .open({ nature: "/session", input: SESSION_INPUT }, async (ctx) => {
+  .open({ nature: "/round", input: ROUND_INPUT }, async (ctx) => {
+    const faults = ctx.input.round ? types.round.faults(ctx.input.round) : [];
+    if (faults.length)
+      throw new ValidationError(
+        faults.map((fault) => ({ message: `${fault.at} ${fault.reason}` })),
+        "/round",
+      );
     const buffer = await ctx.entities.buffer.findOneOrFail({ id: ctx.input.buffer });
-    const { session: previous, ...rest } = buffer.data ?? {};
-    const incoming = ctx.input.session;
-    const next = incoming
-      ? { ...rest, session: { ...incoming, queue: incoming.queue ?? previous?.queue ?? [] } }
-      : rest;
+    const { round: previous, ...rest } = buffer.data ?? {};
+    const next = ctx.input.round ? { ...rest, round: ctx.input.round } : rest;
     await keepQuietly(ctx.entities, buffer, next);
-    return { session: Boolean(incoming) };
+    return { round: Boolean(ctx.input.round) };
   })
 
   .open({ nature: "/commission", input: COMMISSION_INPUT }, async (ctx) => {
@@ -179,12 +189,12 @@ export const aperture = new Vector()
     const activity = await ctx.entities.activity.control({ user: ctx.user?.id ?? null, mode: ctx.mode.id, thread: ctx.thread?.id ?? null });
     const render = await ctx.cortex.hallucinate.object.render({
       controller: activity.controller,
-      policy: { tune: "balanced" },
+      policy: { tier: "balanced" },
       system: { identity: hal.provision.identity(language) },
       turns: [{ role: "user", parts: [{ type: "text", text: hal.provision.request(vocabulary(symbols), ctx.input.state ?? {}, ctx.input.text) }] }],
       output: { schema: hal.provision.output },
     });
-    const out = render.output.object ?? {};
+    const out = render.product.object ?? {};
     if (!out.clause) return out;
     const { set, unknown } = await validated(ctx, [out.clause]);
     return { ...out, clause: set[0], ...(unknown.length ? { reply: `${out.reply ?? ""} Unknown symbols dropped: ${unknown.join(", ")}.`.trim() } : {}) };
@@ -234,7 +244,7 @@ export const aperture = new Vector()
     const activity = await ctx.entities.activity.control({ user: ctx.user?.id ?? null, mode: ctx.mode.id, thread: ctx.thread?.id ?? null });
     const render = await ctx.cortex.hallucinate.object.render({
       controller: activity.controller,
-      policy: { tune: "balanced" },
+      policy: { tier: "balanced" },
       system: {
         rubric: hal.judge.rubric(language, {
           typed: ctx.input.typed,
@@ -248,7 +258,7 @@ export const aperture = new Vector()
       output: { schema: hal.judge.output },
     });
 
-    const evaluation = render.output.object;
+    const evaluation = render.product.object;
     const graded = tokens.map((token, index) => ({
       ...token,
       ...(evaluation?.tokens?.find((entry) => entry.index === index) ?? {

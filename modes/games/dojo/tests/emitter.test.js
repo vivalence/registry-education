@@ -7,7 +7,18 @@ import * as domain from "../../../../domain/domain.viva.js";
 import * as types from "../types.js";
 import * as fold from "../fold.js";
 
-const emitted = (result) => result?.output?.buffer ?? [];
+const emitted = (result) => result?.product?.buffer ?? [];
+
+const POPULATE = ["uses", "uses.symbols", "uses.notes", "symbols", "notes"];
+
+const tablesOf = async (scenario, buffer) => {
+  const ids = buffer.literals
+    .getItems()
+    .filter((literal) => literal.ontology === "conjugation")
+    .map((literal) => literal.id);
+  const populated = await scenario.daemon.entities.literal.find({ id: { $in: ids } }, { populate: POPULATE });
+  return populated.map(fold.card);
+};
 
 specimen.describe("dojo emitter", () => {
   let scenario;
@@ -50,13 +61,13 @@ specimen.describe("dojo emitter", () => {
     });
   });
 
-  specimen.it("emit.feed resolves drawn conjugation rows into ONE table knowable each", async () => {
+  specimen.it("emit.feed keeps a drawn conjugation row as ONE literal, its table built from it", async () => {
     await scenario.scoped(async () => {
       const result = await scenario.mode.emit.feed({ count: 20 });
       const [buffer] = emitted(result);
       const drawn = buffer.literals.getItems();
-      specimen.expect(drawn.every((literal) => literal.ontology !== "conjugation")).toBe(true);
-      const tables = (buffer.data.knowables ?? []).filter((knowable) => knowable.ontology === "conjugation");
+      specimen.expect((buffer.data.knowables ?? []).some(fold.table)).toBe(false);
+      const tables = await tablesOf(scenario, buffer);
       specimen.expect(tables.length).toBe(1);
       const [table] = tables;
       specimen.expect(table.known).toBe("to call");
@@ -141,14 +152,14 @@ specimen.describe("dojo emitter", () => {
     });
   });
 
-  specimen.it("emit.conjugations resolves paradigm rows drawn by where into tables", async () => {
+  specimen.it("emit.conjugations keeps paradigm rows drawn by where as literals, each a table", async () => {
     await scenario.scoped(async () => {
       const result = await scenario.mode.emit.conjugations({
         where: { uses: { $in: [scenario.fixtures.chamo.id] } },
         count: 1,
       });
       const [buffer] = emitted(result);
-      const knowables = buffer.data.knowables;
+      const knowables = await tablesOf(scenario, buffer);
       specimen.expect(knowables.length).toBe(1);
       specimen.expect(buffer.data.recall).toBe("LEARNING");
       specimen.expect(buffer.data.gameplay).toBe("CONJUGATE");
@@ -166,7 +177,7 @@ specimen.describe("dojo emitter", () => {
         await scenario.mode.emit.conjugations({ where: { uses: { $in: [scenario.fixtures.chamo.id] } }, count: 1, gameplay: "TYPE" }),
       );
       specimen.expect(buffer.data.gameplay).toBe("TYPE");
-      specimen.expect(buffer.data.knowables[0].ontology).toBe("conjugation");
+      specimen.expect(buffer.literals.getItems()[0].ontology).toBe("conjugation");
     });
   });
 
@@ -176,8 +187,8 @@ specimen.describe("dojo emitter", () => {
       specimen.expect(buffer.data.set[0].where).toEqual({ ontology: "conjugation" });
       specimen.expect(buffer.data.gameplay).toBe("CONJUGATE");
       specimen.expect(buffer.data.recall).toBe("LEARNING");
-      specimen.expect(buffer.literals.getItems().length).toBe(0);
-      specimen.expect(buffer.data.knowables.every((knowable) => knowable.ontology === "conjugation")).toBe(true);
+      specimen.expect(buffer.literals.getItems().every(fold.table)).toBe(true);
+      specimen.expect(buffer.data.knowables ?? []).toEqual([]);
     });
   });
 

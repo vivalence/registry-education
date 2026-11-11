@@ -10,5 +10,5 @@ export const manifest = {
     "Operator mode that closes the katabolic loop: survey what has no voice, resolve recordings " +
     "from web sources or synthesize via TTS, receive them into the topography's fileset, stamp " +
     "VOCALIZED with attribution, and let the datasink write the mode content back to disk.",
-  traits: ["CONVERSATIONAL", "HARNESSED", "TOOLING", "PRIMER"],
+  traits: ["CONVERSATION", "HARNESS", "TOOLING", "PRIMER"],
 };
