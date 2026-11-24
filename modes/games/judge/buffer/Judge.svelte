@@ -1,7 +1,7 @@
 <script>
   import { Asset, Desk } from "@vivalence/drapes/svelte";
 
-  const { terminal, buffer, surface } = $props();
+  const { terminal, buffer, skin } = $props();
   const files = terminal.client.runtime.entities.file.$entities;
 
   const data = buffer.data ?? {};
@@ -287,7 +287,7 @@
     padding: 1.25rem 1.5rem;
     border-radius: 0.75rem;
     border: 1px solid var(--boundary);
-    background: color-mix(in srgb, var(--surface-lift) 80%, var(--surface-sunk));
+    background: color-mix(in srgb, var(--plane-lift) 80%, var(--plane-sunk));
   }
   .shown {
     font-family: var(--font-family-serif-heading);

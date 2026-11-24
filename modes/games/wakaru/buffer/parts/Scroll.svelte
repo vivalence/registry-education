@@ -98,7 +98,7 @@
     gap: 0.35rem;
     padding: var(--size-space-md) var(--size-space-sm);
     border-radius: var(--shape-radius-card);
-    background: var(--surface-lift);
+    background: var(--plane-lift);
     box-shadow: inset 0 0 0 var(--size-ring) var(--boundary);
     text-align: center;
   }

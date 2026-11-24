@@ -14,7 +14,7 @@ import * as workbenchState from "./workbench.js";
   import Handle from "./parts/Handle.svelte";
   import Drawer from "./parts/Drawer.svelte";
 
-  const { terminal, buffer, surface } = $props();
+  const { terminal, buffer, skin } = $props();
   const recorded = terminal.client.runtime.entities.file.$entities;
   const files = $derived($recorded.filter((file) => file.mode.daemon === buffer.mode.daemon));
 
@@ -898,7 +898,7 @@ import * as workbenchState from "./workbench.js";
     max-height: var(--viva-h, 100%);
     min-height: 0;
     overflow: hidden;
-    background: var(--surface);
+    background: var(--plane);
   }
   .player {
     position: absolute;
@@ -911,7 +911,7 @@ import * as workbenchState from "./workbench.js";
   .strip {
     flex: none;
     height: 2px;
-    background: var(--surface-lift);
+    background: var(--plane-lift);
   }
   .fill {
     height: 100%;
@@ -933,7 +933,7 @@ import * as workbenchState from "./workbench.js";
     display: flex;
     align-items: center;
     justify-content: center;
-    background: color-mix(in srgb, var(--surface) 70%, transparent);
+    background: color-mix(in srgb, var(--plane) 70%, transparent);
   }
   .stage {
     display: flex;

@@ -13,7 +13,7 @@ export const manifest = {
   description:
     "A valley you walk, charted from the learner's own memory: a square, eight districts and their houses, three wings and a dark summit. Read the word stones, catch the due words that roam as spirits, fish, answer the keepers, wake the wardens — every answer a review.",
   version: "0.3.0",
-  traits: ["VIEWABLE", "EMITTER", "INTENTED", "EXPOSED", "TOOLING", "HARNESS"],
+  traits: ["SURFACED", "EMITTER", "INTENTED", "EXPOSED", "TOOLING", "HARNESS"],
 };
 
 export const buffer = v
@@ -32,7 +32,7 @@ Each keeper is an old gardener who speaks through the cortex in the learning lan
 The screen runs the engine — beat(state, action, ctx) → state, effects, events — plays the effects, and keeps data.run through /keep, quietly. The summit's fall raises crowned and the buffer goes DONE.`,
   );
 
-export const views = [{ slug: "wakaru", mount: "buffer/Wakaru.svelte", mime: mime.dom.svelte }];
+export const surfaces = [{ slug: "wakaru", mount: "buffer/Wakaru.svelte", mime: mime.dom.svelte }];
 
 export const dataset = {
   intent: [

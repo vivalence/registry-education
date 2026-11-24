@@ -2,7 +2,7 @@
   import { string } from "@vivalence/typology";
   import { Keyboard, Asset, ViewportLock, Desk, persist } from "@vivalence/drapes/svelte";
 
-  const { terminal, buffer, surface } = $props();
+  const { terminal, buffer, skin } = $props();
   const files = terminal.client.runtime.entities.file.$entities;
 
   let keyboard;
@@ -303,7 +303,7 @@
     padding: 0.625rem 1.25rem;
     border-radius: 0.5rem;
     border: 1px solid var(--boundary);
-    background: color-mix(in srgb, var(--surface-lift) 70%, var(--surface-sunk));
+    background: color-mix(in srgb, var(--plane-lift) 70%, var(--plane-sunk));
     color: var(--text-light);
     font-size: var(--font-size-lg);
     font-family: var(--font-family-serif-heading);

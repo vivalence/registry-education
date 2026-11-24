@@ -48,7 +48,7 @@
   }
   .segment.on {
     border-color: var(--signal-primary-ink);
-    background: var(--surface-sunk);
+    background: var(--plane-sunk);
     color: var(--signal-primary-ink);
   }
   .segment.on[data-tone="secondary"] {

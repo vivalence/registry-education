@@ -291,7 +291,7 @@
     padding: var(--size-space-md) var(--size-space-md)
       calc(var(--size-space-md) + env(safe-area-inset-bottom, 0px));
     border-radius: var(--shape-radius-card) var(--shape-radius-card) 0 0;
-    background: var(--surface-lift);
+    background: var(--plane-lift);
     box-shadow:
       inset 0 0 0 var(--size-ring) var(--boundary),
       var(--shape-lift);
@@ -414,7 +414,7 @@
     margin: 0;
     padding: var(--size-space-sm);
     border-radius: var(--shape-radius-field);
-    background: var(--surface-sunk);
+    background: var(--plane-sunk);
     text-align: center;
   }
   .example-learning {
@@ -479,7 +479,7 @@
     border: 0;
     border-radius: var(--shape-radius-key);
     background: var(--signal-primary);
-    box-shadow: 0 0 0 var(--size-space-xs) var(--surface-lift);
+    box-shadow: 0 0 0 var(--size-space-xs) var(--plane-lift);
     color: var(--signal-primary-on);
     font-family: var(--font-family-code);
     font-size: var(--size-type-md);
@@ -564,7 +564,7 @@
     padding: 0.35rem;
     border-bottom: 2px dashed var(--text-muted);
     border-radius: var(--shape-radius-field) var(--shape-radius-field) 0 0;
-    background: var(--surface-sunk);
+    background: var(--plane-sunk);
   }
   .chip {
     display: inline-flex;

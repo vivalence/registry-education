@@ -561,7 +561,7 @@
     padding: 0.15rem 0.25rem 0.15rem 0.6rem;
     border: 1px solid var(--signal-caution-ink);
     border-radius: 0.2rem;
-    background: var(--surface-sunk);
+    background: var(--plane-sunk);
     font-family: var(--font-family-code);
     font-size: var(--font-size-2xs);
     color: var(--signal-caution-ink);
@@ -626,7 +626,7 @@
   .field {
     width: 100%;
     box-sizing: border-box;
-    background: var(--surface);
+    background: var(--plane);
     border: 1px solid var(--boundary);
     border-radius: 0.25rem;
     padding: 0.55rem 0.7rem;
@@ -675,7 +675,7 @@
     padding: 0.3rem 0.55rem;
     border-radius: 0.2rem;
     border: 1px solid var(--boundary);
-    background: var(--surface);
+    background: var(--plane);
     color: var(--text-ink);
     cursor: grab;
     min-height: 1.75rem;
@@ -728,11 +728,11 @@
   .bin.aimed {
     border-color: var(--text-light);
     border-left-color: var(--tone);
-    background: var(--surface-sunk);
+    background: var(--plane-sunk);
   }
   .bin.over {
     border-color: var(--tone);
-    background: var(--surface-sunk);
+    background: var(--plane-sunk);
   }
   .bin-head {
     display: flex;
@@ -790,7 +790,7 @@
     gap: 0.4rem;
     border: 1px solid var(--tone);
     border-radius: 0.2rem;
-    background: var(--surface-sunk);
+    background: var(--plane-sunk);
     padding: 0.2rem 0.3rem 0.2rem 0.55rem;
     cursor: grab;
   }
@@ -851,7 +851,7 @@
     width: 4rem;
     height: 1.75rem;
     box-sizing: border-box;
-    background: var(--surface);
+    background: var(--plane);
     border: 1px solid var(--boundary);
     border-radius: 0.2rem;
     padding: 0 0.5rem;
@@ -877,7 +877,7 @@
     cursor: row-resize;
     touch-action: none;
     position: relative;
-    background: var(--surface-lift);
+    background: var(--plane-lift);
     border-top: 1px solid var(--boundary-soft);
     border-bottom: 1px solid var(--boundary-soft);
   }
@@ -904,7 +904,7 @@
     min-height: 6rem;
     display: flex;
     flex-direction: column;
-    background: var(--surface-sunk);
+    background: var(--plane-sunk);
   }
   .results-head {
     flex: none;
@@ -945,7 +945,7 @@
   .add.ready {
     border-color: var(--signal-primary-ink);
     color: var(--signal-primary-ink);
-    background: var(--surface-lift);
+    background: var(--plane-lift);
   }
   .add.ready.amber {
     border-color: var(--signal-caution-ink);
@@ -977,10 +977,10 @@
     cursor: pointer;
   }
   .line.pinned {
-    background: var(--surface-sunk);
+    background: var(--plane-sunk);
   }
   .line:hover {
-    background: var(--surface-lift);
+    background: var(--plane-lift);
   }
   .bar {
     flex: none;

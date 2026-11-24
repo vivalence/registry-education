@@ -261,7 +261,7 @@
     min-height: 2.75rem;
     padding: 0 0.6rem;
     border-radius: var(--shape-radius-key);
-    background: var(--surface-lift);
+    background: var(--plane-lift);
     box-shadow:
       inset 0 0 0 var(--size-ring) var(--boundary),
       var(--shape-lift);
@@ -285,7 +285,7 @@
   .tea {
     gap: 0.25rem;
     background: linear-gradient(var(--signal-negative-tint), var(--signal-negative-tint)),
-      var(--surface-lift);
+      var(--plane-lift);
     box-shadow:
       inset 0 0 0 var(--size-ring) var(--signal-negative-ink),
       var(--shape-lift);
@@ -316,7 +316,7 @@
     width: 2.4rem;
     height: 4px;
     border-radius: var(--shape-radius-pill);
-    background: var(--surface-sunk);
+    background: var(--plane-sunk);
     overflow: hidden;
   }
   .beads i {

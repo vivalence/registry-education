@@ -78,7 +78,7 @@
     padding: 0.625rem 0.875rem;
     border-radius: 0.5rem;
     border: 1px solid color-mix(in srgb, var(--boundary) 45%, transparent);
-    background: color-mix(in srgb, var(--surface-lift) 70%, var(--surface-sunk));
+    background: color-mix(in srgb, var(--plane-lift) 70%, var(--plane-sunk));
     color: inherit;
     font: inherit;
     text-align: left;

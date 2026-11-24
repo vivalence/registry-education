@@ -40,13 +40,13 @@ export function Cocina(props) {
   );
 }
 
-export default (element, { terminal, buffer, surface, renderer, palette, focused }) => {
+export default (element, { terminal, buffer, skin, renderer, palette, focused }) => {
   const dispose = _render(
     () =>
       createComponent(RendererContext.Provider, {
         value: renderer,
         get children() {
-          return createComponent(Cocina, { terminal, buffer, surface, renderer, palette, focused });
+          return createComponent(Cocina, { terminal, buffer, skin, renderer, palette, focused });
         },
       }),
     element,

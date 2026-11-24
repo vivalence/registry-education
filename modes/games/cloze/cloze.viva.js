@@ -7,7 +7,7 @@ const manifest = {
   description:
     "Fill blanked tokens in a sentence. Typed, picked, or audio-prompted. Per-token review.",
   version: "0.1.0",
-  traits: ["VIEWABLE", "EMITTER"],
+  traits: ["SURFACED", "EMITTER"],
 };
 
 const ontology = ["sentence"];
@@ -30,7 +30,7 @@ const buffer = v.buffer({
   },
 });
 
-const views = [
+const surfaces = [
   { slug: "cloze", mount: "buffer/Cloze.svelte", mime: mime.dom.svelte },
 ];
 
@@ -84,4 +84,4 @@ const dataset = {
   ],
 };
 
-export { manifest, buffer, views, emitter, dataset };
+export { manifest, buffer, surfaces, emitter, dataset };

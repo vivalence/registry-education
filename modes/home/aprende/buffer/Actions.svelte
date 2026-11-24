@@ -1,7 +1,7 @@
 <script>
   import { Section } from "@vivalence/drapes/svelte";
 
-  const { terminal, buffer, surface } = $props();
+  const { terminal, buffer, skin } = $props();
 
   const GAMES = [
     { key: "flashcard", label: "Flashcard", accent: "#5b8c5a" },

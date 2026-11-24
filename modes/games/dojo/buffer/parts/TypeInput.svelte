@@ -105,7 +105,7 @@
     padding: 0.75rem 1.25rem;
     border-radius: 0.5rem;
     border: 1px solid var(--boundary);
-    background: color-mix(in srgb, var(--surface-lift) 50%, var(--surface));
+    background: color-mix(in srgb, var(--plane-lift) 50%, var(--plane));
     color: var(--text-strong);
     font-size: var(--font-size-base);
     font-family: var(--font-family-serif-heading);

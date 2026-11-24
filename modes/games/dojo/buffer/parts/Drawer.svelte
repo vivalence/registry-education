@@ -243,7 +243,7 @@
     height: 76%;
     transform: translateY(-101%);
     transition: transform 280ms cubic-bezier(0.32, 0.72, 0, 1);
-    background: var(--surface-lift);
+    background: var(--plane-lift);
     border-bottom: 1px solid var(--signal-primary-ink);
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
     display: flex;
@@ -285,7 +285,7 @@
   .rail {
     flex: 0 0 44px;
     border-right: 1px solid var(--boundary-soft);
-    background: var(--surface-lift);
+    background: var(--plane-lift);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -341,7 +341,7 @@
     flex: none;
   }
   .column.side {
-    background: var(--surface);
+    background: var(--plane);
   }
   .narrow .column {
     flex: 1 1 auto;
@@ -356,7 +356,7 @@
     cursor: col-resize;
     touch-action: none;
     position: relative;
-    background: var(--surface-lift);
+    background: var(--plane-lift);
     border-left: 1px solid var(--boundary-soft);
     border-right: 1px solid var(--boundary-soft);
   }
@@ -450,7 +450,7 @@
   .start.ready {
     border-color: var(--signal-primary-ink);
     color: var(--signal-primary-ink);
-    background: var(--surface-sunk);
+    background: var(--plane-sunk);
   }
   .start:disabled {
     cursor: default;
@@ -469,7 +469,7 @@
   .stub-bar {
     flex: none;
     border-top: 1px solid var(--boundary-soft);
-    background: var(--surface);
+    background: var(--plane);
     padding: 0.45rem 0.5rem 0.55rem;
     display: flex;
     flex-direction: column;
@@ -499,7 +499,7 @@
   }
   .stub.on {
     border-color: var(--signal-primary-ink);
-    background: var(--surface-sunk);
+    background: var(--plane-sunk);
     color: var(--signal-primary-ink);
   }
   .stub-meta {
@@ -517,7 +517,7 @@
   .close-bar {
     flex: none;
     border-top: 1px solid var(--boundary);
-    background: var(--surface-lift);
+    background: var(--plane-lift);
     padding: 0.35rem 0;
     display: flex;
     align-items: center;
@@ -528,7 +528,7 @@
     user-select: none;
   }
   .close-bar:hover {
-    background: var(--surface-sunk);
+    background: var(--plane-sunk);
   }
   .close-bar .arrow {
     color: var(--signal-primary-ink);

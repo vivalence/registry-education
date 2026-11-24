@@ -5,7 +5,7 @@ const RIDDLER_RENDER_OUTPUT = v.object({
     v.object({
       riddle: v.string().desc("The riddle prompt — one sentence, LEARNING language."),
       answer: v.string().desc("The single expected answer, LEARNING language."),
-      literals: v.array(v.slug()).desc("The slugs of the vocabulary this riddle depends on."),
+      literals: v.array(v.scalars.Slug).desc("The slugs of the vocabulary this riddle depends on."),
     }),
   ),
 });

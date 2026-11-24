@@ -208,7 +208,7 @@
     gap: 0.4rem;
     padding: 0.7rem 0.8rem;
     border-radius: var(--shape-radius-card);
-    background: var(--surface-lift);
+    background: var(--plane-lift);
     box-shadow: inset 0 0 0 var(--size-ring) var(--boundary);
   }
   .line {
@@ -231,7 +231,7 @@
     display: block;
     height: 8px;
     border-radius: var(--shape-radius-pill);
-    background: var(--surface-sunk);
+    background: var(--plane-sunk);
     box-shadow: inset 0 0 0 var(--size-ring) var(--boundary);
   }
   .fill {
@@ -319,7 +319,7 @@
     padding: 0.4rem 0.7rem;
     border: 0;
     border-radius: var(--shape-radius-card);
-    background: var(--surface-lift);
+    background: var(--plane-lift);
     box-shadow: inset 0 0 0 var(--size-ring) var(--boundary);
     color: var(--text-ink);
     text-align: left;
@@ -367,7 +367,7 @@
     margin: 0.25rem 0 0.35rem 1rem;
     padding: 0.5rem 0.7rem;
     border-radius: var(--shape-radius-card);
-    background: var(--surface-sunk);
+    background: var(--plane-sunk);
   }
   .example p {
     margin: 0;

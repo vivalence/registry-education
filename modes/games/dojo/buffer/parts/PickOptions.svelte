@@ -38,7 +38,7 @@
     padding: 0.875rem 1.125rem;
     border-radius: 0.625rem;
     border: 1px solid var(--boundary);
-    background: color-mix(in srgb, var(--surface-lift) 70%, var(--surface-sunk));
+    background: color-mix(in srgb, var(--plane-lift) 70%, var(--plane-sunk));
     color: var(--text-strong);
     cursor: pointer;
     text-align: left;

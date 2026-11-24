@@ -86,7 +86,7 @@
     flex-direction: column;
     min-height: 0;
     height: 100%;
-    background: var(--surface);
+    background: var(--plane);
   }
   .head {
     flex: none;
@@ -138,7 +138,7 @@
   .field {
     flex: 1;
     min-width: 0;
-    background: var(--surface-lift);
+    background: var(--plane-lift);
     border: 1px solid var(--signal-primary-ink);
     border-radius: 0.2rem;
     padding: 0.4rem 0.55rem;
@@ -169,7 +169,7 @@
   .card {
     border: 1px solid var(--boundary);
     border-radius: 0.2rem;
-    background: var(--surface-lift);
+    background: var(--plane-lift);
   }
   .card.editing {
     border-color: var(--signal-caution-ink);
@@ -236,7 +236,7 @@
     flex: none;
   }
   .tool:hover {
-    background: var(--surface-sunk);
+    background: var(--plane-sunk);
   }
   .tool svg {
     width: 13px;

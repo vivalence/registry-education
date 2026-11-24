@@ -336,14 +336,14 @@
     padding: 0.4rem;
     border: 0;
     border-radius: var(--shape-radius-card);
-    background: var(--surface-lift);
+    background: var(--plane-lift);
     box-shadow: inset 0 0 0 var(--size-ring) var(--boundary);
     color: var(--text-ink);
     font: inherit;
     text-align: left;
   }
   .card.here { box-shadow: inset 0 0 0 2px var(--signal-primary-ink); }
-  .card.unwalked { background: var(--surface); }
+  .card.unwalked { background: var(--plane); }
   .travel { cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
   .travel:active { transform: translateY(var(--size-depth)); }
   .go {
@@ -364,7 +364,7 @@
     display: block;
     padding: 2px;
     border-radius: var(--shape-radius-sm);
-    background: var(--surface-sunk);
+    background: var(--plane-sunk);
     box-shadow: inset 0 0 0 var(--size-ring) var(--boundary);
   }
   canvas { display: block; width: 100%; height: auto; image-rendering: pixelated; border-radius: var(--shape-radius-xs); }
@@ -379,7 +379,7 @@
     margin: -0.3rem 0 0 -0.3rem;
     border-radius: var(--shape-radius-disc);
     background: var(--signal-primary);
-    box-shadow: 0 0 0 2px var(--surface);
+    box-shadow: 0 0 0 2px var(--plane);
     animation: pulse 1.6s ease-in-out infinite;
   }
   .you.middle { left: 50%; top: 50%; }
@@ -408,7 +408,7 @@
   /* a place's held share: a ring on a sunk track, the percent beside it in words */
   .dial { width: 1.1rem; height: 1.1rem; transform: rotate(-90deg); }
   .track, .arc { fill: none; stroke-width: 3; }
-  .track { stroke: var(--surface-sunk); }
+  .track { stroke: var(--plane-sunk); }
   .arc { stroke: var(--signal-positive-ink); stroke-linecap: round; }
 
   .wings { display: flex; flex-direction: column; gap: 0.4rem; }

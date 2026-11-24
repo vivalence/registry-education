@@ -4,7 +4,7 @@ import { GRADES } from "../types.js";
 const EVALUATION_RENDER_OUTPUT = v.object({
   grades: v.array(
     v.object({
-      slug: v.slug().desc("The literal being graded."),
+      slug: v.scalars.Slug.desc("The literal being graded."),
       grade: v.enum(GRADES).desc("The retention signal earned on this literal."),
     }),
   ),

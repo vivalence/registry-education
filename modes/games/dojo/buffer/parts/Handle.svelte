@@ -19,13 +19,13 @@
     padding: 0.55rem 1rem;
     border: none;
     border-bottom: 1px solid var(--boundary);
-    background: var(--surface-lift);
+    background: var(--plane-lift);
     cursor: pointer;
     text-align: left;
     color: inherit;
   }
   .handle:hover {
-    background: var(--surface-sunk);
+    background: var(--plane-sunk);
   }
   .arrow {
     font-family: var(--font-family-code);

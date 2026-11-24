@@ -9,7 +9,7 @@ export const manifest = {
   name: "Cocina",
   description: "Language as the controller — a rail of tickets; the chef calls the steps in Spanish, the learner obeys, then runs the pass. The model converses, the tools cook and grade the lexemes.",
   version: "0.2.0",
-  traits: ["VIEWABLE", "HARNESS", "TOOLING", "CONVERSATION"],
+  traits: ["SURFACED", "HARNESS", "TOOLING", "CONVERSATION"],
 };
 
 const LEXEME = v.object({
@@ -35,7 +35,7 @@ export const buffer = v
   })
   .desc("Cocina: a kitchen driven by Spanish. OBEY until three clean reactions, then COMMAND; the model converses, the tools cook and grade.");
 
-export const views = [
+export const surfaces = [
   { slug: "cocina", mount: "buffer/Cocina.svelte", mime: mime.dom.svelte },
   { slug: "cocina", mount: "buffer/cocina.jsx", mime: mime.tty.solid },
 ];

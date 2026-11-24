@@ -8,7 +8,7 @@ const manifest = {
   description:
     "Standalone typing trainer. Setup, practice, review. One keystroke stream split into recall / spelling / motor. Generic words, or learning-domain literals graded back to retention.",
   version: "0.1.0",
-  traits: ["VIEWABLE", "EMITTER", "TOOLING"],
+  traits: ["SURFACED", "EMITTER", "TOOLING"],
 };
 
 const buffer = v.buffer({
@@ -32,7 +32,7 @@ const buffer = v.buffer({
   literals: v.array(v.rel(v.literal())).optional(),
 });
 
-const views = [
+const surfaces = [
   { slug: "nyan", mount: "buffer/Nyan.svelte", mime: mime.dom.svelte },
 ];
 
@@ -130,4 +130,4 @@ const tools = new Vector().open(
   async (ctx) => ctx.mode.emit.play(ctx.input),
 );
 
-export { manifest, buffer, views, emitter, tools };
+export { manifest, buffer, surfaces, emitter, tools };

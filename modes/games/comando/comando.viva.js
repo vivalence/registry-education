@@ -9,7 +9,7 @@ export const manifest = {
   name: "Comando",
   description: "Language as the controller — a board of units, goals and hazards; the commander speaks Spanish, the learner obeys, then commands. The model converses, the tools move the board and grade the lexemes.",
   version: "0.2.0",
-  traits: ["VIEWABLE", "HARNESS", "TOOLING", "CONVERSATION"],
+  traits: ["SURFACED", "HARNESS", "TOOLING", "CONVERSATION"],
 };
 
 const LEXEME = v.object({
@@ -35,7 +35,7 @@ export const buffer = v
   })
   .desc("Comando: a board driven by Spanish. OBEY until three clean reactions, then COMMAND; the model converses, the tools move and grade.");
 
-export const views = [
+export const surfaces = [
   { slug: "comando", mount: "buffer/Comando.svelte", mime: mime.dom.svelte },
   { slug: "comando", mount: "buffer/comando.jsx", mime: mime.tty.solid },
 ];

@@ -8,7 +8,7 @@
   import Chrome from "./panels/Chrome.svelte";
   import Controls from "./panels/Controls.svelte";
 
-  const { terminal, buffer, surface } = $props();
+  const { terminal, buffer, skin } = $props();
   const { words: seedWords, owners: seedOwners, ...seedConfig } = buffer.data ?? {};
   const literals = buffer.literals;
 

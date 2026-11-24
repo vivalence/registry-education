@@ -7,7 +7,7 @@ const manifest = {
   description:
     "True/false on translation pairs. Correct or distractor pairing. Visual, audio, or audio-only gameplay. Optional speed presets.",
   version: "0.1.0",
-  traits: ["VIEWABLE", "EMITTER"],
+  traits: ["SURFACED", "EMITTER"],
 };
 
 const ontology = ["word", "sentence"];
@@ -126,8 +126,8 @@ const buffer = v.buffer({
   },
 });
 
-const views = [
+const surfaces = [
   { slug: "judge", mount: "buffer/Judge.svelte", mime: mime.dom.svelte },
 ];
 
-export { manifest, buffer, views, emitter, dataset };
+export { manifest, buffer, surfaces, emitter, dataset };

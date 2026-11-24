@@ -124,12 +124,12 @@
     align-items: center;
     padding: 0.45rem 0.75rem;
     border-radius: 0.375rem;
-    background: color-mix(in srgb, var(--surface-lift) 40%, transparent);
+    background: color-mix(in srgb, var(--plane-lift) 40%, transparent);
     transition: background 0.15s;
     min-height: 2.4rem;
   }
   .cell-row:nth-child(odd) {
-    background: color-mix(in srgb, var(--surface-lift) 65%, transparent);
+    background: color-mix(in srgb, var(--plane-lift) 65%, transparent);
   }
   .cell-row.current {
     background: color-mix(in srgb, var(--signal-primary-tint) 25%, transparent);

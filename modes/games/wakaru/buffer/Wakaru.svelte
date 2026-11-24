@@ -1007,7 +1007,7 @@
     height: 100%;
     min-height: 0;
     overflow: hidden;
-    background: var(--surface);
+    background: var(--plane);
   }
   .arena {
     position: absolute;
@@ -1021,7 +1021,7 @@
     flex: 1 1 auto;
     min-height: 30%;
     overflow: hidden;
-    background: var(--surface-sunk);
+    background: var(--plane-sunk);
   }
   .ground {
     position: absolute;
@@ -1046,7 +1046,7 @@
     overscroll-behavior: contain;
     padding: 0.5rem max(0.5rem, env(safe-area-inset-right)) max(0.5rem, env(safe-area-inset-bottom))
       max(0.5rem, env(safe-area-inset-left));
-    background: var(--surface);
+    background: var(--plane);
     box-shadow: var(--shape-lift);
   }
   .slot {
@@ -1069,7 +1069,7 @@
     max-width: 100%;
     padding: 0.35rem 0.8rem;
     border-radius: var(--shape-radius-pill);
-    background: var(--surface-lift);
+    background: var(--plane-lift);
     box-shadow:
       inset 0 0 0 var(--size-ring) var(--boundary),
       var(--shape-lift);
@@ -1080,7 +1080,7 @@
   }
   .toast.coins {
     background: linear-gradient(var(--signal-caution-tint), var(--signal-caution-tint)),
-      var(--surface-lift);
+      var(--plane-lift);
     box-shadow:
       inset 0 0 0 var(--size-ring) var(--signal-caution-ink),
       var(--shape-lift);
@@ -1088,7 +1088,7 @@
   }
   .toast.rested {
     background: linear-gradient(var(--signal-positive-tint), var(--signal-positive-tint)),
-      var(--surface-lift);
+      var(--plane-lift);
     box-shadow:
       inset 0 0 0 var(--size-ring) var(--signal-positive-ink),
       var(--shape-lift);
@@ -1096,7 +1096,7 @@
   }
   .toast.quest {
     background: linear-gradient(var(--signal-primary-tint), var(--signal-primary-tint)),
-      var(--surface-lift);
+      var(--plane-lift);
     box-shadow:
       inset 0 0 0 var(--size-ring) var(--signal-primary-ink),
       var(--shape-lift);
@@ -1104,7 +1104,7 @@
   }
   .toast.fallen {
     background: linear-gradient(var(--signal-negative-tint), var(--signal-negative-tint)),
-      var(--surface-lift);
+      var(--plane-lift);
     box-shadow:
       inset 0 0 0 var(--size-ring) var(--signal-negative-ink),
       var(--shape-lift);
@@ -1124,7 +1124,7 @@
     margin: 0;
     padding: 0.35rem 0.7rem;
     border-radius: var(--shape-radius-key);
-    background: var(--surface-lift);
+    background: var(--plane-lift);
     box-shadow:
       inset 0 0 0 var(--size-ring) var(--boundary),
       var(--shape-lift);
@@ -1160,7 +1160,7 @@
   .veil span {
     padding: 0.5rem 1rem;
     border-radius: var(--shape-radius-pill);
-    background: var(--surface-lift);
+    background: var(--plane-lift);
     box-shadow:
       inset 0 0 0 var(--size-ring) var(--boundary),
       var(--shape-lift);
@@ -1179,7 +1179,7 @@
     overscroll-behavior: contain;
     padding: 0.75rem max(0.75rem, env(safe-area-inset-right)) max(1rem, env(safe-area-inset-bottom))
       max(0.75rem, env(safe-area-inset-left));
-    background: var(--surface);
+    background: var(--plane);
   }
   .sheet:focus {
     outline: none;

@@ -184,7 +184,7 @@
     gap: 0.3rem;
     padding: 0.7rem 0.8rem;
     border-radius: var(--shape-radius-card);
-    background: var(--surface-lift);
+    background: var(--plane-lift);
     box-shadow: inset 0 0 0 2px var(--signal-primary-ink);
   }
   .label {
@@ -242,7 +242,7 @@
     display: block;
     height: 6px;
     border-radius: var(--shape-radius-pill);
-    background: var(--surface-sunk);
+    background: var(--plane-sunk);
     box-shadow: inset 0 0 0 var(--size-ring) var(--boundary);
   }
   .fill {
@@ -292,7 +292,7 @@
     column-gap: 0.6rem;
     padding: 0.45rem 0.6rem;
     border-radius: var(--shape-radius-card);
-    background: var(--surface-lift);
+    background: var(--plane-lift);
     box-shadow: inset 0 0 0 var(--size-ring) var(--boundary);
   }
   .seal {

@@ -7,7 +7,7 @@ const manifest = {
   description:
     "Present structured knowledge. Tables, patterns, contrasts. No testing — pure absorption.",
   version: "0.1.0",
-  traits: ["VIEWABLE", "EMITTER"],
+  traits: ["SURFACED", "EMITTER"],
 };
 
 const ontology = ["word", "sentence"];
@@ -21,7 +21,7 @@ const buffer = v.buffer({
   },
 });
 
-const views = [
+const surfaces = [
   { slug: "exhibit", mount: "buffer/Exhibit.svelte", mime: mime.dom.svelte },
 ];
 
@@ -69,4 +69,4 @@ const dataset = {
   ],
 };
 
-export { manifest, buffer, views, emitter, dataset };
+export { manifest, buffer, surfaces, emitter, dataset };

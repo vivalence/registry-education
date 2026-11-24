@@ -14,7 +14,7 @@ export const manifest = {
   description:
     "One rep machine over words, sentences and conjugation forms — prompt, gameplay, preview, streak, continuous and limit all free to combine.",
   version: "0.1.0",
-  traits: ["VIEWABLE", "EMITTER", "INTENTED", "EXPOSED", "TOOLING", "HARNESS"],
+  traits: ["SURFACED", "EMITTER", "INTENTED", "EXPOSED", "TOOLING", "HARNESS"],
 };
 
 export const buffer = v
@@ -54,7 +54,7 @@ Presets (meet, recognize, write, shadow, listen, drill, mixed, ultra) are emitte
 The buffer carries its own continuous machinery: data.continuous re-resolves data.set on completion, blacklisting what was played. Thread AIMED+QUEUEING re-pull on release is an alternative outer loop.`,
     );
 
-export const views = [
+export const surfaces = [
   { slug: "dojo", mount: "buffer/Dojo.svelte", mime: mime.dom.svelte },
   { slug: "dojo", mount: "buffer/dojo.jsx", mime: mime.tty.solid },
 ];

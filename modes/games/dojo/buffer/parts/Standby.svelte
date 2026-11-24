@@ -40,7 +40,7 @@
     box-sizing: border-box;
     border: 1px solid var(--boundary);
     border-radius: 0.625rem;
-    background: var(--surface-lift);
+    background: var(--plane-lift);
     padding: 2.375rem;
     margin: auto;
   }
@@ -83,7 +83,7 @@
     white-space: nowrap;
   }
   .call {
-    background: var(--surface-sunk);
+    background: var(--plane-sunk);
     border: 1px solid var(--boundary);
     border-radius: 0.375rem;
     padding: 0.875rem;
@@ -109,7 +109,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.375rem;
-    background: var(--surface-sunk);
+    background: var(--plane-sunk);
     padding: 0.875rem 1rem;
   }
   .stat-key {

@@ -85,7 +85,7 @@
     flex-direction: column;
     min-height: 0;
     height: 100%;
-    background: var(--surface-lift);
+    background: var(--plane-lift);
   }
   .head {
     flex: none;
@@ -104,7 +104,7 @@
     line-height: 1;
     border-radius: 0.2rem;
     border: 1px solid var(--signal-primary-ink);
-    background: var(--surface-sunk);
+    background: var(--plane-sunk);
     color: var(--signal-primary-ink);
     font-family: var(--font-family-code);
     font-size: var(--font-size-xs);
@@ -127,7 +127,7 @@
   .port-button {
     border: 1px solid var(--boundary);
     border-radius: 0.2rem;
-    background: var(--surface);
+    background: var(--plane);
     color: var(--text-light);
     font-family: var(--font-family-code);
     font-size: var(--font-size-2xs);
@@ -171,7 +171,7 @@
     text-align: left;
     border: 1px solid var(--boundary);
     border-radius: 0.2rem;
-    background: var(--surface);
+    background: var(--plane);
     padding: 0.45rem 0.55rem;
     cursor: pointer;
     display: flex;
@@ -221,7 +221,7 @@
     color: inherit;
   }
   .recent:hover {
-    background: var(--surface-sunk);
+    background: var(--plane-sunk);
   }
   .recent .rule {
     flex: 1;

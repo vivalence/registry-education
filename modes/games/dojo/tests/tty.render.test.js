@@ -52,7 +52,7 @@ describe("dojo view — mounted in a tty", { sanitizeResources: false, sanitizeO
     const bag = {
       terminal: { dispatch: () => {}, client: { runtime: { entities: { file: { $entities: atom([]) } } } } },
       buffer,
-      surface: { place: "frame" },
+      skin: { place: "frame" },
       palette: tokens.camel("northsea", "2"),
       focused: () => true,
     };

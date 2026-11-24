@@ -292,7 +292,7 @@
     gap: 0.6rem;
     padding: var(--size-space-sm);
     border-radius: var(--shape-radius-card);
-    background: var(--surface-lift);
+    background: var(--plane-lift);
     box-shadow: inset 0 0 0 var(--size-ring) var(--boundary);
   }
   .crest {
@@ -357,7 +357,7 @@
     top: 0;
     bottom: 0;
     width: 2px;
-    background: var(--surface-lift);
+    background: var(--plane-lift);
   }
   .ask {
     margin: 0;
@@ -534,7 +534,7 @@
     padding: 0.35rem;
     border-bottom: 2px dashed var(--text-muted);
     border-radius: var(--shape-radius-field) var(--shape-radius-field) 0 0;
-    background: var(--surface-sunk);
+    background: var(--plane-sunk);
   }
   .chip {
     display: inline-flex;

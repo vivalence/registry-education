@@ -2,7 +2,7 @@
   import { onMount } from "svelte";
   import { Section } from "@vivalence/drapes/svelte";
 
-  const { terminal, buffer, surface } = $props();
+  const { terminal, buffer, skin } = $props();
 
   const ACCENTS = {
     "/emit/vocabolario": "#5b8c5a",

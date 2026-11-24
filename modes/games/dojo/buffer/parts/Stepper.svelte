@@ -75,7 +75,7 @@
     font-size: var(--font-size-xs);
     padding: 0 0.6rem;
     border: none;
-    background: var(--surface-sunk);
+    background: var(--plane-sunk);
     color: var(--text-light);
     cursor: pointer;
     line-height: 1;
@@ -87,7 +87,7 @@
     width: 2.9rem;
     font-variant-numeric: tabular-nums;
     text-align: center;
-    background: var(--surface);
+    background: var(--plane);
     border: none;
     border-left: 1px solid var(--boundary);
     border-right: 1px solid var(--boundary);

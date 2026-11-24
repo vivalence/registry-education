@@ -621,7 +621,7 @@ One unit of work on screen. What a buffer is *for* is `data`. Any mode writes wh
 `modes/games/dojo/dojo.viva.js`:
 
 ```js
-export const views = [{ slug: "dojo", mount: "buffer/Dojo.svelte", mime: mime.dom.svelte }];
+export const surfaces = [{ slug: "dojo", mount: "buffer/Dojo.svelte", mime: mime.dom.svelte }];
 export const buffer = v.buffer({
   data: {
     recall: types.recall,

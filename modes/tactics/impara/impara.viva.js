@@ -11,9 +11,9 @@ export const manifest = {
   name: "Impara",
   description:
     "Italian course in three buckets: vocabolario, grammatica, frasi.",
-  traits: ["VIEWABLE", "EMITTER", "EXPOSED"],
+  traits: ["SURFACED", "EMITTER", "EXPOSED"],
 };
 
-export const views = [
+export const surfaces = [
   { slug: "impara", mount: "buffer/Impara.svelte", mime: mime.dom.svelte },
 ];

@@ -7,7 +7,7 @@ const manifest = {
   description:
     "Connect literal pairs across two columns. Batch mode. Failure is sticky per literal.",
   version: "0.1.0",
-  traits: ["VIEWABLE", "EMITTER"],
+  traits: ["SURFACED", "EMITTER"],
 };
 
 const ontology = ["word", "sentence"];
@@ -26,7 +26,7 @@ const buffer = v.buffer({
   },
 });
 
-const views = [
+const surfaces = [
   { slug: "match", mount: "buffer/Match.svelte", mime: mime.dom.svelte },
 ];
 
@@ -72,4 +72,4 @@ const dataset = {
   ],
 };
 
-export { manifest, buffer, views, emitter, dataset };
+export { manifest, buffer, surfaces, emitter, dataset };

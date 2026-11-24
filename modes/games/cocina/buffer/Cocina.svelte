@@ -50,15 +50,15 @@
 </div>
 
 <style>
-  .cocina { height: 100%; min-height: 0; overflow: auto; display: flex; flex-direction: column; gap: 8px; padding: 8px; box-sizing: border-box; background: var(--surface-sunk); color: var(--text-ink); font-family: var(--font-family-code), monospace; font-size: 12px; }
-  .dial { display: flex; align-items: center; gap: 12px; padding: 6px 12px; background: var(--surface-lift); box-shadow: inset 0 0 0 1px var(--boundary); border-radius: var(--shape-radius-card); }
+  .cocina { height: 100%; min-height: 0; overflow: auto; display: flex; flex-direction: column; gap: 8px; padding: 8px; box-sizing: border-box; background: var(--plane-sunk); color: var(--text-ink); font-family: var(--font-family-code), monospace; font-size: 12px; }
+  .dial { display: flex; align-items: center; gap: 12px; padding: 6px 12px; background: var(--plane-lift); box-shadow: inset 0 0 0 1px var(--boundary); border-radius: var(--shape-radius-card); }
   .dial .t { color: var(--text-strong); font-weight: 600; }
   .dial .k { color: var(--text-muted); }
   .phase { display: inline-flex; gap: 2px; }
   .phase button { height: 22px; padding: 0 8px; border: 0; background: transparent; border-radius: var(--shape-radius-key); color: var(--text-muted); font-family: inherit; font-size: 12px; cursor: default; }
   .phase button.cur { background: var(--control-contrast-pressed); color: var(--control-on-pressed); }
   .rail { display: flex; flex-direction: column; gap: 4px; }
-  .ticket { display: grid; grid-template-columns: 4ch 10ch 1fr auto; align-items: center; gap: 12px; padding: 10px 12px; background: var(--surface-lift); box-shadow: inset 0 0 0 1px var(--boundary); border-left: 3px solid var(--signal-primary); border-radius: var(--shape-radius-card); }
+  .ticket { display: grid; grid-template-columns: 4ch 10ch 1fr auto; align-items: center; gap: 12px; padding: 10px 12px; background: var(--plane-lift); box-shadow: inset 0 0 0 1px var(--boundary); border-left: 3px solid var(--signal-primary); border-radius: var(--shape-radius-card); }
   .ticket.late { border-left-color: var(--signal-caution); }
   .ticket.idle { border-left-color: transparent; color: var(--text-muted); }
   .ticket .prog { color: var(--signal-primary-ink); letter-spacing: 1px; }
@@ -71,7 +71,7 @@
   .chip.pos { color: var(--signal-positive-ink); }
   .chip.neg { color: var(--signal-negative-ink); }
   .chip.on { color: var(--text-strong); background: var(--control-selected); }
-  .spoken { display: flex; align-items: baseline; gap: 12px; padding: 8px 12px; background: var(--surface-lift); box-shadow: inset 0 0 0 1px var(--boundary); border-radius: var(--shape-radius-card); }
+  .spoken { display: flex; align-items: baseline; gap: 12px; padding: 8px 12px; background: var(--plane-lift); box-shadow: inset 0 0 0 1px var(--boundary); border-radius: var(--shape-radius-card); }
   .spoken .who { color: var(--text-muted); }
   .spoken .said { color: var(--text-strong); font-size: 16px; }
   .spoken.awaiting .who { color: var(--signal-caution-ink); }

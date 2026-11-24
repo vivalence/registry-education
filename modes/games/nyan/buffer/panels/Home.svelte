@@ -278,7 +278,7 @@
     padding: 0.6rem 0.8rem;
     border-radius: 0.5rem;
     border: 1px solid var(--boundary);
-    background: color-mix(in srgb, var(--surface-lift) 50%, transparent);
+    background: color-mix(in srgb, var(--plane-lift) 50%, transparent);
     color: var(--text-strong);
     font-family: var(--font-family-code);
     font-size: var(--font-size-md);

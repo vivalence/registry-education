@@ -229,7 +229,7 @@
     padding: var(--size-space-md) var(--size-space-md)
       calc(var(--size-space-md) + env(safe-area-inset-bottom, 0px));
     border-radius: var(--shape-radius-card) var(--shape-radius-card) 0 0;
-    background: var(--surface-lift);
+    background: var(--plane-lift);
     box-shadow:
       inset 0 0 0 var(--size-ring) var(--boundary),
       var(--shape-lift);
@@ -326,7 +326,7 @@
         transparent 0 0.9rem,
         var(--divider) 0.9rem calc(0.9rem + 1px)
       ),
-      var(--surface-sunk);
+      var(--plane-sunk);
   }
   .water.biting {
     box-shadow: inset 0 0 0 2px var(--signal-caution-ink);
@@ -338,7 +338,7 @@
     width: 1.6rem;
     height: 1.6rem;
     border-radius: var(--shape-radius-disc);
-    background: linear-gradient(var(--signal-primary) 50%, var(--surface-lift) 50%);
+    background: linear-gradient(var(--signal-primary) 50%, var(--plane-lift) 50%);
     box-shadow: inset 0 0 0 2px var(--text-strong);
     animation: bob 1.6s ease-in-out infinite;
   }
@@ -406,7 +406,7 @@
     position: relative;
     height: 6px;
     border-radius: var(--shape-radius-pill);
-    background: var(--surface-sunk);
+    background: var(--plane-sunk);
     box-shadow: inset 0 0 0 var(--size-ring) var(--boundary);
     overflow: hidden;
     transition: height 160ms;
@@ -436,7 +436,7 @@
     top: 0;
     bottom: 0;
     width: 2px;
-    background: var(--surface-lift);
+    background: var(--plane-lift);
   }
   /* the one call to act: the primary fill and the ink tested on it. it keeps to the sheet's foot,
      haloed in the card's own colour, so a thumb reaches it however long the sheet runs */
@@ -450,7 +450,7 @@
     border: 0;
     border-radius: var(--shape-radius-key);
     background: var(--signal-primary);
-    box-shadow: 0 0 0 var(--size-space-xs) var(--surface-lift);
+    box-shadow: 0 0 0 var(--size-space-xs) var(--plane-lift);
     color: var(--signal-primary-on);
     font-family: var(--font-family-code);
     font-size: var(--size-type-md);

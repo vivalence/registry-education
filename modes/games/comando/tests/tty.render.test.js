@@ -35,7 +35,7 @@ describe("comando view — mounted in a tty", { sanitizeResources: false, saniti
     const { module } = await loaded();
     const buffer = { id: "B1", $data: atom({ tier: 0, tempo: 1, phase: "OBEY", history: [], reactions: [], spoken: null, said: "", lexicon: [] }) };
     Object.defineProperty(buffer, "data", { get: () => buffer.$data.get(), set: (value) => buffer.$data.set(value) });
-    const bag = { terminal: {}, buffer, surface: { place: "frame" }, palette: tokens.camel("northsea", "2"), focused: () => true };
+    const bag = { terminal: {}, buffer, skin: { place: "frame" }, palette: tokens.camel("northsea", "2"), focused: () => true };
     const setup = await testRender(() => [], { width: 70, height: 40 });
     bag.renderer = setup.renderer;
     const handle = module.default(setup.renderer.root, bag);

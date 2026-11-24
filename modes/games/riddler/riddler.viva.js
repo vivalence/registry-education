@@ -11,7 +11,7 @@ export const manifest = {
   description:
     "Single-riddle challenges in the target language — weekdays, numbers, months, family.",
   version: "0.1.0",
-  traits: ["VIEWABLE", "EXPOSED", "EMITTER"],
+  traits: ["SURFACED", "EXPOSED", "EMITTER"],
 };
 
 export const buffer = v.buffer({
@@ -25,6 +25,6 @@ export const buffer = v.buffer({
   literals: v.array(v.rel(v.literal())),
 });
 
-export const views = [
+export const surfaces = [
   { slug: "riddler", mount: "buffer/Riddler.svelte", mime: mime.dom.svelte },
 ];

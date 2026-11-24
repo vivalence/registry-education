@@ -43,15 +43,15 @@
 </div>
 
 <style>
-  .comando { height: 100%; min-height: 0; overflow: auto; display: flex; flex-direction: column; gap: 8px; padding: 8px; box-sizing: border-box; background: var(--surface-sunk); color: var(--text-ink); font-family: var(--font-family-code), monospace; font-size: 12px; }
-  .dial { display: flex; align-items: center; gap: 12px; padding: 6px 12px; background: var(--surface-lift); box-shadow: inset 0 0 0 1px var(--boundary); border-radius: var(--shape-radius-card); }
+  .comando { height: 100%; min-height: 0; overflow: auto; display: flex; flex-direction: column; gap: 8px; padding: 8px; box-sizing: border-box; background: var(--plane-sunk); color: var(--text-ink); font-family: var(--font-family-code), monospace; font-size: 12px; }
+  .dial { display: flex; align-items: center; gap: 12px; padding: 6px 12px; background: var(--plane-lift); box-shadow: inset 0 0 0 1px var(--boundary); border-radius: var(--shape-radius-card); }
   .dial .t { color: var(--text-strong); font-weight: 600; }
   .dial .k { color: var(--text-muted); }
   .phase { display: inline-flex; gap: 2px; }
   .phase button { height: 22px; padding: 0 8px; border: 0; background: transparent; border-radius: var(--shape-radius-key); color: var(--text-muted); font-family: inherit; font-size: 12px; cursor: default; }
   .phase button.cur { background: var(--control-contrast-pressed); color: var(--control-on-pressed); }
-  .board { display: grid; gap: 2px; padding: 8px; max-width: 480px; background: var(--surface-lift); box-shadow: inset 0 0 0 1px var(--boundary); border-radius: var(--shape-radius-card); }
-  .cell { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; background: var(--surface-sunk); border-radius: var(--shape-radius-key); color: var(--text-muted); font-size: 14px; }
+  .board { display: grid; gap: 2px; padding: 8px; max-width: 480px; background: var(--plane-lift); box-shadow: inset 0 0 0 1px var(--boundary); border-radius: var(--shape-radius-card); }
+  .cell { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; background: var(--plane-sunk); border-radius: var(--shape-radius-key); color: var(--text-muted); font-size: 14px; }
   .cell.unit { background: var(--control-contrast-pressed); color: var(--control-on-pressed); font-weight: 600; }
   .cell.goal { color: var(--signal-caution-ink); font-weight: 600; }
   .cell.hazard { color: var(--signal-negative-ink); }
@@ -63,7 +63,7 @@
   .chip.pos { color: var(--signal-positive-ink); }
   .chip.neg { color: var(--signal-negative-ink); }
   .chip.on { color: var(--text-strong); background: var(--control-selected); }
-  .spoken { display: flex; align-items: baseline; gap: 12px; padding: 8px 12px; background: var(--surface-lift); box-shadow: inset 0 0 0 1px var(--boundary); border-radius: var(--shape-radius-card); }
+  .spoken { display: flex; align-items: baseline; gap: 12px; padding: 8px 12px; background: var(--plane-lift); box-shadow: inset 0 0 0 1px var(--boundary); border-radius: var(--shape-radius-card); }
   .spoken .who { color: var(--text-muted); }
   .spoken .said { color: var(--text-strong); font-size: 16px; }
   .spoken.awaiting .who { color: var(--signal-caution-ink); }

@@ -264,7 +264,7 @@
     flex-direction: column;
     min-height: 0;
     height: 100%;
-    background: var(--surface-lift);
+    background: var(--plane-lift);
   }
   .start-row {
     flex: none;
@@ -300,7 +300,7 @@
   .start.ready {
     border-color: var(--signal-primary-ink);
     color: var(--signal-primary-ink);
-    background: var(--surface-sunk);
+    background: var(--plane-sunk);
   }
   .start:disabled {
     cursor: default;

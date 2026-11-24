@@ -7,7 +7,7 @@
   import Activity from "./Activity.svelte";
   import Ranks from "./Ranks.svelte";
 
-  const { terminal, buffer, surface } = $props();
+  const { terminal, buffer, skin } = $props();
 
   // ── help desk · tutor ──
   async function askTutor(text) {

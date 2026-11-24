@@ -173,7 +173,7 @@
     height: 100%;
     min-height: 0;
     overflow: hidden;
-    background: var(--surface-sunk);
+    background: var(--plane-sunk);
   }
   .valley canvas {
     position: absolute;

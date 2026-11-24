@@ -311,7 +311,7 @@
     gap: 0.7rem;
     padding: var(--size-space-sm);
     border-radius: var(--shape-radius-card);
-    background: var(--surface-lift);
+    background: var(--plane-lift);
     box-shadow: inset 0 0 0 var(--size-ring) var(--boundary);
   }
   /* a hairline is never ink: who speaks is said in --text-light, cased and tracked by the theme */

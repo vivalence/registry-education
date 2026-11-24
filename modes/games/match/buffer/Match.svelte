@@ -1,7 +1,7 @@
 <script>
   import { Desk } from "@vivalence/drapes/svelte";
 
-  const { terminal, buffer, surface } = $props();
+  const { terminal, buffer, skin } = $props();
 
   const data = buffer.data ?? {};
   const recall = data.recall ?? "LEARNING";
@@ -232,7 +232,7 @@
     padding: 0.75rem 0.875rem;
     border-radius: 0.5rem;
     border: 1px solid var(--boundary);
-    background: color-mix(in srgb, var(--surface-lift) 70%, var(--surface-sunk));
+    background: color-mix(in srgb, var(--plane-lift) 70%, var(--plane-sunk));
     color: var(--text-light);
     font-size: var(--font-size-base);
     font-family: var(--font-family-serif-heading);

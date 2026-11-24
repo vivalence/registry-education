@@ -30,7 +30,7 @@
     max-width: min(22rem, calc(100% - 2rem));
     padding: var(--size-space-sm) var(--size-space-md);
     border-radius: var(--shape-radius-card);
-    background: var(--surface-lift);
+    background: var(--plane-lift);
     box-shadow:
       inset 0 0 0 var(--size-ring) var(--boundary),
       var(--shape-lift);

@@ -12,7 +12,7 @@ export const manifest = {
   name: "Aprende",
   description: "Brazilian Portuguese course",
   traits: [
-    "VIEWABLE",
+    "SURFACED",
     "HARNESS",
     "CONVERSATION",
     "EXPOSED",
@@ -21,6 +21,6 @@ export const manifest = {
   ],
 };
 
-export const views = [
+export const surfaces = [
   { slug: "aprende", mount: "buffer/Aprende.svelte", mime: mime.dom.svelte },
 ];

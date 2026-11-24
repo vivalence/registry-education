@@ -1,7 +1,7 @@
 <script>
   import { Asset, Desk } from "@vivalence/drapes/svelte";
 
-  const { terminal, buffer, surface } = $props();
+  const { terminal, buffer, skin } = $props();
   const files = terminal.client.runtime.entities.file.$entities;
 
   const data = buffer.data ?? {};
@@ -213,10 +213,10 @@
     align-items: center;
     padding: 0.625rem 0.75rem;
     border-radius: 0.375rem;
-    background: color-mix(in srgb, var(--surface-lift) 40%, transparent);
+    background: color-mix(in srgb, var(--plane-lift) 40%, transparent);
   }
   .table-row:nth-child(odd) {
-    background: color-mix(in srgb, var(--surface-lift) 70%, transparent);
+    background: color-mix(in srgb, var(--plane-lift) 70%, transparent);
   }
   .table-person {
     font-family: var(--font-family-code);
@@ -248,7 +248,7 @@
     margin-bottom: 1.5rem;
     padding: 1rem;
     border-radius: 0.5rem;
-    background: color-mix(in srgb, var(--surface-lift) 50%, transparent);
+    background: color-mix(in srgb, var(--plane-lift) 50%, transparent);
   }
   .pattern-text {
     font-family: var(--font-family-serif-heading);
@@ -273,7 +273,7 @@
   .example-row {
     padding: 0.75rem;
     border-radius: 0.375rem;
-    background: color-mix(in srgb, var(--surface-lift) 40%, transparent);
+    background: color-mix(in srgb, var(--plane-lift) 40%, transparent);
   }
   .example-learning {
     font-family: var(--font-family-serif-heading);
@@ -309,7 +309,7 @@
   .contrast-row {
     padding: 0.625rem;
     border-radius: 0.375rem;
-    background: color-mix(in srgb, var(--surface-lift) 40%, transparent);
+    background: color-mix(in srgb, var(--plane-lift) 40%, transparent);
   }
   .contrast-learning {
     font-family: var(--font-family-serif-heading);
