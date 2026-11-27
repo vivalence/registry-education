@@ -10,7 +10,7 @@ const STORE = Deno.makeTempDirSync({ prefix: "dojo-tty-" });
 // default export that mounts into an opentui slot
 describe("dojo view — the tty bundle", { sanitizeResources: false, sanitizeOps: false }, () => {
   it("T-bundle: dojo.jsx bundles as tty.solid, keeps solid-js and @opentui/solid external, loads with a mounting default", async () => {
-    const bundle = await paladin.bundler(STORE).bundle({ mime: mime.tty.solid, entry: ENTRY });
+    const bundle = await paladin.bundle.directory(STORE).bundle({ mime: mime.tty.solid, entry: ENTRY });
     expect(bundle.entries[0].mime).toBe(mime.tty.solid);
     const files = [];
     for await (const entry of Deno.readDir(`${STORE}/bundle`)) files.push(entry.name);

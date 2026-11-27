@@ -15,8 +15,8 @@ import * as workbenchState from "./workbench.js";
   import Drawer from "./parts/Drawer.svelte";
 
   const { terminal, buffer, skin } = $props();
-  const recorded = terminal.client.runtime.entities.file.$entities;
-  const files = $derived($recorded.filter((file) => file.mode.daemon === buffer.mode.daemon));
+  const recorded = buffer.mode.daemon.$files;
+  const files = $derived($recorded);
 
   const PICK_OPTIONS = 3;
   const TICK = 1000;

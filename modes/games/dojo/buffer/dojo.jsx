@@ -42,7 +42,7 @@ export function Dojo(props) {
   const [fault, setFault] = createSignal(null);
 
   const drawn = () => types.drawing(axes().random);
-  const files = () => terminal.client.runtime.entities.file.$entities.get().filter((file) => file.mode.daemon === buffer.mode.daemon);
+  const files = () => buffer.mode.daemon.files;
   const dresser = (list) => (index, worn) => knowables.dressFor(files(), axes(), list[index], { index, random: drawn(), worn });
   const prepare = (list) =>
     knowables.order(list.flatMap((knowable, index) => knowables.surface(knowable, knowables.gameplayFor(axes().gameplay, knowable, index, drawn()))), axes().random);

@@ -20,7 +20,7 @@ const settle = async (setup, passes = 6) => {
 };
 
 const loaded = async () => {
-  const bundle = await paladin.bundler(STORE).bundle({ mime: mime.tty.solid, entry: ENTRY });
+  const bundle = await paladin.bundle.directory(STORE).bundle({ mime: mime.tty.solid, entry: ENTRY });
   const files = [];
   for await (const entry of Deno.readDir(`${STORE}/bundle`)) files.push(entry.name);
   const code = await Deno.readTextFile(`${STORE}/bundle/${files.find((name) => name.endsWith(".mjs"))}`);

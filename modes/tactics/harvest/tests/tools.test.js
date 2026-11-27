@@ -56,7 +56,28 @@ const rig = ({ synthesized }) => {
       file: { ensure: async (row) => (received.push({ path: row.path, size: row.bytes }), row) },
       em: { flush: async () => flushed++ },
     },
-    cortex: { hallucinate: { speech: { render: async () => synthesized } } },
+    cortex: {
+      hallucinate: {
+        speech: {
+          render: async () => ({
+            turns: [
+              {
+                role: "assistant",
+                parts: [
+                  {
+                    type: "audio",
+                    mime: "audio/mpeg",
+                    data: btoa(
+                      Array.from(synthesized, (byte) => String.fromCharCode(byte)).join(""),
+                    ),
+                  },
+                ],
+              },
+            ],
+          }),
+        },
+      },
+    },
   };
 
   const call = shape.object(new Vector().use(shard.context.spread(contexts.daemonDie, daemon)).graft(tools));

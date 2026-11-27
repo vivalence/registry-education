@@ -3,7 +3,7 @@
   import { Keyboard, Asset, ViewportLock, Desk, persist } from "@vivalence/drapes/svelte";
 
   const { terminal, buffer, skin } = $props();
-  const files = terminal.client.runtime.entities.file.$entities;
+  const files = buffer.mode.daemon.$files;
 
   let keyboard;
 
@@ -28,7 +28,7 @@
   const tokens = $derived(literal?.trait?.ANNOTATED?.tokens ?? []);
   const known = $derived(literal?.trait?.TRANSLATED?.known);
   const file = $derived(
-    $files.find((file) => file.path === literal?.trait?.VOCALIZED?.asset?.path && file.mode.daemon === buffer.mode.daemon) ?? null,
+    $files.find((file) => file.path === literal?.trait?.VOCALIZED?.asset?.path) ?? null,
   );
   const isListenMode = $derived(gameplay === "LISTEN");
 

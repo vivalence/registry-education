@@ -1,7 +1,7 @@
 import { Path, Vector, v } from "@vivalence/typology";
 import paladin from "@vivalence/paladin";
 
-export const primer = await paladin.prime.directory(new Path(import.meta.resolve("./primer")));
+export const primer = await paladin.find.primer(new Path(import.meta.resolve("./primer")));
 
 export const harness = new Vector().use(async (ctx, next) => {
   ctx.hallucination.policy.tier ??= "fast";

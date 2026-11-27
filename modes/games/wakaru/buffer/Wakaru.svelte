@@ -33,7 +33,7 @@
   import Codex from "./parts/Codex.svelte";
 
   const { terminal, buffer } = $props();
-  const recorded = terminal.client.runtime.entities.file.$entities;
+  const recorded = buffer.mode.daemon.$files;
   const voice = live.voice();
   const sounds = sfx();
 
@@ -216,7 +216,7 @@
   const flash = (tone) => (fx.flash = { until: Date.now() + 260, tone });
 
   const sound = (word) => {
-    const file = live.fileOf($recorded, buffer, world.words[word].audio);
+    const file = live.fileOf($recorded, world.words[word].audio);
     if (file) voice(file);
   };
 

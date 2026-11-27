@@ -1,3 +1,4 @@
+import { decodeBase64 } from "jsr:@std/encoding@1.0.10/base64";
 import { Controller, Span } from "@vivalence/typology";
 
 export const tts = ({ cortex }) => ({
@@ -10,6 +11,11 @@ export const tts = ({ cortex }) => ({
     license: "synthetic",
   }),
 
-  fetch: async (found) =>
-    await cortex.hallucinate.speech.render({ controller: new Controller({ stdout: new Span("hallucination") }), source: found.synthesize }),
+  fetch: async (found) => {
+    const said = await cortex.hallucinate.speech.render({
+      controller: new Controller({ stdout: new Span("hallucination") }),
+      turns: [{ role: "assistant", parts: [{ type: "text", text: found.synthesize }] }],
+    });
+    return decodeBase64(said.turns.at(-1).parts[0].data);
+  },
 });

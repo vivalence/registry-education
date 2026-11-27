@@ -2,7 +2,7 @@
   import { Asset, Desk } from "@vivalence/drapes/svelte";
 
   const { terminal, buffer, skin } = $props();
-  const files = terminal.client.runtime.entities.file.$entities;
+  const files = buffer.mode.daemon.$files;
 
   const data = buffer.data ?? {};
   const recall = data.recall ?? "LEARNING";
@@ -20,7 +20,7 @@
   const isWord = target?.ontology === "word";
   const file =
     (gameplay === "audio" || gameplay === "audio-only")
-      ? ($files.find((file) => file.path === target?.trait?.VOCALIZED?.asset?.path && file.mode.daemon === buffer.mode.daemon) ?? null)
+      ? ($files.find((file) => file.path === target?.trait?.VOCALIZED?.asset?.path) ?? null)
       : null;
 
   const sourceText = target && gameplay !== "audio-only"

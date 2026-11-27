@@ -21,7 +21,7 @@ const kind = (literal) => (literal.ontology === "sentence" ? "sentence" : "word"
 
 const received = async (ctx, topography, path, bytes) => {
   const mount = join(topography.files.directory, path);
-  await paladin.state.store(mount, bytes);
+  await paladin.write.bytes(mount, bytes);
   const hash = await crypto.digestBytes(bytes);
   return ctx.entities.file.ensure({ mode: topography.id, path, mount, mime: mime.of(path), hash, integrity: `sha256-${hash}`, bytes: bytes.length });
 };

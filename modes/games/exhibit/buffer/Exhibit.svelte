@@ -2,7 +2,7 @@
   import { Asset, Desk } from "@vivalence/drapes/svelte";
 
   const { terminal, buffer, skin } = $props();
-  const files = terminal.client.runtime.entities.file.$entities;
+  const files = buffer.mode.daemon.$files;
 
   const data = buffer.data ?? {};
   const layout = data.layout ?? "TABLE";
@@ -40,7 +40,7 @@
 
   function getAudio(lit) {
     const ref = lit?.trait?.VOCALIZED?.asset;
-    return ref ? ($files.find((file) => file.path === ref.path && file.mode.daemon === buffer.mode.daemon) ?? null) : null;
+    return ref ? ($files.find((file) => file.path === ref.path) ?? null) : null;
   }
 
   function parseTemplate(tpl, lits) {

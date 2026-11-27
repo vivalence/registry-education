@@ -72,8 +72,7 @@ export const judge = (buffer, { place, question, reply, target }) =>
   );
 
 // a word's VOCALIZED path names one of the files its own daemon serves
-export const fileOf = (files, buffer, path) =>
-  files.find((file) => file.mode.daemon === buffer.mode.daemon && file.path === path);
+export const fileOf = (files, path) => files.find((file) => file.path === path);
 
 // one element for every word: a phone plays sound only on an element a gesture once started,
 // so the first tap unlocks it for the clocked duels that follow
